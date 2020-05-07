@@ -1,0 +1,112 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+a {
+  text-decoration: none;
+}
+
+nav {
+  width: auto;
+  top: 0px;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: -8px;
+  padding: 13px 150px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #16171a;
+  -webkit-box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.25);
+}
+
+nav #social a {
+  cursor: pointer;
+  color: #fff;
+  margin: 0px 7px;
+  font-size: 18px;
+  -webkit-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+}
+
+nav #social a:hover {
+  color: #0056d8;
+}
+
+nav #menu {
+  display: inline-block;
+}
+
+nav #menu a {
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin: 0px 15px;
+  -webkit-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+}
+
+nav #menu a:hover {
+  color: #0056d8;
+}
+
+nav #menu a .active {
+  color: #0056d8;
+}
+
+nav button {
+  padding: 5px 15px;
+  background-color: #0056d8;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+  cursor: pointer;
+}
+
+nav button:hover {
+  color: #0056d8;
+  background-color: #fff;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider #dot {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 10px 2px;
+  background-color: #16171a;
+  border-radius: 50%;
+  opacity: 0.5;
+  width: 6px;
+  height: 6px;
+  -webkit-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+}
+
+.slider #dot:nth-child(2) {
+  opacity: 1;
+  background-color: #e1e8e9;
+}
+/*# sourceMappingURL=styles.css.map */
