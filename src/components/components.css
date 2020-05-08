@@ -1,5 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-@import url("../gerenal.scss");
+@import url("../Animations.css");
 a {
   text-decoration: none;
 }
@@ -37,7 +37,7 @@ nav #social a {
 }
 
 nav #social a:hover {
-  color: #0056d8;
+  color: #3a78d4;
 }
 
 nav #menu {
@@ -56,16 +56,16 @@ nav #menu a {
 }
 
 nav #menu a:hover {
-  color: #0056d8;
+  color: #3a78d4;
 }
 
 nav #menu a .active {
-  color: #0056d8;
+  color: #3a78d4;
 }
 
 nav button {
   padding: 5px 15px;
-  background-color: #0056d8;
+  background-color: #3a78d4;
   font-family: "Roboto", sans-serif;
   border: none;
   color: #fff;
@@ -78,7 +78,7 @@ nav button {
 }
 
 nav button:hover {
-  color: #0056d8;
+  color: #3a78d4;
   background-color: #fff;
 }
 

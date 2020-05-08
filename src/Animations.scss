@@ -1,12 +1,4 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-@-webkit-keyframes boost {
-  0% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+// Animations
 @keyframes boost {
   0% {
     opacity: 0.9;
@@ -15,16 +7,6 @@
     opacity: 1;
   }
 }
-
-@-webkit-keyframes width {
-  0% {
-    width: 1%;
-  }
-  100% {
-    width: 3%;
-  }
-}
-
 @keyframes width {
   0% {
     width: 1%;
@@ -33,7 +15,6 @@
     width: 3%;
   }
 }
-
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0;
@@ -42,7 +23,6 @@
     opacity: 1;
   }
 }
-
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -51,4 +31,3 @@
     opacity: 1;
   }
 }
-/*# sourceMappingURL=UI.css.map */
