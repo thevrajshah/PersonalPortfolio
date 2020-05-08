@@ -1,5 +1,6 @@
 // Import
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("../animations.css");
 
 // Variables
 $dark: #16171a;
@@ -23,7 +24,6 @@ nav {
   margin: -8px;
   padding: 13px 150px;
   height: fit-content;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   background: $dark;
@@ -82,16 +82,50 @@ nav {
   justify-content: center;
   #dot {
     display: inline-flex;
-    margin: 10px 2px;
-    background-color: $dark;
+    margin: 5px 2px 0px 2px;
+    background-color: $light;
     border-radius: 50%;
     opacity: 0.5;
     width: 6px;
     height: 6px;
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.25);
     transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
     &:nth-child(2) {
       opacity: 1;
-      background-color: $light;
+      background-color: $dark;
     }
   }
+}
+
+// Hero Styling
+
+.img {
+  display: block;
+  margin: 60px auto;
+  width: 200px;
+  border: 7px solid $light;
+  border-radius: 50%;
+  -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+#hero {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-family: $font1;
+  text-align: center;
+  font-size: 55px;
+  color: $light;
+  -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+#subhero {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color: $light;
+  font-weight: 400;
+  text-align: center;
+  font-family: $font2;
 }

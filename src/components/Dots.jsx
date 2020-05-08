@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./styles.css";
+import "./components.css";
 
 class Dots extends Component {
   state = {};

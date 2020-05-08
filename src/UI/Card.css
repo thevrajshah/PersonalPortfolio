@@ -1,0 +1,17 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("../animations.css");
+a {
+  text-decoration: none;
+}
+
+.card {
+  margin: 5px 150px;
+  padding: 20px;
+  background-color: #16171a;
+  color: white;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=Card.css.map */
