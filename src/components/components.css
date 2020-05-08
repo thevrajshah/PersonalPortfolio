@@ -5,13 +5,13 @@ a {
 }
 
 nav {
-  width: auto;
+  overflow: hidden;
   top: 0px;
-  z-index: 2;
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: -8px;
+  margin: 0px;
   padding: 13px 150px;
   height: -webkit-fit-content;
   height: -moz-fit-content;

@@ -8,12 +8,10 @@ $accent: #0056d8;
 $font1: "Roboto", sans-serif;
 $font2: "Space Mono", Monospace;
 
-html {
-  margin: 0;
-  padding: 0px;
-}
-
 body {
+  margin: 0px;
+  padding: 0px;
+
   background: $accent;
   font-family: $font1;
 }

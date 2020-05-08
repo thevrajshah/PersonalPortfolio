@@ -16,12 +16,13 @@ a {
 // NavBar Styling
 nav {
   // fixed position
-  width: auto;
+  overflow: hidden;
+
   top: 0px;
-  z-index: 2;
+  z-index: 3;
   // misc.
   display: flex;
-  margin: -8px;
+  margin: 0px;
   padding: 13px 150px;
   height: fit-content;
   justify-content: space-between;
