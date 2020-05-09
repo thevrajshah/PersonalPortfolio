@@ -1,17 +1,16 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("../Animations.css");
-a {
-  text-decoration: none;
+header {
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  top: 0px;
 }
 
-nav {
-  overflow: hidden;
-  top: 0px;
-  z-index: 3;
+header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0px;
   padding: 13px 150px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -27,7 +26,7 @@ nav {
           box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.25);
 }
 
-nav #social a {
+header nav #social a {
   cursor: pointer;
   color: #fff;
   margin: 0px 7px;
@@ -36,15 +35,15 @@ nav #social a {
   transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
 }
 
-nav #social a:hover {
+header nav #social a:hover {
   color: #3a78d4;
 }
 
-nav #menu {
-  display: inline-block;
+header nav #menu {
+  display: inline;
 }
 
-nav #menu a {
+header nav #menu a {
   cursor: pointer;
   color: #fff;
   font-size: 14px;
@@ -55,15 +54,15 @@ nav #menu a {
   transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
 }
 
-nav #menu a:hover {
+header nav #menu a:hover {
   color: #3a78d4;
 }
 
-nav #menu a .active {
+header nav #menu a .active {
   color: #3a78d4;
 }
 
-nav button {
+header nav button {
   padding: 5px 15px;
   background-color: #3a78d4;
   font-family: "Roboto", sans-serif;
@@ -77,79 +76,62 @@ nav button {
   cursor: pointer;
 }
 
-nav button:hover {
+header nav button:hover {
   color: #3a78d4;
   background-color: #fff;
 }
 
-.slider {
+.hero {
+  background-color: #1e65cf;
+  color: #fff;
+  line-height: 1;
+  font-family: "Space Mono", Monospace;
+  font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 70px 180px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
-.slider #dot {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 5px 2px 0px 2px;
-  background-color: #e1e8e9;
-  border-radius: 50%;
-  opacity: 0.5;
-  width: 6px;
-  height: 6px;
-  -webkit-box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.25);
-  -webkit-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
-  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+.hero #hello {
+  font-size: 20px;
 }
 
-.slider #dot:nth-child(2) {
-  opacity: 1;
-  background-color: #16171a;
+.hero #name {
+  font-size: 80px;
+}
+
+.hero #subhero {
+  text-align: right;
+  margin-top: -40px;
+  vertical-align: middle;
+  font-size: 70px;
+  color: #16171a;
+}
+
+.hero #subhero li {
+  display: none;
+}
+
+.hero #subhero li:nth-child(2) {
+  display: block;
 }
 
 .img {
   display: block;
   margin: 60px auto;
   width: 200px;
-  border: 7px solid #e1e8e9;
+  border: 5px solid #16171a;
   border-radius: 50%;
+  -webkit-box-shadow: 3px 3px 0px 1px #16171a;
+          box-shadow: 3px 3px 0px 1px #16171a;
   -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-
-#hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  font-size: 55px;
-  color: #e1e8e9;
-  -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-
-#subhero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 14px;
-  color: #e1e8e9;
-  font-weight: 400;
-  text-align: center;
-  font-family: "Space Mono", Monospace;
 }
 /*# sourceMappingURL=components.css.map */

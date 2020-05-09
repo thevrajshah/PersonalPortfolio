@@ -1,16 +1,16 @@
 import React from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
-import Dots from "./components/Dots";
 import Home from "./containers/Home";
 
 function App() {
   return (
-    <div className="App">
+    <React.Fragment>
       <NavBar />
-      <Dots />
-      <Home />
-    </div>
+      <div className="content">
+        <Home />
+      </div>
+    </React.Fragment>
   );
 }
 

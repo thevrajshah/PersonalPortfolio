@@ -1,9 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("../Animations.css");
-a {
-  text-decoration: none;
-}
-
 .card {
   margin: 5px 150px;
   padding: 20px;

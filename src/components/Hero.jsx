@@ -5,11 +5,19 @@ class Hero extends Component {
   state = {};
   render() {
     return (
-      <React.Fragment>
-        <img src="pic.jpg" alt="profile" className="img" />
-        <div id="hero">Vraj Shah</div>
-        <div id="subhero">Web Developer / Graphic Designer</div>
-      </React.Fragment>
+      <div className="hero">
+        <div>
+          <div id="hello">Hello There!</div>
+          <div id="name">I'm Vraj.</div>
+        </div>
+        <div id="subhero">
+          <ul>
+            <li>Web Developer</li>
+            <li>Photographer</li>
+            <li>Graphic Designer</li>
+          </ul>
+        </div>
+      </div>
     );
   }
 }
