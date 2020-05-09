@@ -2,10 +2,12 @@
 body {
   background: #d5dedf;
   font-family: "Roboto", sans-serif;
+  width: 100%;
 }
 
 a {
   text-decoration: none;
+  outline: none;
 }
 
 li {

@@ -37,6 +37,9 @@ class NavBar extends Component {
               <button>Blog</button>
             </a>
           </span>
+          <a href="javascript:void(0);" id="hamburger" onclick="hamburger()">
+            &#9776;
+          </a>
         </nav>
       </header>
     );

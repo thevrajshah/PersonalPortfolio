@@ -11,9 +11,11 @@ $font2: "Space Mono", Monospace;
 body {
   background: $light;
   font-family: $font1;
+  width: 100%;
 }
 a {
   text-decoration: none;
+  outline: none;
 }
 li {
   list-style: none;

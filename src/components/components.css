@@ -11,7 +11,7 @@ header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 13px 150px;
+  padding: 13px 15%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -40,13 +40,13 @@ header nav #social a:hover {
 }
 
 header nav #menu {
-  display: inline;
+  display: block;
+  font-size: 14px;
 }
 
 header nav #menu a {
   cursor: pointer;
   color: #fff;
-  font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   margin: 0px 15px;
@@ -81,45 +81,54 @@ header nav button:hover {
   background-color: #fff;
 }
 
-.hero {
-  background-color: #1e65cf;
+#hamburger {
+  font-size: 23px;
+  vertical-align: middle;
+  display: none;
   color: #fff;
-  line-height: 1;
-  font-family: "Space Mono", Monospace;
-  font-weight: 700;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 70px 180px;
+  -webkit-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+}
+
+#hamburger:hover {
+  color: #3a78d4;
+}
+
+#hamburger .active {
+  color: #3a78d4;
+}
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  background-color: #1e65cf;
+  padding: 70px 16%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-}
-
-.hero #hello {
-  font-size: 20px;
+  line-height: 1;
+  font-family: "Space Mono", Monospace;
+  font-weight: 700;
+  color: #fff;
 }
 
 .hero #name {
   font-size: 80px;
 }
 
-.hero #subhero {
-  text-align: right;
-  margin-top: -40px;
-  vertical-align: middle;
-  font-size: 70px;
+.hero #prof {
+  font-size: 36px;
   color: #16171a;
+  margin: auto 0 auto 40%;
 }
 
-.hero #subhero li {
+.hero #prof li {
   display: none;
 }
 
-.hero #subhero li:nth-child(2) {
+.hero #prof li:nth-child(1) {
   display: block;
 }
 
@@ -133,5 +142,34 @@ header nav button:hover {
           box-shadow: 3px 3px 0px 1px #16171a;
   -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    padding: 13px 10%;
+  }
+  nav #social {
+    margin: 0px 5px;
+  }
+  nav span#menu {
+    display: none;
+  }
+  #hamburger {
+    display: block;
+    float: right;
+  }
+  .hero {
+    display: block;
+  }
+  .hero #hello {
+    font-size: 20px;
+  }
+  .hero #name {
+    font-size: 80px;
+  }
+  .hero #prof {
+    font-size: 40px;
+    margin: 20px auto;
+  }
 }
 /*# sourceMappingURL=components.css.map */

@@ -19,7 +19,7 @@ header {
   nav {
     // misc.
     display: flex;
-    padding: 13px 150px;
+    padding: 13px 15%;
     height: fit-content;
     justify-content: space-between;
     align-items: center;
@@ -38,11 +38,11 @@ header {
       }
     }
     #menu {
-      display: inline;
+      display: block;
+      font-size: 14px;
       a {
         cursor: pointer;
         color: #fff;
-        font-size: 14px;
         font-family: $font1;
         font-weight: 700;
         margin: 0px 15px;
@@ -55,6 +55,7 @@ header {
         }
       }
     }
+
     button {
       padding: 5px 15px;
       background-color: $accent;
@@ -73,33 +74,40 @@ header {
     }
   }
 }
-
+#hamburger {
+  font-size: 23px;
+  vertical-align: middle;
+  display: none;
+  color: #fff;
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+  &:hover {
+    color: $accent;
+  }
+  .active {
+    color: $accent;
+  }
+}
 // Hero Styling
 .hero {
+  display: grid;
+  grid-template-columns: 50% 50%;
   background-color: #1e65cf;
-  color: #fff;
+  padding: 70px 16%;
+  height: fit-content;
   line-height: 1;
   font-family: $font2;
   font-weight: 700;
-  display: flex;
-  justify-content: space-between;
-  padding: 70px 180px;
-  height: fit-content;
-  #hello {
-    font-size: 20px;
-  }
+  color: #fff;
   #name {
     font-size: 80px;
   }
-  #subhero {
-    text-align: right;
-    margin-top: -40px;
-    vertical-align: middle;
-    font-size: 70px;
+  #prof {
+    font-size: 36px;
     color: $dark;
+    margin: auto 0 auto 40%;
     li {
       display: none;
-      &:nth-child(2) {
+      &:nth-child(1) {
         display: block;
       }
     }
@@ -115,4 +123,36 @@ header {
   box-shadow: 3px 3px 0px 1px $dark;
   -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+// Responsive Design
+@media screen and (max-width: 1024px) {
+  // NavBar Styling
+  nav {
+    padding: 13px 10%;
+    #social {
+      margin: 0px 5px;
+    }
+    span#menu {
+      display: none;
+    }
+  }
+  #hamburger {
+    display: block;
+    float: right;
+  }
+  // Hero Styling
+  .hero {
+    display: block;
+    #hello {
+      font-size: 20px;
+    }
+    #name {
+      font-size: 80px;
+    }
+    #prof {
+      font-size: 40px;
+      margin: 20px auto;
+    }
+  }
 }
