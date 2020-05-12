@@ -19,8 +19,8 @@ header {
   nav {
     // misc.
     display: flex;
-    padding: 13px 15%;
-    height: fit-content;
+    padding: 13px 7%;
+    height: 30px;
     justify-content: space-between;
     align-items: center;
     background: $dark;
@@ -29,7 +29,7 @@ header {
       a {
         cursor: pointer;
         color: #fff;
-        margin: 0px 7px;
+        margin-right: 10px;
         font-size: 18px;
         transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
         &:hover {
@@ -75,6 +75,7 @@ header {
   }
 }
 #hamburger {
+  cursor: pointer;
   font-size: 23px;
   vertical-align: middle;
   display: none;
@@ -92,23 +93,31 @@ header {
   display: grid;
   grid-template-columns: 50% 50%;
   background-color: #1e65cf;
-  padding: 70px 16%;
+  background-size: cover;
+  padding: 70px 9%;
   height: fit-content;
   line-height: 1;
   font-family: $font2;
   font-weight: 700;
   color: #fff;
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
   #name {
     font-size: 80px;
   }
   #prof {
-    font-size: 36px;
+    text-align: right;
+    margin: auto 0;
     color: $dark;
-    margin: auto 0 auto 40%;
+    line-height: 1;
+    transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
     li {
-      display: none;
+      display: block;
+      font-size: 30px;
+      opacity: 0.5;
       &:nth-child(1) {
+        font-size: 70px;
         display: block;
+        opacity: 1;
       }
     }
   }
@@ -131,7 +140,7 @@ header {
   nav {
     padding: 13px 10%;
     #social {
-      margin: 0px 5px;
+      margin-right: 5px;
     }
     span#menu {
       display: none;
@@ -143,7 +152,8 @@ header {
   }
   // Hero Styling
   .hero {
-    display: block;
+    grid-template-columns: auto;
+    grid-template-rows: 50% 50%;
     #hello {
       font-size: 20px;
     }
@@ -151,8 +161,8 @@ header {
       font-size: 80px;
     }
     #prof {
-      font-size: 40px;
-      margin: 20px auto;
+      font-size: 30px;
+      text-align: left;
     }
   }
 }

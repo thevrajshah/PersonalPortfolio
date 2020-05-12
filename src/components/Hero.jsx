@@ -5,7 +5,7 @@ class Hero extends Component {
   state = {};
   render() {
     return (
-      <div className="hero">
+      <main className="hero">
         <div>
           <h3>Hello There!</h3>
           <div id="name">I'm Vraj.</div>
@@ -15,7 +15,7 @@ class Hero extends Component {
           <li>Photographer</li>
           <li>Designer</li>
         </div>
-      </div>
+      </main>
     );
   }
 }
