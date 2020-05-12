@@ -6,11 +6,11 @@
 $dark: #181818;
 $light: #ddd;
 $grey: #242424;
-$accent: #3d87c9;
+$accent: #077bff;
 $font1: "Poppins", sans-serif;
 $font2: "Space Mono", Monospace;
-// linear-gradient(to left, #3d87c9 0%, #00f2fe 100%);
-// -webkit-linear-gradient(to left, #3d87c9 0%, #00f2fe 100%);
+// linear-gradient(to left, #077bff 0%, #00f2fe 100%);
+// -webkit-linear-gradient(to left, #077bff 0%, #00f2fe 100%);
 
 // NavBar Styling
 header {
@@ -97,11 +97,11 @@ header {
   display: grid;
   margin-top: 56px;
   grid-template-columns: 50% 50%;
-  background-color: #3d87c9; // fallback for old browsers
+  background-color: #077bff; // fallback for old browsers
   // Chrome 10-25, Safari 5.1-6
-  background: -webkit-linear-gradient(to right, #3d87c9 0%, #00f2fe 100%);
+  background: -webkit-linear-gradient(to right, #077bff 0%, #00f2fe 100%);
   // W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
-  background: linear-gradient(to right, #3d87c9 0%, #00f2fe 100%);
+  background: linear-gradient(to right, #077bff 0%, #00f2fe 100%);
   background-size: cover;
   padding: 60px 15%;
   height: fit-content;
