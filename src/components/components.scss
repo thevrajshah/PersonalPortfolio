@@ -3,11 +3,11 @@
 @import url("../Animations.css");
 
 // Variables
-$dark: #16171a;
+$dark: #181818;
 $light: #ddd;
-$grey: #444;
+$grey: #242424;
 $accent: #3a78d4;
-$font1: "Roboto", sans-serif;
+$font1: "Poppins", sans-serif;
 $font2: "Space Mono", Monospace;
 
 // NavBar Styling
@@ -17,6 +17,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0px;
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
   nav {
     // misc.
     display: flex;
@@ -25,7 +26,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background: $dark;
-    box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.1);
     #social {
       a {
         cursor: pointer;
@@ -45,8 +46,8 @@ header {
         cursor: pointer;
         color: #fff;
         font-family: $font1;
-        font-weight: 700;
-        margin: 0px 15px;
+        font-weight: 600;
+        margin-left: 30px;
         transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
         &:hover {
           color: $accent;
@@ -58,14 +59,14 @@ header {
     }
 
     button {
-      padding: 5px 15px;
+      padding: 3px 15px;
       background-color: $accent;
       font-family: $font1;
       border: none;
       color: #fff;
       font-size: 14px;
-      font-weight: 700;
-      border-radius: 10px;
+      font-weight: 600;
+      border-radius: 15px;
       transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
       cursor: pointer;
       &:hover {
@@ -89,6 +90,7 @@ header {
     color: $accent;
   }
 }
+
 // Hero Styling
 .hero {
   display: grid;
@@ -96,11 +98,11 @@ header {
   grid-template-columns: 50% 50%;
   background-color: #1e65cf;
   background-size: cover;
-  padding: 60px 13%;
+  padding: 60px 11%;
   height: fit-content;
   line-height: 1;
   font-family: $font2;
-  font-weight: 700;
+  font-weight: 600;
   color: #fff;
   transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
   h3 {
@@ -112,32 +114,22 @@ header {
   }
   #prof {
     text-align: right;
+    font-family: $font1;
     margin: auto 0;
     color: $dark;
-    line-height: 1.2;
+    line-height: 1.4;
     transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
     li {
       display: block;
       font-size: 30px;
-      opacity: 0.5;
+      font-weight: 400;
       &:nth-child(1) {
         font-size: 60px;
+        font-weight: 600;
         display: block;
-        opacity: 1;
       }
     }
   }
-}
-
-.img {
-  display: block;
-  margin: 60px auto;
-  width: 200px;
-  border: 5px solid $dark;
-  border-radius: 50%;
-  box-shadow: 3px 3px 0px 1px $dark;
-  -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 // Responsive Design
@@ -156,6 +148,7 @@ header {
     display: block;
     float: right;
   }
+
   // Hero Styling
   .hero {
     grid-template-columns: auto;
@@ -170,9 +163,9 @@ header {
       text-align: left;
       margin: 10px 0;
       li {
-        font-size: 35px;
+        font-size: 30px;
         &:nth-child(1) {
-          font-size: 50px;
+          font-size: 60px;
         }
       }
     }
@@ -202,16 +195,16 @@ header {
       font-size: 5px;
     }
     #name {
-      font-size: 55px;
+      font-size: 60px;
     }
     #prof {
       text-align: left;
       margin: 15px 0;
       li {
-        font-size: 25px;
+        font-size: 20px;
 
         &:nth-child(1) {
-          font-size: 35px;
+          font-size: 40px;
         }
       }
     }

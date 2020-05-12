@@ -3,17 +3,18 @@
 @import url("../Animations.css");
 
 // Variables
-$dark: #16171a;
+$dark: #181818;
 $light: #ddd;
-$grey: #444;
+$grey: #242424;
 $accent: #3a78d4;
-$font1: "Roboto", sans-serif;
+$font1: "Poppins", sans-serif;
 $font2: "Space Mono", Monospace;
 
-// Card Styling
+// Section Styling
 .section {
   margin: 0;
-  padding: 30px 10%;
+  padding: 40px 11%;
   background-color: #fff;
-  color: $dark;
+  color: $grey;
+  box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.1);
 }

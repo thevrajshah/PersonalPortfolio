@@ -10,8 +10,8 @@ class Home extends Component {
       <React.Fragment>
         <Hero />
         <Section>
-          <h2>Welcome my Website.</h2>
-          <h6>This is the place where I put up my blah blah blah</h6>
+          <h1>Welcome my Website.</h1>
+          This is the place where I put up my blah blah blah
         </Section>
       </React.Fragment>
     );

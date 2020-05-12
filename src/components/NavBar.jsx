@@ -29,6 +29,9 @@ class NavBar extends Component {
               href="https://twitter.com/thevrajshah"
             ></a>
           </span>
+          <a href="javascript:void(0);" id="hamburger" onclick="hamburger()">
+            &#9776;
+          </a>
           <span id="menu">
             <a onclick="showHome()">Home</a>
             <a onclick="showAbout()">About</a>
@@ -37,9 +40,6 @@ class NavBar extends Component {
               <button>Blog</button>
             </a>
           </span>
-          <a href="javascript:void(0);" id="hamburger" onclick="hamburger()">
-            &#9776;
-          </a>
         </nav>
       </header>
     );

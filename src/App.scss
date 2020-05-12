@@ -2,16 +2,17 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 // Variables
-$dark: #16171a;
+$dark: #181818;
 $light: #ddd;
-$grey: #444;
+$grey: #242424;
 $accent: #0056d8;
-$font1: "Roboto", sans-serif;
+$font1: "Poppins", sans-serif;
 $font2: "Space Mono", Monospace;
 
 body {
   background: #cccccc;
   font-family: $font1;
+  font-size: 14px;
   width: 100%;
 }
 h1,
@@ -23,12 +24,6 @@ h6 {
   margin: 0;
   padding: 5px 0;
   color: $dark;
-}
-h6 {
-  color: $grey;
-  font-size: 14px;
-  font-family: $font1;
-  font-weight: 400;
 }
 a {
   text-decoration: none;

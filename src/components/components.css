@@ -5,6 +5,8 @@ header {
   position: fixed;
   width: 100%;
   top: 0px;
+  -webkit-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
 }
 
 header nav {
@@ -19,9 +21,9 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #16171a;
-  -webkit-box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.25);
+  background: #181818;
+  -webkit-box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
 header nav #social a {
@@ -45,9 +47,9 @@ header nav #menu {
 header nav #menu a {
   cursor: pointer;
   color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  margin: 0px 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-left: 30px;
   -webkit-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
   transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
 }
@@ -61,14 +63,14 @@ header nav #menu a .active {
 }
 
 header nav button {
-  padding: 5px 15px;
+  padding: 3px 15px;
   background-color: #3a78d4;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   border: none;
   color: #fff;
   font-size: 14px;
-  font-weight: 700;
-  border-radius: 10px;
+  font-weight: 600;
+  border-radius: 15px;
   -webkit-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
   transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
   cursor: pointer;
@@ -105,13 +107,13 @@ header nav button:hover {
       grid-template-columns: 50% 50%;
   background-color: #1e65cf;
   background-size: cover;
-  padding: 60px 13%;
+  padding: 60px 11%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   line-height: 1;
   font-family: "Space Mono", Monospace;
-  font-weight: 700;
+  font-weight: 600;
   color: #fff;
   -webkit-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
   transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
@@ -128,9 +130,10 @@ header nav button:hover {
 
 .hero #prof {
   text-align: right;
+  font-family: "Poppins", sans-serif;
   margin: auto 0;
-  color: #16171a;
-  line-height: 1.2;
+  color: #181818;
+  line-height: 1.4;
   -webkit-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
   transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
 }
@@ -138,25 +141,13 @@ header nav button:hover {
 .hero #prof li {
   display: block;
   font-size: 30px;
-  opacity: 0.5;
+  font-weight: 400;
 }
 
 .hero #prof li:nth-child(1) {
   font-size: 60px;
+  font-weight: 600;
   display: block;
-  opacity: 1;
-}
-
-.img {
-  display: block;
-  margin: 60px auto;
-  width: 200px;
-  border: 5px solid #16171a;
-  border-radius: 50%;
-  -webkit-box-shadow: 3px 3px 0px 1px #16171a;
-          box-shadow: 3px 3px 0px 1px #16171a;
-  -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 @media screen and (max-width: 1024px) {
@@ -190,10 +181,10 @@ header nav button:hover {
     margin: 10px 0;
   }
   .hero #prof li {
-    font-size: 35px;
+    font-size: 30px;
   }
   .hero #prof li:nth-child(1) {
-    font-size: 50px;
+    font-size: 60px;
   }
 }
 
@@ -222,17 +213,17 @@ header nav button:hover {
     font-size: 5px;
   }
   .hero #name {
-    font-size: 55px;
+    font-size: 60px;
   }
   .hero #prof {
     text-align: left;
     margin: 15px 0;
   }
   .hero #prof li {
-    font-size: 25px;
+    font-size: 20px;
   }
   .hero #prof li:nth-child(1) {
-    font-size: 35px;
+    font-size: 40px;
   }
 }
 /*# sourceMappingURL=components.css.map */

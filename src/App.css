@@ -1,7 +1,8 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 body {
   background: #cccccc;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
   width: 100%;
 }
 
@@ -13,14 +14,7 @@ h5,
 h6 {
   margin: 0;
   padding: 5px 0;
-  color: #16171a;
-}
-
-h6 {
-  color: #444;
-  font-size: 14px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  color: #181818;
 }
 
 a {
