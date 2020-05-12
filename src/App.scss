@@ -5,12 +5,14 @@
 $dark: #181818;
 $light: #ddd;
 $grey: #242424;
-$accent: #0056d8;
+$accent: #3d87c9;
 $font1: "Poppins", sans-serif;
 $font2: "Space Mono", Monospace;
+// linear-gradient(to left, #4facfe 0%, #00f2fe 100%);
+// -webkit-linear-gradient(to left, #4facfe 0%, #00f2fe 100%);
 
 body {
-  background: #cccccc;
+  background: $light;
   font-family: $font1;
   font-size: 14px;
   width: 100%;

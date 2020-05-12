@@ -12,22 +12,22 @@ class NavBar extends Component {
               target="_blank"
               class="fa fa-github"
               href="https://github.com/thevrajshah"
-            ></a>
+            />
             <a
               target="_blank"
               class="fa fa-linkedin-square"
               href="https://www.linkedin.com/in/thevrajshah/"
-            ></a>
+            />
             <a
               target="_blank"
               class="fa fa-instagram"
               href="https://www.instagram.com/thevrajshaah"
-            ></a>
+            />
             <a
               target="_blank"
               class="fa fa-twitter"
               href="https://twitter.com/thevrajshah"
-            ></a>
+            />
           </span>
           <a href="javascript:void(0);" id="hamburger" onclick="hamburger()">
             &#9776;

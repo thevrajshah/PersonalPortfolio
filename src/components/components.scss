@@ -6,9 +6,11 @@
 $dark: #181818;
 $light: #ddd;
 $grey: #242424;
-$accent: #3a78d4;
+$accent: #3d87c9;
 $font1: "Poppins", sans-serif;
 $font2: "Space Mono", Monospace;
+// linear-gradient(to left, #3d87c9 0%, #00f2fe 100%);
+// -webkit-linear-gradient(to left, #3d87c9 0%, #00f2fe 100%);
 
 // NavBar Styling
 header {
@@ -57,21 +59,20 @@ header {
         }
       }
     }
-
     button {
       padding: 3px 15px;
-      background-color: $accent;
+      background: $accent;
       font-family: $font1;
       border: none;
       color: #fff;
       font-size: 14px;
       font-weight: 600;
       border-radius: 15px;
-      transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+      transition: all 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
       cursor: pointer;
       &:hover {
-        color: $accent;
         background-color: #fff;
+        color: $accent;
       }
     }
   }
@@ -96,9 +97,13 @@ header {
   display: grid;
   margin-top: 56px;
   grid-template-columns: 50% 50%;
-  background-color: #1e65cf;
+  background-color: #3d87c9; // fallback for old browsers
+  // Chrome 10-25, Safari 5.1-6
+  background: -webkit-linear-gradient(to right, #3d87c9 0%, #00f2fe 100%);
+  // W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+  background: linear-gradient(to right, #3d87c9 0%, #00f2fe 100%);
   background-size: cover;
-  padding: 60px 11%;
+  padding: 60px 15%;
   height: fit-content;
   line-height: 1;
   font-family: $font2;
@@ -120,13 +125,11 @@ header {
     line-height: 1.4;
     transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
     li {
-      display: block;
       font-size: 30px;
       font-weight: 400;
       &:nth-child(1) {
         font-size: 60px;
         font-weight: 600;
-        display: block;
       }
     }
   }

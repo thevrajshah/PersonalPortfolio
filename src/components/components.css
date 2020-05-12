@@ -36,7 +36,7 @@ header nav #social a {
 }
 
 header nav #social a:hover {
-  color: #3a78d4;
+  color: #3d87c9;
 }
 
 header nav #menu {
@@ -55,30 +55,30 @@ header nav #menu a {
 }
 
 header nav #menu a:hover {
-  color: #3a78d4;
+  color: #3d87c9;
 }
 
 header nav #menu a .active {
-  color: #3a78d4;
+  color: #3d87c9;
 }
 
 header nav button {
   padding: 3px 15px;
-  background-color: #3a78d4;
+  background: #3d87c9;
   font-family: "Poppins", sans-serif;
   border: none;
   color: #fff;
   font-size: 14px;
   font-weight: 600;
   border-radius: 15px;
-  -webkit-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
-  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+  -webkit-transition: all 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+  transition: all 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
   cursor: pointer;
 }
 
 header nav button:hover {
-  color: #3a78d4;
   background-color: #fff;
+  color: #3d87c9;
 }
 
 #hamburger {
@@ -92,11 +92,11 @@ header nav button:hover {
 }
 
 #hamburger:hover {
-  color: #3a78d4;
+  color: #3d87c9;
 }
 
 #hamburger .active {
-  color: #3a78d4;
+  color: #3d87c9;
 }
 
 .hero {
@@ -105,9 +105,11 @@ header nav button:hover {
   margin-top: 56px;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
-  background-color: #1e65cf;
+  background-color: #3d87c9;
+  background: -webkit-gradient(linear, left top, right top, from(#3d87c9), to(#00f2fe));
+  background: linear-gradient(to right, #3d87c9 0%, #00f2fe 100%);
   background-size: cover;
-  padding: 60px 11%;
+  padding: 60px 15%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -139,7 +141,6 @@ header nav button:hover {
 }
 
 .hero #prof li {
-  display: block;
   font-size: 30px;
   font-weight: 400;
 }
@@ -147,7 +148,6 @@ header nav button:hover {
 .hero #prof li:nth-child(1) {
   font-size: 60px;
   font-weight: 600;
-  display: block;
 }
 
 @media screen and (max-width: 1024px) {
