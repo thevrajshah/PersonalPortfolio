@@ -11,7 +11,7 @@ header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 13px 7%;
+  padding: 13px 10%;
   height: 30px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -100,11 +100,12 @@ header nav button:hover {
 .hero {
   display: -ms-grid;
   display: grid;
+  margin-top: 56px;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   background-color: #1e65cf;
   background-size: cover;
-  padding: 70px 9%;
+  padding: 60px 13%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -116,7 +117,12 @@ header nav button:hover {
   transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
 }
 
+.hero h3 {
+  color: #fff;
+}
+
 .hero #name {
+  margin-top: 10px;
   font-size: 80px;
 }
 
@@ -124,7 +130,7 @@ header nav button:hover {
   text-align: right;
   margin: auto 0;
   color: #16171a;
-  line-height: 1;
+  line-height: 1.2;
   -webkit-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
   transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
 }
@@ -136,7 +142,7 @@ header nav button:hover {
 }
 
 .hero #prof li:nth-child(1) {
-  font-size: 70px;
+  font-size: 60px;
   display: block;
   opacity: 1;
 }
@@ -174,14 +180,59 @@ header nav button:hover {
         grid-template-rows: 50% 50%;
   }
   .hero #hello {
-    font-size: 20px;
+    font-size: 30px;
   }
   .hero #name {
-    font-size: 80px;
+    font-size: 90px;
   }
   .hero #prof {
-    font-size: 30px;
     text-align: left;
+    margin: 10px 0;
+  }
+  .hero #prof li {
+    font-size: 35px;
+  }
+  .hero #prof li:nth-child(1) {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  nav {
+    padding: 13px 10%;
+  }
+  nav #social {
+    margin-right: 5px;
+  }
+  nav span#menu {
+    display: none;
+  }
+  #hamburger {
+    display: block;
+    float: right;
+  }
+  .hero {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+    line-height: 0.9;
+  }
+  .hero #hello {
+    font-size: 5px;
+  }
+  .hero #name {
+    font-size: 55px;
+  }
+  .hero #prof {
+    text-align: left;
+    margin: 15px 0;
+  }
+  .hero #prof li {
+    font-size: 25px;
+  }
+  .hero #prof li:nth-child(1) {
+    font-size: 35px;
   }
 }
 /*# sourceMappingURL=components.css.map */

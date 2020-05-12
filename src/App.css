@@ -5,6 +5,24 @@ body {
   width: 100%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 5px 0;
+  color: #16171a;
+}
+
+h6 {
+  color: #444;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
 a {
   text-decoration: none;
   outline: none;
@@ -12,9 +30,5 @@ a {
 
 li {
   list-style: none;
-}
-
-.content {
-  margin-top: 53px;
 }
 /*# sourceMappingURL=App.css.map */

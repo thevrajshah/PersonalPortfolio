@@ -9,3 +9,11 @@ $grey: #444;
 $accent: #3a78d4;
 $font1: "Roboto", sans-serif;
 $font2: "Space Mono", Monospace;
+
+// Card Styling
+.section {
+  margin: 0;
+  padding: 30px 10%;
+  background-color: #fff;
+  color: $dark;
+}

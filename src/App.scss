@@ -3,7 +3,8 @@
 
 // Variables
 $dark: #16171a;
-$light: #d5dedf;
+$light: #ddd;
+$grey: #444;
 $accent: #0056d8;
 $font1: "Roboto", sans-serif;
 $font2: "Space Mono", Monospace;
@@ -13,13 +14,26 @@ body {
   font-family: $font1;
   width: 100%;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 5px 0;
+  color: $dark;
+}
+h6 {
+  color: $grey;
+  font-size: 14px;
+  font-family: $font1;
+  font-weight: 400;
+}
 a {
   text-decoration: none;
   outline: none;
 }
 li {
   list-style: none;
-}
-.content {
-  margin-top: 53px;
 }

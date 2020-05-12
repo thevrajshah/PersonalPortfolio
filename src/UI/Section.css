@@ -1,0 +1,9 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("../Animations.css");
+.section {
+  margin: 0;
+  padding: 30px 10%;
+  background-color: #fff;
+  color: #16171a;
+}
+/*# sourceMappingURL=Section.css.map */

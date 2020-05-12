@@ -4,7 +4,8 @@
 
 // Variables
 $dark: #16171a;
-$light: #d5dedf;
+$light: #ddd;
+$grey: #444;
 $accent: #3a78d4;
 $font1: "Roboto", sans-serif;
 $font2: "Space Mono", Monospace;
@@ -19,7 +20,7 @@ header {
   nav {
     // misc.
     display: flex;
-    padding: 13px 7%;
+    padding: 13px 10%;
     height: 30px;
     justify-content: space-between;
     align-items: center;
@@ -91,31 +92,36 @@ header {
 // Hero Styling
 .hero {
   display: grid;
+  margin-top: 56px;
   grid-template-columns: 50% 50%;
   background-color: #1e65cf;
   background-size: cover;
-  padding: 70px 9%;
+  padding: 60px 13%;
   height: fit-content;
   line-height: 1;
   font-family: $font2;
   font-weight: 700;
   color: #fff;
   transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+  h3 {
+    color: #fff;
+  }
   #name {
+    margin-top: 10px;
     font-size: 80px;
   }
   #prof {
     text-align: right;
     margin: auto 0;
     color: $dark;
-    line-height: 1;
+    line-height: 1.2;
     transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
     li {
       display: block;
       font-size: 30px;
       opacity: 0.5;
       &:nth-child(1) {
-        font-size: 70px;
+        font-size: 60px;
         display: block;
         opacity: 1;
       }
@@ -155,14 +161,59 @@ header {
     grid-template-columns: auto;
     grid-template-rows: 50% 50%;
     #hello {
-      font-size: 20px;
+      font-size: 30px;
     }
     #name {
-      font-size: 80px;
+      font-size: 90px;
     }
     #prof {
-      font-size: 30px;
       text-align: left;
+      margin: 10px 0;
+      li {
+        font-size: 35px;
+        &:nth-child(1) {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  // NavBar Styling
+  nav {
+    padding: 13px 10%;
+    #social {
+      margin-right: 5px;
+    }
+    span#menu {
+      display: none;
+    }
+  }
+  #hamburger {
+    display: block;
+    float: right;
+  }
+  // Hero Styling
+  .hero {
+    grid-template-columns: auto;
+    grid-template-rows: 50% 50%;
+    line-height: 0.9;
+    #hello {
+      font-size: 5px;
+    }
+    #name {
+      font-size: 55px;
+    }
+    #prof {
+      text-align: left;
+      margin: 15px 0;
+      li {
+        font-size: 25px;
+
+        &:nth-child(1) {
+          font-size: 35px;
+        }
+      }
     }
   }
 }
