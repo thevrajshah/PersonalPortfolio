@@ -39,6 +39,24 @@ header nav #social a:hover {
   color: #077bff;
 }
 
+header nav #hamburger {
+  cursor: pointer;
+  font-size: 23px;
+  vertical-align: middle;
+  display: none;
+  color: #fff;
+  -webkit-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+}
+
+header nav #hamburger:hover {
+  color: #077bff;
+}
+
+header nav #hamburger .active {
+  color: #077bff;
+}
+
 header nav #menu {
   display: block;
   font-size: 14px;
@@ -81,28 +99,9 @@ header nav button:hover {
   color: #077bff;
 }
 
-#hamburger {
-  cursor: pointer;
-  font-size: 23px;
-  vertical-align: middle;
-  display: none;
-  color: #fff;
-  -webkit-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
-  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
-}
-
-#hamburger:hover {
-  color: #077bff;
-}
-
-#hamburger .active {
-  color: #077bff;
-}
-
 .hero {
   display: -ms-grid;
   display: grid;
-  margin-top: 56px;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   background-color: #077bff;
@@ -148,6 +147,43 @@ header nav button:hover {
 .hero #prof li:nth-child(1) {
   font-size: 60px;
   font-weight: 600;
+}
+
+footer {
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .footer {
+  padding: 13px 10%;
+  color: #fff;
+  background: #181818;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  vertical-align: middle;
+}
+
+footer .footer #made {
+  margin: auto 0;
+}
+
+footer .footer #made .fa-heart {
+  color: crimson;
+}
+
+footer .footer #made img {
+  width: 17px;
+  vertical-align: middle;
+}
+
+footer .footer #copyright {
+  font-size: 12px;
 }
 
 @media screen and (max-width: 1024px) {

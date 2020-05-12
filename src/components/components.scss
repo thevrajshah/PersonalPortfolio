@@ -41,6 +41,20 @@ header {
         }
       }
     }
+    #hamburger {
+      cursor: pointer;
+      font-size: 23px;
+      vertical-align: middle;
+      display: none;
+      color: #fff;
+      transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+      &:hover {
+        color: $accent;
+      }
+      .active {
+        color: $accent;
+      }
+    }
     #menu {
       display: block;
       font-size: 14px;
@@ -77,25 +91,10 @@ header {
     }
   }
 }
-#hamburger {
-  cursor: pointer;
-  font-size: 23px;
-  vertical-align: middle;
-  display: none;
-  color: #fff;
-  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
-  &:hover {
-    color: $accent;
-  }
-  .active {
-    color: $accent;
-  }
-}
 
 // Hero Styling
 .hero {
   display: grid;
-  margin-top: 56px;
   grid-template-columns: 50% 50%;
   background-color: #077bff; // fallback for old browsers
   // Chrome 10-25, Safari 5.1-6
@@ -131,6 +130,36 @@ header {
         font-size: 60px;
         font-weight: 600;
       }
+    }
+  }
+}
+
+// Footer Styling
+footer {
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  width: 100%;
+  .footer {
+    padding: 13px 10%;
+    color: #fff;
+    background: $dark;
+    display: flex;
+    justify-content: space-between;
+
+    vertical-align: middle;
+    #made {
+      margin: auto 0;
+      .fa-heart {
+        color: crimson;
+      }
+      img {
+        width: 17px;
+        vertical-align: middle;
+      }
+    }
+    #copyright {
+      font-size: 12px;
     }
   }
 }

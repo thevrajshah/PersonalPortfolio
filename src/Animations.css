@@ -1,39 +1,3 @@
-@-webkit-keyframes scrolling-in {
-  0% {
-    top: 0%;
-  }
-  100% {
-    top: 100%;
-  }
-}
-
-@keyframes scrolling-in {
-  0% {
-    top: 0%;
-  }
-  100% {
-    top: 100%;
-  }
-}
-
-@-webkit-keyframes scrolling-out {
-  0% {
-    bottom: 100%;
-  }
-  100% {
-    bottom: 0%;
-  }
-}
-
-@keyframes scrolling-out {
-  0% {
-    bottom: 100%;
-  }
-  100% {
-    bottom: 0%;
-  }
-}
-
 @-webkit-keyframes boost {
   0% {
     opacity: 0.9;
