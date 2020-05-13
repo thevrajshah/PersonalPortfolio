@@ -15,3 +15,23 @@ $font2: "Space Mono", Monospace;
 .content {
   margin-top: 56px;
 }
+
+// Projects Styling
+.projects {
+  display: grid;
+  margin: 10px 11%;
+  grid-template-columns: 33% 33% 33%;
+}
+
+// Responsive Design
+@media screen and (max-width: 1024px) {
+  .projects {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .projects {
+    grid-template-columns: 100%;
+  }
+}

@@ -1,9 +1,9 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("../Animations.css");
 .card {
-  margin: 5px 150px;
+  margin: 5px;
   padding: 20px;
-  background-color: #181818;
+  background-color: #fff;
   color: white;
   height: -webkit-fit-content;
   height: -moz-fit-content;

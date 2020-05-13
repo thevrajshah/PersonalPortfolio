@@ -3,4 +3,26 @@
 .content {
   margin-top: 56px;
 }
+
+.projects {
+  display: -ms-grid;
+  display: grid;
+  margin: 10px 11%;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+}
+
+@media screen and (max-width: 1024px) {
+  .projects {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .projects {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
 /*# sourceMappingURL=containers.css.map */
