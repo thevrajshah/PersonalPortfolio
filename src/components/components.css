@@ -39,24 +39,6 @@ header nav #social a:hover {
   color: #077bff;
 }
 
-header nav #hamburger {
-  cursor: pointer;
-  font-size: 23px;
-  vertical-align: middle;
-  display: none;
-  color: #fff;
-  -webkit-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
-  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
-}
-
-header nav #hamburger:hover {
-  color: #077bff;
-}
-
-header nav #hamburger .active {
-  color: #077bff;
-}
-
 header nav #menu {
   display: block;
   font-size: 14px;
@@ -96,6 +78,24 @@ header nav button {
 
 header nav button:hover {
   background-color: #fff;
+  color: #077bff;
+}
+
+#hamburger {
+  cursor: pointer;
+  font-size: 20px;
+  vertical-align: middle;
+  display: none;
+  color: #fff;
+  -webkit-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+}
+
+#hamburger:hover {
+  color: #077bff;
+}
+
+#hamburger .active {
   color: #077bff;
 }
 
@@ -150,15 +150,10 @@ header nav button:hover {
 }
 
 footer {
-  position: absolute;
   margin: 0;
   bottom: 0;
-  width: 100%;
-}
-
-footer .footer {
-  padding: 13px 10%;
-  color: #fff;
+  padding: 11px 10%;
+  font-size: 13px;
   background: #181818;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -169,21 +164,22 @@ footer .footer {
   vertical-align: middle;
 }
 
-footer .footer #made {
+footer #made {
   margin: auto 0;
+  color: #ddd;
 }
 
-footer .footer #made .fa-heart {
+footer #made .fa-heart {
   color: crimson;
 }
 
-footer .footer #made img {
+footer #made img {
   width: 17px;
   vertical-align: middle;
 }
 
-footer .footer #copyright {
-  font-size: 12px;
+footer #copyright {
+  color: #ddd;
 }
 
 @media screen and (max-width: 1024px) {
@@ -234,10 +230,6 @@ footer .footer #copyright {
   nav span#menu {
     display: none;
   }
-  #hamburger {
-    display: block;
-    float: right;
-  }
   .hero {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
@@ -252,7 +244,6 @@ footer .footer #copyright {
     font-size: 60px;
   }
   .hero #prof {
-    text-align: left;
     margin: 15px 0;
   }
   .hero #prof li {
@@ -260,6 +251,12 @@ footer .footer #copyright {
   }
   .hero #prof li:nth-child(1) {
     font-size: 40px;
+  }
+  footer #made {
+    margin: auto auto;
+  }
+  footer #copyright {
+    display: none;
   }
 }
 /*# sourceMappingURL=components.css.map */

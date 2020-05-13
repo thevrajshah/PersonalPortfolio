@@ -29,9 +29,12 @@ class NavBar extends Component {
               href="https://twitter.com/thevrajshah"
             />
           </span>
-          <a href="javascript:void(0);" id="hamburger" onclick="hamburger()">
-            &#9776;
-          </a>
+          <a
+            href="javascript:void(0);"
+            className="fa fa-bars"
+            id="hamburger"
+            onclick="hamburger()"
+          ></a>
           <span id="menu">
             <a onclick="showHome()">Home</a>
             <a onclick="showAbout()">About</a>
