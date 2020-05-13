@@ -9,8 +9,8 @@ $grey: #242424;
 $accent: #077bff;
 $font1: "Poppins", sans-serif;
 $font2: "Space Mono", Monospace;
-// linear-gradient(to left, #077bff 0%, #00f2fe 100%);
-// -webkit-linear-gradient(to left, #077bff 0%, #00f2fe 100%);
+$gradient: linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
+$-webkitgradient: -webkit-linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
 
 // NavBar Styling
 header {
@@ -36,9 +36,6 @@ header {
         margin-right: 10px;
         font-size: 18px;
         transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
-        &:hover {
-          color: $accent;
-        }
       }
     }
 
@@ -52,27 +49,24 @@ header {
         font-weight: 600;
         margin-left: 30px;
         transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
-        &:hover {
-          color: $accent;
-        }
-        .active {
-          color: $accent;
-        }
       }
     }
     button {
       padding: 3px 15px;
+      margin-left: 30px;
       background: $accent;
+      background: $gradient;
+      background: $-webkitgradient;
       font-family: $font1;
       border: none;
       color: #fff;
       font-size: 14px;
       font-weight: 600;
       border-radius: 15px;
-      transition: all 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+      transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
       cursor: pointer;
       &:hover {
-        background-color: #fff;
+        background: #fff;
         color: $accent;
       }
     }
@@ -96,11 +90,9 @@ header {
 .hero {
   display: grid;
   grid-template-columns: 50% 50%;
-  background-color: #077bff; // fallback for old browsers
-  // Chrome 10-25, Safari 5.1-6
-  background: -webkit-linear-gradient(to right, #077bff 0%, #00f2fe 100%);
-  // W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
-  background: linear-gradient(to right, #077bff 0%, #00f2fe 100%);
+  background: $accent;
+  background: $gradient;
+  background: $-webkitgradient;
   background-size: cover;
   padding: 60px 15%;
   height: fit-content;
@@ -151,7 +143,7 @@ footer {
       color: crimson;
     }
     img {
-      width: 17px;
+      width: 15px;
       vertical-align: middle;
     }
   }

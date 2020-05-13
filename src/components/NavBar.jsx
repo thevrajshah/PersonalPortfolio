@@ -6,7 +6,7 @@ class NavBar extends Component {
   render() {
     return (
       <header>
-        <nav>
+        <nav className="gradientTextOnHover">
           <span id="social">
             <a
               target="_blank"
@@ -34,14 +34,12 @@ class NavBar extends Component {
             className="fa fa-bars"
             id="hamburger"
             onclick="hamburger()"
-          ></a>
+          />
           <span id="menu">
             <a onclick="showHome()">Home</a>
             <a onclick="showAbout()">About</a>
             <a onclick="showContact()">Contact</a>
-            <a href="#">
-              <button>Blog</button>
-            </a>
+            <button>Blog</button>
           </span>
         </nav>
       </header>

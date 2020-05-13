@@ -27,9 +27,25 @@ li {
 }
 
 .gradientText {
-  background: -webkit-gradient(linear, right top, left top, from(#077bff), to(#00f2fe));
-  background: linear-gradient(to left, #077bff 0%, #00f2fe 100%);
-  background: -webkit-linear-gradient(to left, #077bff 0%, #00f2fe 100%);
+  background: #077bff;
+  background: linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
+  background: -webkit-linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradientTextOnHover a:hover {
+  background: #077bff;
+  background: linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
+  background: -webkit-linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradientTextOnHover a.active {
+  background: #077bff;
+  background: linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
+  background: -webkit-linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./containers.css";
 import Badge from "../UI/Badge";
-import Card from "../UI/Card";
 
 class Projects extends Component {
   state = {};
@@ -12,9 +11,9 @@ class Projects extends Component {
           <div className="gradientText">Projects</div>
         </Badge>
         <div className="projects">
-          <Card align="left">
-            <h3>Project Name</h3>
-          </Card>
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
         </div>
       </React.Fragment>
     );
@@ -22,3 +21,25 @@ class Projects extends Component {
 }
 
 export default Projects;
+
+class ProjectCard extends Component {
+  state = {};
+  render() {
+    return (
+      <div className="projectCard">
+        <div className="projectImage"></div>
+        <div className="projectText">
+          <h3>
+            <a>Project Title</a>
+          </h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+          vitae. Consequuntur molestias maiores alias laborum.
+        </div>
+        <div className="learnMore">
+          <a href="#" className="fa fa-github-alt"></a>{" "}
+          <a href="">Learn More</a>
+        </div>
+      </div>
+    );
+  }
+}

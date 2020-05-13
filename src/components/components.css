@@ -35,10 +35,6 @@ header nav #social a {
   transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
 }
 
-header nav #social a:hover {
-  color: #077bff;
-}
-
 header nav #menu {
   display: block;
   font-size: 14px;
@@ -54,30 +50,25 @@ header nav #menu a {
   transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
 }
 
-header nav #menu a:hover {
-  color: #077bff;
-}
-
-header nav #menu a .active {
-  color: #077bff;
-}
-
 header nav button {
   padding: 3px 15px;
+  margin-left: 30px;
   background: #077bff;
+  background: linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
+  background: -webkit-linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
   font-family: "Poppins", sans-serif;
   border: none;
   color: #fff;
   font-size: 14px;
   font-weight: 600;
   border-radius: 15px;
-  -webkit-transition: all 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
-  transition: all 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+  -webkit-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
   cursor: pointer;
 }
 
 header nav button:hover {
-  background-color: #fff;
+  background: #fff;
   color: #077bff;
 }
 
@@ -104,9 +95,9 @@ header nav button:hover {
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
-  background-color: #077bff;
-  background: -webkit-gradient(linear, left top, right top, from(#077bff), to(#00f2fe));
-  background: linear-gradient(to right, #077bff 0%, #00f2fe 100%);
+  background: #077bff;
+  background: linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
+  background: -webkit-linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
   background-size: cover;
   padding: 60px 15%;
   height: -webkit-fit-content;
@@ -174,7 +165,7 @@ footer #made .fa-heart {
 }
 
 footer #made img {
-  width: 17px;
+  width: 15px;
   vertical-align: middle;
 }
 
