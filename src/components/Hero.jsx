@@ -12,7 +12,6 @@ class Hero extends Component {
         </div>
         <div id="prof">
           <li>Developer</li>
-          <li>Photographer</li>
           <li>Designer</li>
         </div>
       </main>
