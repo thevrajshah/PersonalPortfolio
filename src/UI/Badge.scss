@@ -12,12 +12,15 @@ $font2: "Space Mono", Monospace;
 // linear-gradient(to left, #077bff 0%, #00f2fe 100%);
 // -webkit-linear-gradient(to left, #077bff 0%, #00f2fe 100%);
 
-// Card Styling
-.card {
-  margin: 5px 150px;
-  padding: 20px;
-  background-color: $dark;
-  color: white;
-  height: fit-content;
-  border-radius: 10px;
+// Badge Styling
+.badge {
+  margin: 20px auto;
+  padding: 5px 15px;
+  border-radius: 20px;
+  width: fit-content;
+  color: linear-gradient(to left, #4facfe 0%, #00f2fe 100%);
+  background-color: #fff;
+  font-weight: 600;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.1);
 }

@@ -25,4 +25,12 @@ a {
 li {
   list-style: none;
 }
+
+.gradientText {
+  background: -webkit-gradient(linear, right top, left top, from(#077bff), to(#00f2fe));
+  background: linear-gradient(to left, #077bff 0%, #00f2fe 100%);
+  background: -webkit-linear-gradient(to left, #077bff 0%, #00f2fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /*# sourceMappingURL=App.css.map */

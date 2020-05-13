@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./containers.css";
 import Hero from "../components/Hero";
 import Section from "../UI/Section";
+import Projects from "../containers/Projects";
 
 class Home extends Component {
   state = {};
@@ -17,6 +18,7 @@ class Home extends Component {
           have something like this). Anyone who visits this site can get inside
           my mind once I'm completely done with the building process.
         </Section>
+        <Projects />
       </React.Fragment>
     );
   }
