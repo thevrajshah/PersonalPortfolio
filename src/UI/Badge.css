@@ -2,7 +2,7 @@
 @import url("../Animations.css");
 .badge {
   margin: 20px auto;
-  padding: 5px 25px;
+  padding: 4px 25px;
   border-radius: 30px;
   width: -webkit-fit-content;
   width: -moz-fit-content;

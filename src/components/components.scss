@@ -11,6 +11,8 @@ $font1: "Poppins", sans-serif;
 $font2: "Space Mono", Monospace;
 $gradient: linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
 $-webkitgradient: -webkit-linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
+$curve1: cubic-bezier(0.39, 0.575, 0.565, 1);
+$curve2: cubic-bezier(0.7, 0, 0.3, 1);
 
 // NavBar Styling
 header {
@@ -19,7 +21,6 @@ header {
   position: fixed;
   width: 100%;
   top: 0px;
-  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
   nav {
     // misc.
     display: flex;
@@ -35,7 +36,7 @@ header {
         color: #fff;
         margin-right: 10px;
         font-size: 18px;
-        transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+        transition: all 0.3s $curve1 0s;
       }
     }
 
@@ -48,7 +49,7 @@ header {
         font-family: $font1;
         font-weight: 600;
         margin-left: 30px;
-        transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+        transition: all 0.3s $curve1 0s;
       }
     }
     button {
@@ -63,7 +64,7 @@ header {
       font-size: 14px;
       font-weight: 600;
       border-radius: 15px;
-      transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+      transition: all 0.3s $curve1 0s;
       cursor: pointer;
       &:hover {
         background: #fff;
@@ -78,7 +79,7 @@ header {
   vertical-align: middle;
   display: none;
   color: #fff;
-  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+  transition: all 0.3s $curve1 0s;
   &:hover {
     color: $accent;
   }
@@ -100,7 +101,7 @@ header {
   font-family: $font2;
   font-weight: 600;
   color: #fff;
-  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+  transition: all 0.3s $curve1 0s;
   h3 {
     color: #fff;
   }
@@ -114,7 +115,7 @@ header {
     margin: auto 0;
     color: $dark;
     line-height: 1.4;
-    transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+    transition: all 0.3s $curve1 0s;
     li {
       font-size: 30px;
       font-weight: 400;
@@ -128,7 +129,7 @@ header {
 
 // Footer Styling
 footer {
-  margin: 0;
+  margin: 10px 0 0 0;
   bottom: 0;
   padding: 11px 10%;
   font-size: 13px;
@@ -153,20 +154,13 @@ footer {
 }
 
 // Responsive Design
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 950px) {
   // NavBar Styling
   nav {
     padding: 13px 10%;
     #social {
       margin-right: 5px;
     }
-    span#menu {
-      display: none;
-    }
-  }
-  #hamburger {
-    display: block;
-    float: right;
   }
 
   // Hero Styling
@@ -191,7 +185,7 @@ footer {
     }
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   // NavBar Styling
   nav {
     padding: 13px 10%;
@@ -201,6 +195,10 @@ footer {
     span#menu {
       display: none;
     }
+  }
+  #hamburger {
+    display: block;
+    float: right;
   }
 
   // Hero Styling

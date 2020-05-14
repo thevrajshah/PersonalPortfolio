@@ -11,12 +11,14 @@ $font1: "Poppins", sans-serif;
 $font2: "Space Mono", Monospace;
 $gradient: linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
 $-webkitgradient: -webkit-linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
+$curve1: cubic-bezier(0.39, 0.575, 0.565, 1);
+$curve2: cubic-bezier(0.7, 0, 0.3, 1);
 
 // Section Styling
 .section {
-  z-index: 1;
+  z-index: 2;
   margin: 0;
-  padding: 40px 11%;
+  padding: 45px 11%;
   background-color: #fff;
   color: $grey;
   box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.1);

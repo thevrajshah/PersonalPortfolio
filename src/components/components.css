@@ -5,8 +5,6 @@ header {
   position: fixed;
   width: 100%;
   top: 0px;
-  -webkit-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
-  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
 }
 
 header nav {
@@ -141,7 +139,7 @@ header nav button:hover {
 }
 
 footer {
-  margin: 0;
+  margin: 10px 0 0 0;
   bottom: 0;
   padding: 11px 10%;
   font-size: 13px;
@@ -173,19 +171,12 @@ footer #copyright {
   color: #ddd;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 950px) {
   nav {
     padding: 13px 10%;
   }
   nav #social {
     margin-right: 5px;
-  }
-  nav span#menu {
-    display: none;
-  }
-  #hamburger {
-    display: block;
-    float: right;
   }
   .hero {
     -ms-grid-columns: auto;
@@ -211,7 +202,7 @@ footer #copyright {
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   nav {
     padding: 13px 10%;
   }
@@ -220,6 +211,10 @@ footer #copyright {
   }
   nav span#menu {
     display: none;
+  }
+  #hamburger {
+    display: block;
+    float: right;
   }
   .hero {
     -ms-grid-columns: auto;

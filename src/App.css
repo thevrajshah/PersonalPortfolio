@@ -30,6 +30,7 @@ li {
   background: #077bff;
   background: linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
   background: -webkit-linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -38,6 +39,7 @@ li {
   background: #077bff;
   background: linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
   background: -webkit-linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -46,6 +48,7 @@ li {
   background: #077bff;
   background: linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
   background: -webkit-linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

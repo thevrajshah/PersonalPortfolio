@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./containers.css";
 import Section from "../UI/Section";
+import Badge from "../UI/Section";
 
 class Gallery extends Component {
   render() {
@@ -13,11 +14,24 @@ class Gallery extends Component {
           quasi maxime. Magnam, nemo.
         </Section>
         <div className="imageContainer">
-          <img src="https://picsum.photos/300" alt="image" />
-          <img src="https://picsum.photos/300" alt="image" />
-          <img src="https://picsum.photos/300" alt="image" />
-          <img src="https://picsum.photos/300" alt="image" />
-          <img src="https://picsum.photos/300" alt="image" />
+          <span className="imgWrapper">
+            <img src="https://picsum.photos/300" alt="image" />
+          </span>
+          <span className="imgWrapper">
+            <img src="https://picsum.photos/300" alt="image" />
+          </span>
+          <span className="imgWrapper">
+            <img src="https://picsum.photos/300" alt="image" />
+          </span>
+          <span className="imgWrapper">
+            <img src="https://picsum.photos/300" alt="image" />
+          </span>
+          <span className="imgWrapper">
+            <img src="https://picsum.photos/300" alt="image" />
+          </span>
+          <span className="imgWrapper">
+            <img src="https://picsum.photos/300" alt="image" />
+          </span>{" "}
         </div>
       </React.Fragment>
     );
