@@ -7,7 +7,7 @@ class Projects extends Component {
   render() {
     return (
       <React.Fragment>
-        <Badge fsize="26px">
+        <Badge fsize="22px">
           <div className="gradientText">Projects</div>
         </Badge>
         <div className="projects">

@@ -19,7 +19,7 @@ $-webkitgradient: -webkit-linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
 // Projects Styling
 .projects {
   display: grid;
-  margin: 10px 11%;
+  margin: 20px 10%;
   grid-template-columns: 33% 33% 33%;
 }
 .projectCard {
@@ -27,7 +27,7 @@ $-webkitgradient: -webkit-linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
   box-sizing: border-box;
   height: 25em;
   grid-template-rows: 40% 50% 10%;
-  margin: 5px;
+  margin: 10px;
   background-color: #fff;
   border-radius: 10px;
   transition: all 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
@@ -60,14 +60,32 @@ $-webkitgradient: -webkit-linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
   }
 }
 
+// Gallery Styling
+.imageContainer {
+  z-index: 0;
+  display: inline;
+  text-align: center;
+  box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  img {
+    width: 250px;
+    filter: grayscale(0.9);
+    transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+    &:hover {
+      filter: none;
+    }
+  }
+}
+
 // Responsive Design
 @media screen and (max-width: 1024px) {
+  // Projects Styling
   .projects {
     grid-template-columns: 50% 50%;
   }
 }
 
 @media screen and (max-width: 550px) {
+  // Projects Styling
   .projects {
     grid-template-columns: 100%;
   }

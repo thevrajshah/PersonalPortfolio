@@ -3,6 +3,7 @@ import "./containers.css";
 import Hero from "../components/Hero";
 import Section from "../UI/Section";
 import Projects from "../containers/Projects";
+import Gallery from "../containers/Gallery";
 
 class Home extends Component {
   state = {};
@@ -19,6 +20,7 @@ class Home extends Component {
           my mind once I'm completely done with the building process.
         </Section>
         <Projects />
+        <Gallery />
       </React.Fragment>
     );
   }

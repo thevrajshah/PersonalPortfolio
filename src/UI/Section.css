@@ -1,6 +1,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("../Animations.css");
 .section {
+  z-index: 1;
   margin: 0;
   padding: 40px 11%;
   background-color: #fff;
