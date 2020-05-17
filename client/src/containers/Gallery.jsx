@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./containers.css";
 import Section from "../UI/Section";
-import Badge from "../UI/Section";
+import Badge from "../UI/Badge";
 
 class Gallery extends Component {
   render() {
