@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./containers.css";
+import "./containers.scss";
 import Hero from "../components/Hero";
 import Section from "../UI/Section";
 import Projects from "./Projects";

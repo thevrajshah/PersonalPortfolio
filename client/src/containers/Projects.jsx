@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./containers.css";
+import "./containers.scss";
 import Badge from "../UI/Badge";
 
 class Projects extends Component {

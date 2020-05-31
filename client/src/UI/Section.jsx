@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Section.css";
+import "./Section.scss";
 
 class Section extends Component {
   state = {};
