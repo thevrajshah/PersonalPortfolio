@@ -13,6 +13,9 @@ $-webkitgradient: -webkit-linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
 $curve1: cubic-bezier(0.39, 0.575, 0.565, 1);
 $curve2: cubic-bezier(0.7, 0, 0.3, 1);
 
+* {
+  box-sizing: border-box;
+}
 body {
   background: $light;
   font-family: $font1;
@@ -46,14 +49,7 @@ li {
 }
 
 .gradientTextOnHover {
-  a:hover {
-    background: $accent;
-    background: $gradient;
-    background: $-webkitgradient;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+  a:hover,
   a.active {
     background: $accent;
     background: $gradient;

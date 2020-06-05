@@ -25,7 +25,7 @@ header {
     // misc.
     display: flex;
     padding: 13px 10%;
-    height: 25px;
+    height: 45px;
     justify-content: space-between;
     align-items: center;
     background: $dark;
@@ -52,7 +52,7 @@ header {
         transition: all 0.3s $curve1 0s;
       }
     }
-    button {
+    #blog {
       padding: 4px 15px;
       margin-left: 30px;
       background: #fff;
@@ -73,20 +73,44 @@ header {
     }
   }
 }
-#hamburger {
+.hamburger {
   cursor: pointer;
-  font-size: 20px;
-  vertical-align: middle;
+  background: transparent;
+  border: 0;
+  height: 18px;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  width: 18px;
   display: none;
-  color: #fff;
-  transition: all 0.3s $curve1 0s;
-  &:hover {
-    color: $accent;
+  &::before,
+  &::after {
+    background: #fff;
+    content: " ";
+    display: block;
+    height: 1.5px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: all 0.3s $curve1;
+    width: 100%;
   }
-  .active {
-    color: $accent;
+  &::before {
+    top: 25%;
+  }
+  &::after {
+    top: 75%;
+  }
+  &:hover {
+    &::before,
+    &::after {
+      background: $accent;
+      background: $gradient;
+      background: $-webkitgradient;
+    }
   }
 }
+
 // Hero Styling
 .hero {
   display: grid;
@@ -193,13 +217,13 @@ footer {
     #social {
       margin-right: 5px;
     }
+
     span#menu {
       display: none;
     }
   }
-  #hamburger {
+  .hamburger {
     display: block;
-    float: right;
   }
 
   // Hero Styling
