@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, NavLink } from "react-router-dom";
 import "./components.scss";
 
 class NavBar extends Component {
@@ -12,21 +13,25 @@ class NavBar extends Component {
               target="_blank"
               class="fa fa-github"
               href="https://github.com/thevrajshah"
+              rel="noopener noreferrer"
             />
             <a
               target="_blank"
               class="fa fa-linkedin-square"
               href="https://www.linkedin.com/in/thevrajshah/"
+              rel="noopener noreferrer"
             />
             <a
               target="_blank"
               class="fa fa-instagram"
               href="https://www.instagram.com/thevrajshaah"
+              rel="noopener noreferrer"
             />
             <a
               target="_blank"
               class="fa fa-twitter"
               href="https://twitter.com/thevrajshah"
+              rel="noopener noreferrer"
             />
           </span>
           <a
@@ -36,9 +41,11 @@ class NavBar extends Component {
             onclick="hamburger()"
           />
           <span id="menu">
-            <a onclick="showHome()">Home</a>
-            <a onclick="showAbout()">About</a>
-            <a onclick="showContact()">Contact</a>
+            <NavLink to="/" exact>
+              Home
+            </NavLink>
+            <NavLink to="/about">About</NavLink>
+            <NavLink to="/contact">Contact</NavLink>
             <button>Blog</button>
           </span>
         </nav>

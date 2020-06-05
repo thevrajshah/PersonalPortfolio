@@ -25,7 +25,7 @@ header {
     // misc.
     display: flex;
     padding: 13px 10%;
-    height: 30px;
+    height: 25px;
     justify-content: space-between;
     align-items: center;
     background: $dark;
@@ -42,7 +42,7 @@ header {
 
     #menu {
       display: block;
-      font-size: 14px;
+      font-size: 12px;
       a {
         cursor: pointer;
         color: #fff;
@@ -53,22 +53,22 @@ header {
       }
     }
     button {
-      padding: 3px 15px;
+      padding: 4px 15px;
       margin-left: 30px;
-      background: $accent;
-      background: $gradient;
-      background: $-webkitgradient;
+      background: #fff;
       font-family: $font1;
       border: none;
-      color: #fff;
-      font-size: 14px;
+      color: $dark;
+      font-size: 12px;
       font-weight: 600;
       border-radius: 15px;
       transition: all 0.3s $curve1 0s;
       cursor: pointer;
       &:hover {
-        background: #fff;
-        color: $accent;
+        background: $accent;
+        background: $gradient;
+        background: $-webkitgradient;
+        color: #fff;
       }
     }
   }
@@ -137,6 +137,7 @@ footer {
   display: flex;
   justify-content: space-between;
   vertical-align: middle;
+  box-shadow: 0px -2px 10px 1px rgba(0, 0, 0, 0.1);
   #made {
     margin: auto 0;
     color: $light;
