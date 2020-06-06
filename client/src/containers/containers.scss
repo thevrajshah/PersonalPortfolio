@@ -1,0 +1,110 @@
+// Imports
+@import url("../Animations.css");
+
+// Variables
+$dark: #181818;
+$light: #ddd;
+$grey: #242424;
+$accent: #077bff;
+$font1: "Poppins", sans-serif;
+$font2: "Space Mono", Monospace;
+$gradient: linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
+$-webkitgradient: -webkit-linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
+$curve1: cubic-bezier(0.39, 0.575, 0.565, 1);
+$curve2: cubic-bezier(0.7, 0, 0.3, 1);
+
+.content {
+  margin-top: 45px;
+}
+
+// Projects Styling
+.projects {
+  display: grid;
+  margin: 20px 10%;
+  grid-template-columns: 33% 33% 33%;
+}
+.projectCard {
+  display: grid;
+  box-sizing: border-box;
+  height: 26em;
+  grid-template-rows: 40% 50% 10%;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: all 0.4s $curve2 0s;
+
+  &:hover {
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  }
+  .projectImage {
+    border-radius: 10px 10px 0 0;
+    background: #bbbbbb;
+  }
+  .projectText {
+    padding: 20px;
+    font-size: 15px;
+  }
+  .learnMore {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 600;
+    margin: auto 20px;
+    a {
+      color: $accent;
+    }
+    .fa {
+      color: $dark;
+      font-size: 16px;
+      text-align: right;
+    }
+  }
+}
+
+// Gallery Styling
+.tagBadges {
+  display: inline-block;
+  margin: 0 auto;
+}
+.imageContainer {
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  img {
+    cursor: pointer;
+    width: 250px;
+    filter: grayscale(0.9);
+    margin-bottom: -6px;
+    transition: all 0.5s $curve2;
+    &:hover {
+      filter: none;
+    }
+  }
+}
+
+// Responsive Design
+@media screen and (max-width: 950px) {
+  // Projects Styling
+  .projects {
+    grid-template-columns: 50% 50%;
+  }
+  // Gallery Styling
+  .imageContainer {
+    img {
+      width: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  // Projects Styling
+  .projects {
+    grid-template-columns: 100%;
+  }
+  // Gallery Styling
+  .imageContainer {
+    img {
+      width: 150px;
+    }
+  }
+}
