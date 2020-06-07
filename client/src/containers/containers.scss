@@ -20,7 +20,7 @@ $curve2: cubic-bezier(0.7, 0, 0.3, 1);
 // Projects Styling
 .projects {
   display: grid;
-  margin: 20px 10%;
+  margin: -10px 10% 10px 10%;
   grid-template-columns: 33% 33% 33%;
 }
 .projectCard {
@@ -42,7 +42,6 @@ $curve2: cubic-bezier(0.7, 0, 0.3, 1);
   }
   .projectText {
     padding: 20px;
-    font-size: 15px;
   }
   .learnMore {
     display: flex;
@@ -68,11 +67,12 @@ $curve2: cubic-bezier(0.7, 0, 0.3, 1);
 }
 .imageContainer {
   display: inline-block;
+  margin: 0 5%;
   text-align: center;
   overflow: hidden;
   img {
     cursor: pointer;
-    width: 250px;
+    width: 200px;
     filter: grayscale(0.9);
     margin-bottom: -6px;
     transition: all 0.5s $curve2;

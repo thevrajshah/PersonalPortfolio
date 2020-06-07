@@ -33,12 +33,6 @@ class NavBar extends Component {
               rel="noopener noreferrer"
             />
           </span>
-          {/* <a
-            href="javascript:void(0);"
-            className="fa fa-bars"
-            id="hamburger"
-            onclick="hamburger()"
-          /> */}
           <button className="hamburger"></button>
           <span id="menu">
             <NavLink to="/" exact>

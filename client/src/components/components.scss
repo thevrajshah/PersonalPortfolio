@@ -41,7 +41,7 @@ header {
 
     #menu {
       display: block;
-      font-size: 12px;
+      font-size: 13px;
       a {
         cursor: pointer;
         color: #fff;
@@ -52,16 +52,16 @@ header {
       }
     }
     #blog {
-      padding: 4px 15px;
+      padding: 1px 10px;
       margin-left: 30px;
       background: #fff;
       font-family: $font1;
       border: none;
       color: $dark;
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 600;
-      border-radius: 15px;
-      transition: all 0.3s $curve1 0s;
+      border-radius: 5px;
+      transition: all 0.2s $curve1 0s;
       cursor: pointer;
       &:hover {
         background: $accent;
@@ -100,14 +100,6 @@ header {
   &::after {
     top: 75%;
   }
-  &:hover {
-    &::before,
-    &::after {
-      background: $accent;
-      background: $gradient;
-      background: $-webkitgradient;
-    }
-  }
 }
 
 // Hero Styling
@@ -118,7 +110,7 @@ header {
   background: $gradient;
   background: $-webkitgradient;
   background-size: cover;
-  padding: 60px 15%;
+  padding: 25px 15%;
   height: fit-content;
   line-height: 1;
   font-family: $font2;
@@ -152,7 +144,7 @@ header {
 
 // Footer Styling
 footer {
-  margin: 10px 0 0 0;
+  margin: 0;
   bottom: 0;
   padding: 11px 10%;
   font-size: 13px;
