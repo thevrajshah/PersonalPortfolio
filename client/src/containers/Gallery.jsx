@@ -13,24 +13,30 @@ class Gallery extends Component {
           quasi maxime. Magnam, nemo.
         </Section>
         <div className="imageContainer">
-          <span className="imgWrapper">
+          <div className="imgWrapper">
             <img src="https://picsum.photos/300" alt="" />
-          </span>
-          <span className="imgWrapper">
+          </div>
+          <div className="imgWrapper">
             <img src="https://picsum.photos/300" alt="" />
-          </span>
-          <span className="imgWrapper">
+          </div>
+          <div className="imgWrapper">
             <img src="https://picsum.photos/300" alt="" />
-          </span>
-          <span className="imgWrapper">
+          </div>
+          <div className="imgWrapper">
             <img src="https://picsum.photos/300" alt="" />
-          </span>
-          <span className="imgWrapper">
+          </div>
+          <div className="imgWrapper">
             <img src="https://picsum.photos/300" alt="" />
-          </span>
-          <span className="imgWrapper">
+          </div>
+          <div className="imgWrapper">
             <img src="https://picsum.photos/300" alt="" />
-          </span>{" "}
+          </div>
+          <div className="imgWrapper">
+            <img src="https://picsum.photos/300" alt="" />
+          </div>
+          <div className="imgWrapper">
+            <img src="https://picsum.photos/300" alt="" />
+          </div>
         </div>
       </React.Fragment>
     );

@@ -8,7 +8,7 @@ class Footer extends Component {
         <div id="made">
           Made with &nbsp;
           <div className="fa fa-heart" /> &nbsp; & &nbsp;
-          <img src="logo192.png" alt="React" />
+          <img src="/logo192.png" alt="React" />
         </div>
         <div id="copyright">© 2020 VrajShah. &nbsp;All Rights Reserved.</div>
       </footer>

@@ -109,7 +109,8 @@ header {
   background: $accent;
   background: $gradient;
   background: $-webkitgradient;
-  background-size: cover;
+  background-attachment: scroll;
+  background-size: auto;
   padding: 25px 15%;
   height: fit-content;
   line-height: 1;
