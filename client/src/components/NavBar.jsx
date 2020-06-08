@@ -3,11 +3,15 @@ import { NavLink } from "react-router-dom";
 import "./components.scss";
 
 class NavBar extends Component {
+  state = { toggle: false };
+  Toggle = () => {
+    this.setState({ toggle: !this.state.toggle });
+  };
   render() {
     return (
       <header>
-        <nav className="gradientTextOnHover">
-          <span id="social">
+        <nav>
+          <span id="social" className="gradientTextOnHover">
             <a
               target="_blank"
               class="fa fa-github"
@@ -33,15 +37,31 @@ class NavBar extends Component {
               rel="noopener noreferrer"
             />
           </span>
-          <button className="hamburger"></button>
-          <span id="menu">
-            <NavLink to="/" exact>
-              Home
-            </NavLink>
-            <NavLink to="/about">About</NavLink>
-            <NavLink to="/contact">Contact</NavLink>
-            <button id="blog">Blog</button>
-          </span>
+          <button
+            className={this.state.toggle ? "hamburger x" : "hamburger"}
+            onClick={this.Toggle}
+          ></button>
+          <ul
+            className="menu"
+            className={
+              this.state.toggle ? "mobileMenu" : "menu gradientTextOnHover"
+            }
+          >
+            <li>
+              <NavLink to="/" exact>
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/about">About</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact">Contact</NavLink>
+            </li>
+            <li>
+              <button id="blog">Blog</button>
+            </li>
+          </ul>
         </nav>
       </header>
     );

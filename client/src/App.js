@@ -10,14 +10,11 @@ function App() {
     <React.Fragment>
       <Router>
         <NavBar />
-
-        <div className="content">
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-          </Switch>
-        </div>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
       </Router>
       <Footer />
     </React.Fragment>

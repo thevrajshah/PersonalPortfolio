@@ -1,5 +1,5 @@
 // Imports
-@import url("../Animations.css");
+@import url("../Animations.scss");
 
 // Variables
 $dark: #181818;
@@ -17,7 +17,8 @@ $curve2: cubic-bezier(0.7, 0, 0.3, 1);
 header {
   // fixed position
   z-index: 3;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   width: 100%;
   top: 0px;
   nav {
@@ -39,9 +40,12 @@ header {
       }
     }
 
-    #menu {
+    .menu {
       display: block;
       font-size: 13px;
+      li {
+        display: inline-block;
+      }
       a {
         cursor: pointer;
         color: #fff;
@@ -72,6 +76,8 @@ header {
     }
   }
 }
+
+// Mobile Nav
 .hamburger {
   cursor: pointer;
   background: transparent;
@@ -99,6 +105,55 @@ header {
   }
   &::after {
     top: 75%;
+  }
+}
+.x {
+  &::before {
+    left: 0;
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  &::after {
+    left: 0;
+    top: 50%;
+    transform: rotate(45deg);
+  }
+}
+.mobileMenu {
+  z-index: 1;
+  display: block;
+  position: fixed;
+  top: 32px;
+  left: 0;
+  padding: 10px 20px;
+  background: $dark;
+  height: calc(100vh - 32px);
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s $curve1;
+  animation: nav-in 0.3s $curve1 alternate;
+  #blog {
+    margin: 0 auto;
+    padding: 1px 10px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    background: $accent;
+    background: $gradient;
+    background: $-webkitgradient;
+    color: #fff;
+  }
+  a {
+    cursor: pointer;
+    color: #fff;
+    font-family: $font1;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s $curve1 0s;
+  }
+  li {
+    display: block;
+    padding: 10px 20px;
   }
 }
 
@@ -210,8 +265,11 @@ footer {
       margin-right: 5px;
     }
 
-    span#menu {
+    ul.menu {
       display: none;
+    }
+    ul.mobileMenu {
+      display: block;
     }
   }
   .hamburger {
@@ -247,5 +305,23 @@ footer {
     #copyright {
       display: none;
     }
+  }
+}
+
+// Animation
+@-webkit-keyframes nav-in {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 1;
+  }
+}
+@keyframes nav-in {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 1;
   }
 }

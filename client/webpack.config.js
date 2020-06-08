@@ -28,4 +28,8 @@ module.exports = {
       template: "./public/index.html",
     }),
   ],
+  devServer: {
+    hot: true,
+    port: 3000,
+  },
 };
