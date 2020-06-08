@@ -7,6 +7,7 @@ class NavBar extends Component {
   Toggle = () => {
     this.setState({ toggle: !this.state.toggle });
   };
+
   render() {
     return (
       <header>
@@ -41,12 +42,7 @@ class NavBar extends Component {
             className={this.state.toggle ? "hamburger x" : "hamburger"}
             onClick={this.Toggle}
           ></button>
-          <ul
-            className="menu"
-            className={
-              this.state.toggle ? "mobileMenu" : "menu gradientTextOnHover"
-            }
-          >
+          <ul className="desktopMenu">
             <li>
               <NavLink to="/" exact>
                 Home
@@ -60,6 +56,31 @@ class NavBar extends Component {
             </li>
             <li>
               <button id="blog">Blog</button>
+            </li>
+          </ul>
+          <ul
+            className="mobileMenu"
+            style={{ display: this.state.toggle ? "block" : "none" }}
+          >
+            <li>
+              <NavLink to="/" exact onClick={this.Toggle}>
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/about" onClick={this.Toggle}>
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact" onClick={this.Toggle}>
+                Contact
+              </NavLink>
+            </li>
+            <li>
+              <button id="blog" onClick={this.Toggle}>
+                Blog
+              </button>
             </li>
           </ul>
         </nav>
