@@ -60,20 +60,19 @@ $curve2: cubic-bezier(0.7, 0, 0.3, 1);
   margin: 0 auto;
 }
 .imageContainer {
-  display: inline-block;
-  margin: 0 5%;
+  margin: 6px 5vh;
   text-align: center;
   overflow: hidden;
 }
 .imgWrapper {
-  display: inline;
+  display: inline-flex;
   overflow: hidden;
+  margin-top: -6px;
 }
 img {
   cursor: pointer;
   width: 200px;
   filter: grayscale(0.9);
-  margin-bottom: -6px;
   transition: all 0.5s $curve2;
   &:hover {
     scale: 1.1;
@@ -90,7 +89,7 @@ img {
   // Gallery Styling
   .imageContainer {
     img {
-      width: 200px;
+      width: 175px;
     }
   }
 }
@@ -102,6 +101,7 @@ img {
   }
   // Gallery Styling
   .imageContainer {
+    margin: 0;
     img {
       width: 150px;
     }
