@@ -11,7 +11,6 @@ module.exports = {
     filename: "bundle.js",
     publicPath: process.env.PUBLIC_URL || "/",
   },
-  devtool: "inline-source-map",
   module: {
     rules: [
       {
@@ -27,10 +26,6 @@ module.exports = {
         loader: ["style-loader", "css-loader", "sass-loader"],
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: ["file-loader"],
-      },
-      {
         test: /\.(png|jpg|gif)$/i,
         use: [
           {
@@ -43,13 +38,7 @@ module.exports = {
       },
     ],
   },
-  resolve: {
-    alias: {
-      "react-dom": "@hot-loader/react-dom",
-    },
-  },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),
@@ -59,6 +48,5 @@ module.exports = {
     hot: true,
     port: port,
     compress: true,
-    progress: true,
   },
 };
