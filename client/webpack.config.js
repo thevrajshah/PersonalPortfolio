@@ -7,9 +7,9 @@ const port = process.env.PORT || 3000;
 module.exports = {
   entry: "./src/index.js",
   output: {
-    path: path.join(__dirname, "/dist"),
-    filename: "index_bundle.js",
-    publicPath: "/",
+    path: path.join(__dirname, "/build"),
+    filename: "bundle.js",
+    publicPath: process.env.PUBLIC_URL || "/",
   },
   devtool: "inline-source-map",
   module: {
@@ -27,18 +27,19 @@ module.exports = {
         loader: ["style-loader", "css-loader", "sass-loader"],
       },
       {
-        test: /\.(png|jpeg|gif|jpg)$/i,
-        loader: "url-loader",
-        options: {
-          limit: 25000,
-        },
+        test: /\.(png|svg|jpg|gif)$/,
+        use: ["file-loader"],
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
-        loader: "file-loader",
-        options: {
-          name: "[path][name].[ext]",
-        },
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 8192,
+            },
+          },
+        ],
       },
     ],
   },
@@ -50,7 +51,7 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      template: "./index.html",
+      template: "./public/index.html",
     }),
   ],
   devServer: {

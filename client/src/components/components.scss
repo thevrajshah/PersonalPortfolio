@@ -125,9 +125,9 @@ header {
   position: fixed;
   top: 32px;
   left: 0;
-  padding: 10px 20px;
+  padding: 5px 20px 20px 20px;
   background: $dark;
-  height: calc(100vh - 32px);
+  height: fit-content;
   width: 100%;
   text-align: center;
   transition: all 0.3s $curve1;
