@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Card.scss";
+import "./UI.scss";
 
 class Card extends Component {
   state = {};

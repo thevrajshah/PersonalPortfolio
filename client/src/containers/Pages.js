@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import "./containers.scss";
-import Hero from "../components/Hero.jsx";
-import Section from "../UI/Section.jsx";
-import Projects from "./Projects.jsx";
-import Gallery from "./Gallery.jsx";
+import Hero from "../components/Hero";
+import Section from "../UI/Section";
+import Projects from "./Projects";
+import Gallery from "./Gallery";
+import Loader from "../UI/Loader";
 
-class Home extends Component {
+export class Home extends Component {
   render() {
     return (
       <React.Fragment>
@@ -24,23 +25,21 @@ class Home extends Component {
     );
   }
 }
-export { Home };
 
-class About extends Component {
+export class About extends Component {
   render() {
     return (
       <React.Fragment>
         <Section>
           <h1>About</h1>
+          <Loader />
         </Section>
       </React.Fragment>
     );
   }
 }
 
-export { About };
-
-class Contact extends Component {
+export class Contact extends Component {
   render() {
     return (
       <React.Fragment>
@@ -51,5 +50,3 @@ class Contact extends Component {
     );
   }
 }
-
-export { Contact };

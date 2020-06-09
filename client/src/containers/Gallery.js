@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./containers.scss";
-import Section from "../UI/Section.jsx";
+import Section from "../UI/Section";
 
 class Gallery extends Component {
   render() {

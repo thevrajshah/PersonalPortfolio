@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./containers.scss";
-import Badge from "../UI/Badge.jsx";
+import Badge from "../UI/Badge";
 
 class Projects extends Component {
   render() {

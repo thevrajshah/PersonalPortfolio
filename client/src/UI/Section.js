@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Section.scss";
+import "./UI.scss";
 
 class Section extends Component {
   render() {

@@ -60,7 +60,8 @@ $curve2: cubic-bezier(0.7, 0, 0.3, 1);
   margin: 0 auto;
 }
 .imageContainer {
-  margin: 6px 5vh;
+  z-index: 1;
+  margin: 0 5vh;
   text-align: center;
   overflow: hidden;
 }

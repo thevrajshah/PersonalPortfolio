@@ -15,25 +15,25 @@ class NavBar extends Component {
           <span id="social" className="gradientTextOnHover">
             <a
               target="_blank"
-              class="fa fa-github"
+              className="fa fa-github"
               href="https://github.com/thevrajshah"
               rel="noopener noreferrer"
             />
             <a
               target="_blank"
-              class="fa fa-linkedin-square"
+              className="fa fa-linkedin-square"
               href="https://www.linkedin.com/in/thevrajshah/"
               rel="noopener noreferrer"
             />
             <a
               target="_blank"
-              class="fa fa-instagram"
+              className="fa fa-instagram"
               href="https://www.instagram.com/thevrajshaah"
               rel="noopener noreferrer"
             />
             <a
               target="_blank"
-              class="fa fa-twitter"
+              className="fa fa-twitter"
               href="https://twitter.com/thevrajshah"
               rel="noopener noreferrer"
             />
@@ -42,7 +42,7 @@ class NavBar extends Component {
             className={this.state.toggle ? "hamburger x" : "hamburger"}
             onClick={this.Toggle}
           ></button>
-          <ul className="desktopMenu">
+          <ul className="desktopMenu gradientTextOnHover">
             <li>
               <NavLink to="/" exact>
                 Home
