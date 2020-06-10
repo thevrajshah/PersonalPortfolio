@@ -1,9 +1,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 const settings = {
-  distPath: path.join(__dirname, "build"),
+  distPath: path.join(__dirname, "dist"),
   srcPath: path.join(__dirname, "src"),
 };
 
@@ -73,9 +72,6 @@ module.exports = (env, options) => {
     },
 
     plugins: [
-      /* new CleanWebpackPlugin([settings.distPath], {
-        verbose: true,
-      }), */
       new HtmlWebpackPlugin({
         template: srcPathExtend("index.html"),
       }),
