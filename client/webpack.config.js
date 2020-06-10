@@ -31,7 +31,7 @@ module.exports = {
           {
             loader: "resolve-url-loader",
             options: {
-              limit: 8192,
+              limit: 20000,
             },
           },
         ],
