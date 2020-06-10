@@ -13,11 +13,11 @@ function srcPathExtend(subpath) {
 module.exports = (env, options) => {
   const isDevMode = options.mode === "development";
   return {
-    /* entry: "./src/index.js",
+    entry: "./src/index.js",
     output: {
       path: path.join(__dirname, "/build"),
       filename: "bundle.js",
-    }, */
+    },
     devtool: isDevMode ? "source-map" : false,
     resolve: {
       extensions: [".js", ".jsx"],
