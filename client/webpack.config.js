@@ -1,24 +1,24 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
-/* const settings = {
+const settings = {
   distPath: path.join(__dirname, "build"),
   srcPath: path.join(__dirname, "src"),
 };
 
 function srcPathExtend(subpath) {
   return path.join(settings.srcPath, subpath);
-} */
+}
 
 module.exports = (env, options) => {
   const isDevMode = options.mode === "development";
   return {
-    entry: "./src/index.js",
+    /* entry: "./src/index.js",
     output: {
       path: path.join(__dirname, "/build"),
       filename: "bundle.js",
-    },
+    }, */
     devtool: isDevMode ? "source-map" : false,
     resolve: {
       extensions: [".js", ".jsx"],
@@ -77,7 +77,7 @@ module.exports = (env, options) => {
         verbose: true,
       }), */
       new HtmlWebpackPlugin({
-        template: "./public/index.html",
+        template: srcPathExtend("index.html"),
       }),
     ],
   };
