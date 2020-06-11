@@ -1,7 +1,7 @@
 // Variables
 $dark: #181818;
 $light: #ddd;
-$grey: #242424;
+$grey: #555;
 $accent: #077bff;
 $font1: "Poppins", sans-serif;
 $font2: "Space Mono", Monospace;
@@ -9,6 +9,8 @@ $gradient: linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
 $-webkitgradient: -webkit-linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
 $curve1: cubic-bezier(0.39, 0.575, 0.565, 1);
 $curve2: cubic-bezier(0.7, 0, 0.3, 1);
+$shadow1: 0px 5px 40px rgba(0, 0, 0, 0.1);
+$shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
 
 * {
   box-sizing: border-box;
@@ -59,5 +61,22 @@ li {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+}
+
+.react-rotating-text-cursor {
+  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s
+    infinite;
+}
+
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

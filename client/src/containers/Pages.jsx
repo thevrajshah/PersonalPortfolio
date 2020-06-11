@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import "./containers.scss";
 import Hero from "../components/Hero";
 import Section from "../UI/Section";
+import Card from "../UI/Card";
 import Projects from "./Projects";
 import Gallery from "./Gallery";
-import Loader from "../UI/Loader";
 
 export class Home extends Component {
   render() {
@@ -30,10 +30,7 @@ export class About extends Component {
   render() {
     return (
       <React.Fragment>
-        <Section>
-          <h1>About</h1>
-          <Loader />
-        </Section>
+        <IDCard />
       </React.Fragment>
     );
   }
@@ -48,5 +45,11 @@ export class Contact extends Component {
         </Section>
       </React.Fragment>
     );
+  }
+}
+
+export class IDCard extends Component {
+  render() {
+    return <Card>Vraj Shah</Card>;
   }
 }

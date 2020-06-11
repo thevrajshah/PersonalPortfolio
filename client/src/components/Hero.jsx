@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ReactRotatingText from "react-rotating-text";
 import "./components.scss";
 
 class Hero extends Component {
@@ -10,9 +11,12 @@ class Hero extends Component {
           <div id="name">I'm Vraj.</div>
         </div>
         <div id="prof">
+          <ReactRotatingText items={["Developer", "Designer", "Creator"]} />
+        </div>
+        {/* 
           <li>Developer</li>
           <li>Designer</li>
-        </div>
+         */}
       </main>
     );
   }

@@ -12,32 +12,7 @@ class NavBar extends Component {
     return (
       <header>
         <nav>
-          <span id="social" className="gradientTextOnHover">
-            <a
-              target="_blank"
-              className="fa fa-github"
-              href="https://github.com/thevrajshah"
-              rel="noopener noreferrer"
-            />
-            <a
-              target="_blank"
-              className="fa fa-linkedin-square"
-              href="https://www.linkedin.com/in/thevrajshah/"
-              rel="noopener noreferrer"
-            />
-            <a
-              target="_blank"
-              className="fa fa-instagram"
-              href="https://www.instagram.com/thevrajshaah"
-              rel="noopener noreferrer"
-            />
-            <a
-              target="_blank"
-              className="fa fa-twitter"
-              href="https://twitter.com/thevrajshah"
-              rel="noopener noreferrer"
-            />
-          </span>
+          <span id="logo">thevrajshah</span>
           <button
             className={this.state.toggle ? "hamburger x" : "hamburger"}
             onClick={this.Toggle}

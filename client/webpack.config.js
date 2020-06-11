@@ -2,12 +2,12 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const settings = {
-  distPath: path.join(__dirname, "dist"),
-  srcPath: path.join(__dirname, "src"),
+  distPath: path.resolve(__dirname, "dist"),
+  srcPath: path.resolve(__dirname, "src"),
 };
 
 function srcPathExtend(subpath) {
-  return path.join(settings.srcPath, subpath);
+  return path.resolve(settings.srcPath, subpath);
 }
 
 module.exports = (env, options) => {
@@ -15,8 +15,9 @@ module.exports = (env, options) => {
   return {
     entry: "./src/index.js",
     output: {
-      path: path.join(__dirname, "/build"),
       filename: "bundle.js",
+      path: path.resolve(__dirname, "build"),
+      publicPath: "/",
     },
     devtool: isDevMode ? "source-map" : false,
     resolve: {
@@ -70,7 +71,10 @@ module.exports = (env, options) => {
         },
       ],
     },
-
+    devServer: {
+      compress: true,
+      historyApiFallback: true,
+    },
     plugins: [
       new HtmlWebpackPlugin({
         template: srcPathExtend("index.html"),

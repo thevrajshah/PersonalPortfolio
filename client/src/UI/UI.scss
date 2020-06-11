@@ -5,7 +5,7 @@
 // Variables
 $dark: #181818;
 $light: #ddd;
-$grey: #242424;
+$grey: #555;
 $accent: #077bff;
 $font1: "Poppins", sans-serif;
 $font2: "Space Mono", Monospace;
@@ -13,6 +13,8 @@ $gradient: linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
 $-webkitgradient: -webkit-linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
 $curve1: cubic-bezier(0.39, 0.575, 0.565, 1);
 $curve2: cubic-bezier(0.7, 0, 0.3, 1);
+$shadow1: 0px 5px 40px rgba(0, 0, 0, 0.1);
+$shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
 
 // Section Styling
 .section {
@@ -21,17 +23,18 @@ $curve2: cubic-bezier(0.7, 0, 0.3, 1);
   padding: 30px 11%;
   background-color: #fff;
   color: $grey;
-  box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: $shadow1;
 }
 
 // Card Styling
 .card {
-  margin: 5px;
+  margin: 5px 10%;
   padding: 20px;
   background-color: #fff;
   color: white;
   height: fit-content;
-  border-radius: 10px;
+  border-radius: 5px;
+  box-shadow: $shadow1;
 }
 
 // Badge Styling
@@ -43,4 +46,11 @@ $curve2: cubic-bezier(0.7, 0, 0.3, 1);
   background-color: #fff;
   font-weight: 600;
   box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 950px) {
+  .card {
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 650px) {
 }
