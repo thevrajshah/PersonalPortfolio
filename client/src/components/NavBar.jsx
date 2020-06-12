@@ -12,7 +12,7 @@ class NavBar extends Component {
     return (
       <header>
         <nav>
-          <span id="logo">thevrajshah</span>
+          <span id="logo">/thevrajshah</span>
           <button
             className={this.state.toggle ? "hamburger x" : "hamburger"}
             onClick={this.Toggle}

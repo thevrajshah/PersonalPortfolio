@@ -3,13 +3,13 @@
 
 // Variables
 $dark: #181818;
-$light: #ddd;
+$light: #eee;
 $grey: #555;
-$accent: #077bff;
+$accent: #078fff;
 $font1: "Poppins", sans-serif;
 $font2: "Space Mono", Monospace;
-$gradient: linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
-$-webkitgradient: -webkit-linear-gradient(-60deg, #077bff 0%, #00f2fe 100%);
+$gradient: linear-gradient(-60deg, #078fff 0%, #00f2fe 100%);
+$-webkitgradient: -webkit-linear-gradient(-60deg, #078fff 0%, #00f2fe 100%);
 $curve1: cubic-bezier(0.39, 0.575, 0.565, 1);
 $curve2: cubic-bezier(0.7, 0, 0.3, 1);
 $shadow1: 0px 5px 40px rgba(0, 0, 0, 0.1);
@@ -18,7 +18,7 @@ $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
 // Projects Styling
 .projects {
   display: grid;
-  margin: -10px 10% 10px 10%;
+  margin: -10px 5% 10px 5%;
   grid-template-columns: 33% 33% 33%;
 }
 .projectCard {
@@ -76,7 +76,7 @@ img {
   cursor: pointer;
   width: 200px;
   filter: grayscale(0.9);
-  transition: all 0.5s $curve2;
+  transition: all 0.7s $curve2;
   &:hover {
     scale: 1.1;
     filter: none;
