@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./components.scss";
 
-class Footer extends Component {
+export default class Footer extends Component {
   render() {
     return (
       <footer>
@@ -9,7 +9,7 @@ class Footer extends Component {
           Made with{" "}
           <span style={{ color: "#01d5f5", fontWeight: "600" }}>React</span>.
         </div>
-        <span id="social" className="gradientTextOnHover">
+        <span id="social">
           <a
             target="_blank"
             className="fa fa-github"
@@ -36,12 +36,9 @@ class Footer extends Component {
           />
         </span>
         <div id="copyright">
-          © 2020 <span style={{ fontWeight: "600" }}>VrajShah</span>. &nbsp;All
-          Rights Reserved.
+          © 2020 <span style={{ fontWeight: "600" }}>VrajShah</span>.
         </div>
       </footer>
     );
   }
 }
-
-export default Footer;

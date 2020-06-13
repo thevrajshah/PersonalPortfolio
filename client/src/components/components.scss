@@ -12,18 +12,16 @@ $gradient: linear-gradient(-60deg, #078fff 0%, #00f2fe 100%);
 $-webkitgradient: -webkit-linear-gradient(-60deg, #078fff 0%, #00f2fe 100%);
 $curve1: cubic-bezier(0.39, 0.575, 0.565, 1);
 $curve2: cubic-bezier(0.7, 0, 0.3, 1);
-$shadow1: 0px 5px 40px rgba(0, 0, 0, 0.1);
+$shadow1: 0px 5px 10px rgba(0, 0, 0, 0.1);
 $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
 
 // NavBar Styling
 header {
   // fixed position
-  z-index: 10;
   position: -webkit-sticky;
   position: sticky;
   width: 100%;
   top: 0px;
-  border-radius: 0 10px 10px 10px;
   box-shadow: $shadow1;
   nav {
     display: flex;
@@ -31,16 +29,17 @@ header {
     height: 50px;
     justify-content: space-between;
     align-items: center;
-    background: $dark;
+    background: #fff;
     #logo {
       /* padding: 0.1px 4px;
       border-radius: 4px;
       background: white; */
-      color: $light;
+      vertical-align: middle;
+      color: $dark;
       font-weight: 600;
       font-size: 13px;
     }
-    .desktopMenu {
+    #desktopMenu {
       display: block;
       font-size: 13px;
       li {
@@ -48,35 +47,36 @@ header {
       }
       a {
         cursor: pointer;
-        color: $light;
+        color: $dark;
         font-family: $font1;
         font-weight: 600;
         margin-left: 30px;
         transition: all 0.3s $curve1 0s;
-      }
-    }
-    #blog {
-      padding: 1px 10px;
-      margin-left: 30px;
-      background: $light;
-      font-family: $font1;
-      border: none;
-      color: $dark;
-      font-size: 13px;
-      font-weight: 600;
-      border-radius: 5px;
-      transition: all 0.2s $curve1 0s;
-      cursor: pointer;
-      &:hover {
-        background: $accent;
-        background: $gradient;
-        background: $-webkitgradient;
-        color: #fff;
+        &:hover,
+        &.active {
+          color: $accent;
+        }
       }
     }
   }
 }
-
+#blog {
+  z-index: 3;
+  padding: 1px 10px;
+  margin-left: 30px;
+  background: #fff;
+  font-family: $font1;
+  color: $dark;
+  font-size: 13px;
+  font-weight: 600;
+  border: solid $dark 2px;
+  box-shadow: 1.5px 1.5px 0px 0.5px;
+  transition: all 0.2s $curve1 0s;
+  cursor: pointer;
+  &:hover {
+    color: $accent;
+  }
+}
 // Mobile Nav
 .hamburger {
   cursor: pointer;
@@ -90,7 +90,7 @@ header {
   display: none;
   &::before,
   &::after {
-    background: $light;
+    background: $dark;
     content: " ";
     display: block;
     height: 1.5px;
@@ -119,38 +119,54 @@ header {
     transform: rotate(45deg);
   }
 }
-.mobileMenu {
+#mobileMenu {
   display: none;
   z-index: 1;
   position: fixed;
-  top: 32px;
+  top: 50px;
   left: 0;
-  padding: 5px 20px;
-  background: $dark;
+  padding: 5px 10px;
+  background: #fff;
   height: calc(100vh - 50px);
-  width: 100vw;
+  width: 100%;
   text-align: center;
   animation: nav-in 0.3s $curve1 alternate;
   #blog {
     margin: 0 auto;
     padding: 1px 10px;
-    width: 50%;
-    font-size: 16px;
+    width: 25%;
+    font-size: 14px;
     font-weight: 600;
-    background: $light;
+    background: #fff;
     color: $dark;
   }
   a {
     cursor: pointer;
-    color: $light;
+    color: $dark;
     font-family: $font1;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     transition: all 0.3s $curve1 0s;
+  }
+  ul {
+    padding: 0;
   }
   li {
     display: block;
     padding: 10px 20px;
+  }
+  #social {
+    bottom: 30px;
+    a {
+      cursor: pointer;
+      color: $dark;
+      margin: 50px 5px;
+      font-size: 16px;
+      transition: all 0.3s $curve1 0s;
+      &:hover {
+        color: $accent;
+      }
+    }
   }
 }
 
@@ -163,7 +179,7 @@ header {
   background: $-webkitgradient;
   background-attachment: scroll;
   background-size: auto;
-  padding: 70px 15%;
+  padding: 70px 12%;
   height: fit-content;
   line-height: 1;
   font-family: $font2;
@@ -192,7 +208,7 @@ header {
 footer {
   margin: 0;
   bottom: 0;
-  padding: 20px 10% 60px 10%;
+  padding: 15px 10% 40px 10%;
   font-size: 12px;
   background: #fff;
   display: flex;
@@ -216,6 +232,9 @@ footer {
       margin-right: 10px;
       font-size: 16px;
       transition: all 0.3s $curve1 0s;
+      &:hover {
+        color: $accent;
+      }
     }
   }
   #copyright {
@@ -243,14 +262,14 @@ footer {
     }
   }
   footer {
-    #copyright {
+    #social {
       display: none;
     }
   }
 }
 @media screen and (max-width: 650px) {
   // NavBar Styling
-  nav ul.desktopMenu {
+  nav ul#desktopMenu {
     display: none;
   }
   .hamburger {

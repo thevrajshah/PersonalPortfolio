@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { NavLink } from "react-router-dom";
 import "./components.scss";
 
@@ -10,33 +10,37 @@ class NavBar extends Component {
 
   render() {
     return (
-      <header>
-        <nav>
-          <span id="logo">/thevrajshah</span>
-          <button
-            className={this.state.toggle ? "hamburger x" : "hamburger"}
-            onClick={this.Toggle}
-          ></button>
-          <ul className="desktopMenu gradientTextOnHover">
-            <li>
-              <NavLink to="/" exact>
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/about">About</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact">Contact</NavLink>
-            </li>
-            <li>
-              <button id="blog">Blog</button>
-            </li>
-          </ul>
-          <ul
-            className="mobileMenu"
-            style={{ display: this.state.toggle ? "block" : "none" }}
-          >
+      <Fragment>
+        <header>
+          <nav>
+            <span id="logo">/thevrajshah</span>
+            <button
+              className={this.state.toggle ? "hamburger x" : "hamburger"}
+              onClick={this.Toggle}
+            ></button>
+            <ul id="desktopMenu">
+              <li>
+                <NavLink to="/" exact>
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/about">About</NavLink>
+              </li>
+              <li>
+                <NavLink to="/contact">Contact</NavLink>
+              </li>
+              <li>
+                <button id="blog">Blog</button>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div
+          id="mobileMenu"
+          style={{ display: this.state.toggle ? "block" : "none" }}
+        >
+          <ul>
             <li>
               <NavLink to="/" exact onClick={this.Toggle}>
                 Home
@@ -57,9 +61,35 @@ class NavBar extends Component {
                 Blog
               </button>
             </li>
+            <span id="social">
+              <a
+                target="_blank"
+                className="fa fa-github"
+                href="https://github.com/thevrajshah"
+                rel="noopener noreferrer"
+              />
+              <a
+                target="_blank"
+                className="fa fa-linkedin-square"
+                href="https://www.linkedin.com/in/thevrajshah/"
+                rel="noopener noreferrer"
+              />
+              <a
+                target="_blank"
+                className="fa fa-instagram"
+                href="https://www.instagram.com/thevrajshaah"
+                rel="noopener noreferrer"
+              />
+              <a
+                target="_blank"
+                className="fa fa-twitter"
+                href="https://twitter.com/thevrajshah"
+                rel="noopener noreferrer"
+              />
+            </span>
           </ul>
-        </nav>
-      </header>
+        </div>
+      </Fragment>
     );
   }
 }
