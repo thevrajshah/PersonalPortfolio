@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import "./containers.scss";
 import Section from "../UI/Section";
 
 class Gallery extends Component {
   render() {
     return (
-      <React.Fragment>
+      <Fragment>
         <Section>
           <h2>Art is Lorem ipsum.</h2>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui quisquam
@@ -38,7 +38,7 @@ class Gallery extends Component {
             <img src="https://picsum.photos/300" alt="" />
           </div>
         </div>
-      </React.Fragment>
+      </Fragment>
     );
   }
 }

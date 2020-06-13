@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import "./containers.scss";
 import Badge from "../UI/Badge";
 
 class Projects extends Component {
   render() {
     return (
-      <React.Fragment>
+      <Fragment>
         <Badge fsize="20px">
           <div className="gradientText">Projects</div>
         </Badge>
@@ -14,7 +14,7 @@ class Projects extends Component {
           <ProjectCard />
           <ProjectCard />
         </div>
-      </React.Fragment>
+      </Fragment>
     );
   }
 }

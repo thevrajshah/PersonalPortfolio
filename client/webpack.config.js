@@ -22,6 +22,9 @@ module.exports = (env, options) => {
     devtool: isDevMode ? "source-map" : false,
     resolve: {
       extensions: [".js", ".jsx"],
+      alias: {
+        Assets: path.resolve(__dirname, "./src/assets/"),
+      },
     },
     module: {
       rules: [

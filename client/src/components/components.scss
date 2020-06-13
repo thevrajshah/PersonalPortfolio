@@ -39,6 +39,18 @@ header {
       font-weight: 600;
       font-size: 13px;
     }
+    #social {
+      a {
+        cursor: pointer;
+        color: $dark;
+        margin: 0 5px;
+        font-size: 16px;
+        transition: all 0.3s $curve1 0s;
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
     #desktopMenu {
       display: block;
       font-size: 13px;
@@ -90,38 +102,40 @@ header {
   display: none;
   &::before,
   &::after {
-    background: $dark;
+    background-color: $dark;
     content: " ";
     display: block;
-    height: 1.5px;
+    height: 2px;
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
     transition: all 0.3s $curve1;
     width: 100%;
+    &:hover {
+      background-color: $accent;
+    }
   }
   &::before {
-    top: 25%;
+    top: 10%;
   }
   &::after {
-    top: 75%;
+    top: 60%;
   }
 }
 .x {
   &::before {
     left: 0;
-    top: 50%;
+    top: 35%;
     transform: rotate(-45deg);
   }
   &::after {
     left: 0;
-    top: 50%;
+    top: 35%;
     transform: rotate(45deg);
   }
 }
-#mobileMenu {
+.mobileMenu {
   display: none;
-  z-index: 1;
   position: fixed;
   top: 50px;
   left: 0;
@@ -156,8 +170,8 @@ header {
     padding: 10px 20px;
   }
   #social {
-    bottom: 30px;
     a {
+      vertical-align: middle;
       cursor: pointer;
       color: $dark;
       margin: 50px 5px;
@@ -180,7 +194,6 @@ header {
   background-attachment: scroll;
   background-size: auto;
   padding: 70px 12%;
-  height: fit-content;
   line-height: 1;
   font-family: $font2;
   font-weight: 600;
@@ -225,18 +238,6 @@ footer {
       vertical-align: middle;
     }
   }
-  #social {
-    a {
-      cursor: pointer;
-      color: $dark;
-      margin-right: 10px;
-      font-size: 16px;
-      transition: all 0.3s $curve1 0s;
-      &:hover {
-        color: $accent;
-      }
-    }
-  }
   #copyright {
     color: $dark;
   }
@@ -244,6 +245,18 @@ footer {
 
 // Responsive Design
 @media screen and (max-width: 950px) {
+  // NavBar Styling
+  nav {
+    span#social {
+      display: none;
+    }
+    ul#desktopMenu {
+      display: none;
+    }
+  }
+  .hamburger {
+    display: block;
+  }
   // Hero Styling
   .hero {
     padding: 40px 15%;
@@ -268,14 +281,6 @@ footer {
   }
 }
 @media screen and (max-width: 650px) {
-  // NavBar Styling
-  nav ul#desktopMenu {
-    display: none;
-  }
-  .hamburger {
-    display: block;
-  }
-
   // Hero Styling
   .hero {
     grid-template-columns: auto;

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import "./containers.scss";
 import Hero from "../components/Hero";
 import Section from "../UI/Section";
@@ -9,7 +9,7 @@ import Gallery from "./Gallery";
 export class Home extends Component {
   render() {
     return (
-      <React.Fragment>
+      <Fragment>
         <Hero />
         <Section>
           <h1>Welcome my Website.</h1>
@@ -21,7 +21,7 @@ export class Home extends Component {
         </Section>
         <Projects />
         <Gallery />
-      </React.Fragment>
+      </Fragment>
     );
   }
 }
