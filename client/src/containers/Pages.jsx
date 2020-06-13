@@ -3,6 +3,7 @@ import "./containers.scss";
 import Hero from "../components/Hero";
 import Section from "../UI/Section";
 import Card from "../UI/Card";
+import Loader from "../UI/Loader";
 import Projects from "./Projects";
 import Gallery from "./Gallery";
 
@@ -30,7 +31,9 @@ export class About extends Component {
   render() {
     return (
       <React.Fragment>
-        <IDCard />
+        <Section>
+          <Loader />
+        </Section>
       </React.Fragment>
     );
   }

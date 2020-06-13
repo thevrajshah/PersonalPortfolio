@@ -5,10 +5,7 @@ class Loader extends Component {
   render() {
     return (
       <div className="loader">
-        <img
-          src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Dino_non-birthday_version.gif"
-          alt="Loading..."
-        />
+        <img src="./src/assets/dino.gif" alt="Loading..." />
       </div>
     );
   }
