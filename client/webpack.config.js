@@ -1,5 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const settings = {
   distPath: path.resolve(__dirname, "dist"),
@@ -79,6 +81,8 @@ module.exports = (env, options) => {
       historyApiFallback: true,
     },
     plugins: [
+      new CleanWebpackPlugin(),
+      new MiniCssExtractPlugin(),
       new HtmlWebpackPlugin({
         template: srcPathExtend("index.html"),
       }),
