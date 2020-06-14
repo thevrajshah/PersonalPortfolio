@@ -15,7 +15,6 @@
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-headroom": "^3.0.0",
     "react-rotating-text": "^1.4.1",
     "react-router-dom": "^5.2.0"
   },
@@ -35,10 +34,5 @@
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"
-  },
-  "browserslist": {
-    "production": [
-      "last 3 version"
-    ]
   }
 }

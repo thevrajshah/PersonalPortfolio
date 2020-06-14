@@ -73,12 +73,27 @@ $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
   margin-top: -6px;
   img {
     cursor: pointer;
+    height: 200px;
     width: 200px;
     filter: grayscale(0.9);
     transition: all 0.7s $curve2;
     &:hover {
       scale: 1.1;
       filter: none;
+    }
+  }
+}
+
+#social {
+  a {
+    vertical-align: middle;
+    cursor: pointer;
+    color: $dark;
+    margin: 0 5px;
+    font-size: 16px;
+    transition: all 0.3s $curve1 0s;
+    &:hover {
+      color: $accent;
     }
   }
 }
@@ -93,6 +108,7 @@ $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
   .imageContainer {
     img {
       width: 175px;
+      height: 175px;
     }
   }
 }
@@ -107,6 +123,14 @@ $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
     margin: 0;
     img {
       width: 150px;
+      height: 175px;
+    }
+  }
+  // Social Styling
+  #social {
+    a {
+      font-size: 16px;
+      margin: 0 4px;
     }
   }
 }

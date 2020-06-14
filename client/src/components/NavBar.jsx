@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { NavLink } from "react-router-dom";
+import Social from "../containers/Social";
 import "./components.scss";
 
 class NavBar extends Component {
@@ -14,32 +15,7 @@ class NavBar extends Component {
         <header>
           <nav>
             <span id="logo">/thevrajshah</span>
-            <span id="social">
-              <a
-                target="_blank"
-                className="fa fa-github"
-                href="https://github.com/thevrajshah"
-                rel="noopener noreferrer"
-              />
-              <a
-                target="_blank"
-                className="fa fa-linkedin-square"
-                href="https://www.linkedin.com/in/thevrajshah/"
-                rel="noopener noreferrer"
-              />
-              <a
-                target="_blank"
-                className="fa fa-instagram"
-                href="https://www.instagram.com/thevrajshaah"
-                rel="noopener noreferrer"
-              />
-              <a
-                target="_blank"
-                className="fa fa-twitter"
-                href="https://twitter.com/thevrajshah"
-                rel="noopener noreferrer"
-              />
-            </span>
+            <Social />
             <button
               className={this.state.toggle ? "hamburger x" : "hamburger"}
               onClick={this.Toggle}
@@ -88,32 +64,6 @@ class NavBar extends Component {
               </button>
             </li>
           </ul>
-          <span id="social">
-            <a
-              target="_blank"
-              className="fa fa-github"
-              href="https://github.com/thevrajshah"
-              rel="noopener noreferrer"
-            />
-            <a
-              target="_blank"
-              className="fa fa-linkedin-square"
-              href="https://www.linkedin.com/in/thevrajshah/"
-              rel="noopener noreferrer"
-            />
-            <a
-              target="_blank"
-              className="fa fa-instagram"
-              href="https://www.instagram.com/thevrajshaah"
-              rel="noopener noreferrer"
-            />
-            <a
-              target="_blank"
-              className="fa fa-twitter"
-              href="https://twitter.com/thevrajshah"
-              rel="noopener noreferrer"
-            />
-          </span>
         </div>
       </Fragment>
     );

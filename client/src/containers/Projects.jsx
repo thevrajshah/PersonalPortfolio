@@ -34,7 +34,7 @@ class ProjectCard extends Component {
           vitae. Consequuntur molestias maiores alias laborum.
         </div>
         <div className="learnMore">
-          <a href="#" className="fa fa-github-alt"></a>{" "}
+          <a href="#" className="fab fa-github-alt"></a>{" "}
           <a href="">Learn More</a>
         </div>
       </div>
