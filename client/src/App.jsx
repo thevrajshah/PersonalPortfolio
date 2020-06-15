@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.scss";
 import NavBar from "./components/NavBar";
-import { Home, About, Contact } from "./containers/Pages";
+import { About, Work, Contact } from "./containers/Pages";
 import Footer from "./components/Footer";
 
 export default class App extends Component {
@@ -12,8 +12,8 @@ export default class App extends Component {
         <Router>
           <NavBar />
           <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/about" component={About} />
+            <Route path="/" exact component={About} />
+            <Route path="/about" component={Work} />
             <Route path="/contact" component={Contact} />
           </Switch>
         </Router>

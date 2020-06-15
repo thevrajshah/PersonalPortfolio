@@ -3,7 +3,7 @@
 
 // Variables
 $dark: #181818;
-$light: #eee;
+$light: #f8f8f8;
 $grey: #555;
 $accent: #078fff;
 $font1: "Poppins", sans-serif;
@@ -43,31 +43,60 @@ header {
     #desktopMenu {
       display: block;
       font-size: 13px;
+      letter-spacing: 0.5px;
+
+      font-weight: 600;
       li {
         display: inline-block;
       }
       a {
         cursor: pointer;
         color: $dark;
-        font-family: $font1;
-        font-weight: 600;
-        margin-left: 30px;
-        transition: all 0.3s $curve1 0s;
+        padding: 20px 10px;
+        transition: all 0.2s $curve1 0s;
         &:hover,
         &.active {
           color: $accent;
         }
+      }
+      .work {
+        display: flex;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        .work-content {
+          display: none;
+          position: absolute;
+          background-color: #fff;
+          min-width: 140px;
+          box-shadow: $shadow1;
+          z-index: 1;
+          text-align: left;
+          margin-top: 55px;
+          padding: 5px 10px 10px 0;
+          border-radius: 0 0 5px 5px;
+          transition: all 0.2s $curve1 0s;
+          animation: fade-in 0.3s;
+          a {
+            display: block;
+            padding: 5px 10px !important;
+          }
+        }
+      }
+      .work:hover .work-content {
+        display: block;
       }
     }
   }
 }
 #blog {
   padding: 1px 10px;
-  margin-left: 30px;
+  margin-left: 10px;
   background: #fff;
   font-family: $font1;
   color: $dark;
   font-size: 13px;
+  letter-spacing: 0.5px;
   font-weight: 600;
   border: solid $dark 2px;
   box-shadow: 1.5px 1.5px 0px 0.5px;
@@ -77,6 +106,7 @@ header {
     color: $accent;
   }
 }
+
 // Mobile Nav
 .hamburger {
   cursor: pointer;
@@ -129,28 +159,37 @@ header {
   position: sticky;
   top: 50px;
   left: 0;
-  padding: 5px 10px;
+  padding: 5px 10%;
   background: #fff;
   height: calc(100vh - 50px);
   width: 100%;
   text-align: center;
+  transition: all 0.3s $curve1 0s;
   animation: nav-in 0.3s $curve1 alternate;
   #blog {
     margin: 0 auto;
     padding: 1px 10px;
-    width: 25%;
+    width: 30%;
     font-size: 14px;
     font-weight: 600;
     background: #fff;
     color: $dark;
+    &:hover {
+      color: $accent;
+    }
   }
   a {
     cursor: pointer;
+    display: block;
     color: $dark;
     font-family: $font1;
     font-weight: 600;
     font-size: 14px;
     transition: all 0.3s $curve1 0s;
+    &:hover,
+    &.active {
+      color: $accent;
+    }
   }
   ul {
     padding: 0;
@@ -158,6 +197,25 @@ header {
   li {
     display: block;
     padding: 10px 20px;
+  }
+  .work-m {
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    .work-content-m {
+      display: none;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      background: $light;
+      border-radius: 5px;
+      margin-top: 5px;
+      padding: 5px 10px;
+      animation: fade-in 0.2s $curve1 0s;
+      a {
+        padding: 2px 10px;
+      }
+    }
   }
 }
 
@@ -272,16 +330,20 @@ footer {
 @-webkit-keyframes nav-in {
   0% {
     height: 0;
-    border-radius: 50%;
+  }
+  50% {
+    height: 0.5;
   }
   100% {
     height: 1;
-    border-radius: 0;
   }
 }
 @keyframes nav-in {
   0% {
     height: 0;
+  }
+  50% {
+    height: 0.5;
   }
   100% {
     height: 1;

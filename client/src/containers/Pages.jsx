@@ -7,7 +7,7 @@ import Loader from "../UI/Loader";
 import Projects from "./Projects";
 import Gallery from "./Gallery";
 
-export class Home extends Component {
+export class About extends Component {
   render() {
     return (
       <Fragment>
@@ -27,7 +27,7 @@ export class Home extends Component {
   }
 }
 
-export class About extends Component {
+export class Work extends Component {
   render() {
     return (
       <React.Fragment>
