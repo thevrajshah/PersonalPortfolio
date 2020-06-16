@@ -24,7 +24,7 @@ body {
   padding: 0;
   background: $light;
   font-family: $font1;
-  font-size: 13px;
+  font-size: 14px;
   width: 100%;
 }
 h1,
@@ -34,7 +34,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  padding: 0;
+  margin-bottom: 10px;
   cursor: default;
   color: $dark;
 }

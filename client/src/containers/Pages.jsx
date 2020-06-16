@@ -13,15 +13,9 @@ export class About extends Component {
       <Fragment>
         <Hero />
         <Section>
-          <h1>Welcome my Website.</h1>
-          Hey, looks like you found my site. In case you're wondering I've
-          created this place in order to put together all my work, thoughts &
-          information all in one place for no specific reason (Just wanted to
-          have something like this). Anyone who visits this site can get inside
-          my mind once I'm completely done with the building process.
+          <h2>Looks like you found my Website.</h2>
+          On this site you will find a collection of my work, thoughts and
         </Section>
-        <Projects />
-        <Gallery />
       </Fragment>
     );
   }
@@ -30,11 +24,19 @@ export class About extends Component {
 export class Work extends Component {
   render() {
     return (
-      <React.Fragment>
+      <Fragment>
         <Section>
-          <Loader />
+          <h1>Developement</h1>
+          Hey, looks like you found my site. In case you're wondering I've
+          created this place in order to put together all my work, thoughts &
+          information all in one place for no specific reason (Just wanted to
+          have something like this). Anyone who visits this site can get inside
+          my mind once I'm completely done with the building process.
         </Section>
-      </React.Fragment>
+        <Projects />
+
+        <Gallery />
+      </Fragment>
     );
   }
 }
@@ -42,11 +44,11 @@ export class Work extends Component {
 export class Contact extends Component {
   render() {
     return (
-      <React.Fragment>
+      <Fragment>
         <Section>
           <h1>Contact</h1>
         </Section>
-      </React.Fragment>
+      </Fragment>
     );
   }
 }

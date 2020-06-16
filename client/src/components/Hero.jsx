@@ -13,10 +13,6 @@ class Hero extends Component {
         <div id="prof">
           <ReactRotatingText items={["Developer", "Designer", "Creator"]} />
         </div>
-        {/* 
-          <li>Developer</li>
-          <li>Designer</li>
-         */}
       </main>
     );
   }

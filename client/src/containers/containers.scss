@@ -18,7 +18,7 @@ $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
 // Projects Styling
 .projects {
   display: grid;
-  margin: -10px 5% 10px 5%;
+  margin: 10px 5%;
   grid-template-columns: 33% 33% 33%;
 }
 .projectCard {
@@ -26,7 +26,7 @@ $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   height: 26em;
   grid-template-rows: 40% 50% 10%;
-  margin: 10px;
+  margin: 15px;
   background-color: #fff;
   border-radius: 10px;
   transition: all 0.4s $curve2 0s;

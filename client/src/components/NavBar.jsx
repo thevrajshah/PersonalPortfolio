@@ -4,18 +4,17 @@ import Social from "../containers/Social";
 import "./components.scss";
 
 class NavBar extends Component {
-  state = { toggle: false, toggleWork: false };
+  state = { toggle: false };
   Toggle = () => {
     this.setState({ toggle: !this.state.toggle });
-  };
-  ToggleWork = () => {
-    this.setState({ toggleWork: !this.state.toggleWork });
   };
   render() {
     return (
       <header>
         <nav>
-          <span id="logo">/thevrajshah</span>
+          <NavLink to="/" exact id="logo">
+            /thevrajshah
+          </NavLink>
           <Social />
           <button
             className={this.state.toggle ? "hamburger x" : "hamburger"}
@@ -28,13 +27,7 @@ class NavBar extends Component {
               </NavLink>
             </li>
             <li>
-              <div className="work">
-                <a>Work</a>
-                <div className="work-content">
-                  <NavLink to="/work/development">Development</NavLink>
-                  <NavLink to="/work/Others">Others</NavLink>
-                </div>
-              </div>
+              <NavLink to="/work">Work</NavLink>
             </li>
             <li>
               <NavLink to="/contact">Contact</NavLink>
@@ -55,20 +48,9 @@ class NavBar extends Component {
               </NavLink>
             </li>
             <li>
-              <span className="work-m">
-                <a onClick={this.ToggleWork}>Work</a>
-                <div
-                  className="work-content-m"
-                  style={{ display: this.state.toggleWork ? "block" : "none" }}
-                >
-                  <NavLink to="/work/development" onClick={this.Toggle}>
-                    Development
-                  </NavLink>
-                  <NavLink to="/work/Others" onClick={this.Toggle}>
-                    Others
-                  </NavLink>
-                </div>
-              </span>
+              <NavLink to="/work" onClick={this.Toggle}>
+                Work
+              </NavLink>
             </li>
             <li>
               <NavLink to="/contact" onClick={this.Toggle}>

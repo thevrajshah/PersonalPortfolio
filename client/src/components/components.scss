@@ -222,13 +222,13 @@ header {
 // Hero Styling
 .hero {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 60% 40%;
   background: $accent;
   background: $gradient;
   background: $-webkitgradient;
   background-attachment: scroll;
   background-size: auto;
-  padding: 70px 12%;
+  padding: 60px 11%;
   line-height: 1;
   font-family: $font2;
   font-weight: 600;
@@ -238,15 +238,14 @@ header {
     color: white;
   }
   #name {
-    margin-top: 10px;
-    font-size: 85px;
+    font-size: 80px;
   }
   #prof {
     text-align: right;
     font-family: $font1;
     margin: auto 0;
+    padding-top: 45px;
     color: $dark;
-    line-height: 1.4;
     transition: all 0.3s $curve1 0s;
     font-size: 60px;
   }
@@ -302,7 +301,8 @@ footer {
     }
     #prof {
       text-align: left;
-      margin: 10px 0;
+      padding: 0;
+      margin: 15px 0;
       font-size: 55px;
     }
   }
@@ -317,7 +317,7 @@ footer {
       font-size: 5px;
     }
     #name {
-      font-size: 60px;
+      font-size: 65px;
     }
     #prof {
       margin-top: 30px;
