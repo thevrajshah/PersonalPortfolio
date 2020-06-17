@@ -11,7 +11,10 @@ class Hero extends Component {
           <div id="name">I'm Vraj.</div>
         </div>
         <div id="prof">
-          <ReactRotatingText items={["Developer", "Designer", "Creator"]} />
+          <ReactRotatingText
+            items={["Developer", "Designer", "Creator"]}
+            emptyPause="300"
+          />
         </div>
       </main>
     );

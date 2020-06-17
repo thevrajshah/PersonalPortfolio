@@ -15,6 +15,13 @@ $curve2: cubic-bezier(0.7, 0, 0.3, 1);
 $shadow1: 0px 5px 10px rgba(0, 0, 0, 0.1);
 $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
 
+//Intro Styling
+.intro {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-gap: 50px;
+}
+
 // Projects Styling
 .projects {
   display: grid;
@@ -38,6 +45,7 @@ $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
   }
   .projectText {
     padding: 20px;
+    color: $grey;
   }
   .learnMore {
     display: flex;

@@ -8,9 +8,11 @@ class Gallery extends Component {
       <Fragment>
         <Section>
           <h2>Art is Lorem ipsum.</h2>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui quisquam
-          delectus praesentium atque debitis quia expedita voluptates ipsam
-          quasi maxime. Magnam, nemo.
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+            quisquam delectus praesentium atque debitis quia expedita voluptates
+            ipsam quasi maxime. Magnam, nemo.
+          </p>
         </Section>
         <div className="imageContainer">
           <div className="imgWrapper">

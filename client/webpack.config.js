@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const webpack = require("webpack");
 
 const settings = {
   distPath: path.resolve(__dirname, "dist"),
@@ -36,7 +37,7 @@ module.exports = (env, options) => {
           use: "babel-loader",
         },
         {
-          test: /\.scss$/,
+          test: /\.(scss|css)$/,
           use: [
             "style-loader",
             {
@@ -83,6 +84,11 @@ module.exports = (env, options) => {
     plugins: [
       new CleanWebpackPlugin(),
       new MiniCssExtractPlugin(),
+      new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery",
+        "window.jQuery": "jquery",
+      }),
       new HtmlWebpackPlugin({
         template: srcPathExtend("index.html"),
       }),

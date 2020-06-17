@@ -6,7 +6,7 @@ export default class Footer extends Component {
     return (
       <footer>
         <div id="made">
-          Made with{" "}
+          Made with &nbsp;
           <span style={{ color: "#01d5f5", fontWeight: "600" }}>React</span>.
         </div>
 

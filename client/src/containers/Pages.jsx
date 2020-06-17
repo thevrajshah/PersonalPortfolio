@@ -13,8 +13,20 @@ export class About extends Component {
       <Fragment>
         <Hero />
         <Section>
-          <h2>Looks like you found my Website.</h2>
-          On this site you will find a collection of my work, thoughts and
+          <div className="intro">
+            <div style={{ textAlign: "right" }}>
+              <h2>Looks like you found my Website.</h2>
+              <p>
+                On this site you will find a collection of my work, thoughts and
+              </p>
+            </div>
+            <div style={{ textAlign: "left" }}>
+              <h2>Looks like you found my Website.</h2>
+              <p>
+                On this site you will find a collection of my work, thoughts and
+              </p>
+            </div>
+          </div>
         </Section>
       </Fragment>
     );
@@ -26,12 +38,14 @@ export class Work extends Component {
     return (
       <Fragment>
         <Section>
-          <h1>Developement</h1>
-          Hey, looks like you found my site. In case you're wondering I've
-          created this place in order to put together all my work, thoughts &
-          information all in one place for no specific reason (Just wanted to
-          have something like this). Anyone who visits this site can get inside
-          my mind once I'm completely done with the building process.
+          <h2>Developement</h2>
+          <p>
+            Hey, looks like you found my site. In case you're wondering I've
+            created this place in order to put together all my work, thoughts &
+            information all in one place for no specific reason (Just wanted to
+            have something like this). Anyone who visits this site can get
+            inside my mind once I'm completely done with the building process.
+          </p>
         </Section>
         <Projects />
 
