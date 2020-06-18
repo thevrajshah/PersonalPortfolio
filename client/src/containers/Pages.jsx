@@ -14,18 +14,13 @@ export class About extends Component {
         <Hero />
         <Section>
           <div className="intro">
-            <div style={{ textAlign: "right" }}>
-              <h2>Looks like you found my Website.</h2>
-              <p>
-                On this site you will find a collection of my work, thoughts and
-              </p>
-            </div>
-            <div style={{ textAlign: "left" }}>
-              <h2>Looks like you found my Website.</h2>
-              <p>
-                On this site you will find a collection of my work, thoughts and
-              </p>
-            </div>
+            <h2>A Little About Me</h2>
+            <p>
+              Hey! I'm Vraj Shah and it seems you stumbled into my website. To
+              tell you a bit about myself, I love tech in general! I really
+              enjoy everything from designing weird pictures with coloured text
+              to working with websites.
+            </p>
           </div>
         </Section>
       </Fragment>

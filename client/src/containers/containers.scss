@@ -15,15 +15,9 @@ $curve2: cubic-bezier(0.7, 0, 0.3, 1);
 $shadow1: 0px 5px 10px rgba(0, 0, 0, 0.1);
 $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
 
-//Intro Styling
-.intro {
-  display: grid;
-  grid-template-columns: 65% 35%;
-  grid-gap: 50px;
-}
-
 // Projects Styling
 .projects {
+  z-index: 0;
   display: grid;
   margin: 10px 5%;
   grid-template-columns: 33% 33% 33%;
@@ -97,8 +91,8 @@ $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
     vertical-align: middle;
     cursor: pointer;
     color: $dark;
-    margin: 0 5px;
-    font-size: 16px;
+    margin: 0 4px;
+    font-size: 14px;
     transition: all 0.3s $curve1 0s;
     &:hover {
       color: $accent;
@@ -132,12 +126,6 @@ $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
     img {
       width: 150px;
       height: 175px;
-    }
-  }
-  // Social Styling
-  #social {
-    a {
-      margin: 0 4px;
     }
   }
 }
