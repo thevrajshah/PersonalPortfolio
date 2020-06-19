@@ -16,10 +16,10 @@ export class About extends Component {
           <div className="intro">
             <h2>A Little About Me</h2>
             <p>
-              Hey! I'm Vraj Shah and it seems you stumbled into my website. To
-              tell you a bit about myself, I love tech in general! I really
-              enjoy everything from designing weird pictures with coloured text
-              to working with websites.
+              Hey! My name is <b>Vraj Shah</b> and it seems you stumbled into my
+              website. To tell you a bit about myself, I love tech in general! I
+              really enjoy everything from designing weird pictures with
+              coloured text to working with websites.
             </p>
           </div>
         </Section>
@@ -33,13 +33,10 @@ export class Work extends Component {
     return (
       <Fragment>
         <Section>
-          <h2>Developement</h2>
+          <h2>Programming</h2>
           <p>
-            Hey, looks like you found my site. In case you're wondering I've
-            created this place in order to put together all my work, thoughts &
-            information all in one place for no specific reason (Just wanted to
-            have something like this). Anyone who visits this site can get
-            inside my mind once I'm completely done with the building process.
+            One must consider programming as an Art which is how I feel like
+            working all the time
           </p>
         </Section>
         <Projects />

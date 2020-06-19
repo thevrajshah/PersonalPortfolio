@@ -1,6 +1,6 @@
 // Variables
 $dark: #181818;
-$light: #f8f8f8;
+$light: #eeeeee;
 $grey: #555;
 $accent: #078fff;
 $font1: "Poppins", sans-serif;
@@ -33,15 +33,14 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin: 5px 0;
   padding: 0;
   cursor: default;
   color: $dark;
   line-height: 1;
 }
 p {
-  margin-top: 10px;
-  font-family: $font2;
+  font-family: $font1;
 }
 a {
   text-decoration: none;
@@ -51,6 +50,11 @@ li {
   list-style: none;
 }
 
+.flexHead {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: text-bottom;
+}
 .react-rotating-text-cursor {
   animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s
     infinite;

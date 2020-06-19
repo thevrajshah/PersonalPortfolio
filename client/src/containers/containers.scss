@@ -3,7 +3,7 @@
 
 // Variables
 $dark: #181818;
-$light: #f8f8f8;
+$light: #eeeeee;
 $grey: #555;
 $accent: #078fff;
 $font1: "Poppins", sans-serif;
@@ -19,20 +19,21 @@ $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
 .projects {
   z-index: 0;
   display: grid;
-  margin: 10px 5%;
+  margin: 10px 7%;
   grid-template-columns: 33% 33% 33%;
 }
 .projectCard {
   display: grid;
   box-sizing: border-box;
   height: 26em;
-  grid-template-rows: 40% 50% 10%;
+  grid-template-rows: 40% 40% 10% 10%;
   margin: 15px;
   background-color: #fff;
   border-radius: 10px;
-  transition: all 0.4s $curve2 0s;
-  box-shadow: $shadow2;
-
+  transition: all 0.4s $curve1;
+  &:hover {
+    box-shadow: $shadow1;
+  }
   .projectImage {
     border-radius: 10px 10px 0 0;
     background: #bbbbbb;
@@ -41,19 +42,41 @@ $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     color: $grey;
   }
+  .tools {
+    text-align: center;
+    font-size: 15px;
+    .fab {
+      margin: auto 3px;
+    }
+    .fa-html5 {
+      color: #e85d25;
+    }
+    .fa-css3-alt {
+      color: #264de0;
+    }
+    .fa-js-square {
+      color: #f6dd1e;
+    }
+    .fa-react {
+      color: #0ad3fd;
+    }
+  }
   .learnMore {
     display: flex;
     justify-content: space-between;
     font-size: 12px;
     font-weight: 600;
-    margin: auto 20px;
+    margin: auto 15px;
     a {
       color: $accent;
     }
-    .fa {
+    .fa-github-alt {
       color: $dark;
       font-size: 16px;
       text-align: right;
+      &:hover {
+        color: #9a45a8;
+      }
     }
   }
 }

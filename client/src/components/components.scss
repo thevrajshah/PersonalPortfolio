@@ -3,7 +3,7 @@
 
 // Variables
 $dark: #181818;
-$light: #f8f8f8;
+$light: #eeeeee;
 $grey: #555;
 $accent: #078fff;
 $font1: "Poppins", sans-serif;
@@ -194,8 +194,7 @@ header {
   #prof {
     text-align: right;
     font-family: $font1;
-    margin: auto 0;
-    padding-top: 30px;
+    margin-top: 30px;
     color: $dark;
     transition: all 0.3s $curve1 0s;
     font-size: 65px;

@@ -7,11 +7,19 @@ export default class Footer extends Component {
       <footer>
         <div id="made">
           Made with &nbsp;
-          <span style={{ color: "#01d5f5", fontWeight: "600" }}>React</span>.
+          <span
+            className="fab fa-react"
+            style={{ fontSize: "13px", color: "#0ad3fd" }}
+          />{" "}
+          &nbsp; & &nbsp;
+          <span
+            className="fas fa-heart"
+            style={{ fontSize: "13px", color: "#ed4b52" }}
+          />
         </div>
 
         <div id="copyright">
-          © 2020 <span style={{ fontWeight: "600" }}>VrajShah</span>.
+          © 2020 <b>VrajShah</b>.
         </div>
       </footer>
     );
