@@ -3,8 +3,8 @@
 
 // Variables
 $dark: #181818;
-$light: #eeeeee;
-$grey: #555;
+$light: #f4f4f4;
+$grey: #4f4f4f;
 $accent: #078fff;
 $font1: "Poppins", sans-serif;
 $font2: "Space Mono", Monospace;
@@ -180,21 +180,25 @@ header {
   background: $-webkitgradient;
   background-attachment: scroll;
   background-size: auto;
-  padding: 70px 10%;
+  padding: 80px 10%;
   font-family: $font2;
-  font-weight: 600;
+  line-height: 1.2;
   color: #fff;
   transition: all 0.3s $curve1 0s;
-  h3 {
+  #hello {
     color: white;
+    font-weight: 600;
+    font-size: 15px;
   }
   #name {
     font-size: 75px;
+    font-weight: 600;
   }
   #prof {
     text-align: right;
     font-family: $font1;
-    margin-top: 27px;
+    font-weight: 600;
+    margin-top: 28px;
     color: $dark;
     transition: all 0.3s $curve1 0s;
     font-size: 65px;
@@ -242,15 +246,8 @@ footer {
   .hero {
     padding: 40px 15%;
     grid-template-columns: auto;
-    #hello {
-      font-size: 25px;
-    }
-    #name {
-      font-size: 75px;
-    }
     #prof {
       text-align: left;
-      padding: 0;
       margin: 10px 0;
       font-size: 55px;
     }
@@ -260,15 +257,11 @@ footer {
   // Hero Styling
   .hero {
     grid-template-columns: auto;
-    #hello {
-      font-size: 5px;
-    }
     #name {
-      font-size: 65px;
+      font-size: 60px;
     }
     #prof {
-      margin-top: 35px;
-      font-size: 40px;
+      font-size: 45px;
     }
   }
 }

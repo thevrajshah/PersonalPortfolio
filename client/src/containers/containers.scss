@@ -3,8 +3,8 @@
 
 // Variables
 $dark: #181818;
-$light: #eeeeee;
-$grey: #555;
+$light: #f4f4f4;
+$grey: #4f4f4f;
 $accent: #078fff;
 $font1: "Poppins", sans-serif;
 $font2: "Space Mono", Monospace;
@@ -15,14 +15,17 @@ $curve2: cubic-bezier(0.7, 0, 0.3, 1);
 $shadow1: 0px 5px 10px rgba(0, 0, 0, 0.1);
 $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
 
-.moreAbout {
+#moreAbout {
   display: grid;
-  margin: 50px 12%;
+  margin: 50px 14%;
   grid-template-columns: 50% 50%;
   img {
     background: #bbb;
-    width: 350px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
+  }
+  #moreAboutText {
+    margin: auto 0;
   }
 }
 
@@ -122,10 +125,13 @@ $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
 
 // Responsive Design
 @media screen and (max-width: 950px) {
-  .moreAbout {
+  #moreAbout {
     grid-template-columns: auto;
     img {
-      margin: 0 auto 25px auto;
+      margin: 0 auto 30px auto;
+    }
+    #moreAboutText {
+      text-align: center;
     }
   }
   // Projects Styling

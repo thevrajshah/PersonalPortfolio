@@ -7,7 +7,7 @@ class Hero extends Component {
     return (
       <main className="hero">
         <div>
-          <h3>Hello There!</h3>
+          <span id="hello">Hello There!</span>
           <div id="name">I'm Vraj.</div>
         </div>
         <div id="prof">

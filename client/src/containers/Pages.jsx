@@ -22,17 +22,25 @@ export class About extends Component {
             place, I hope you have a good time exploring it.
           </p>
         </Section>
-        <div className="moreAbout">
+        <div id="moreAbout">
           <img />
-          <div>
+          <span id="moreAboutText">
             <h2>A Little More</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              non, explicabo libero voluptas inventore labore fugit debitis qui
-              saepe esse temporibus commodi reiciendis corporis necessitatibus
-              fuga nesciunt quibusdam ratione placeat?
+              I'm 18 Years old, based in Vadodara, Gujarat. I'm in my 2
+              <sup>nd</sup> Year of Computer Engineering at SVIT, Vasad.
             </p>
-          </div>
+            <p>
+              Minima non, explicabo libero voluptas inventore labore fugit
+              debitis qui saepe esse temporibus commodi reiciendis corporis
+              necessitatibus fuga nesciunt quibusdam ratione placeat?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+              minima natus excepturi maiores praesentium, quos corrupti ullam,
+              adipisci beatae dicta provident ipsa tempora fugiat expedita.
+            </p>
+          </span>
         </div>
       </Fragment>
     );
