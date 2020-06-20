@@ -55,6 +55,14 @@ module.exports = (env, options) => {
           ],
         },
         {
+          test: /\.json5$/i,
+          loader: "json5-loader",
+          options: {
+            esModule: false,
+          },
+          type: "javascript/auto",
+        },
+        {
           test: /\.(ttf|eot|woff|woff2)$/,
           exclude: /node_modules/,
           use: {

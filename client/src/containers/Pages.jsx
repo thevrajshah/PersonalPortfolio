@@ -13,16 +13,27 @@ export class About extends Component {
       <Fragment>
         <Hero />
         <Section>
-          <div className="intro">
-            <h2>A Little About Me</h2>
+          <h2>A Little About Me</h2>
+          <p>
+            Hey! My name is <b>Vraj Shah</b> and it seems you stumbled into my
+            website. To tell you a bit about myself, I love tech in general! I
+            really enjoy everything from designing images with coloured text to
+            working with websites. This website compiles all I love in one
+            place, I hope you have a good time exploring it.
+          </p>
+        </Section>
+        <div className="moreAbout">
+          <img />
+          <div>
+            <h2>A Little More</h2>
             <p>
-              Hey! My name is <b>Vraj Shah</b> and it seems you stumbled into my
-              website. To tell you a bit about myself, I love tech in general! I
-              really enjoy everything from designing weird pictures with
-              coloured text to working with websites.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              non, explicabo libero voluptas inventore labore fugit debitis qui
+              saepe esse temporibus commodi reiciendis corporis necessitatibus
+              fuga nesciunt quibusdam ratione placeat?
             </p>
           </div>
-        </Section>
+        </div>
       </Fragment>
     );
   }
@@ -52,7 +63,8 @@ export class Contact extends Component {
     return (
       <Fragment>
         <Section>
-          <h1>Contact</h1>
+          <h1>Get in Touch</h1>
+          <table></table>
         </Section>
       </Fragment>
     );

@@ -7,9 +7,19 @@ class Projects extends Component {
     return (
       <Fragment>
         <div className="projects">
-          <ProjectCard Name="Lawda Website" />
+          {projectData.map((data, key) => {
+            return (
+              <ProjectCard
+                key={key}
+                Name={data.Name}
+                Description={data.Description}
+                Tools={data.Tools}
+              />
+            );
+          })}
+          {/* <ProjectCard Name="Lawda Website" />
           <ProjectCard Name="Lassun App" />
-          <ProjectCard Name="Falana Project" />
+          <ProjectCard Name="Falana Project" /> */}
         </div>
       </Fragment>
     );
@@ -27,16 +37,10 @@ class ProjectCard extends Component {
           <h3>
             <a>{this.props.Name}</a>
           </h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
-            vitae. Consequuntur molestias maiores alias laborum.
-          </p>
+          <p>{this.props.Description}</p>
         </div>
         <div className="tools">
-          <span className="fab fa-html5" />
-          <span className="fab fa-css3-alt" />
-          <span className="fab fa-js-square" />
-          <span className="fab fa-react" />
+          <i>{this.props.Tools}</i>
         </div>
         <div className="learnMore">
           <a href="#" className="fab fa-github-alt"></a>{" "}
@@ -46,3 +50,13 @@ class ProjectCard extends Component {
     );
   }
 }
+
+const projectData = [
+  {
+    Name: "Lawda Project",
+    Description: "Lorem ipsum lawda lassun",
+    Tools: "JavaSrcipt, HTML",
+  },
+  { Name: "Falana Project", Description: "Lorem ipsum lawda lassun" },
+  { Name: "Lassun Project", Description: "Lorem ipsum lawda lassun" },
+];

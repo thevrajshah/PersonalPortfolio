@@ -15,6 +15,17 @@ $curve2: cubic-bezier(0.7, 0, 0.3, 1);
 $shadow1: 0px 5px 10px rgba(0, 0, 0, 0.1);
 $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
 
+.moreAbout {
+  display: grid;
+  margin: 50px 12%;
+  grid-template-columns: 50% 50%;
+  img {
+    background: #bbb;
+    width: 350px;
+    height: 400px;
+  }
+}
+
 // Projects Styling
 .projects {
   z-index: 0;
@@ -43,23 +54,9 @@ $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
     color: $grey;
   }
   .tools {
-    text-align: center;
-    font-size: 15px;
-    .fab {
-      margin: auto 3px;
-    }
-    .fa-html5 {
-      color: #e85d25;
-    }
-    .fa-css3-alt {
-      color: #264de0;
-    }
-    .fa-js-square {
-      color: #f6dd1e;
-    }
-    .fa-react {
-      color: #0ad3fd;
-    }
+    margin: auto 25px;
+    color: $grey;
+    font-size: 10px;
   }
   .learnMore {
     display: flex;
@@ -125,6 +122,12 @@ $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
 
 // Responsive Design
 @media screen and (max-width: 950px) {
+  .moreAbout {
+    grid-template-columns: auto;
+    img {
+      margin: 0 auto 25px auto;
+    }
+  }
   // Projects Styling
   .projects {
     grid-template-columns: 50% 50%;

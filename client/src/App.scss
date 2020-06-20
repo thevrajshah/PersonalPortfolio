@@ -33,14 +33,16 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 5px 0;
+  margin: 0;
   padding: 0;
   cursor: default;
   color: $dark;
   line-height: 1;
 }
 p {
+  margin-top: 5px;
   font-family: $font1;
+  color: $grey;
 }
 a {
   text-decoration: none;

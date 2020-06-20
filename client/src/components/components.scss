@@ -194,7 +194,7 @@ header {
   #prof {
     text-align: right;
     font-family: $font1;
-    margin-top: 30px;
+    margin-top: 27px;
     color: $dark;
     transition: all 0.3s $curve1 0s;
     font-size: 65px;
@@ -242,7 +242,6 @@ footer {
   .hero {
     padding: 40px 15%;
     grid-template-columns: auto;
-    grid-template-rows: 50% 50%;
     #hello {
       font-size: 25px;
     }
@@ -252,7 +251,7 @@ footer {
     #prof {
       text-align: left;
       padding: 0;
-      margin: 15px 0;
+      margin: 10px 0;
       font-size: 55px;
     }
   }
@@ -261,8 +260,6 @@ footer {
   // Hero Styling
   .hero {
     grid-template-columns: auto;
-    grid-template-rows: 50% 50%;
-    line-height: 0.9;
     #hello {
       font-size: 5px;
     }
@@ -270,7 +267,7 @@ footer {
       font-size: 65px;
     }
     #prof {
-      margin-top: 40px;
+      margin-top: 35px;
       font-size: 40px;
     }
   }
