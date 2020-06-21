@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import "./containers.scss";
-import Section from "../UI/Section";
+import { Section } from "../UI/Section";
 
 class Gallery extends Component {
   render() {

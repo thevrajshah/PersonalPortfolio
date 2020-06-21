@@ -21,7 +21,10 @@ $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
   padding: 30px 14%;
   background-color: #fff;
 }
-
+.section-grey {
+  padding: 30px 14%;
+  background-color: $light;
+}
 // Card Styling
 .card {
   margin: 5px 10%;
@@ -41,7 +44,8 @@ $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
   font-weight: 600;
 }
 @media screen and (max-width: 950px) {
-  .section {
+  .section,
+  .section-grey {
     padding: 30px 12%;
   }
 }

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./containers.scss";
-import Section from "../UI/Section";
+import { Section } from "../UI/Section";
 
 export default class Design extends Component {
   render() {
