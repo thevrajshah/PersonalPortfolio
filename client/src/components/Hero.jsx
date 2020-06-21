@@ -13,7 +13,7 @@ class Hero extends Component {
         <div id="prof">
           <ReactRotatingText
             items={["Developer", "Designer", "Creator"]}
-            emptyPause="300"
+            emptyPause={300}
           />
         </div>
       </main>

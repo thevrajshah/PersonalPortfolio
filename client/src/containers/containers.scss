@@ -3,8 +3,8 @@
 
 // Variables
 $dark: #181818;
-$light: #f4f4f4;
-$grey: #4f4f4f;
+$light: #eee;
+$grey: #505050;
 $accent: #078fff;
 $font1: "Poppins", sans-serif;
 $font2: "Space Mono", Monospace;
@@ -18,11 +18,13 @@ $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
 #moreAbout {
   display: grid;
   margin: 50px 14%;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 47% 47%;
+  grid-gap: 6%;
   img {
     background: #bbb;
-    width: 300px;
-    height: 300px;
+    margin: auto;
+    width: 100%;
+    height: 350px;
   }
   #moreAboutText {
     margin: auto 0;
@@ -40,7 +42,7 @@ $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
   display: grid;
   box-sizing: border-box;
   height: 26em;
-  grid-template-rows: 40% 40% 10% 10%;
+  grid-template-rows: 45% 40% 5% 10%;
   margin: 15px;
   background-color: #fff;
   border-radius: 10px;
@@ -127,6 +129,7 @@ $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
 @media screen and (max-width: 950px) {
   #moreAbout {
     grid-template-columns: auto;
+    margin: 50px 12%;
     img {
       margin: 0 auto 30px auto;
     }

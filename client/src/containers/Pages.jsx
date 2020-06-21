@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import "./containers.scss";
 import Hero from "../components/Hero";
+import Design from "../containers/Design";
 import Section from "../UI/Section";
 import Card from "../UI/Card";
 import Loader from "../UI/Loader";
@@ -42,6 +43,10 @@ export class About extends Component {
             </p>
           </span>
         </div>
+        <Section>
+          <h2>Get into my brain</h2>
+          <p>I write about tech and politics.</p>
+        </Section>
       </Fragment>
     );
   }
@@ -55,11 +60,11 @@ export class Work extends Component {
           <h2>Programming</h2>
           <p>
             One must consider programming as an Art which is how I feel like
-            working all the time
+            working all the time man!
           </p>
         </Section>
         <Projects />
-
+        <Design />
         <Gallery />
       </Fragment>
     );
