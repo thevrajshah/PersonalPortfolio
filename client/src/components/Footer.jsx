@@ -9,12 +9,12 @@ export default class Footer extends Component {
           Made with &nbsp;
           <span
             className="fab fa-react"
-            style={{ fontSize: "13px", color: "#0ad3fd" }}
-          />{" "}
+            style={{ fontSize: "15px", color: "#0ad3fd" }}
+          />
           &nbsp; & &nbsp;
           <span
             className="fas fa-heart"
-            style={{ fontSize: "13px", color: "#ed4b52" }}
+            style={{ fontSize: "14px", color: "#dc143c" }}
           />
         </div>
 

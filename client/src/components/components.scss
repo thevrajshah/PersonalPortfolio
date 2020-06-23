@@ -3,7 +3,7 @@
 
 // Variables
 $dark: #181818;
-$light: #eee;
+$light: #dddddd;
 $grey: #505050;
 $accent: #078fff;
 $font1: "Poppins", sans-serif;
@@ -180,7 +180,7 @@ header {
   background: $-webkitgradient;
   background-attachment: scroll;
   background-size: auto;
-  padding: 80px 10%;
+  padding: 80px 11%;
   font-family: $font2;
   line-height: 1.2;
   color: #fff;
@@ -198,7 +198,7 @@ header {
     text-align: right;
     font-family: $font1;
     font-weight: 600;
-    margin-top: 28px;
+    margin-top: 30px;
     color: $dark;
     transition: all 0.3s $curve1 0s;
     font-size: 65px;
@@ -210,17 +210,15 @@ footer {
   margin: 0;
   bottom: 0;
   padding: 15px 10% 40px 10%;
-  font-size: 12px;
+  font-size: 13px;
   background: #fff;
   display: flex;
   justify-content: space-between;
   vertical-align: middle;
+  color: #dc143c;
   #made {
     margin: auto 0;
     color: $dark;
-    .fa-heart {
-      color: crimson;
-    }
     img {
       width: 15px;
       vertical-align: middle;

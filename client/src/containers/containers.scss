@@ -3,7 +3,7 @@
 
 // Variables
 $dark: #181818;
-$light: #eee;
+$light: #ddd;
 $grey: #505050;
 $accent: #078fff;
 $font1: "Poppins", sans-serif;
@@ -83,13 +83,8 @@ $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 // Gallery Styling
-.tagBadges {
-  display: inline-block;
-  margin: 0 auto;
-}
 .imageContainer {
   z-index: 1;
-  margin: 0 5vh;
   text-align: center;
   overflow: hidden;
 }
@@ -128,6 +123,10 @@ $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
 @media screen and (max-width: 950px) {
   #moreAbout {
     display: block;
+    #profile {
+      width: 50%;
+      margin: 0 auto;
+    }
     #moreAboutText {
       margin-top: 15px;
       text-align: center;
@@ -153,7 +152,6 @@ $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
   }
   // Gallery Styling
   .imageContainer {
-    margin: 0;
     img {
       width: 150px;
       height: 150px;
