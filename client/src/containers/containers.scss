@@ -4,7 +4,7 @@
 // Variables
 $dark: #181818;
 $light: #ddd;
-$grey: #505050;
+$grey: #444;
 $accent: #078fff;
 $font1: "Poppins", sans-serif;
 $font2: "Space Mono", Monospace;
@@ -111,7 +111,7 @@ $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     color: $dark;
     margin: 0 4px;
-    font-size: 14px;
+    font-size: 16px;
     transition: all 0.3s $curve1 0s;
     &:hover {
       color: $accent;

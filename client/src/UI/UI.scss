@@ -5,7 +5,7 @@
 // Variables
 $dark: #181818;
 $light: #ddd;
-$grey: #505050;
+$grey: #444;
 $accent: #078fff;
 $font1: "Poppins", sans-serif;
 $font2: "Space Mono", Monospace;
@@ -20,10 +20,6 @@ $shadow2: 4px 5px 10px rgba(0, 0, 0, 0.1);
 .section {
   padding: 30px 14%;
   background-color: #fff;
-}
-.section-grey {
-  padding: 30px 14%;
-  background-color: $light;
 }
 // Card Styling
 .card {

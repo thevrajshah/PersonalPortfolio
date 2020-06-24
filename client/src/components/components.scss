@@ -4,7 +4,7 @@
 // Variables
 $dark: #181818;
 $light: #dddddd;
-$grey: #505050;
+$grey: #444;
 $accent: #078fff;
 $font1: "Poppins", sans-serif;
 $font2: "Space Mono", Monospace;
@@ -23,11 +23,10 @@ header {
   position: sticky;
   width: 100%;
   top: 0px;
-  box-shadow: $shadow1;
   nav {
     display: flex;
-    padding: 13px 10%;
-    height: 50px;
+    padding: 13px 12%;
+    height: 55px;
     justify-content: space-between;
     align-items: center;
     background: #fff;
@@ -37,21 +36,21 @@ header {
       background: white; */
       vertical-align: middle;
       color: $dark;
-      font-weight: 600;
-      font-size: 13px;
+      font-weight: 700;
+      font-size: 14px;
     }
     #desktopMenu {
       display: block;
-      font-size: 13px;
+      font-size: 14px;
       letter-spacing: 0.5px;
-      font-weight: 600;
+      font-weight: 700;
       li {
         display: inline-block;
       }
       a {
         cursor: pointer;
         color: $dark;
-        padding: 20px 10px;
+        padding: 20px 15px;
         transition: all 0.2s $curve1 0s;
         &:hover,
         &.active {
@@ -66,9 +65,9 @@ header {
   margin-left: 10px;
   background: #fff;
   color: $dark;
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 0.5px;
-  font-weight: 600;
+  font-weight: 700;
   border: solid $dark 2px;
   box-shadow: 1.5px 1.5px 0px 0.5px;
   transition: all 0.2s $curve1 0s;
@@ -142,7 +141,7 @@ header {
     padding: 1px 10px;
     width: 30%;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
     background: #fff;
     color: $dark;
     &:hover {
@@ -154,7 +153,7 @@ header {
     display: block;
     color: $dark;
     font-family: $font1;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 14px;
     transition: all 0.3s $curve1 0s;
     &:hover,
@@ -180,25 +179,25 @@ header {
   background: $-webkitgradient;
   background-attachment: scroll;
   background-size: auto;
-  padding: 80px 11%;
+  padding: 80px 12%;
   font-family: $font2;
   line-height: 1.2;
   color: #fff;
   transition: all 0.3s $curve1 0s;
   #hello {
     color: white;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 15px;
   }
   #name {
-    font-size: 75px;
-    font-weight: 600;
+    font-size: 80px;
+    font-weight: 700;
   }
   #prof {
     text-align: right;
     font-family: $font1;
-    font-weight: 600;
-    margin-top: 30px;
+    font-weight: 700;
+    margin-top: 35px;
     color: $dark;
     transition: all 0.3s $curve1 0s;
     font-size: 65px;
@@ -209,7 +208,7 @@ header {
 footer {
   margin: 0;
   bottom: 0;
-  padding: 15px 10% 40px 10%;
+  padding: 15px 12% 40px 12%;
   font-size: 13px;
   background: #fff;
   display: flex;
