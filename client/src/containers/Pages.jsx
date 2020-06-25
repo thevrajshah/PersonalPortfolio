@@ -23,7 +23,7 @@ export class About extends Component {
             place, I hope you have a good time exploring it.
           </p>
         </Section>
-        <Section>
+        <GreySection>
           <div id="moreAbout">
             <div id="profile"></div>
             <div id="moreAboutText">
@@ -43,7 +43,7 @@ export class About extends Component {
               </p>
             </div>
           </div>
-        </Section>
+        </GreySection>
         <Section>
           <h2>Get into my brain</h2>
           <p>I write about tech and politics.</p>
