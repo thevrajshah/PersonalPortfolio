@@ -53,10 +53,10 @@ class ProjectCard extends Component {
 
 const projectData = [
   {
-    Name: "Lawda Project",
-    Description: "Lorem ipsum lawda lassun",
+    Name: "Some Random Project",
+    Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dui justo, rhoncus quis aliquam a, tempor ac enim. Donec nec luctus arcu. Pellentesque in enim maximus, pulvinar tellus quis, pharetra lorem. Vivamus finibus velit nec elit varius imperdiet sed ac tortor. Vestibulum convallis libero a enim malesuada blandit.",
     Tools: "JavaSrcipt, HTML",
   },
-  { Name: "Falana Project", Description: "Lorem ipsum lawda lassun" },
-  { Name: "Lassun Project", Description: "Lorem ipsum lawda lassun" },
+  { Name: "Some Other Project", Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dui justo, rhoncus quis aliquam a, tempor ac enim. Donec nec luctus arcu. Pellentesque in enim maximus, pulvinar tellus quis, pharetra lorem. Vivamus finibus velit nec elit varius imperdiet sed ac tortor. Vestibulum convallis libero a enim malesuada blandit." },
+  { Name: "Someone Else's Project", Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dui justo, rhoncus quis aliquam a, tempor ac enim. Donec nec luctus arcu. Pellentesque in enim maximus, pulvinar tellus quis, pharetra lorem. Vivamus finibus velit nec elit varius imperdiet sed ac tortor. Vestibulum convallis libero a enim malesuada blandit." },
 ];
