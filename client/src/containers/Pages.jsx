@@ -14,7 +14,7 @@ export class About extends Component {
       <Fragment>
         <Hero />
         <Section>
-          <h2>A Little About Me</h2>
+          <h1>A Little About Me</h1>
           <p>
             Hey! My name is <b>Vraj Shah</b> and it seems you stumbled into my
             website. To tell you a bit about myself, I love tech in general! I
@@ -27,7 +27,7 @@ export class About extends Component {
           <div id="moreAbout">
             <div id="profile"></div>
             <div id="moreAboutText">
-              <h2>A Little More</h2>
+              <h1>A Little More</h1>
               <p>
                 I'm 18 Years old, based in Vadodara, Gujarat. I'm in my 2
                 <sup>nd</sup> Year of Computer Engineering at SVIT, Vasad.
@@ -45,7 +45,7 @@ export class About extends Component {
           </div>
         </GreySection>
         <Section>
-          <h2>Get into my brain</h2>
+          <h1>Get into my brain</h1>
           <p>I write about tech and politics.</p>
         </Section>
       </Fragment>
@@ -58,7 +58,7 @@ export class Work extends Component {
     return (
       <Fragment>
         <Section>
-          <h2>Programming</h2>
+          <h1>Programming</h1>
           <p>
             One must consider programming as an Art which is how I feel like
             working all the time man!
