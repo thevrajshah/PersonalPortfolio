@@ -15,6 +15,9 @@ export default class ContactForm extends Component {
             <input type="text" name="subject" placeholder="Subject" required />
             <input type="email" name="address" placeholder="Your Email" />
             <textarea name="mail-body" placeholder="Message" required />
+            <button type="reset">
+              <i className="fa fa-refresh" aria-hidden="true"></i>
+            </button>
             <button type="submit">
               Submit
               <i

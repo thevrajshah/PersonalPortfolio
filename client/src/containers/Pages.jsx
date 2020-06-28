@@ -17,11 +17,11 @@ export class About extends Component {
         <Section>
           <h2>A Little About Me</h2>
           <p>
-            Hey! My name is <b>Vraj Shah</b> and it seems you stumbled into my
-            website. To tell you a bit about myself, I love tech in general! I
-            really enjoy everything from designing images with coloured text to
-            working with websites. This website compiles all I love in one
-            place, I hope you have a good time exploring it.
+            Hey! My name is <strong>Vraj Shah</strong> and it seems you stumbled
+            into my website. To tell you a bit about myself, I love tech in
+            general! I really enjoy everything from designing images with
+            coloured text to working with websites. This website compiles all I
+            love in one place, I hope you have a good time exploring it.
           </p>
         </Section>
         <GreySection>
@@ -46,8 +46,18 @@ export class About extends Component {
           </div>
         </GreySection>
         <Section>
-          <h2>Get into my brain</h2>
-          <p>I write about tech and politics.</p>
+          <h2>About this Website.</h2>
+          <p>
+            I' sure you're liking it here! Well, this website is completely
+            designed & built by me using <strong>ReactJS</strong> and basic
+            <strong> HTML/CSS</strong> tools and I love to take pride in that as
+            most of the websites these days especially the personal one are made
+            using templates.
+          </p>
+          <p>
+            However, the pain of messing with CSS for weeks to tweak each
+            smallest detail is totally worth it.
+          </p>
         </Section>
       </Fragment>
     );
