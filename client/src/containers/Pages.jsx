@@ -7,6 +7,7 @@ import Card from "../UI/Card";
 import Loader from "../UI/Loader";
 import Projects from "./Projects";
 import Gallery from "./Gallery";
+import ContactForm from "./Contact";
 
 export class About extends Component {
   render() {
@@ -76,16 +77,11 @@ export class Contact extends Component {
   render() {
     return (
       <Fragment>
-        <Section>
-          <h1>Get in Touch</h1>
-        </Section>
+        <Card>
+          <h1>Say Hello!</h1>
+          <ContactForm />
+        </Card>
       </Fragment>
     );
-  }
-}
-
-export class IDCard extends Component {
-  render() {
-    return <Card>Vraj Shah</Card>;
   }
 }
