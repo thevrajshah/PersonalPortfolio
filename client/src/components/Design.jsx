@@ -7,6 +7,12 @@ export default class Design extends Component {
     return (
       <Section>
         <h2>Design</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
+          vitae corporis suscipit architecto fuga fugiat odio laborum eius
+          voluptas voluptate iste quo, itaque veritatis perferendis laboriosam
+          animi, sunt ratione rerum.
+        </p>
       </Section>
     );
   }

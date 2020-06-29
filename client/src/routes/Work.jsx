@@ -18,6 +18,14 @@ export default class Work extends Component {
         </Section>
         <Projects />
         <Design />
+        <Section>
+          <h2>Art is Lorem ipsum.</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+            quisquam delectus praesentium atque debitis quia expedita voluptates
+            ipsam quasi maxime. Magnam, nemo.
+          </p>
+        </Section>
         <Gallery />
       </Fragment>
     );

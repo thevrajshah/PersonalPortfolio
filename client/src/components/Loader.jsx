@@ -5,11 +5,9 @@ import { Section } from "../containers/Section";
 class Loader extends Component {
   render() {
     return (
-      <Section>
-        <div className="loader">
-          <i className="fa fa-refresh" aria-hidden="true"></i>
-        </div>
-      </Section>
+      <div className="loader">
+        <i className="fa fa-spinner" aria-hidden="true"></i>
+      </div>
     );
   }
 }
