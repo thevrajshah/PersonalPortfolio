@@ -148,8 +148,7 @@ header {
   #blog {
     margin: 0 auto;
     padding: 1px 10px;
-    width: 30%;
-    font-size: 14px;
+    width: 70%;
     font-weight: 600;
     background: #fff;
     color: $dark;
@@ -163,7 +162,6 @@ header {
     color: $dark;
     font-family: $font1;
     font-weight: 600;
-    font-size: 14px;
     transition: all 0.3s $curve1 0s;
     &:hover,
     &.active {
@@ -175,7 +173,7 @@ header {
   }
   li {
     display: block;
-    padding: 10px 20px;
+    margin: 10px 100px;
   }
 }
 
