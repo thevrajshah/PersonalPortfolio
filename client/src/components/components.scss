@@ -77,11 +77,8 @@ header {
 
 // Loader Styling
 .loader {
-  display: flex;
-  align-items: center;
-  font-size: 50px;
-  text-align: center;
   i.fa-refresh {
+    font-size: 50px;
     -webkit-animation: buffering 0.4s $curve2 infinite;
     animation: buffering 0.4s $curve2 infinite;
   }
@@ -328,7 +325,7 @@ header {
     background: $accent;
     color: #fff;
     font-size: 15px;
-    transition: all 0.2s $curve2 0s;
+    transition: all 0.3s $curve2 0s;
     box-shadow: 0 5px 10px 0px rgba(7, 143, 255, 0.35);
     &:hover {
       background: $dark;
@@ -342,9 +339,11 @@ header {
     cursor: pointer;
     margin: 10px 5px;
     color: #fff;
-    background: $grey;
+    background: $dark;
     box-shadow: 0 5px 10px 0px rgba(24, 24, 24, 0.35);
+    transition: all 0.3s $curve2 0s;
     &:hover {
+      background-color: $grey;
       i.fa-refresh {
         transform: rotate(360deg);
         transition: all 0.4s $curve2 0s;
