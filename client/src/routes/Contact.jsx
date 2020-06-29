@@ -1,0 +1,17 @@
+import React, { Component, Fragment } from "react";
+import "./routes.scss";
+import Card from "../containers/Card";
+import ContactForm from "../components/ContactForm";
+
+export default class Contact extends Component {
+  render() {
+    return (
+      <Fragment>
+        <Card>
+          <h1>Say Hello!</h1>
+          <ContactForm />
+        </Card>
+      </Fragment>
+    );
+  }
+}

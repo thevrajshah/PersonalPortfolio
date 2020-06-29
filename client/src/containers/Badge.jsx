@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./UI.scss";
+import "./containers.scss";
 
 class Badge extends Component {
   render() {

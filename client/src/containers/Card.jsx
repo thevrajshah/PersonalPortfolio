@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import "./UI.scss";
+import "./containers.scss";
 
 class Card extends Component {
-  state = {};
   render() {
     return (
       <div

@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import "./containers.scss";
+import "./components.scss";
 
 export default class ContactForm extends Component {
   render() {

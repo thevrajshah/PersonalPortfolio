@@ -1,4 +1,5 @@
 // Imports
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("../Animations.scss");
 
 // Variables
@@ -12,235 +13,44 @@ $gradient: linear-gradient(-60deg, #078fff 0%, #00f2fe 100%);
 $-webkitgradient: -webkit-linear-gradient(-60deg, #078fff 0%, #00f2fe 100%);
 $curve1: cubic-bezier(0.39, 0.575, 0.565, 1);
 $curve2: cubic-bezier(0.7, 0, 0.3, 1);
-$shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+$shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 
-// MoreAbout
-#moreAbout {
-  display: grid;
-  grid-template-columns: 47% 47%;
-  grid-gap: 6%;
-  #profile {
-    background: #bbb;
-    margin: 20px auto;
-    width: 80%;
-    height: 350px;
-  }
-  #moreAboutText {
-    text-align: left;
-    margin: auto 0;
-  }
-}
-
-// Projects Styling
-.projects {
-  z-index: 0;
-  display: grid;
-  margin: 10px 12%;
-  grid-template-columns: 33% 33% 33%;
-}
-.projectCard {
-  display: grid;
-  box-sizing: border-box;
-  height: 27em;
-  grid-template-rows: 45% 40% 5% 10%;
-  margin: 20px;
+// Section Styling
+.section {
+  padding: 40px 14%;
   background-color: #fff;
+}
+.grey-section {
+  padding: 40px 14%;
+  background-color: $light;
+}
+// Card Styling
+.card {
+  margin: 20px 12%;
+  padding: 50px 10%;
+  background-color: #fff;
+  color: $dark;
   border-radius: 10px;
-  transition: all 0.4s $curve1;
-  box-shadow: $shadow;
-  .projectImage {
-    border-radius: 10px 10px 0 0;
-    background: #bbbbbb;
-  }
-  .projectText {
-    padding: 20px;
-    color: $grey;
-  }
-  .tools {
-    margin: auto 25px;
-    color: $grey;
-    font-size: 10px;
-  }
-  .learnMore {
-    display: flex;
-    justify-content: space-between;
-    font-size: 12px;
-    font-weight: 600;
-    margin: auto 15px;
-    a {
-      color: $accent;
-    }
-    &:hover {
-      opacity: 0.9;
-    }
-    .fa-github-alt {
-      color: $dark;
-      font-size: 16px;
-      text-align: right;
-      &:hover {
-        transition: all 0.2s $curve1;
-        color: #9a45a8;
-      }
-    }
-  }
 }
 
-// Gallery Styling
-.imageContainer {
-  z-index: 1;
-  margin: 0 12%;
-  text-align: center;
-  overflow: hidden;
+// Badge Styling
+.badge {
+  margin: 15px auto;
+  padding: 2px 14px;
+  border-radius: 8px;
+  width: max-content;
+  background-color: $accent;
+  font-weight: 600;
 }
-.imgWrapper {
-  display: inline-flex;
-  overflow: hidden;
-  margin-top: -6px;
-  img {
-    cursor: pointer;
-    height: 200px;
-    width: 200px;
-    filter: grayscale(0.9);
-    transition: all 0.7s $curve2;
-    &:hover {
-      scale: 1.1;
-      filter: none;
-    }
-  }
-}
-
-// Social Styling
-#social {
-  a {
-    vertical-align: middle;
-    cursor: pointer;
-    color: $dark;
-    margin: 0 4px;
-    font-size: 15px;
-    transition: all 0.3s $curve1 0s;
-    &:hover {
-      color: $accent;
-    }
-  }
-}
-
-//Contact Styling
-#contactForm {
-  margin: 20px 0;
-  padding: 0 20%;
-  display: inline-block;
-  input {
-    width: 100%;
-    padding: 12px 20px;
-    width: 100%;
-  }
-  textarea {
-    height: 150px;
-    resize: vertical;
-    width: 100%;
-  }
-  button[type="submit"] {
-    cursor: pointer;
-    margin: 10px 5px;
-    background: $accent;
-    color: #fff;
-    font-size: 15px;
-    transition: all 0.2s $curve2 0s;
-    box-shadow: 0 5px 10px 0px rgba(7, 143, 255, 0.35);
-    &:hover {
-      background: $dark;
-      box-shadow: 0 5px 10px 0px rgba(24, 24, 24, 0.35);
-      i.m-1-10 {
-        transform: translateX(5px);
-      }
-    }
-  }
-  button[type="reset"] {
-    cursor: pointer;
-    margin: 10px 5px;
-    color: #fff;
-    background: $grey;
-    box-shadow: 0 5px 10px 0px rgba(24, 24, 24, 0.35);
-    &:hover {
-      i.fa-refresh {
-        transform: rotate(360deg);
-        transition: all 0.4s $curve2 0s;
-      }
-    }
-  }
-  input,
-  textarea,
-  button {
-    font-family: $font1;
-    font-size: 14px;
-    font-weight: 700;
-    color: $grey;
-    display: inline-block;
-    border: none;
-    border-radius: 25px;
-    margin: 10px 0;
-    padding: 12px 20px;
-    transition: all 0.3s $curve1 0s;
-    background-color: $light;
-    touch-action: manipulation;
-    -ms-touch-action: manipulation;
-    &:focus,
-    &:hover {
-      box-shadow: $shadow;
-    }
-  }
-}
-.m-1-10 {
-  margin-left: 5px;
-  transition: all 0.4s $curve2 0s;
-}
-
-// Responsive Design
 @media screen and (max-width: 950px) {
-  // MoreAbout
-  #moreAbout {
-    display: block;
-    #profile {
-      margin: 0 auto;
-    }
-    #moreAboutText {
-      margin-top: 15px;
-      text-align: center;
-    }
-  }
-  // Projects Styling
-  .projects {
-    grid-template-columns: 50% 50%;
-  }
-  // Gallery Styling
-  .imageContainer {
-    margin: 0 5%;
-    img {
-      width: 175px;
-      height: 175px;
-    }
-  }
-  //Contact Styling
-  #contactForm {
-    padding: 0 15%;
+  .section,
+  .section-grey {
+    padding: 30px 7%;
   }
 }
-
-@media screen and (max-width: 600px) {
-  // Projects Styling
-  .projects {
-    grid-template-columns: 100%;
-    margin: 10px 5%;
-  }
-  // Gallery Styling
-  .imageContainer {
-    img {
-      width: 150px;
-      height: 150px;
-    }
-  }
-  //Contact Styling
-  #contactForm {
-    padding: 0 12%;
+@media screen and (max-width: 650px) {
+  .card {
+    margin: 20px 5%;
+    padding: 50px 4%;
   }
 }

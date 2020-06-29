@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from "react";
-import "./containers.scss";
-import Badge from "../UI/Badge";
+import "./components.scss";
 
 class Projects extends Component {
   render() {
@@ -54,9 +53,18 @@ class ProjectCard extends Component {
 const projectData = [
   {
     Name: "Some Random Project",
-    Description: "Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    Description:
+      "Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     Tools: "JavaSrcipt, HTML",
   },
-  { Name: "Some Other Project", Description: "Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
-  { Name: "Someone Else's Project", Description: "Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+  {
+    Name: "Some Other Project",
+    Description:
+      "Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+  {
+    Name: "Someone Else's Project",
+    Description:
+      "Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
 ];

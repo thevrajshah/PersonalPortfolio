@@ -1,15 +1,9 @@
 import React, { Component, Fragment } from "react";
-import "./containers.scss";
+import "./routes.scss";
 import Hero from "../components/Hero";
-import Design from "../containers/Design";
-import { Section, GreySection } from "../UI/Section";
-import Card from "../UI/Card";
-import Loader from "../UI/Loader";
-import Projects from "./Projects";
-import Gallery from "./Gallery";
-import ContactForm from "./Contact";
+import { Section, GreySection } from "../containers/Section";
 
-export class About extends Component {
+export default class About extends Component {
   render() {
     return (
       <Fragment>
@@ -59,38 +53,6 @@ export class About extends Component {
             smallest detail is totally worth it.
           </p>
         </Section>
-      </Fragment>
-    );
-  }
-}
-
-export class Work extends Component {
-  render() {
-    return (
-      <Fragment>
-        <Section>
-          <h2>Programming</h2>
-          <p>
-            One must consider programming as an Art which is how I feel like
-            working all the time man!
-          </p>
-        </Section>
-        <Projects />
-        <Design />
-        <Gallery />
-      </Fragment>
-    );
-  }
-}
-
-export class Contact extends Component {
-  render() {
-    return (
-      <Fragment>
-        <Card>
-          <h1>Say Hello!</h1>
-          <ContactForm />
-        </Card>
       </Fragment>
     );
   }

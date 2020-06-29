@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./containers.scss";
+import "./components.scss";
 
 export default class Social extends Component {
   render() {
