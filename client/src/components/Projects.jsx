@@ -31,7 +31,9 @@ class ProjectCard extends Component {
   render() {
     return (
       <div className="projectCard">
-        <div className="projectImage"></div>
+        <div className="projectImage">
+          <img src="#" alt="" />
+        </div>
         <div className="projectText">
           <h3>
             <a>{this.props.Name}</a>
@@ -42,7 +44,6 @@ class ProjectCard extends Component {
           <i>{this.props.Tools}</i>
         </div>
         <div className="learnMore">
-          <a href="#" className="fab fa-github-alt"></a>{" "}
           <a href="">Learn More</a>
         </div>
       </div>
@@ -56,6 +57,7 @@ const projectData = [
     Description:
       "Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     Tools: "JavaSrcipt, HTML",
+    Url: "",
   },
   {
     Name: "Some Other Project",
