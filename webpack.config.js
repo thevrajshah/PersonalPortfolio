@@ -63,7 +63,6 @@ module.exports = (env, options) => {
           loader: "file-loader",
           options: {
             name: "public/assets/[name].[ext]",
-            publicPath: url => url.replace(/public/, ""),
           },
         },
       ],
