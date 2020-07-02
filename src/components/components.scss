@@ -79,11 +79,8 @@ header {
 // Loader Styling
 .loader {
   margin: 40px auto;
-  i.fa-spinner {
-    font-size: 50px;
-    color: $grey;
-    -webkit-animation: buffering 0.6s $curve2 infinite;
-    animation: buffering 0.6s $curve2 infinite;
+  img {
+    width: 30em;
   }
 }
 
@@ -288,7 +285,6 @@ header {
   img {
     cursor: pointer;
     max-height: 200px;
-    height: 200px;
     object-fit: contain;
     filter: grayscale(0.9);
     transition: all 0.5s $curve2;
@@ -447,6 +443,12 @@ footer {
     }
     #prof {
       font-size: 45px;
+    }
+  }
+  // Loader Styling
+  .loader {
+    img {
+      width: 20em;
     }
   }
   // Projects Styling

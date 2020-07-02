@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./components.scss";
 import { Section } from "../containers/Section";
+import Loader from "./Loader";
 
 export default class Design extends Component {
   render() {
@@ -13,6 +14,7 @@ export default class Design extends Component {
           voluptas voluptate iste quo, itaque veritatis perferendis laboriosam
           animi, sunt ratione rerum.
         </p>
+        <Loader />
       </Section>
     );
   }

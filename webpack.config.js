@@ -65,23 +65,19 @@ module.exports = (env, options) => {
         {
           test: /\.(ttf|eot|woff|woff2)$/,
           exclude: /node_modules/,
-          use: {
-            loader: "file-loader",
-            options: {
-              name: "fonts/[name].[ext]",
-            },
+
+          loader: "file-loader",
+          options: {
+            name: "public/fonts/[name].[ext]",
           },
         },
         {
-          test: /\.(jpe?g|png|gif|svg|ico)$/i,
-          use: [
-            {
-              loader: "file-loader",
-              options: {
-                outputPath: "assets/",
-              },
-            },
-          ],
+          test: [/\.svg$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+          loader: "file-loader",
+          options: {
+            name: "public/assets/[name].[ext]",
+            publicPath: (url) => url.replace(/public/, ""),
+          },
         },
       ],
     },
@@ -98,7 +94,7 @@ module.exports = (env, options) => {
         "window.jQuery": "jquery",
       }),
       new HtmlWebpackPlugin({
-        template: srcPathExtend("index.html"),
+        template: "./public/index.html",
       }),
     ],
   };
