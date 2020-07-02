@@ -5,7 +5,7 @@ class Loader extends Component {
   render() {
     return (
       <div className='loader'>
-        <img src='dino.gif' alt='' />
+        <img src='/assets/dino.gif' alt='' />
       </div>
     );
   }
