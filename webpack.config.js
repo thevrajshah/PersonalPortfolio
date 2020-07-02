@@ -62,7 +62,7 @@ module.exports = (env, options) => {
           test: [/\.svg$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
           loader: "file-loader",
           options: {
-            name: "public/assets/[name].[ext]",
+            name: "[name].[ext]",
             publicPath: url => url.replace(/public/, ""),
           },
         },
