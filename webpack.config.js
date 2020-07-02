@@ -19,6 +19,14 @@ module.exports = (env, options) => {
     module: {
       rules: [
         {
+          test: /\.(svg|gif|jpe?g|png|ico)$/,
+          loader: "file-loader",
+          options: {
+            name: "[name].[ext]",
+            publicPath: url => url.replace(/public/, ""),
+          },
+        },
+        {
           test: /\.js(x*)$/,
           exclude: /node_modules/,
           use: "babel-loader",
@@ -56,14 +64,6 @@ module.exports = (env, options) => {
           loader: "file-loader",
           options: {
             name: "public/fonts/[name].[ext]",
-          },
-        },
-        {
-          test: [/\.svg$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
-          loader: "file-loader",
-          options: {
-            name: "[name].[ext]",
-            publicPath: url => url.replace(/public/, ""),
           },
         },
       ],
