@@ -287,9 +287,9 @@ header {
   margin-top: -6px;
   img {
     cursor: pointer;
-max-height: 200px
+    max-height: 200px;
     height: 200px;
-object-fit: contain;
+    object-fit: contain;
     filter: grayscale(0.9);
     transition: all 0.5s $curve2;
     &:hover {

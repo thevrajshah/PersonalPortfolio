@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { NavLink } from "react-router-dom";
-import Social from "../components/Social";
+import Social from "./Social";
 import "./components.scss";
 
 class NavBar extends Component {
