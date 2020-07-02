@@ -3,7 +3,7 @@ import "./routes.scss";
 import Card from "../containers/Card";
 import ContactForm from "../components/ContactForm";
 
-export default class Contact extends Component {
+export default class Connect extends Component {
   render() {
     return (
       <Fragment>

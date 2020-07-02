@@ -8,7 +8,7 @@ import { Section } from "./containers/Section";
 
 const About = lazy(() => import("./routes/About"));
 const Work = lazy(() => import("./routes/Work"));
-const Contact = lazy(() => import("./routes/Contact"));
+const Connect = lazy(() => import("./routes/Connect"));
 
 export default class App extends Component {
   render() {
@@ -26,7 +26,7 @@ export default class App extends Component {
             <Switch>
               <Route path="/" exact component={About} />
               <Route path="/work" component={Work} />
-              <Route path="/contact" component={Contact} />
+              <Route path="/connect" component={Connect} />
             </Switch>
           </Suspense>
         </Router>
