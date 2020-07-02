@@ -53,8 +53,8 @@ class NavBar extends Component {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/contact" onClick={this.Toggle}>
-                Contact
+              <NavLink to="/connect" onClick={this.Toggle}>
+                Connect
               </NavLink>
             </li>
             <li>
