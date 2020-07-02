@@ -287,9 +287,10 @@ header {
   margin-top: -6px;
   img {
     cursor: pointer;
-    height: 200;
+max-height: 200px
+    height: 200px;
     filter: grayscale(0.9);
-    transition: all 0.7s $curve2;
+    transition: all 0.5s $curve2;
     &:hover {
       scale: 1.05;
       filter: none;
