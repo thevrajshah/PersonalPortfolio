@@ -4,15 +4,6 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
 
-const settings = {
-  distPath: path.resolve(__dirname, "dist"),
-  srcPath: path.resolve(__dirname, "src"),
-};
-
-function srcPathExtend(subpath) {
-  return path.resolve(settings.srcPath, subpath);
-}
-
 module.exports = (env, options) => {
   const isDevMode = options.mode === "development";
   return {
@@ -20,14 +11,10 @@ module.exports = (env, options) => {
     output: {
       filename: "bundle.js",
       path: path.resolve(__dirname, "build"),
-      publicPath: "/",
     },
-    devtool: isDevMode ? "source-map" : false,
+    devtool: isDevMode ? "cheap-module-source-map" : false,
     resolve: {
       extensions: [".js", ".jsx"],
-      alias: {
-        Assets: path.resolve(__dirname, "./src/assets/"),
-      },
     },
     module: {
       rules: [
@@ -76,7 +63,7 @@ module.exports = (env, options) => {
           loader: "file-loader",
           options: {
             name: "public/assets/[name].[ext]",
-            publicPath: (url) => url.replace(/public/, ""),
+            publicPath: url => url.replace(/public/, ""),
           },
         },
       ],

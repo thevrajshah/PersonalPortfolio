@@ -21,9 +21,9 @@ class Gallery extends Component {
     ];
     return (
       <Fragment>
-        <div className="imageContainer">
-          {urls.map((url) => (
-            <div className="imgWrapper">
+        <div className='imgContainer'>
+          {urls.map(url => (
+            <div className='imgWrapper'>
               <img key={url} src={url} />
             </div>
           ))}

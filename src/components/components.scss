@@ -269,23 +269,25 @@ header {
 }
 
 // Gallery Styling
-.imageContainer {
+.imgContainer {
   z-index: 1;
   margin: 0 10%;
+  padding: 0;
   text-align: center;
   overflow: hidden;
 }
 .imgWrapper {
   display: inline-flex;
   overflow: hidden;
-  height: 200px;
-  width: 200px;
+  height: 14rem;
+  width: 14rem;
   justify-content: center;
   margin-top: -6px;
   img {
     cursor: pointer;
-    max-height: 200px;
-    object-fit: contain;
+    max-height: 14rem;
+    width: 100%;
+    object-fit: cover;
     filter: grayscale(0.9);
     transition: all 0.5s $curve2;
     &:hover {
@@ -419,14 +421,14 @@ footer {
     grid-template-columns: 50% 50%;
   }
   // Gallery Styling
-  .imageContainer {
+  .imgContainer {
     margin: 0 5%;
   }
-  .imageWrapper {
-    width: 175px;
-    height: 175px;
+  .imgWrapper {
+    width: 12rem;
+    height: 12rem;
     img {
-      height: 175px;
+      max-height: 12rem;
     }
   }
   //Contact Styling
@@ -457,14 +459,14 @@ footer {
     margin: 10px 5%;
   }
   // Gallery Styling
-  .imageContainer {
+  .imgContainer {
     margin: 0;
   }
-  .imageWrapper {
-    width: 120px;
-    height: 120px;
+  .imgWrapper {
+    width: 10rem;
+    height: 10rem;
     img {
-      height: 120px;
+      max-height: 10rem;
     }
   }
   //Contact Styling
