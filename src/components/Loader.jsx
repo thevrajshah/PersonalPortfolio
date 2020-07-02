@@ -4,8 +4,8 @@ import "./components.scss";
 class Loader extends Component {
   render() {
     return (
-      <div className="loader">
-        <img src="/public/assets/dino.gif" alt="" />
+      <div className='loader'>
+        <img src='/public/assets/dino.gif' alt='' />
       </div>
     );
   }

@@ -10,7 +10,7 @@ module.exports = (env, options) => {
     entry: "./src/index.js",
     output: {
       filename: "bundle.js",
-      path: path.resolve(__dirname, "build"),
+      path: path.resolve(__dirname, "public"),
     },
     devtool: isDevMode ? "cheap-module-source-map" : false,
     resolve: {
@@ -55,15 +55,15 @@ module.exports = (env, options) => {
 
           loader: "file-loader",
           options: {
-            name: "build/fonts/[name].[ext]",
+            name: "public/fonts/[name].[ext]",
           },
         },
         {
           test: [/\.svg$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
           loader: "file-loader",
           options: {
-            name: "build/assets/[name].[ext]",
-            publicPath: url => url.replace(/build/, ""),
+            name: "public/assets/[name].[ext]",
+            publicPath: url => url.replace(/public/, ""),
           },
         },
       ],
