@@ -55,14 +55,15 @@ module.exports = (env, options) => {
 
           loader: "file-loader",
           options: {
-            name: "public/fonts/[name].[ext]",
+            name: "[name].[ext]",
           },
         },
         {
           test: [/\.svg$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
           loader: "file-loader",
           options: {
-            name: "public/assets/[name].[ext]",
+            name: "[name].[ext]",
+            publicPath: url => url.replace(/public/, ""),
           },
         },
       ],
