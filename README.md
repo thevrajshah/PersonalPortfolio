@@ -9,4 +9,3 @@ This started coming together as soon as I started learning ReactJS and eventuall
 * Webpack
 * Sass
 
-<http://www.thevrajshah.me>
