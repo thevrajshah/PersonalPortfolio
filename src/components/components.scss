@@ -291,7 +291,7 @@ header {
     filter: grayscale(0.9);
     transition: all 0.4s $curve2;
     &:hover {
-      - -webkit-transform: scale(1.06); 
+      -webkit-transform: scale(1.06); 
       -moz-transform: scale(1.06); 
       -o-transform: scale(1.06); 
       transform: scale(1.06)
