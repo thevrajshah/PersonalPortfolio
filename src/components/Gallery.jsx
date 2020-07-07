@@ -24,7 +24,7 @@ class Gallery extends Component {
         <div className='imgContainer'>
           {urls.map(url => (
             <div className='imgWrapper'>
-              <img key={url} src={url} />
+              <img src={url} />
             </div>
           ))}
         </div>

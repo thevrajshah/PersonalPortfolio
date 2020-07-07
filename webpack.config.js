@@ -10,7 +10,7 @@ module.exports = (env, options) => {
     entry: "./src/index.js",
     output: {
       filename: "bundle.js",
-      path: path.resolve(__dirname, "public"),
+      path: path.resolve(__dirname, "build"),
     },
     devtool: isDevMode ? "cheap-module-source-map" : false,
     resolve: {
@@ -23,7 +23,7 @@ module.exports = (env, options) => {
           loader: "file-loader",
           options: {
             name: "[name].[ext]",
-            publicPath: url => url.replace(/public/, ""),
+            publicPath: url => url.replace(/build/, ""),
           },
         },
         {
@@ -36,13 +36,7 @@ module.exports = (env, options) => {
           use: [
             "style-loader",
             {
-              loader: "css-loader",
-              options: {
-                sourceMap: isDevMode,
-              },
-            },
-            {
-              loader: "sass-loader",
+              loader: ["css-loader", "sass-loader", "postcss"],
               options: {
                 sourceMap: isDevMode,
               },
@@ -63,7 +57,7 @@ module.exports = (env, options) => {
 
           loader: "file-loader",
           options: {
-            name: "public/fonts/[name].[ext]",
+            name: "build/fonts/[name].[ext]",
           },
         },
       ],
