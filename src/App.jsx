@@ -5,8 +5,8 @@ import Loader from "./components/Loader";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import { Section } from "./containers/Section";
+import About from "./routes/About";
 
-const About = lazy(() => import("./routes/About"));
 const Work = lazy(() => import("./routes/Work"));
 const Connect = lazy(() => import("./routes/Connect"));
 
@@ -15,7 +15,7 @@ export default class App extends Component {
     return (
       <React.Fragment>
         <Router onUpdate={() => window.scrollTo(0, 0)}>
-          <NavBar />
+          <NavBar height='50px' />
           <Suspense
             fallback={
               <Section>
@@ -24,9 +24,9 @@ export default class App extends Component {
             }
           >
             <Switch>
-              <Route path="/" exact component={About} />
-              <Route path="/work" component={Work} />
-              <Route path="/connect" component={Connect} />
+              <Route path='/' exact component={About} />
+              <Route path='/work' component={Work} />
+              <Route path='/connect' component={Connect} />
             </Switch>
           </Suspense>
         </Router>

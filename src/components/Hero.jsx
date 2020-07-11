@@ -5,18 +5,18 @@ import "./components.scss";
 class Hero extends Component {
   render() {
     return (
-      <main className="hero">
+      <section className='hero'>
         <div>
-          <span id="hello">Hello There!</span>
-          <div id="name">I'm Vraj.</div>
+          <span id='hello'>Hello There!</span>
+          <div id='name'>VRAJ. SHAH</div>
         </div>
-        <div id="prof">
+        <div id='prof'>
           <ReactRotatingText
             items={["Developer", "Designer", "Creator"]}
             emptyPause={300}
           />
         </div>
-      </main>
+      </section>
     );
   }
 }

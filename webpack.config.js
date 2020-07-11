@@ -33,7 +33,8 @@ module.exports = (env, options) => {
         },
         {
           test: /\.(scss|css)$/,
-          use: ["style-loader", "css-loader", "sass-loader", "postcss"],
+          exclude: /node_modules/,
+          use: ["style-loader", "css-loader", "sass-loader"],
         },
         {
           test: /\.json5$/i,

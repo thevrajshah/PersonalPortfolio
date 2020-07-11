@@ -5,7 +5,7 @@ class Projects extends Component {
   render() {
     return (
       <Fragment>
-        <div className="projects">
+        <div className='projects'>
           {projectData.map((data, key) => {
             return (
               <ProjectCard
@@ -30,21 +30,29 @@ export default Projects;
 class ProjectCard extends Component {
   render() {
     return (
-      <div className="projectCard">
-        <div className="projectImage">
-          <img src="#" alt="" />
+      <div className='projectCard'>
+        <div className='projectImage'>
+          <img src='#' alt='' />
         </div>
-        <div className="projectText">
+        <div className='projectText'>
           <h3>
             <a>{this.props.Name}</a>
           </h3>
           <p>{this.props.Description}</p>
         </div>
-        <div className="tools">
+        <div className='tools'>
           <i>{this.props.Tools}</i>
         </div>
-        <div className="learnMore">
-          <a href="">Learn More</a>
+        <div className='projectOptions'>
+          <a
+            target='_blank'
+            className='fab fa-github-alt'
+            href='https://github.com/thevrajshah'
+            rel='noopener noreferrer'
+          />
+          <a id='learnMore' href=''>
+            Learn More
+          </a>
         </div>
       </div>
     );

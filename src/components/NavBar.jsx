@@ -11,56 +11,41 @@ class NavBar extends Component {
   render() {
     return (
       <header>
-        <nav>
-          <NavLink to="/" exact id="logo">
+        <nav style={{ height: this.props.height }}>
+          <NavLink to='/' exact id='logo'>
             /thevrajshah
           </NavLink>
+          <DesktopNav />
           <Social />
           <button
             className={this.state.toggle ? "hamburger x" : "hamburger"}
             onClick={this.Toggle}
           ></button>
-          <ul id="desktopMenu">
-            <li>
-              <NavLink to="/" exact>
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/work">Work</NavLink>
-            </li>
-            <li>
-              <NavLink to="/connect">Connect</NavLink>
-            </li>
-            <li>
-              <button id="blog">Blog</button>
-            </li>
-          </ul>
         </nav>
         <div
-          className="mobileMenu"
+          className='mobileMenu'
           style={{ display: this.state.toggle ? "block" : "none" }}
         >
           <ul>
             <li>
-              <NavLink to="/" exact onClick={this.Toggle}>
-                About
+              <NavLink to='/' exact onClick={this.Toggle}>
+                ABOUT
               </NavLink>
             </li>
             <li>
-              <NavLink to="/work" onClick={this.Toggle}>
-                Work
+              <NavLink to='/work' onClick={this.Toggle}>
+                WORK
               </NavLink>
             </li>
             <li>
-              <NavLink to="/connect" onClick={this.Toggle}>
-                Connect
+              <NavLink to='/connect' onClick={this.Toggle}>
+                CONNECT
               </NavLink>
             </li>
             <li>
-              <button id="blog" onClick={this.Toggle}>
-                Blog
-              </button>
+              <a href='#' id='blog' onClick={this.Toggle}>
+                BLOG
+              </a>
             </li>
           </ul>
         </div>
@@ -70,3 +55,30 @@ class NavBar extends Component {
 }
 
 export default NavBar;
+
+class DesktopNav extends Component {
+  render() {
+    return (
+      <ul id='desktopNav'>
+        <li>
+          <NavLink to='/' exact>
+            ABOUT
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to='/work'>WORK</NavLink>
+        </li>
+        <li>
+          <NavLink to='/connect'>CONNECT</NavLink>
+        </li>
+        <li>
+          <a id='blog' href='#'>
+            BLOG
+          </a>
+        </li>
+      </ul>
+    );
+  }
+}
+
+export { DesktopNav };
