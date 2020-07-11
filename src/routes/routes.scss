@@ -3,8 +3,8 @@
 
 // Variables
 $dark: #111;
-$light: #ccc;
-$grey: #666;
+$light: #f1f1f1;
+$grey: #444;
 $accent: #078fff;
 $font1: "Poppins", sans-serif;
 $font2: "Space Mono", Monospace;
@@ -12,7 +12,8 @@ $gradient: linear-gradient(-60deg, #078fff 0%, #00f2fe 100%);
 $-webkitgradient: -webkit-linear-gradient(-60deg, #078fff 0%, #00f2fe 100%);
 $curve1: cubic-bezier(0.39, 0.575, 0.565, 1);
 $curve2: cubic-bezier(0.7, 0, 0.3, 1);
-$shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
+$shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+$inset-shadow: inset 0px 0px 40px 2px rgba(0, 0, 0, 0.1);
 
 // MoreAbout
 #moreAbout {
@@ -22,7 +23,7 @@ $shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
   #profile {
     background: #bbb;
     margin: 20px auto;
-    width: 80%;
+    width: 100%;
     height: 350px;
   }
   #moreAboutText {
@@ -31,7 +32,23 @@ $shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
   }
 }
 
-@media screen and (max-width: 950px) {
+// Media Queries
+$mq-small: (
+  max-width: 768px,
+);
+$mq-medium: (
+  max-width: 1024px,
+);
+$mq-large: (
+  min-width: 1366px,
+);
+
+// Responsive Design
+
+@media screen and #{$mq-large} {
+}
+
+@media screen and #{$mq-medium} {
   // MoreAbout
   #moreAbout {
     display: block;
@@ -40,10 +57,9 @@ $shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
     }
     #moreAboutText {
       margin-top: 15px;
-      text-align: center;
     }
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and #{$mq-small} {
 }

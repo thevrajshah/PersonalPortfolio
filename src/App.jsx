@@ -4,8 +4,8 @@ import "./App.scss";
 import Loader from "./components/Loader";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import { Section } from "./containers/Section";
-import About from "./routes/About";
+import { WhiteSection } from "./containers/Section";
+import Home from "./routes/Home";
 
 const Work = lazy(() => import("./routes/Work"));
 const Connect = lazy(() => import("./routes/Connect"));
@@ -18,13 +18,13 @@ export default class App extends Component {
           <NavBar height='50px' />
           <Suspense
             fallback={
-              <Section>
+              <WhiteSection>
                 <Loader />
-              </Section>
+              </WhiteSection>
             }
           >
             <Switch>
-              <Route path='/' exact component={About} />
+              <Route path='/' exact component={Home} />
               <Route path='/work' component={Work} />
               <Route path='/connect' component={Connect} />
             </Switch>

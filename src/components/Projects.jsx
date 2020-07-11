@@ -1,10 +1,11 @@
 import React, { Component, Fragment } from "react";
 import "./components.scss";
+import { GreySection } from "../containers/Section";
 
 class Projects extends Component {
   render() {
     return (
-      <Fragment>
+      <div className='greySection'>
         <div className='projects'>
           {projectData.map((data, key) => {
             return (
@@ -20,7 +21,7 @@ class Projects extends Component {
           <ProjectCard Name="Lassun App" />
           <ProjectCard Name="Falana Project" /> */}
         </div>
-      </Fragment>
+      </div>
     );
   }
 }

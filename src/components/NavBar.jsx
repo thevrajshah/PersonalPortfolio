@@ -18,7 +18,7 @@ export default class NavBar extends Component {
           <ul id='desktopNav'>
             <li>
               <NavLink to='/' exact>
-                ABOUT
+                HOME
               </NavLink>
             </li>
             <li>
@@ -34,38 +34,36 @@ export default class NavBar extends Component {
             </li>
           </ul>
           <Social />
-          <button
-            className={this.state.toggle ? "hamburger x" : "hamburger"}
+          <a
+            className={this.state.toggle ? "hamburger cross" : "hamburger"}
             onClick={this.Toggle}
-          ></button>
+          ></a>
         </nav>
-        <div
+        <ul
           id='mobileNav'
           style={{ display: this.state.toggle ? "block" : "none" }}
         >
-          <ul>
-            <li>
-              <NavLink to='/' exact onClick={this.Toggle}>
-                ABOUT
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to='/work' onClick={this.Toggle}>
-                WORK
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to='/connect' onClick={this.Toggle}>
-                CONNECT
-              </NavLink>
-            </li>
-            <li>
-              <a href='#' id='blog' onClick={this.Toggle}>
-                BLOG
-              </a>
-            </li>
-          </ul>
-        </div>
+          <li>
+            <NavLink to='/' exact onClick={this.Toggle}>
+              HOME
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to='/work' onClick={this.Toggle}>
+              WORK
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to='/connect' onClick={this.Toggle}>
+              CONNECT
+            </NavLink>
+          </li>
+          <li>
+            <a href='#' id='blog' onClick={this.Toggle}>
+              BLOG
+            </a>
+          </li>
+        </ul>
       </header>
     );
   }

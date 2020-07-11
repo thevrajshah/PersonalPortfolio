@@ -3,8 +3,8 @@
 
 // Variables
 $dark: #111;
-$light: #ccc;
-$grey: #666;
+$light: #f1f1f1;
+$grey: #444;
 $accent: #078fff;
 $font1: "Poppins", sans-serif;
 $font2: "Space Mono", Monospace;
@@ -12,22 +12,26 @@ $gradient: linear-gradient(-60deg, #078fff 0%, #00f2fe 100%);
 $-webkitgradient: -webkit-linear-gradient(-60deg, #078fff 0%, #00f2fe 100%);
 $curve1: cubic-bezier(0.39, 0.575, 0.565, 1);
 $curve2: cubic-bezier(0.7, 0, 0.3, 1);
-$shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
+$shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+$inset-shadow: inset 0px 0px 40px 2px rgba(0, 0, 0, 0.1);
 
 // NavBar Styling
 header {
   // fixed position
   z-index: 5;
   position: sticky;
+  position: -webkit-sticky;
   width: 100%;
   top: 0px;
   background: $dark;
-  font-size: 0.75rem;
+  font-size: 1.2rem;
   font-weight: 600;
   nav {
     display: flex;
-    padding: 10px 12%;
+    padding: 10px 25px;
     justify-content: space-between;
+    max-width: 1040px;
+    margin: auto;
     align-items: center;
     box-shadow: $shadow;
     height: 50px;
@@ -35,12 +39,9 @@ header {
       color: #fff;
     }
     #logo {
-      /* padding: 0.1px 4px;
-      border-radius: 4px;
-      background: white; */
       vertical-align: middle;
       color: #fff;
-      font-size: 0.8rem;
+      font-size: 1.3rem;
     }
     #desktopNav {
       display: block;
@@ -48,7 +49,7 @@ header {
         display: inline-block;
       }
       a {
-        opacity: 0.5;
+        opacity: 0.6;
         padding: 20px 15px;
         letter-spacing: 0.7px;
         &:hover {
@@ -63,22 +64,11 @@ header {
   }
 }
 
-// Loader Styling
-.loader {
-  margin: 40px auto;
-  img {
-    width: 100px;
-  }
-}
-
 // Mobile Nav
 .hamburger {
   cursor: pointer;
   background: transparent;
-  border: 0;
   height: 20px;
-  outline: 0;
-  padding: 0;
   position: relative;
   width: 18px;
   display: none;
@@ -87,7 +77,6 @@ header {
     background-color: #fff;
     content: " ";
     border: none;
-    border-radius: 5px;
     display: block;
     height: 2px;
     left: 50%;
@@ -106,7 +95,7 @@ header {
     top: 75%;
   }
 }
-.x {
+.cross {
   &::before {
     left: 0;
     top: 50%;
@@ -153,13 +142,21 @@ header {
   }
 }
 
+// Loader Styling
+.loader {
+  margin: 40px auto;
+  img {
+    width: 100px;
+  }
+}
+
 // Hero Styling
 .hero {
   display: grid;
   grid-template-columns: 55% 45%;
-  background: $accent;
+  background: transparent; /* 
   background: $gradient;
-  background: $-webkitgradient;
+  background: $-webkitgradient; */
   background-attachment: fixed;
   background-size: auto;
   height: calc(100vh - 50px);
@@ -169,14 +166,13 @@ header {
   color: #fff;
   transition: all 0.3s $curve1 0s;
   #hello {
-    color: white;
     font-weight: 700;
     font-size: 1rem;
   }
   #name {
+    color: #111;
     font-size: 5rem;
     font-weight: 700;
-    outline: 2px #fff;
   }
   #prof {
     text-align: right;
@@ -185,7 +181,7 @@ header {
     margin-top: 2rem;
     color: $dark;
     transition: all 0.3s $curve1 0s;
-    font-size: 65px;
+    font-size: 6.5rem;
   }
 }
 
@@ -195,9 +191,9 @@ header {
     vertical-align: middle;
     cursor: pointer;
     color: white;
-    opacity: 0.5;
+    opacity: 0.6;
     margin: 0 4px;
-    font-size: 0.9375rem;
+    font-size: 1.5rem;
     &:hover {
       opacity: 1;
     }
@@ -243,7 +239,7 @@ header {
   .tools {
     margin: auto 25px;
     color: $grey;
-    font-size: 10px;
+    font-size: 1rem;
   }
   .projectOptions {
     display: flex;
@@ -279,13 +275,13 @@ header {
 .imgWrapper {
   display: inline-flex;
   overflow: hidden;
-  height: 14rem;
-  width: 14rem;
+  height: 20rem;
+  width: 20rem;
   justify-content: center;
   margin-top: -7px;
   img {
     cursor: pointer;
-    max-height: 14rem;
+    max-height: 20rem;
     width: 100%;
     object-fit: cover;
     filter: grayscale(0.9);
@@ -320,7 +316,7 @@ header {
     margin: 10px 5px;
     background: $accent;
     color: #fff;
-    font-size: 15px;
+    font-size: 1.5rem;
     transition: all 0.3s $curve2 0s;
     box-shadow: 0 5px 10px 0px rgba(7, 143, 255, 0.35);
     &:hover {
@@ -350,7 +346,7 @@ header {
   textarea,
   button {
     font-family: $font1;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 700;
     color: $grey;
     display: inline-block;
@@ -378,7 +374,7 @@ footer {
   margin: 0;
   bottom: 0;
   padding: 15px 12% 40px 12%;
-  font-size: 13px;
+  font-size: 1.3rem;
   background: #fff;
   display: flex;
   justify-content: space-between;
@@ -397,8 +393,20 @@ footer {
   }
 }
 
+// Media Queries
+$mq-small: (
+  max-width: 768px,
+);
+$mq-medium: (
+  max-width: 1024px,
+);
+$mq-large: (
+  min-width: 1366px,
+);
+
 // Responsive Design
-@media screen and (max-width: 950px) {
+
+@media screen and #{$mq-medium} {
   // NavBar Styling
   nav {
     ul#desktopNav {
@@ -416,7 +424,7 @@ footer {
     #prof {
       text-align: left;
       margin: 10px 0;
-      font-size: 55px;
+      font-size: 5.5rem;
     }
   }
   // Projects Styling
@@ -432,15 +440,16 @@ footer {
     padding: 0 15%;
   }
 }
-@media screen and (max-width: 650px) {
+
+@media screen and #{$mq-small} {
   // Hero Styling
   .hero {
     grid-template-columns: auto;
     #name {
-      font-size: 60px;
+      font-size: 6rem;
     }
     #prof {
-      font-size: 45px;
+      font-size: 4.5rem;
     }
   }
   // Loader Styling
@@ -459,10 +468,10 @@ footer {
     margin: 0;
   }
   .imgWrapper {
-    width: 12rem;
-    height: 12rem;
+    width: 12.5rem;
+    height: 12.5rem;
     img {
-      max-height: 12rem;
+      max-height: 12.5rem;
     }
   }
   //Contact Styling

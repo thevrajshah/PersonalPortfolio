@@ -1,16 +1,17 @@
 import React, { Component } from "react";
 import "./containers.scss";
 
-export class Section extends Component {
+export class WhiteSection extends Component {
   render() {
     return (
-      <div
-        className="section"
-        style={{
-          textAlign: this.props.align ? this.props.align : "center",
-        }}
-      >
-        {this.props.children}
+      <div className='whiteSection'>
+        <section
+          style={{
+            textAlign: this.props.textAlign ? this.props.textAlign : "center",
+          }}
+        >
+          {this.props.children}
+        </section>
       </div>
     );
   }
@@ -19,13 +20,14 @@ export class Section extends Component {
 export class GreySection extends Component {
   render() {
     return (
-      <div
-        className="grey-section"
-        style={{
-          textAlign: this.props.align ? this.props.align : "center",
-        }}
-      >
-        {this.props.children}
+      <div className='greySection'>
+        <section
+          style={{
+            textAlign: this.props.textAlign ? this.props.textAlign : "center",
+          }}
+        >
+          {this.props.children}
+        </section>
       </div>
     );
   }
