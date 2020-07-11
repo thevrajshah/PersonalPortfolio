@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import Social from "./Social";
 import "./components.scss";
 
-class NavBar extends Component {
+export default class NavBar extends Component {
   state = { toggle: false };
   Toggle = () => {
     this.setState({ toggle: !this.state.toggle });
@@ -11,11 +11,28 @@ class NavBar extends Component {
   render() {
     return (
       <header>
-        <nav style={{ height: this.props.height }}>
+        <nav>
           <NavLink to='/' exact id='logo'>
             /thevrajshah
           </NavLink>
-          <DesktopNav />
+          <ul id='desktopNav'>
+            <li>
+              <NavLink to='/' exact>
+                ABOUT
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to='/work'>WORK</NavLink>
+            </li>
+            <li>
+              <NavLink to='/connect'>CONNECT</NavLink>
+            </li>
+            <li>
+              <a id='blog' href='#'>
+                BLOG
+              </a>
+            </li>
+          </ul>
           <Social />
           <button
             className={this.state.toggle ? "hamburger x" : "hamburger"}
@@ -23,7 +40,7 @@ class NavBar extends Component {
           ></button>
         </nav>
         <div
-          className='mobileMenu'
+          id='mobileNav'
           style={{ display: this.state.toggle ? "block" : "none" }}
         >
           <ul>
@@ -53,32 +70,3 @@ class NavBar extends Component {
     );
   }
 }
-
-export default NavBar;
-
-class DesktopNav extends Component {
-  render() {
-    return (
-      <ul id='desktopNav'>
-        <li>
-          <NavLink to='/' exact>
-            ABOUT
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to='/work'>WORK</NavLink>
-        </li>
-        <li>
-          <NavLink to='/connect'>CONNECT</NavLink>
-        </li>
-        <li>
-          <a id='blog' href='#'>
-            BLOG
-          </a>
-        </li>
-      </ul>
-    );
-  }
-}
-
-export { DesktopNav };
