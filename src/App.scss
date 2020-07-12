@@ -1,12 +1,29 @@
-// Variables
+// Sass Variables
+// Colors
 $dark: #111;
 $light: #f1f1f1;
 $grey: #444;
 $accent: #078fff;
-$font1: "Poppins", sans-serif;
-$font2: "Space Mono", Monospace;
 $gradient: linear-gradient(-60deg, #078fff 0%, #00f2fe 100%);
 $-webkitgradient: -webkit-linear-gradient(-60deg, #078fff 0%, #00f2fe 100%);
+
+// Fonts
+$font1: "Poppins", sans-serif;
+$font2: "Space Mono", Monospace;
+
+// Media Queries
+$max-width: 1080px;
+$mq-small: (
+  max-width: 768px,
+);
+$mq-medium: (
+  max-width: 1024px,
+);
+$mq-large: (
+  min-width: 1366px,
+);
+
+// Misc.
 $curve1: cubic-bezier(0.39, 0.575, 0.565, 1);
 $curve2: cubic-bezier(0.7, 0, 0.3, 1);
 $shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
@@ -27,7 +44,8 @@ body {
   margin: 0;
   padding: 0;
   font-size: 1.4rem;
-  line-height: 1.5;
+  color: $dark;
+  line-height: 25px;
   background: $light;
   //Background-Image
   /* &::before {
@@ -58,28 +76,19 @@ h6 {
   cursor: default;
   color: $dark;
   line-height: 1;
+  margin-bottom: 7px;
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
-
-section {
-  margin: auto;
-  padding: 30px;
-  max-width: 1040px;
-  background: transparent;
-}
-.whiteSection {
-  background: #fff;
-}
-.greySection {
-  box-shadow: $inset-shadow;
-  background: $light;
-}
-
 p {
-  margin: 2vh 0;
+  margin: 0.6rem 0;
   font-family: $font1;
-  color: $grey;
   font-size: 1.4rem;
   a {
+    color: $accent;
     &:hover {
       text-decoration: underline;
     }
@@ -94,14 +103,37 @@ a {
 li {
   list-style: none;
 }
-.react-rotating-text-cursor {
-  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s
-    infinite;
+input,
+textarea,
+button {
+  font-family: $font1;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: $grey;
+  display: inline-block;
+  border: none;
+  transition: all 0.3s $curve1 0s;
+  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+}
+// Section Styling
+section {
+  margin: auto;
+  padding: 30px;
+  max-width: 1040px;
+  background: transparent;
+}
+.whiteSection {
+  background: #fff;
+}
+.greySection {
+  box-shadow: $inset-shadow;
+  background: $light;
 }
 
 // Card Styling
 .card {
-  margin: 30px 12%;
+  margin: 0 7vw;
   padding: 50px 10%;
   background-color: #fff;
   color: $dark;
@@ -109,19 +141,13 @@ li {
   box-shadow: $shadow;
 }
 
-// Media Queries
-$mq-small: (
-  max-width: 768px,
-);
-$mq-medium: (
-  max-width: 1024px,
-);
-$mq-large: (
-  min-width: 1366px,
-);
+// Hero Rotating Text
+.react-rotating-text-cursor {
+  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s
+    infinite;
+}
 
 // Responsive Design
-
 @media screen and #{$mq-large} {
 }
 
@@ -136,7 +162,6 @@ $mq-large: (
 }
 
 // Animations
-
 @keyframes blinking-cursor {
   0% {
     opacity: 0;
@@ -146,5 +171,38 @@ $mq-large: (
   }
   100% {
     opacity: 0;
+  }
+}
+/* transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1); */
+@keyframes boost {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes width {
+  0% {
+    width: 1%;
+  }
+  100% {
+    width: 3%;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

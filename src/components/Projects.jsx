@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from "react";
 import "./components.scss";
-import { GreySection } from "../containers/Section";
+import { GreySection } from "../containers/Containers";
 
 class Projects extends Component {
   render() {
     return (
-      <div className='greySection'>
+      <GreySection>
         <div className='projects'>
           {projectData.map((data, key) => {
             return (
@@ -21,7 +21,7 @@ class Projects extends Component {
           <ProjectCard Name="Lassun App" />
           <ProjectCard Name="Falana Project" /> */}
         </div>
-      </div>
+      </GreySection>
     );
   }
 }
@@ -36,9 +36,7 @@ class ProjectCard extends Component {
           <img src='#' alt='' />
         </div>
         <div className='projectText'>
-          <h3>
-            <a>{this.props.Name}</a>
-          </h3>
+          <h3>{this.props.Name}</h3>
           <p>{this.props.Description}</p>
         </div>
         <div className='tools'>
@@ -51,8 +49,8 @@ class ProjectCard extends Component {
             href='https://github.com/thevrajshah'
             rel='noopener noreferrer'
           />
-          <a id='learnMore' href=''>
-            Learn More
+          <a id='veiwLive' href=''>
+            Veiw
           </a>
         </div>
       </div>
@@ -66,7 +64,8 @@ const projectData = [
     Description:
       "Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     Tools: "JavaSrcipt, HTML",
-    Url: "",
+    GitUrl: "",
+    LiveUrl: "",
   },
   {
     Name: "Some Other Project",

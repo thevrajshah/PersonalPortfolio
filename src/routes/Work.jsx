@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import "./routes.scss";
-import { WhiteSection } from "../containers/Section";
+import { WhiteSection } from "../containers/Containers";
 import Projects from "../components/Projects";
 import Gallery from "../components/Gallery";
 import Design from "../components/Design";
@@ -9,7 +9,7 @@ export default class Work extends Component {
   render() {
     return (
       <Fragment>
-        <WhiteSection>
+        <WhiteSection textAlign='center'>
           <h1>Programming</h1>
           <p>
             One must consider programming as an Art which is how I feel like
@@ -18,7 +18,7 @@ export default class Work extends Component {
         </WhiteSection>
         <Projects />
         <Design />
-        <WhiteSection>
+        <WhiteSection textAlign='center'>
           <h1>Art is Lorem ipsum.</h1>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui

@@ -4,7 +4,7 @@ import "./App.scss";
 import Loader from "./components/Loader";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import { WhiteSection } from "./containers/Section";
+import { WhiteSection } from "./containers/Containers";
 import Home from "./routes/Home";
 
 const Work = lazy(() => import("./routes/Work"));

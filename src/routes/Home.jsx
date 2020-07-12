@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import "./routes.scss";
 import Hero from "../components/Hero";
-import { WhiteSection, GreySection } from "../containers/Section";
+import { WhiteSection, GreySection } from "../containers/Containers";
 
 export default class Home extends Component {
   render() {
@@ -9,7 +9,10 @@ export default class Home extends Component {
       <Fragment>
         <Hero />
         <WhiteSection>
-          <h1 style={{ fontSize: "4rem" }}>about me</h1>
+          <h1 style={{ fontSize: "5rem" }}>about me</h1>
+          <p style={{ fontSize: "2rem", color: "#444" }}>
+            I'm a product designer based in sunny Sydney, Australia.
+          </p>
           <p>
             Hey! My name is <strong>Vraj Shah</strong> and it seems you stumbled
             into my website. To tell you a bit about myself, I love tech in
@@ -18,31 +21,32 @@ export default class Home extends Component {
             love in one place, I hope you have a good time exploring it.
           </p>
         </WhiteSection>
-        <div className='greySection'>
-          <section style={{ textAlign: "left" }}>
-            <div id='moreAbout'>
-              <div id='profile'></div>
-              <div id='moreAboutText'>
-                <h2>A Little More</h2>
-                <p>
-                  I'm 18 Years old, based in Vadodara, Gujarat. I'm in my 2
-                  <sup>nd</sup> Year of Computer Engineering at SVIT, Vasad.
-                </p>
-                <p>
-                  Minima non, explicabo libero voluptas inventore labore fugit
-                  debitis qui saepe esse temporibus commodi reiciendis corporis
-                  necessitatibus fuga nesciunt quibusdam ratione placeat?
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptas, minima natus excepturi maiores
-                </p>
-              </div>
+        <GreySection>
+          <div id='moreAbout'>
+            <div id='profile'></div>
+            <div id='moreAboutText'>
+              <h2>A Little More</h2>
+              <p>
+                I'm 18 Years old, based in Vadodara, Gujarat. I'm in my 2
+                <sup>nd</sup> Year of Computer Engineering at SVIT, Vasad.
+              </p>
+              <p>
+                Minima non, explicabo libero voluptas inventore labore fugit
+                debitis qui saepe esse temporibus commodi reiciendis corporis
+                necessitatibus fuga nesciunt quibusdam ratione placeat?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas, minima natus excepturi maiores
+              </p>
             </div>
-          </section>
-        </div>
+          </div>
+        </GreySection>
         <WhiteSection>
-          <h2>About this Website.</h2>
+          <h1 style={{ fontSize: "3.5rem" }}>about this website</h1>
+          <p style={{ fontSize: "1.8rem", color: "#444" }}>
+            Looks like you stumbled into my Website.
+          </p>
           <p>
             I' sure you're liking it here! Well, this website is completely
             designed & built by me using <strong>ReactJS</strong> and basic

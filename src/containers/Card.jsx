@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import "./containers.scss";
 
-class Card extends Component {
+export default class Card extends Component {
   render() {
     return (
-      <div
-        className="card"
-        style={{ textAlign: this.props.align ? this.props.align : "center" }}
-      >
-        {this.props.children}
-      </div>
+      <section>
+        <div
+          className='card'
+          style={{ textAlign: this.props.align ? this.props.align : "center" }}
+        >
+          {this.props.children}
+        </div>
+      </section>
     );
   }
 }
-
-export default Card;

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./containers.scss";
 
 export class WhiteSection extends Component {
   render() {
@@ -7,7 +6,7 @@ export class WhiteSection extends Component {
       <div className='whiteSection'>
         <section
           style={{
-            textAlign: this.props.textAlign ? this.props.textAlign : "center",
+            textAlign: this.props.textAlign ? this.props.textAlign : "left",
           }}
         >
           {this.props.children}
@@ -23,7 +22,7 @@ export class GreySection extends Component {
       <div className='greySection'>
         <section
           style={{
-            textAlign: this.props.textAlign ? this.props.textAlign : "center",
+            textAlign: this.props.textAlign ? this.props.textAlign : "left",
           }}
         >
           {this.props.children}

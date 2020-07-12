@@ -1,15 +1,29 @@
-// Imports
-@import url("../Animations.scss");
-
-// Variables
+// Sass Variables
+// Colors
 $dark: #111;
 $light: #f1f1f1;
 $grey: #444;
 $accent: #078fff;
-$font1: "Poppins", sans-serif;
-$font2: "Space Mono", Monospace;
 $gradient: linear-gradient(-60deg, #078fff 0%, #00f2fe 100%);
 $-webkitgradient: -webkit-linear-gradient(-60deg, #078fff 0%, #00f2fe 100%);
+
+// Fonts
+$font1: "Poppins", sans-serif;
+$font2: "Space Mono", Monospace;
+
+// Media Queries
+$max-width: 1080px;
+$mq-small: (
+  max-width: 768px,
+);
+$mq-medium: (
+  max-width: 1024px,
+);
+$mq-large: (
+  min-width: 1366px,
+);
+
+// Misc.
 $curve1: cubic-bezier(0.39, 0.575, 0.565, 1);
 $curve2: cubic-bezier(0.7, 0, 0.3, 1);
 $shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
@@ -216,15 +230,14 @@ header {
 .projects {
   z-index: 0;
   display: grid;
-  margin: 10px 12%;
   grid-template-columns: 33% 33% 33%;
 }
 .projectCard {
   display: grid;
   box-sizing: border-box;
-  height: 26em;
-  grid-template-rows: 40% 45% 5% 10%;
-  margin: 20px;
+  height: 35rem;
+  grid-template-rows: 15rem 15rem 2rem 3rem;
+  margin: 15px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: $shadow;
@@ -237,13 +250,14 @@ header {
     color: $grey;
   }
   .tools {
-    margin: auto 25px;
+    margin: auto;
     color: $grey;
     font-size: 1rem;
   }
   .projectOptions {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: auto 20px;
     .fa-github-alt {
       color: $dark;
@@ -251,14 +265,14 @@ header {
         color: #a806c5;
       }
     }
-    #learnMore {
+    #veiwLive {
       display: flex;
       justify-content: space-between;
-      font-size: 0.75rem;
+      font-size: 1.2rem;
       font-weight: 600;
       color: $accent;
       &:hover {
-        opacity: 0.8;
+        opacity: 0.9;
       }
     }
   }
@@ -267,7 +281,6 @@ header {
 // Gallery Styling
 .imgContainer {
   z-index: 1;
-  margin: 0 10%;
   padding: 0;
   text-align: center;
   overflow: hidden;
@@ -312,7 +325,6 @@ header {
     width: 100%;
   }
   button[type="submit"] {
-    cursor: pointer;
     margin: 10px 5px;
     background: $accent;
     color: #fff;
@@ -328,14 +340,13 @@ header {
     }
   }
   button[type="reset"] {
-    cursor: pointer;
     margin: 10px 5px;
     color: #fff;
-    background: $grey;
+    background: $dark;
     box-shadow: 0 5px 10px 0px rgba(24, 24, 24, 0.35);
     transition: all 0.3s $curve2 0s;
     &:hover {
-      background-color: $dark;
+      background: $grey;
       i.fa-refresh {
         transform: rotate(360deg);
         transition: all 0.4s $curve2 0s;
@@ -345,19 +356,10 @@ header {
   input,
   textarea,
   button {
-    font-family: $font1;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: $grey;
-    display: inline-block;
-    border: none;
-    border-radius: 25px;
     margin: 10px 0;
     padding: 12px 20px;
-    transition: all 0.3s $curve1 0s;
+    border-radius: 25px;
     background-color: $light;
-    touch-action: manipulation;
-    -ms-touch-action: manipulation;
     &:focus,
     &:hover {
       box-shadow: $shadow;
@@ -388,24 +390,27 @@ footer {
       vertical-align: middle;
     }
   }
+  button#toTop {
+    padding: 4px 8px;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    background: $accent;
+    box-shadow: 0 5px 10px 0px rgba(24, 24, 24, 0.35);
+    &:hover {
+      background-color: $dark;
+      i.fa-chevron-up {
+        transform: translateY(-2px);
+        transition: all 0.4s $curve2 0s;
+      }
+    }
+  }
   #copyright {
     color: $dark;
   }
 }
 
-// Media Queries
-$mq-small: (
-  max-width: 768px,
-);
-$mq-medium: (
-  max-width: 1024px,
-);
-$mq-large: (
-  min-width: 1366px,
-);
-
 // Responsive Design
-
 @media screen and #{$mq-medium} {
   // NavBar Styling
   nav {

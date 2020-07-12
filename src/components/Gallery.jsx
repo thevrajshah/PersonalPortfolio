@@ -1,4 +1,4 @@
-import React, { Component, Fragment, Suspense } from "react";
+import React, { Component, Suspense } from "react";
 import "./components.scss";
 
 class Gallery extends Component {
