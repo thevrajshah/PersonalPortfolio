@@ -3,11 +3,16 @@ import React, { Component } from "react";
 export class WhiteSection extends Component {
   render() {
     return (
-      <div className='whiteSection'>
+      <div
+        className='whiteSection'
+        style={{
+          padding: this.props.paddingTB ? this.props.paddingTB : "30px 0",
+        }}
+      >
         <section
           style={{
             textAlign: this.props.textAlign ? this.props.textAlign : "left",
-            padding: this.props.padding ? this.props.padding : "30px 0",
+            padding: this.props.paddingLR ? this.props.paddingLR : "0 24px",
           }}
         >
           {this.props.children}
@@ -20,11 +25,16 @@ export class WhiteSection extends Component {
 export class GreySection extends Component {
   render() {
     return (
-      <div className='greySection'>
+      <div
+        className='greySection'
+        style={{
+          padding: this.props.paddingTB ? this.props.paddingTB : "30px 0",
+        }}
+      >
         <section
           style={{
             textAlign: this.props.textAlign ? this.props.textAlign : "left",
-            padding: this.props.padding ? this.props.padding : "30px 0",
+            padding: this.props.paddingLR ? this.props.paddingLR : "0 24px",
           }}
         >
           {this.props.children}

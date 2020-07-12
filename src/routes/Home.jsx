@@ -9,8 +9,8 @@ export default class Home extends Component {
       <Fragment>
         <Hero />
         <WhiteSection>
-          <h1 style={{ fontSize: "5rem" }}>about me</h1>
-          <p style={{ fontSize: "2rem", color: "#444" }}>
+          <h1 style={{ fontSize: "4rem" }}>about me</h1>
+          <p style={{ fontSize: "1.8rem", color: "#444" }}>
             I'm a computer enginnering student based in sunny Gujarat, India.
           </p>
           <p>

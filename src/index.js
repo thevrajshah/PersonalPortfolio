@@ -1,8 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
+import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(<App />, document.getElementById("Root"));
+
+serviceWorker.unregister();
 
 // 10px = 0.625rem
 // 12px = 0.75rem
