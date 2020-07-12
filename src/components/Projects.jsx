@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import "./components.scss";
-import { GreySection } from "../containers/Containers";
+import { GreySection } from "./Containers";
 
 class Projects extends Component {
   render() {

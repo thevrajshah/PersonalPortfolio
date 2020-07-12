@@ -1,7 +1,7 @@
 // Sass Variables
 // Colors
 $dark: #111;
-$light: #f1f1f1;
+$light: #fafafa;
 $grey: #555;
 $accent: #078fff;
 $gradient: linear-gradient(-60deg, #078fff 0%, #00f2fe 100%);
@@ -49,13 +49,20 @@ header {
     align-items: center;
     box-shadow: $shadow;
     height: 50px;
-    a {
-      color: #fff;
-    }
     #logo {
+      // padding: 3px;
+      // border: solid $accent 0.3px;
       vertical-align: middle;
       color: #fff;
-      font-size: 1.3rem;
+      opacity: 0.9;
+      font-family: $font2;
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 0.9;
+      transition: all 0.2s $curve1;
+      &:hover {
+        opacity: 1;
+      }
     }
     #desktopNav {
       display: block;
@@ -63,17 +70,20 @@ header {
         display: inline-block;
       }
       a {
-        opacity: 0.6;
         padding: 20px 15px;
         letter-spacing: 0.7px;
-        &:hover {
-          color: $accent;
-          opacity: 1;
-        }
-        &.active {
-          opacity: 1;
-        }
       }
+    }
+  }
+  a {
+    color: #fff;
+    opacity: 0.5;
+    &:hover {
+      color: $accent;
+      opacity: 1;
+    }
+    &.active {
+      opacity: 1;
     }
   }
 }
@@ -135,67 +145,9 @@ header {
   text-align: center;
   transition: all 0.3s $curve1 0s;
   animation: nav-in 0.3s $curve1 alternate;
-  a {
-    cursor: pointer;
-    display: block;
-    color: #fff;
-    opacity: 0.5;
-    font-family: $font1;
-    font-weight: 600;
-    &:hover {
-      color: $accent;
-      opacity: 1;
-    }
-    &.active {
-      opacity: 1;
-    }
-  }
   li {
     display: block;
-    margin: 20px 100px;
-  }
-}
-
-// Loader Styling
-.loader {
-  margin: 40px auto;
-  img {
-    width: 100px;
-  }
-}
-
-// Hero Styling
-.hero {
-  display: grid;
-  grid-template-columns: 55% 45%;
-  background: transparent; /* 
-  background: $gradient;
-  background: $-webkitgradient; */
-  background-attachment: fixed;
-  background-size: auto;
-  height: calc(100vh - 50px);
-  padding: 80px 12%;
-  font-family: $font2;
-  line-height: 1.2;
-  color: #fff;
-  transition: all 0.3s $curve1 0s;
-  #hello {
-    font-weight: 700;
-    font-size: 1rem;
-  }
-  #name {
-    color: #111;
-    font-size: 5rem;
-    font-weight: 700;
-  }
-  #prof {
-    text-align: right;
-    font-family: $font1;
-    font-weight: 600;
-    margin-top: 2rem;
-    color: $dark;
-    transition: all 0.3s $curve1 0s;
-    font-size: 6.5rem;
+    margin: 15px 100px;
   }
 }
 
@@ -205,7 +157,7 @@ header {
     vertical-align: middle;
     cursor: pointer;
     color: white;
-    opacity: 0.6;
+    opacity: 0.5;
     margin: 0 4px;
     font-size: 1.5rem;
     &:hover {
@@ -223,6 +175,40 @@ header {
   }
   .fa-instagram:hover {
     color: #ff1f57;
+  }
+}
+// Loader Styling
+.loader {
+  margin: 40px auto;
+  img {
+    width: 100px;
+  }
+}
+
+// Hero Styling
+.hero {
+  display: flex;
+  background: $accent;
+  background: $gradient;
+  background: $-webkitgradient;
+  background-attachment: fixed;
+  background-size: cover;
+  height: calc(100vh - 50px);
+  padding: 50px 12%;
+  line-height: 1.2;
+  color: #fff;
+  transition: all 0.3s $curve1 0s;
+  #name {
+    font-size: 5rem;
+    font-weight: 700;
+  }
+  #prof {
+    text-align: left;
+    font-family: $font2;
+    font-weight: 700;
+    color: $dark;
+    transition: all 0.3s $curve2 0s;
+    font-size: 6.5rem;
   }
 }
 
@@ -280,18 +266,19 @@ header {
 
 // Gallery Styling
 .imgContainer {
-  z-index: 1;
+  position: relative;
   padding: 0;
   text-align: center;
   overflow: hidden;
 }
 .imgWrapper {
   display: inline-flex;
+  padding: 0;
   overflow: hidden;
   height: 20rem;
   width: 20rem;
   justify-content: center;
-  margin-top: -7px;
+  margin-top: -7.6px;
   img {
     cursor: pointer;
     max-height: 20rem;
@@ -378,6 +365,8 @@ footer {
   background: #fff;
   text-align: center;
   button#toTop {
+    position: relative;
+    top: 0;
     margin: 5px auto;
     padding: 0 7px;
     color: #fff;
@@ -394,6 +383,8 @@ footer {
     }
   }
   #credits {
+    position: relative;
+    bottom: 0;
     padding: 5px 0;
     font-size: 1.3rem;
     display: flex;

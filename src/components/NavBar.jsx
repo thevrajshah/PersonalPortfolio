@@ -13,7 +13,7 @@ export default class NavBar extends Component {
       <header>
         <nav>
           <NavLink to='/' exact id='logo'>
-            /thevrajshah
+            VRAJ.<b style={{ color: "#078fff" }}>SHAH</b>
           </NavLink>
           <ul id='desktopNav'>
             <li>
@@ -34,10 +34,10 @@ export default class NavBar extends Component {
             </li>
           </ul>
           <Social />
-          <a
+          <i
             className={this.state.toggle ? "hamburger cross" : "hamburger"}
             onClick={this.Toggle}
-          ></a>
+          ></i>
         </nav>
         <ul
           id='mobileNav'

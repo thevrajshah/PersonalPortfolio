@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import "./routes.scss";
-import { WhiteSection } from "../containers/Containers";
+import { WhiteSection } from "../components/Containers";
 import Projects from "../components/Projects";
 import Gallery from "../components/Gallery";
 import Design from "../components/Design";

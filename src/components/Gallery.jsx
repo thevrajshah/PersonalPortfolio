@@ -1,5 +1,6 @@
 import React, { Component, Suspense } from "react";
 import "./components.scss";
+import { GreySection } from "./Containers";
 
 class Gallery extends Component {
   render() {
@@ -20,17 +21,15 @@ class Gallery extends Component {
       "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3209e373465817.5c0a1fe41557d.jpg",
     ];
     return (
-      <div className='greySection'>
-        <section style={{ padding: "0" }}>
-          <div className='imgContainer'>
-            {urls.map(url => (
-              <div className='imgWrapper'>
-                <img src={url} />
-              </div>
-            ))}
-          </div>
-        </section>
-      </div>
+      <GreySection padding='0'>
+        <div className='imgContainer'>
+          {urls.map(url => (
+            <div className='imgWrapper'>
+              <img src={url} />
+            </div>
+          ))}
+        </div>
+      </GreySection>
     );
   }
 }

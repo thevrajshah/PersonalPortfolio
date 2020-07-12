@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import "./routes.scss";
 import Hero from "../components/Hero";
-import { WhiteSection, GreySection } from "../containers/Containers";
+import { WhiteSection, GreySection } from "../components/Containers";
 
 export default class Home extends Component {
   render() {
@@ -11,7 +11,7 @@ export default class Home extends Component {
         <WhiteSection>
           <h1 style={{ fontSize: "5rem" }}>about me</h1>
           <p style={{ fontSize: "2rem", color: "#444" }}>
-            I'm a product designer based in sunny Sydney, Australia.
+            I'm a computer enginnering student based in sunny Gujarat, India.
           </p>
           <p>
             Hey! My name is <strong>Vraj Shah</strong> and it seems you stumbled

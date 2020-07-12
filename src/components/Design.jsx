@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./components.scss";
-import { WhiteSection } from "../containers/Containers";
+import { WhiteSection } from "./Containers";
 
 export default class Design extends Component {
   render() {
