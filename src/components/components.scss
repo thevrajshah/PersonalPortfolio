@@ -187,29 +187,53 @@ header {
 
 // Hero Styling
 .hero {
-  display: flex;
   background: $accent;
   background: $gradient;
   background: $-webkitgradient;
   background-attachment: fixed;
   background-size: cover;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 55px);
   padding: 50px 12%;
   line-height: 1.2;
   color: #fff;
   transition: all 0.3s $curve1 0s;
   #name {
-    font-size: 5rem;
+    font-size: 6.5rem;
     font-weight: 700;
+    // Centering
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   #prof {
-    text-align: left;
-    font-family: $font2;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 600;
     color: $dark;
     transition: all 0.3s $curve2 0s;
-    font-size: 6.5rem;
+    // Centering
+    position: relative;
+    top: 10px;
   }
+}
+/*Vertical Sliding*/
+.slidingVertical {
+  transition: all 0.2s $curve2 0s;
+}
+.slidingVertical span {
+  animation: topToBottom 3.5s $curve2 infinite 0s;
+  -ms-animation: topToBottom 3.5s $curve2 infinite 0s;
+  -webkit-animation: topToBottom 3.5s $curve2 infinite 0s;
+  color: $dark;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+}
+.slidingVertical span:nth-child(2) {
+  animation-delay: 2s;
+  -ms-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
 }
 
 // Projects Styling
@@ -374,7 +398,7 @@ footer {
     border-radius: 50%;
     font-size: 1.5rem;
     background: $accent;
-    box-shadow: 0 2px 10px 0px rgba(24, 24, 24, 0.25);
+    box-shadow: $shadow;
     &:hover {
       i.fa-angle-up {
         transform: translateY(-1px);
@@ -516,5 +540,61 @@ footer {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+/*topToBottom Animation*/
+@keyframes topToBottom {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    -moz-transform: translateX(-50px);
+  }
+  10% {
+    opacity: 1;
+    -moz-transform: translateX(0px);
+  }
+  25% {
+    opacity: 1;
+    -moz-transform: translateX(0px);
+  }
+  30% {
+    opacity: 0;
+    -moz-transform: translateX(50px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes topToBottom {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    -moz-transform: translateX(-50px);
+  }
+  10% {
+    opacity: 1;
+    -moz-transform: translateX(0px);
+  }
+  25% {
+    opacity: 1;
+    -moz-transform: translateX(0px);
+  }
+  30% {
+    opacity: 0;
+    -moz-transform: translateX(50px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }

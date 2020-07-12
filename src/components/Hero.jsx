@@ -7,13 +7,14 @@ class Hero extends Component {
     return (
       <div className='hero'>
         <section>
-          <div id='name'>Vraj Shah</div>
-
-          <div id='prof'>
-            <ReactRotatingText
-              items={["Developer", "Designer", "Creator"]}
-              emptyPause={300}
-            />
+          <div id='name'>
+            Vraj Shah
+            <div id='prof'>
+              <div class='slidingVertical'>
+                <span>Developer.</span>
+                <span>Designer.</span>
+              </div>
+            </div>
           </div>
         </section>
       </div>

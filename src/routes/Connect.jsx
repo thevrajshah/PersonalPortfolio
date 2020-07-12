@@ -8,7 +8,7 @@ export default class Connect extends Component {
     return (
       <Fragment>
         <Card>
-          <h1>Say Hello!</h1>
+          <h1 style={{ fontSize: "4rem" }}>Say Hello!</h1>
           <ContactForm />
         </Card>
       </Fragment>
