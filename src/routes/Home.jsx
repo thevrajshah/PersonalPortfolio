@@ -10,15 +10,15 @@ export default class Home extends Component {
         <Hero />
         <WhiteSection>
           <h1 style={{ fontSize: "4rem" }}>about me</h1>
-          <p style={{ fontSize: "1.8rem", color: "#444" }}>
+          <p id='highlight'>
             I'm a computer enginnering student based in sunny Gujarat, India.
           </p>
           <p>
-            Hey! My name is <strong>Vraj Shah</strong> and it seems you stumbled
-            into my website. To tell you a bit about myself, I love tech in
-            general! I really enjoy everything from designing images with
-            coloured text to working with websites. This website compiles all I
-            love in one place, I hope you have a good time exploring it.
+            Hey! It seems you stumbled into my website. To tell you a bit about
+            myself, I love tech in general! I really enjoy everything from
+            designing images with coloured text to working with websites. This
+            website compiles all I love in one place, I hope you have a good
+            time exploring it.
           </p>
         </WhiteSection>
         <GreySection>

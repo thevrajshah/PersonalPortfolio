@@ -5,7 +5,7 @@ export default class Footer extends Component {
   render() {
     return (
       <footer>
-        <section>
+        <section style={{ padding: "0 25px" }}>
           <button id='toTop' onClick={() => window.scrollTo(0, 0)}>
             <i className='fa fa-angle-up' aria-hidden='true' />
           </button>

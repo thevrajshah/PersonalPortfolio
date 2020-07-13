@@ -1,33 +1,4 @@
-// Sass Variables
-// Colors
-$dark: #111;
-$light: #fafafa;
-$grey: #555;
-$accent: #078fff;
-$gradient: linear-gradient(-60deg, #078fff 0%, #00f2fe 100%);
-$-webkitgradient: -webkit-linear-gradient(-60deg, #078fff 0%, #00f2fe 100%);
-
-// Fonts
-$font1: "Poppins", sans-serif;
-$font2: "Space Mono", Monospace;
-
-// Media Queries
-$max-width: 1080px;
-$mq-small: (
-  max-width: 768px,
-);
-$mq-medium: (
-  max-width: 1024px,
-);
-$mq-large: (
-  min-width: 1366px,
-);
-
-// Misc.
-$curve1: cubic-bezier(0.39, 0.575, 0.565, 1);
-$curve2: cubic-bezier(0.7, 0, 0.3, 1);
-$shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
-$inset-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+@import "./variables";
 
 * {
   margin: 0;
@@ -44,9 +15,9 @@ body {
   margin: 0;
   padding: 0;
   font-size: 1.6rem;
-  color: $dark;
+  color: $foreground1;
   line-height: 25px;
-  background: $light;
+  background: $background2;
   //Background-Image
   /* &::before {
     content: "";
@@ -74,7 +45,7 @@ h4,
 h5,
 h6 {
   cursor: default;
-  color: $dark;
+  color: $foreground1;
   line-height: 1;
   margin-bottom: 7px;
   a {
@@ -94,6 +65,10 @@ p {
     }
   }
 }
+#highlight {
+  font-size: 1.8rem;
+  color: $foreground2;
+}
 a {
   cursor: pointer;
   text-decoration: none;
@@ -109,7 +84,7 @@ button {
   font-family: $font1;
   font-size: 1.4rem;
   font-weight: 700;
-  color: $grey;
+  color: $foreground2;
   display: inline-block;
   border: none;
   outline: none;
@@ -124,27 +99,21 @@ section {
   background: transparent;
 }
 .whiteSection {
-  background: #fff;
+  background: $background1;
 }
 .greySection {
   box-shadow: $inset-shadow;
-  background: transparentize($color: $light, $amount: 0);
+  background: transparentize($color: $background2, $amount: 0);
 }
 
 // Card Styling
 .card {
   margin: 20px 7vw;
   padding: 50px 10%;
-  background-color: #fff;
-  color: $dark;
+  background-color: $background1;
+  color: $foreground1;
   border-radius: 20px;
   box-shadow: $shadow;
-}
-
-// Hero Rotating Text
-.react-rotating-text-cursor {
-  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s
-    infinite;
 }
 
 // Responsive Design
@@ -162,24 +131,29 @@ section {
 }
 
 // Animations
-@keyframes blinking-cursor {
+/* transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1); */
+@-webkit-keyframes boost {
   0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
+    opacity: 0.9;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
-/* transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1); */
 @keyframes boost {
   0% {
     opacity: 0.9;
   }
   100% {
     opacity: 1;
+  }
+}
+@-webkit-keyframes width {
+  0% {
+    width: 1%;
+  }
+  100% {
+    width: 3%;
   }
 }
 @keyframes width {

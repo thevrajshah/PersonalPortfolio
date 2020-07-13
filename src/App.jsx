@@ -1,6 +1,7 @@
-import React, { Component, Suspense, lazy } from "react";
+import React, { Component, Suspense, lazy, useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.scss";
+import "./_variables.scss";
 import Loader from "./components/Loader";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";

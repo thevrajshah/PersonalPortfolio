@@ -1,10 +1,12 @@
 import React, { Component, Fragment } from "react";
 import "./components.scss";
+import Loader from "./Loader";
 
 export default class ContactForm extends Component {
   render() {
     return (
       <Fragment>
+        <Loader />
         <div id='contactForm'>
           <form
             action='mailto:thevrajshah@gmail.com'

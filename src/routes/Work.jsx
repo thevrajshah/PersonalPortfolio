@@ -1,9 +1,10 @@
-import React, { Component, Fragment } from "react";
+import React, { Component, Fragment, lazy, Suspense } from "react";
 import "./routes.scss";
 import { WhiteSection } from "../components/Containers";
 import Projects from "../components/Projects";
-import Gallery from "../components/Gallery";
 import Design from "../components/Design";
+
+const Gallery = lazy(() => import("../components/Gallery"));
 
 export default class Work extends Component {
   render() {
@@ -12,20 +13,21 @@ export default class Work extends Component {
         <WhiteSection textAlign='center'>
           <h1>Programming</h1>
           <p>
-            One must consider programming as an Art which is how I feel like
-            working all the time man!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+            quisquam delectus praesentium atque debitis quia expedita voluptates
           </p>
         </WhiteSection>
         <Projects />
         <Design />
         <WhiteSection textAlign='center'>
-          <h1>Art is Lorem ipsum.</h1>
+          <h1>Art means the world to me.</h1>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
             quisquam delectus praesentium atque debitis quia expedita voluptates
             ipsam quasi maxime. Magnam, nemo.
           </p>
         </WhiteSection>
+        <Suspense fallback={"Loading..."}></Suspense>
         <Gallery />
       </Fragment>
     );
