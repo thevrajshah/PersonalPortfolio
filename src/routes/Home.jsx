@@ -44,9 +44,7 @@ export default class Home extends Component {
         </GreySection>
         <WhiteSection>
           <h1 style={{ fontSize: "3.5rem" }}>about this website</h1>
-          <p style={{ fontSize: "1.8rem", color: "#444" }}>
-            Looks like you stumbled into my Website.
-          </p>
+          <p id='highlight'> Looks like you stumbled into my Website.</p>
           <p>
             I' sure you're liking it here! Well, this website is completely
             designed & built by me using <strong>ReactJS</strong> and basic
