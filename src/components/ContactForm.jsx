@@ -10,7 +10,7 @@ export default class ContactForm extends Component {
             action='mailto:thevrajshah@gmail.com'
             method='post'
             encType='text/plain'
-            netlify
+            netlify='true'
           >
             <input type='text' name='name' placeholder='Name' required />
             <input type='text' name='subject' placeholder='Subject' required />

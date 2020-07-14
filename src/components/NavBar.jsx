@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import { NavLink } from "react-router-dom";
 import Social from "./Social";
 import "./components.scss";
+import ThemeMode from "../ThemeChanger";
 
 export default class NavBar extends Component {
   state = { toggle: false };
@@ -12,9 +13,10 @@ export default class NavBar extends Component {
     return (
       <header>
         <nav>
-          <NavLink to='/' exact id='logo'>
+          <a id='logo'>
             VRAJ.<b style={{ color: "#078fff" }}>SHAH</b>
-          </NavLink>
+            <ThemeMode />
+          </a>
           <ul id='desktopNav'>
             <li>
               <NavLink to='/' exact>

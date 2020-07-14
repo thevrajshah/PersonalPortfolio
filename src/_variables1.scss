@@ -1,33 +1,19 @@
 // Colors
+// lightMode
+$foreground1: #111;
+$background1: #fff;
+$foreground2: #222;
+$background2: #eee;
 
-$white: #fff;
-$black: #111;
-$light: #ebebeb;
-$dark: #222;
+// darkMode
+// $foreground1: #fff;
+// $background1: #111;
+// $foreground2: #fafafa;
+// $background2: #222;
+
 $accent: #078fff;
 $gradient: linear-gradient(-60deg, #078fff 0%, #00f2fe 100%);
 $-webkitgradient: -webkit-linear-gradient(-60deg, #078fff 0%, #00f2fe 100%);
-
-// lightMode
-body {
-  --foreground1: #111;
-  --background1: #fff;
-  --foreground2: #222;
-  --background2: #ebebeb;
-}
-body.dark-mode {
-  --foreground1: #fff;
-  --background1: #111;
-  --foreground2: #ebebeb;
-  --background2: #222;
-}
-// darkMode
-input[type="checkbox"]#switch:checked {
-  $foreground1: $white;
-  $background1: $black;
-  $foreground2: $light;
-  $background2: $dark;
-}
 
 // Fonts
 $font1: "Poppins", sans-serif;

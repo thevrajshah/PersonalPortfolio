@@ -16,10 +16,10 @@ export default class App extends Component {
     return (
       <React.Fragment>
         <Router onUpdate={() => window.scrollTo(0, 0)}>
-          <NavBar height='50px' />
+          <NavBar />
           <Suspense
             fallback={
-              <WhiteSection>
+              <WhiteSection textAlign='center'>
                 <Loader />
               </WhiteSection>
             }

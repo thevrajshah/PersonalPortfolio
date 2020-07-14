@@ -5,10 +5,6 @@ export default class Social extends Component {
   render() {
     return (
       <span id='social'>
-        <input type='checkbox' id='switch' name='theme' />
-        <label htmlFor='switch'>
-          <a className='fa fa-sun-o' />
-        </label>
         <a
           target='_blank'
           className='fab fa-github'

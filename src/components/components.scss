@@ -8,9 +8,10 @@ header {
   position: -webkit-sticky;
   width: 100%;
   top: 0px;
-  background: $background1;
+  background: var(--background1);
   font-size: 1.2rem;
   font-weight: 600;
+  box-shadow: $shadow;
   nav {
     display: flex;
     padding: 10px 25px;
@@ -18,13 +19,12 @@ header {
     max-width: 1040px;
     margin: auto;
     align-items: center;
-    box-shadow: $shadow;
     height: 55px;
     #logo {
       // padding: 3px;
       // border: solid $accent 0.3px;
       vertical-align: middle;
-      color: $foreground1;
+      color: var(--foreground1);
       opacity: 0.9;
       font-family: $font2;
       font-weight: 700;
@@ -48,7 +48,7 @@ header {
     }
   }
   a {
-    color: $foreground1;
+    color: var(--foreground1);
     opacity: 0.6;
     &:hover {
       color: $accent;
@@ -69,7 +69,7 @@ header {
   display: none;
   &::before,
   &::after {
-    background-color: $foreground1;
+    background-color: var(--foreground1);
     content: " ";
     border: none;
     display: block;
@@ -110,7 +110,7 @@ header {
   top: 50px;
   left: 0;
   padding: 5px 10%;
-  background: $background1;
+  background: var(--background1);
   height: calc(100vh - 50px);
   width: 100%;
   text-align: center;
@@ -128,7 +128,7 @@ header {
   a {
     vertical-align: middle;
     cursor: pointer;
-    color: $foreground1;
+    color: var(--foreground1);
     opacity: 0.6;
     margin: 0 4px;
     font-size: 1.5rem;
@@ -147,11 +147,6 @@ header {
   }
   .fa-instagram:hover {
     color: #ff1f57;
-  }
-  input[type="checkbox"] {
-    height: 0;
-    width: 0;
-    visibility: hidden;
   }
 }
 // Loader Styling
@@ -172,7 +167,7 @@ header {
   height: calc(100vh - 55px);
   padding: 50px 12%;
   line-height: 1.2;
-  color: $background1;
+  color: #fff;
   transition: all 0.3s $curve1 0s;
   #name {
     font-size: 6.5rem;
@@ -187,7 +182,7 @@ header {
   #prof {
     font-size: 3rem;
     font-weight: 600;
-    color: $foreground1;
+    color: #222;
     transition: all 0.3s $curve2 0s;
     // Centering
     position: relative;
@@ -202,7 +197,6 @@ header {
   animation: topToBottom 3.5s $curve2 infinite 0s;
   -ms-animation: topToBottom 3.5s $curve2 infinite 0s;
   -webkit-animation: topToBottom 3.5s $curve2 infinite 0s;
-  color: $foreground1;
   opacity: 0;
   overflow: hidden;
   position: absolute;
@@ -226,7 +220,7 @@ header {
   height: 35rem;
   grid-template-rows: 15rem 15rem 2rem 3rem;
   margin: 15px;
-  background-color: $background1;
+  background-color: var(--background1);
   border-radius: 10px;
   box-shadow: $shadow;
   .projectImage {
@@ -235,11 +229,11 @@ header {
   }
   .projectText {
     padding: 20px;
-    color: $foreground2;
+    color: var(--foreground2);
   }
   .tools {
     margin: auto;
-    color: $foreground2;
+    color: var(--foreground2);
     font-size: 1rem;
   }
   .projectOptions {
@@ -248,7 +242,7 @@ header {
     align-items: center;
     margin: auto 20px;
     .fa-github-alt {
-      color: $foreground1;
+      color: var(--foreground1);
       &:hover {
         color: #a806c5;
       }
@@ -316,12 +310,12 @@ header {
   button[type="submit"] {
     margin: 10px 5px;
     background: $accent;
-    color: $background1;
+    color: var(--background1);
     font-size: 1.5rem;
     transition: all 0.3s $curve2 0s;
     box-shadow: 0 5px 10px 0px rgba(7, 143, 255, 0.1);
     &:hover {
-      background: $foreground1;
+      background: var(--foreground1);
       box-shadow: 0 5px 10px 0px rgba(24, 24, 24, 0.35);
       i.m-1-10 {
         transform: translateX(5px);
@@ -330,12 +324,12 @@ header {
   }
   button[type="reset"] {
     margin: 10px 5px;
-    color: $background1;
-    background: $foreground1;
+    color: var(--background1);
+    background: var(--foreground1);
     box-shadow: 0 5px 10px 0px rgba(24, 24, 24, 0.35);
     transition: all 0.3s $curve2 0s;
     &:hover {
-      background: $foreground2;
+      background: var(--foreground2);
       i.fa-refresh {
         transform: rotate(360deg);
         transition: all 0.4s $curve2 0s;
@@ -348,7 +342,7 @@ header {
     margin: 10px 0;
     padding: 12px 20px;
     border-radius: 25px;
-    background-color: $background2;
+    background-color: var(--background2);
     &:focus,
     &:hover {
       box-shadow: $shadow;
@@ -364,14 +358,14 @@ header {
 footer {
   bottom: 0;
   height: 8rem;
-  background: $background1;
+  background: var(--background1);
   text-align: center;
   button#toTop {
     position: relative;
     top: 5px;
     margin: 5px auto;
     padding: 2px 9px;
-    color: $background1;
+    color: var(--background1);
     border-radius: 50%;
     font-size: 1.5rem;
     background: $accent;
@@ -394,14 +388,14 @@ footer {
     color: #dc143c;
     #createdWith {
       margin: auto 0;
-      color: $foreground1;
+      color: var(--foreground1);
       img {
         width: 15px;
         vertical-align: middle;
       }
     }
     #copyright {
-      color: $foreground1;
+      color: var(--foreground1);
     }
   }
 }

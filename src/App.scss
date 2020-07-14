@@ -15,9 +15,9 @@ body {
   margin: 0;
   padding: 0;
   font-size: 1.6rem;
-  color: $foreground1;
+  color: var(--foreground1);
   line-height: 25px;
-  background: $background2;
+  background: var(--background2);
   //Background-Image
   /* &::before {
     content: "";
@@ -45,7 +45,7 @@ h4,
 h5,
 h6 {
   cursor: default;
-  color: $foreground1;
+  color: var(--foreground1);
   line-height: 1;
   margin-bottom: 7px;
   a {
@@ -67,7 +67,7 @@ p {
 }
 #highlight {
   font-size: 1.8rem;
-  color: $foreground2;
+  color: var(--foreground2);
   opacity: 0.8;
 }
 a {
@@ -85,7 +85,7 @@ button {
   font-family: $font1;
   font-size: 1.4rem;
   font-weight: 700;
-  color: $foreground2;
+  color: var(--foreground2);
   display: inline-block;
   border: none;
   outline: none;
@@ -100,19 +100,19 @@ section {
   background: transparent;
 }
 .whiteSection {
-  background: $background1;
+  background: var(--background1);
 }
 .greySection {
   box-shadow: $inset-shadow;
-  background: transparentize($color: $background2, $amount: 0);
+  background: var(--background2);
 }
 
 // Card Styling
 .card {
   margin: 20px 7vw;
   padding: 50px 10%;
-  background-color: $background1;
-  color: $foreground1;
+  background-color: var(--background1);
+  color: var(--foreground1);
   border-radius: 20px;
   box-shadow: $shadow;
 }
