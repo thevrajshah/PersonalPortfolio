@@ -10,10 +10,16 @@ export default class ContactForm extends Component {
             action='mailto:thevrajshah@gmail.com'
             method='post'
             encType='text/plain'
+            netlify
           >
             <input type='text' name='name' placeholder='Name' required />
             <input type='text' name='subject' placeholder='Subject' required />
-            <input type='email' name='mail' placeholder='Your Email' />
+            <input
+              type='email'
+              inputMode='email'
+              name='email'
+              placeholder='Your Email'
+            />
             <textarea name='message' placeholder='Message' required />
             <button type='reset'>
               <i className='fa fa-refresh' aria-hidden='true' />
