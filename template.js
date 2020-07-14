@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+export default ({ subtitle }) => {
+  return `<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- begin SEO -->
-    <title>Vraj Shah</title>
+    <title>Vraj Shah - Developer</title>
     <meta charset="utf-8"/>
     <meta property="og:locale" content="en-US">
     <meta property="og:site_name" content="Vraj Shah">
@@ -22,7 +23,8 @@
     <link rel="apple-touch-icon" href="src/assets/logo192.png">    
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" lazyload>
   <body class="dark-mode">
-    <div id="Root"></div>
+    <div id="root"></div>
   </body>
   <script src="https://kit.fontawesome.com/123f0f79ae.js" crossorigin="anonymous"></script>
-</html>
+</html>`;
+};

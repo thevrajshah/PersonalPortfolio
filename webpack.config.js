@@ -7,7 +7,7 @@ const webpack = require("webpack");
 module.exports = (env, options) => {
   const isDevMode = options.mode === "development";
   return {
-    entry: "./src/index.js",
+    entry: "./src/Browser.js",
     output: {
       filename: "bundle.js",
       path: path.resolve(__dirname, "build"),
@@ -21,10 +21,6 @@ module.exports = (env, options) => {
         {
           test: /\.(svg|gif|jpe?g|png|ico)$/,
           loader: "file-loader",
-          options: {
-            name: "[name].[ext]",
-            publicPath: url => url.replace(/build/, ""),
-          },
         },
         {
           test: /\.js(x*)$/,
@@ -68,7 +64,7 @@ module.exports = (env, options) => {
         "window.jQuery": "jquery",
       }),
       new HtmlWebpackPlugin({
-        template: "./public/index.html",
+        template: "./template.js",
       }),
     ],
   };

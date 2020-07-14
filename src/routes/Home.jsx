@@ -16,9 +16,9 @@ export default class Home extends Component {
           <p>
             Hey! It seems you stumbled into my website. To tell you a bit about
             myself, I love tech in general! I really enjoy everything from
-            designing images with coloured text to working with websites. This
-            website compiles all I love in one place, I hope you have a good
-            time exploring it.
+            designing images with coloured text to working on complex UI/UX.
+            This website compiles all I love in one place, I hope you have a
+            good time exploring it.
           </p>
         </WhiteSection>
         <GreySection>
