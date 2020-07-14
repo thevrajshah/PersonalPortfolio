@@ -38,6 +38,7 @@ export default class NavBar extends Component {
             </li>
           </ul>
           <Social />
+
           <i
             className={this.state.toggle ? "hamburger cross" : "hamburger"}
             onClick={this.Toggle}

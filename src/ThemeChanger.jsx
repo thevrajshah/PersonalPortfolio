@@ -21,7 +21,7 @@ const ThemeChanger = () => {
     <a
       onClick={handleChange}
       className={themeState ? "fa fa-moon-o" : "fa fa-sun-o"}
-      style={{ fontSize: "1.4rem" }}
+      id='themeChanger'
     />
   );
 };
