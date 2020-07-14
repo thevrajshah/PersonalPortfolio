@@ -63,9 +63,13 @@ const projectData = [
     Name: "Some Random Project",
     Description:
       "Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    Tools: "JavaSrcipt, HTML",
     GitUrl: "",
     LiveUrl: "",
+  },
+  {
+    Name: "Someone Else's Project",
+    Description:
+      "Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     Name: "Some Other Project",

@@ -15,7 +15,6 @@ export default class NavBar extends Component {
         <nav>
           <a id='logo'>
             VRAJ.<b style={{ color: "#078fff" }}>SHAH</b>
-            <ThemeMode />
           </a>
           <ul id='desktopNav'>
             <li>
@@ -33,6 +32,9 @@ export default class NavBar extends Component {
               <a id='blog' href='#'>
                 BLOG
               </a>
+            </li>
+            <li>
+              <ThemeMode />
             </li>
           </ul>
           <Social />
@@ -64,6 +66,9 @@ export default class NavBar extends Component {
             <a href='#' id='blog' onClick={this.Toggle}>
               BLOG
             </a>
+          </li>
+          <li>
+            <ThemeMode />
           </li>
         </ul>
       </header>

@@ -35,6 +35,7 @@ $font2: "Space Mono", Monospace;
 
 // Media Queries
 $max-width: 1080px;
+
 $mq-small: (
   max-width: 768px,
 );
@@ -48,5 +49,5 @@ $mq-large: (
 // Misc.
 $curve1: cubic-bezier(0.39, 0.575, 0.565, 1);
 $curve2: cubic-bezier(0.7, 0, 0.3, 1);
-$shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+$shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 $inset-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.1);

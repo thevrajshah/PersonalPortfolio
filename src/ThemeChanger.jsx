@@ -18,14 +18,11 @@ const ThemeChanger = () => {
     if (getTheme === "dark") return document.body.classList.add("dark-mode");
   });
   return (
-    <a onClick={handleChange}>
-      &nbsp;
-      {themeState ? (
-        <i className='fa fa-sun-o' />
-      ) : (
-        <i className='fa fa-moon-o' />
-      )}
-    </a>
+    <a
+      onClick={handleChange}
+      className={themeState ? "fa fa-moon-o" : "fa fa-sun-o"}
+      style={{ fontSize: "1.4rem" }}
+    />
   );
 };
 

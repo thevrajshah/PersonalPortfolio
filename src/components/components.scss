@@ -16,10 +16,10 @@ header {
     display: flex;
     padding: 10px 25px;
     justify-content: space-between;
-    max-width: 1040px;
+    max-width: $max-width;
     margin: auto;
     align-items: center;
-    height: 55px;
+    height: 5.2rem;
     #logo {
       // padding: 3px;
       // border: solid $accent 0.3px;
@@ -30,7 +30,7 @@ header {
       font-weight: 700;
       font-size: 1.6rem;
       line-height: 0.9;
-      transition: all 0.2s $curve1;
+      transition: all 0.3s $curve1;
       &:hover {
         opacity: 1;
       }
@@ -191,33 +191,37 @@ header {
 }
 /*Vertical Sliding*/
 .slidingVertical {
-  transition: all 0.2s $curve2 0s;
-}
-.slidingVertical span {
-  animation: topToBottom 3.5s $curve2 infinite 0s;
-  -ms-animation: topToBottom 3.5s $curve2 infinite 0s;
-  -webkit-animation: topToBottom 3.5s $curve2 infinite 0s;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-}
-.slidingVertical span:nth-child(2) {
-  animation-delay: 2s;
-  -ms-animation-delay: 2s;
-  -webkit-animation-delay: 2s;
+  transition: all 2s $curve2 0s;
+  span {
+    animation: topToBottom 5s $curve2 infinite 0s;
+    -ms-animation: topToBottom 5s $curve2 infinite 0s;
+    -webkit-animation: topToBottom 5s $curve2 infinite 0s;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    &:nth-child(2) {
+      animation-delay: 2s;
+      -ms-animation-delay: 2s;
+      -webkit-animation-delay: 2s;
+    }
+  }
 }
 
 // Projects Styling
 .projects {
   z-index: 0;
-  margin: 0;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  display: -moz-grid;
+  justify-content: center;
+  width: 100%;
+  grid-template-columns: auto auto auto;
 }
 .projectCard {
   display: grid;
   box-sizing: border-box;
   height: 35rem;
+  width: 28rem !important;
+  min-width: 28rem;
   grid-template-rows: 15rem 15rem 2rem 3rem;
   margin: 15px;
   background-color: var(--background1);
@@ -424,7 +428,12 @@ footer {
   }
   // Projects Styling
   .projects {
-    grid-template-columns: 50% 50%;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: start;
+    display: -ms-flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
   }
   // Gallery Styling
   .imgContainer {
@@ -452,10 +461,6 @@ footer {
     img {
       width: 20em;
     }
-  }
-  // Projects Styling
-  .projects {
-    grid-template-columns: 100%;
   }
   // Gallery Styling
   .imgContainer {
@@ -497,22 +502,6 @@ footer {
     height: 1;
   }
 }
-@keyframes buffering {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes buffering {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*topToBottom Animation*/
 @keyframes topToBottom {
@@ -521,19 +510,19 @@ footer {
   }
   5% {
     opacity: 0;
-    -moz-transform: translateX(-50px);
+    -moz-transform: translateY(-50px);
   }
   10% {
     opacity: 1;
-    -moz-transform: translateX(0px);
+    -moz-transform: translateY(0px);
   }
   25% {
     opacity: 1;
-    -moz-transform: translateX(0px);
+    -moz-transform: translateY(0px);
   }
   30% {
     opacity: 0;
-    -moz-transform: translateX(50px);
+    -moz-transform: translateY(50px);
   }
   80% {
     opacity: 0;
@@ -548,19 +537,19 @@ footer {
   }
   5% {
     opacity: 0;
-    -moz-transform: translateX(-50px);
+    -moz-transform: translateY(-50px);
   }
   10% {
     opacity: 1;
-    -moz-transform: translateX(0px);
+    -moz-transform: translateY(0px);
   }
   25% {
     opacity: 1;
-    -moz-transform: translateX(0px);
+    -moz-transform: translateY(0px);
   }
   30% {
     opacity: 0;
-    -moz-transform: translateX(50px);
+    -moz-transform: translateY(50px);
   }
   80% {
     opacity: 0;
