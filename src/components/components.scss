@@ -30,6 +30,7 @@ header {
       font-weight: 700;
       font-size: 1.6rem;
       line-height: 0.9;
+      vertical-align: middle;
       transition: all 0.3s $curve1;
       &:hover {
         opacity: 1;
@@ -120,7 +121,8 @@ header {
   animation: nav-in 0.3s $curve1;
   li {
     display: block;
-    margin: 15px 100px;
+    margin: 25px 100px;
+    font-size: 1.4rem;
   }
 }
 
