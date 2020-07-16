@@ -26,7 +26,7 @@ export default class App extends Component {
           >
             <Switch>
               <Route path='/' exact component={Home} />
-              <Route path='/work' component={Work} />
+              <Route path='/portfolio' component={Work} />
               <Route path='/connect' component={Connect} />
             </Switch>
           </Suspense>

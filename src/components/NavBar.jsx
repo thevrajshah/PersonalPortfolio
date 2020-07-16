@@ -32,7 +32,7 @@ export default class NavBar extends Component {
               </NavLink>
             </li>
             <li>
-              <NavLink to='/work'>WORK</NavLink>
+              <NavLink to='/portfolio'>PROTFOLIO</NavLink>
             </li>
             <li>
               <NavLink to='/connect'>CONNECT</NavLink>
@@ -64,8 +64,8 @@ export default class NavBar extends Component {
             </NavLink>
           </li>
           <li>
-            <NavLink to='/work' onClick={this.toggleMobileNav}>
-              WORK
+            <NavLink to='/portfolio' onClick={this.toggleMobileNav}>
+              PROTFOLIO
             </NavLink>
           </li>
           <li>

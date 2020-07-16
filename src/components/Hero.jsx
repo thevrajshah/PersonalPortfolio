@@ -6,8 +6,9 @@ class Hero extends Component {
     return (
       <div id='Hero'>
         <section>
+          <div id='profile'></div>
           <div id='heroText'>
-            <div id='name'>I'M VRAJ</div>
+            <div id='name'>VRAJ SHAH</div>
             <div id='prof'>
               <div className='slidingVertical'>
                 <span>Developer.</span>

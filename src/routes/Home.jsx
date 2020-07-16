@@ -20,10 +20,16 @@ export default class Home extends Component {
             This website compiles all I love in one place, I hope you have a
             good time exploring it.
           </p>
+          <a
+            href='https://twitter.com/thevrajshah?ref_src=twsrc%5Etfw'
+            class='twitter-follow-button'
+            data-show-count='false'
+          >
+            Follow @thevrajshah
+          </a>
         </WhiteSection>
         <GreySection>
           <div id='moreAbout'>
-            <div id='profile'></div>
             <div id='moreAboutText'>
               <h1>A Little More</h1>
               <p>
@@ -39,13 +45,6 @@ export default class Home extends Component {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptas, minima natus excepturi maiores
               </p>
-              <a
-                href='https://twitter.com/thevrajshah?ref_src=twsrc%5Etfw'
-                class='twitter-follow-button'
-                data-show-count='false'
-              >
-                Follow @thevrajshah
-              </a>
             </div>
           </div>
         </GreySection>
