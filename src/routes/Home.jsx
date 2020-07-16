@@ -10,9 +10,9 @@ export default class Home extends Component {
         <Hero />
         <WhiteSection>
           <h1 style={{ fontSize: "4rem" }}>about me</h1>
-          <p id='highlight'>
-            I'm a computer enginnering student based in sunny Gujarat, India.
-          </p>
+          <h2 id='highlight'>
+            I'm a computer enginnering student based in Gujarat, India.
+          </h2>
           <p>
             Hey! It seems you stumbled into my website. To tell you a bit about
             myself, I love tech in general! I really enjoy everything from
@@ -25,7 +25,7 @@ export default class Home extends Component {
           <div id='moreAbout'>
             <div id='profile'></div>
             <div id='moreAboutText'>
-              <h2>A Little More</h2>
+              <h1>A Little More</h1>
               <p>
                 I'm 18 Years old, based in Vadodara, Gujarat. I'm in my 2
                 <sup>nd</sup> Year of Computer Engineering at SVIT, Vasad.
@@ -39,12 +39,19 @@ export default class Home extends Component {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptas, minima natus excepturi maiores
               </p>
+              <a
+                href='https://twitter.com/thevrajshah?ref_src=twsrc%5Etfw'
+                class='twitter-follow-button'
+                data-show-count='false'
+              >
+                Follow @thevrajshah
+              </a>
             </div>
           </div>
         </GreySection>
         <WhiteSection>
           <h1 style={{ fontSize: "3.5rem" }}>about this website</h1>
-          <p id='highlight'> Looks like you stumbled into my Website.</p>
+          <h2 id='highlight'> Looks like you stumbled into my Website.</h2>
           <p>
             I' sure you're liking it here! Well, this website is completely
             designed & built by me using <strong>ReactJS</strong> and basic

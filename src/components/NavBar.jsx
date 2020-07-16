@@ -5,17 +5,26 @@ import "./components.scss";
 import ThemeMode from "./ThemeChanger";
 
 export default class NavBar extends Component {
-  state = { toggle: false };
-  Toggle = () => {
-    this.setState({ toggle: !this.state.toggle });
+  state = { mobileNavVisible: false, opaqueNav: false };
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+  // Hide or show the menu.
+  handleScroll = () => {};
+  toggleMobileNav = () => {
+    this.setState({ mobileNavVisible: !this.state.mobileNavVisible });
   };
   render() {
     return (
       <header>
         <nav>
-          <a id='logo'>
-            VRAJ.<b style={{ color: "#078fff" }}>SHAH</b>
-          </a>
+          <span id='logo'>
+            VRAJ.<b style={{ color: "var(--accent)" }}>SHAH</b>
+          </span>
           <ul id='desktopNav'>
             <li>
               <NavLink to='/' exact>
@@ -39,31 +48,33 @@ export default class NavBar extends Component {
           </ul>
           <Social />
           <i
-            className={this.state.toggle ? "hamburger cross" : "hamburger"}
-            onClick={this.Toggle}
-          ></i>
+            className={
+              this.state.mobileNavVisible ? "hamburger cross" : "hamburger"
+            }
+            onClick={this.toggleMobileNav}
+          />
         </nav>
         <ul
           id='mobileNav'
-          style={{ display: this.state.toggle ? "block" : "none" }}
+          style={{ display: this.state.mobileNavVisible ? "block" : "none" }}
         >
           <li>
-            <NavLink to='/' exact onClick={this.Toggle}>
+            <NavLink to='/' exact onClick={this.toggleMobileNav}>
               HOME
             </NavLink>
           </li>
           <li>
-            <NavLink to='/work' onClick={this.Toggle}>
+            <NavLink to='/work' onClick={this.toggleMobileNav}>
               WORK
             </NavLink>
           </li>
           <li>
-            <NavLink to='/connect' onClick={this.Toggle}>
+            <NavLink to='/connect' onClick={this.toggleMobileNav}>
               CONNECT
             </NavLink>
           </li>
           <li>
-            <a href='#' id='blog' onClick={this.Toggle}>
+            <a href='#' id='blog' onClick={this.toggleMobileNav}>
               BLOG
             </a>
           </li>

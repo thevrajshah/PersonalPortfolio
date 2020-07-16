@@ -21,8 +21,17 @@ export default ({ subtitle }) => {
     <link rel="canonical" href="https://thevrajshah.me/">
     <link rel="icon" href="src/assets/favicon.ico">
     <link rel="apple-touch-icon" href="src/assets/logo192.png">    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" lazyload>
-  <body class="dark-mode">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85887053-2"></script>
+    <script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-85887053-2');
+</script>
+    <body class="dark-mode">
     <div id="root"></div>
   </body>
   <script src="https://kit.fontawesome.com/123f0f79ae.js" crossorigin="anonymous"></script>

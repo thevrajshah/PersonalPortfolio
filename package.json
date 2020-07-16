@@ -1,8 +1,9 @@
 {
-  "name": "client",
+  "name": "thevrajshah",
   "version": "1.0.0",
-  "description": "Frontend for the Blog Site built using React.",
-  "main": "index.js",
+  "description": "",
+  "main": "Browser.js",
+  "private": true,
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot --port 3000",
     "build": "webpack --mode production"

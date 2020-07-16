@@ -22,11 +22,11 @@ export default class ContactForm extends Component {
             />
             <textarea name='message' placeholder='Message' required />
             <button type='reset'>
-              <i className='fa fa-refresh' aria-hidden='true' />
+              <i className='fa fa-refresh' />
             </button>
             <button type='submit'>
               Submit
-              <i className='fa fa-long-arrow-right m-1-10' aria-hidden='true' />
+              <i className='fa fa-long-arrow-right m-1-10' />
             </button>
           </form>
         </div>

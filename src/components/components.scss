@@ -9,8 +9,7 @@ header {
   width: 100%;
   top: 0px;
   background: var(--background1);
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 700;
   box-shadow: $shadow;
   nav {
     display: flex;
@@ -18,23 +17,20 @@ header {
     justify-content: space-between;
     max-width: $max-width;
     margin: auto;
+    font-size: 1.2rem;
     align-items: center;
     height: 5.2rem;
     #logo {
       // padding: 3px;
-      // border: solid $accent 0.3px;
+      // border: solid var(--accent) 0.3px;
       vertical-align: middle;
       color: var(--foreground1);
-      opacity: 0.9;
+      font-weight: 900;
+      font-size: 1.4rem;
       font-family: $font2;
-      font-weight: 700;
-      font-size: 1.6rem;
       line-height: 0.9;
       vertical-align: middle;
       transition: all 0.3s $curve1;
-      &:hover {
-        opacity: 1;
-      }
     }
     // DesktopNav
     #desktopNav {
@@ -45,19 +41,19 @@ header {
       }
       a {
         padding: 20px 15px;
-        letter-spacing: 0.7px;
       }
     }
   }
   a {
     color: var(--foreground1);
-    opacity: 0.6;
+    // opacity: 0.6;
     &:hover {
-      color: $accent;
-      opacity: 1;
+      color: var(--accent);
+      // opacity: 1;
     }
     &.active {
-      opacity: 1;
+      // opacity: 1;
+      color: var(--accent);
     }
   }
 }
@@ -82,7 +78,7 @@ header {
     transform: translateX(-50%);
     transition: all 0.3s $curve1;
     &:hover {
-      background-color: $accent;
+      background-color: var(--accent);
     }
   }
   &::before {
@@ -133,16 +129,14 @@ header {
 
 // Social Styling
 #social {
+  font-size: 1rem;
   a {
     vertical-align: middle;
     cursor: pointer;
     color: var(--foreground1);
-    opacity: 0.6;
+    // opacity: 0.6;
     margin: 0 4px;
     font-size: 1.5rem;
-    &:hover {
-      opacity: 1;
-    }
   }
   .fa-github:hover {
     color: #a806c5;
@@ -166,34 +160,40 @@ header {
 }
 
 // Hero Styling
-.hero {
-  background: $accent;
+#Hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--accent);
   background: $gradient;
   background: $-webkitgradient;
   background-attachment: fixed;
   background-size: cover;
   height: calc(100vh - 5.2rem);
-  padding: 50px 12%;
+  padding: 5rem 3rem;
   line-height: 1.2;
   color: #fff;
   transition: all 0.3s $curve1 0s;
-  #name {
-    font-size: 6.5rem;
-    font-weight: 700;
-    // Centering
+  #heroText {
+    height: 100%;
     position: absolute;
-    text-align: center;
+    translate: -50%;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  }
+  #name {
+    font-family: $font2;
+    font-size: 7rem;
+    font-weight: 700;
+    animation: hero 1.5s $curve2;
   }
   #prof {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 700;
     color: #222;
     transition: all 0.3s $curve2 0s;
     // Centering
     position: relative;
+    text-align: left;
     top: 10px;
   }
 }
@@ -263,8 +263,8 @@ header {
       display: flex;
       justify-content: space-between;
       font-size: 1.2rem;
-      font-weight: 600;
-      color: $accent;
+      font-weight: 700;
+      color: var(--accent);
       &:hover {
         opacity: 0.9;
       }
@@ -321,7 +321,7 @@ header {
   }
   button[type="submit"] {
     margin: 10px 5px;
-    background: $accent;
+    background: var(--accent);
     color: var(--background1);
     font-size: 1.5rem;
     transition: all 0.3s $curve2 0s;
@@ -380,7 +380,7 @@ footer {
     color: var(--background1);
     border-radius: 50%;
     font-size: 1.5rem;
-    background: $accent;
+    background: var(--accent);
     box-shadow: $shadow;
     &:hover {
       i.fa-angle-up {
@@ -486,7 +486,32 @@ footer {
   }
 }
 
-// Animation
+// Animations
+@-webkit-keyframes hero {
+  0% {
+    opacity: 0;
+    transform: scale(5);
+    letter-spacing: 50px;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    letter-spacing: 1;
+  }
+}
+@keyframes hero {
+  0% {
+    opacity: 0;
+    transform: scale(5);
+    letter-spacing: 50px;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    letter-spacing: 1;
+  }
+}
+
 @keyframes nav-in {
   0% {
     height: 0;

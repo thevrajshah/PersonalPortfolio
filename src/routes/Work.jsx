@@ -12,10 +12,7 @@ export default class Work extends Component {
       <Fragment>
         <WhiteSection textAlign='center'>
           <h1>Programming</h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
-            quisquam delectus praesentium atque debitis quia expedita voluptates
-          </p>
+          <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
         </WhiteSection>
         <Projects />
         <Design />

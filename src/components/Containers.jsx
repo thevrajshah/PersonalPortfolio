@@ -12,7 +12,7 @@ export class WhiteSection extends Component {
         <section
           style={{
             textAlign: this.props.textAlign ? this.props.textAlign : "left",
-            padding: this.props.paddingLR ? this.props.paddingLR : "0 24px",
+            padding: this.props.paddingLR ? this.props.paddingLR : "0 4rem",
           }}
         >
           {this.props.children}
@@ -34,7 +34,7 @@ export class GreySection extends Component {
         <section
           style={{
             textAlign: this.props.textAlign ? this.props.textAlign : "left",
-            padding: this.props.paddingLR ? this.props.paddingLR : "0 24px",
+            padding: this.props.paddingLR ? this.props.paddingLR : "0 4rem",
           }}
         >
           {this.props.children}

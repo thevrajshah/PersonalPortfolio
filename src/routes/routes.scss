@@ -8,7 +8,8 @@
   #profile {
     background: #bbb;
     margin: 20px auto;
-    width: 100%;
+    border-radius: 50%;
+    width: 350px;
     height: 350px;
   }
   #moreAboutText {
@@ -26,7 +27,9 @@
   #moreAbout {
     display: block;
     #profile {
-      margin: 0 auto;
+      margin: 5px auto;
+      width: 27.5rem;
+      height: 27.5rem;
     }
     #moreAboutText {
       margin-top: 15px;

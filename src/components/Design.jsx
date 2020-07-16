@@ -6,7 +6,7 @@ export default class Design extends Component {
   render() {
     return (
       <WhiteSection textAlign='center'>
-        <h2>Design</h2>
+        <h1>Design</h1>
         <p>
           <i>"Design-Grid Here"</i>
         </p>

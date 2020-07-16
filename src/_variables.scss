@@ -1,40 +1,35 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400&family=Source+Code+Pro:wght@500;900&display=swap");
+$font1: "Poppins", sans-serif;
+$font2: "Source Code Pro", Monospace;
+
 // Colors
 
-$white: #fff;
-$black: #111;
-$light: #ebebeb;
-$dark: #222;
-$accent: #12c7a1; //#078fff
-$gradient: linear-gradient(-60deg, #078fff 0%, #00f2fe 100%);
-$-webkitgradient: -webkit-linear-gradient(-60deg, #078fff 0%, #00f2fe 100%);
+$gradient: linear-gradient(-60deg, var(--accent) 0%, #00f2fe 100%);
+$-webkitgradient: -webkit-linear-gradient(
+  -60deg,
+  var(--accent) 0%,
+  #00f2fe 100%
+);
 
-// lightMode
 body {
+  --accent: #02b7c4; //#078fff
+  // lightMode
   --foreground1: #111;
   --background1: #fff;
-  --foreground2: #222;
+  --foreground2: #444;
   --background2: #ebebeb;
+  // darkMode
+  &.dark-mode {
+    --foreground1: #fff;
+    --background1: #111;
+    --foreground2: #ebebeb;
+    --background2: #181818;
+  }
 }
-body.dark-mode {
-  --foreground1: #fff;
-  --background1: #111;
-  --foreground2: #ebebeb;
-  --background2: #222;
-}
-// darkMode
-input[type="checkbox"]#switch:checked {
-  $foreground1: $white;
-  $background1: $black;
-  $foreground2: $light;
-  $background2: $dark;
-}
-
-// Fonts
-$font1: "Poppins", sans-serif;
-$font2: "Space Mono", Monospace;
 
 // Media Queries
-$max-width: 1080px;
+$max-width: 1140px;
 
 $mq-small: (
   max-width: 768px,

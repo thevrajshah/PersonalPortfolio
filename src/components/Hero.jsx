@@ -4,10 +4,10 @@ import "./components.scss";
 class Hero extends Component {
   render() {
     return (
-      <div className='hero'>
+      <div id='Hero'>
         <section>
-          <div id='name'>
-            Vraj Shah
+          <div id='heroText'>
+            <div id='name'>I'M VRAJ</div>
             <div id='prof'>
               <div className='slidingVertical'>
                 <span>Developer.</span>
