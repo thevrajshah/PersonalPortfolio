@@ -25,10 +25,10 @@ module.exports = (env, options) => {
         {
           test: /\.(png|gif|jp(e*)g|svg|ico)$/,
           loader: "url-loader",
-          options: {
+          /* options: {
             limit: 8000,
             name: "images/[hash]-[name].[ext]",
-          },
+          }, */
         },
         {
           test: /\.js(x*)$/,
@@ -58,7 +58,7 @@ module.exports = (env, options) => {
       new CleanWebpackPlugin(),
       new MiniCssExtractPlugin(),
       new HtmlWebpackPlugin({
-        template: "./template.js",
+        template: "./template.html",
       }),
     ],
   };

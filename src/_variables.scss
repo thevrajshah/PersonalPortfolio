@@ -12,16 +12,19 @@ $-webkitgradient: -webkit-linear-gradient(
   #00f2fe 100%
 );
 
-body {
-  --accent: #00f1af; //#02b7c4 //#078fff
-  // lightMode
+// lightMode
+html[data-theme="light"] {
+  --accent: #00e0a5; //#00cddb  #02b7c4
   --foreground1: #111;
   --background1: #fff;
   --foreground2: #444;
   --background2: #f8f8f8;
-  // darkMode
-  &.dark-mode {
-    --accent: #00d8e7; //#00f1af
+}
+
+//darkMode
+html[data-theme="dark"] {
+  body.dark-mode {
+    --accent: #00cddb; //#00e0a5
     --foreground1: #fff;
     --background1: #111;
     --foreground2: #ebebeb;

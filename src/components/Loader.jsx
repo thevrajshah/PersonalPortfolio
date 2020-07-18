@@ -8,7 +8,7 @@ class Loader extends Component {
     return (
       <WhiteSection textAlign='center'>
         <div className='loader'>
-          <h1>Please wait until I learn Server-Side Rendering.</h1>
+          <h3>Wait until I figure out Server-Side Rendering....</h3>
           <img
             // src='https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Dino_non-birthday_version.gif'
             src={dino}

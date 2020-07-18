@@ -2,7 +2,6 @@ import React, { Component, Fragment } from "react";
 import "./routes.scss";
 import Hero from "../components/Hero";
 import { WhiteSection, GreySection } from "../components/Containers";
-import profile from "../images/vraj_dev.png";
 
 export default class Home extends Component {
   render() {

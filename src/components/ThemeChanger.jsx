@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 const ThemeChanger = () => {
   const [themeState, setThemeState] = useState(false);
@@ -6,17 +6,11 @@ const ThemeChanger = () => {
   const handleChange = () => {
     setThemeState(!themeState);
     if (themeState) {
-      localStorage.setItem("Theme", "dark");
-      document.body.classList.add("dark-mode");
+      document.documentElement.setAttribute("data-theme", "dark");
     } else {
-      localStorage.setItem("Theme", "light");
-      document.body.classList.remove("dark-mode");
+      document.documentElement.setAttribute("data-theme", "light");
     }
   };
-  useEffect(() => {
-    const getTheme = localStorage.getItem("Theme");
-    if (getTheme === "dark") return document.body.classList.add("dark-mode");
-  });
   return (
     <a
       onClick={handleChange}
