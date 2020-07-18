@@ -25,15 +25,14 @@ export default ({ subtitle }) => {
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85887053-2"></script>
     <script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script>
     <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-85887053-2');
-</script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-85887053-2');
+    </script>
     <body class="dark-mode">
     <div id="root"></div>
   </body>
-  <script src="https://kit.fontawesome.com/123f0f79ae.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/123f0f79ae.js" crossorigin="anonymous"></script>
 </html>`;
 };

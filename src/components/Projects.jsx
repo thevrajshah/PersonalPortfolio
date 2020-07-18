@@ -5,7 +5,7 @@ import { GreySection } from "./Containers";
 class Projects extends Component {
   render() {
     return (
-      <GreySection>
+      <GreySection paddingLR='0 2rem'>
         <div className='projects'>
           {projectData.map((data, key) => {
             return (
