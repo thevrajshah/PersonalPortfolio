@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import "./routes.scss";
 import Hero from "../components/Hero";
 import { WhiteSection, GreySection } from "../components/Containers";
+import profile from "../images/vraj_dev.png";
 
 export default class Home extends Component {
   render() {
@@ -14,11 +15,10 @@ export default class Home extends Component {
             I'm a computer enginnering student based in Gujarat, India.
           </h2>
           <p>
-            Hey! It seems you stumbled into my website. To tell you a bit about
-            myself, I love tech in general! I really enjoy everything from
-            designing images with coloured text to working on complex UI/UX.
-            This website compiles all I love in one place, I hope you have a
-            good time exploring it.
+            I love tech in general. I really enjoy everything from designing
+            images with coloured text to working on complex UI/UX. This website
+            compiles all I love in one place, I hope you have a good time
+            exploring it.
           </p>
           <a
             href='https://twitter.com/thevrajshah?ref_src=twsrc%5Etfw'
@@ -28,25 +28,19 @@ export default class Home extends Component {
             Follow @thevrajshah
           </a>
         </WhiteSection>
-        <GreySection>
-          <div id='moreAbout'>
-            <div id='moreAboutText'>
-              <h1>A Little More</h1>
-              <p>
-                I'm 18 Years old, based in Vadodara, Gujarat. I'm in my 2
-                <sup>nd</sup> Year of Computer Engineering at SVIT, Vasad.
-              </p>
-              <p>
-                Minima non, explicabo libero voluptas inventore labore fugit
-                debitis qui saepe esse temporibus commodi reiciendis corporis
-                necessitatibus fuga nesciunt quibusdam ratione placeat?
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptas, minima natus excepturi maiores
-              </p>
-            </div>
-          </div>
+        <GreySection textAlign='center'>
+          <h1>Skills</h1>
+          <hr id='line' />
+          {/* <div id='skills'>
+        <div id='development'>
+          <h5>Development</h5>
+          afdfd
+        </div>
+        <div id='design'>
+          <h5>Design</h5>
+          agfga
+        </div>
+      </div> */}
         </GreySection>
         <WhiteSection>
           <h1 style={{ fontSize: "3.5rem" }}>about this website</h1>

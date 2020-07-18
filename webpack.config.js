@@ -48,15 +48,6 @@ module.exports = (env, options) => {
           },
           type: "javascript/auto",
         },
-        {
-          test: /\.(ttf|eot|woff|woff2)$/,
-          exclude: /node_modules/,
-
-          loader: "file-loader",
-          options: {
-            name: "build/fonts/[name].[ext]",
-          },
-        },
       ],
     },
     devServer: {

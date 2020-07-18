@@ -19,11 +19,11 @@ export default ({ subtitle }) => {
     <meta name="MobileOptimized" content="320">
     <meta name="HandheldFriendly" content="True">
     <link rel="canonical" href="https://thevrajshah.me/">
-    <link rel="icon" href="src/assets/favicon.ico">
+    <link rel="icon" href="src/images/favicon.ico">
     <link rel="apple-touch-icon" href="src/assets/logo192.png">    
     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src='https://platform.twitter.com/widgets.js' charset='utf-8'></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85887053-2"></script>
-    <script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -33,6 +33,6 @@ export default ({ subtitle }) => {
     <body class="dark-mode">
     <div id="root"></div>
   </body>
-<script src="https://kit.fontawesome.com/123f0f79ae.js" crossorigin="anonymous"></script>
+<script async src="https://kit.fontawesome.com/123f0f79ae.js" crossorigin="anonymous"></script>
 </html>`;
 };

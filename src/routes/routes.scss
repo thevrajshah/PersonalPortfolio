@@ -1,14 +1,14 @@
 @import "../variables";
 
-// MoreAbout
-#moreAbout {
-  display: grid;
-  grid-template-columns: 47% 47%;
-  grid-gap: 6%;
-
-  #moreAboutText {
-    text-align: left;
-    margin: auto 0;
+// Skills
+#skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  #development,
+  #design {
+    display: flex;
+    margin: 5px;
   }
 }
 
@@ -17,18 +17,6 @@
 }
 
 @media screen and #{$mq-medium} {
-  // MoreAbout
-  #moreAbout {
-    display: block;
-    #profile {
-      margin: 5px auto;
-      width: 27.5rem;
-      height: 27.5rem;
-    }
-    #moreAboutText {
-      margin-top: 15px;
-    }
-  }
 }
 
 @media screen and #{$mq-small} {

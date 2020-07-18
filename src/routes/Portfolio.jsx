@@ -6,7 +6,7 @@ import Design from "../components/Design";
 
 const Gallery = lazy(() => import("../components/Gallery"));
 
-export default class Work extends Component {
+export default class Portfolio extends Component {
   render() {
     return (
       <Fragment>

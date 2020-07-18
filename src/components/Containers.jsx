@@ -6,13 +6,13 @@ export class WhiteSection extends Component {
       <div
         className='whiteSection'
         style={{
-          padding: this.props.paddingTB ? this.props.paddingTB : "30px 0",
+          padding: this.props.paddingTB ? this.props.paddingTB : "3rem 0",
         }}
       >
         <section
           style={{
             textAlign: this.props.textAlign ? this.props.textAlign : "left",
-            padding: this.props.paddingLR ? this.props.paddingLR : "0 4rem",
+            padding: this.props.paddingLR ? this.props.paddingLR : "0 3rem",
           }}
         >
           {this.props.children}
@@ -28,13 +28,13 @@ export class GreySection extends Component {
       <div
         className='greySection'
         style={{
-          padding: this.props.paddingTB ? this.props.paddingTB : "30px 0",
+          padding: this.props.paddingTB ? this.props.paddingTB : "3rem 0",
         }}
       >
         <section
           style={{
             textAlign: this.props.textAlign ? this.props.textAlign : "left",
-            padding: this.props.paddingLR ? this.props.paddingLR : "0 4rem",
+            padding: this.props.paddingLR ? this.props.paddingLR : "0 3rem",
           }}
         >
           {this.props.children}

@@ -36,7 +36,7 @@ class ProjectCard extends Component {
           <img src='#' alt='' />
         </div>
         <div className='projectText'>
-          <h4>{this.props.Name}</h4>
+          <h5>{this.props.Name}</h5>
           <p>{this.props.Description}</p>
         </div>
         <div className='tools'>

@@ -153,9 +153,10 @@ header {
 }
 // Loader Styling
 .loader {
-  margin: 40px auto;
+  font-family: $font2;
+  margin: 5rem auto;
   img {
-    width: 50rem;
+    width: 40rem;
   }
 }
 
@@ -172,21 +173,19 @@ header {
   height: calc(100vh - 5.2rem);
   padding: 5rem 2.5rem;
   line-height: 1.2;
-  color: #fff;
   transition: all 0.3s $curve1 0s;
-  #profile {
-    background: #bbb;
-    margin: 2.5rem auto;
-    border-radius: 50%;
-    width: 20rem;
-    height: 20rem;
-  }
   #heroText {
     margin: 2rem auto;
+    text-align: center;
+    font-weight: bolder;
+  }
+  #hello {
+    font-size: 2rem;
+    color: #222;
+    font-family: $font2;
   }
   #name {
-    font-size: 5.5rem;
-    font-weight: 800;
+    font-size: 6rem;
     -webkit-animation: tracking-in-contract 0.8s
       cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s both;
     animation: tracking-in-contract 0.8s cubic-bezier(0.075, 0.82, 0.165, 1)
@@ -628,7 +627,6 @@ footer {
     opacity: 0.6;
   }
   100% {
-    letter-spacing: normal;
     opacity: 1;
   }
 }

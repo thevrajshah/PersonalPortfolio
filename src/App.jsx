@@ -5,10 +5,9 @@ import "./_variables.scss";
 import Loader from "./components/Loader";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import { WhiteSection } from "./components/Containers";
 import Home from "./routes/Home";
 
-const Work = lazy(() => import("./routes/Work"));
+const Portfolio = lazy(() => import("./routes/Portfolio"));
 const Connect = lazy(() => import("./routes/Connect"));
 
 export default class App extends Component {
@@ -17,16 +16,10 @@ export default class App extends Component {
       <React.Fragment>
         <Router onUpdate={() => window.scrollTo(0, 0)}>
           <NavBar />
-          <Suspense
-            fallback={
-              <WhiteSection textAlign='center'>
-                <Loader />
-              </WhiteSection>
-            }
-          >
+          <Suspense fallback={<Loader />}>
             <Switch>
               <Route path='/' exact component={Home} />
-              <Route path='/portfolio' component={Work} />
+              <Route path='/portfolio' component={Portfolio} />
               <Route path='/connect' component={Connect} />
             </Switch>
           </Suspense>
