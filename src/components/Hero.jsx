@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import "./components.scss";
+import profile from "../images/vraj_dev.png";
 
 class Hero extends Component {
   render() {
     return (
       <div id='Hero'>
         <section>
-          <div id='profile'></div>
+          <img src={profile} id='profile'></img>
           <div id='heroText'>
             <div id='name'>VRAJ SHAH</div>
             <div id='prof'>

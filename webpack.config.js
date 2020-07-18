@@ -3,13 +3,17 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
+const package = require("./package.json");
 
 module.exports = (env, options) => {
   const isDevMode = options.mode === "development";
   return {
-    entry: "./src/Browser.js",
+    entry: {
+      app: "./src/Browser.js",
+      vendor: Object.keys(package.dependencies),
+    },
     output: {
-      filename: "bundle.js",
+      filename: "[name].bundle.js",
       path: path.resolve(__dirname, "build"),
     },
     devtool: isDevMode ? "cheap-module-source-map" : false,
@@ -19,8 +23,12 @@ module.exports = (env, options) => {
     module: {
       rules: [
         {
-          test: /\.(svg|gif|jpe?g|png|ico)$/,
-          loader: "file-loader",
+          test: /\.(png|gif|jp(e*)g|svg|ico)$/,
+          loader: "url-loader",
+          options: {
+            limit: 8000,
+            name: "images/[hash]-[name].[ext]",
+          },
         },
         {
           test: /\.js(x*)$/,
@@ -28,7 +36,7 @@ module.exports = (env, options) => {
           use: "babel-loader",
         },
         {
-          test: /\.(scss|css)$/,
+          test: /\.(s*)css$/,
           exclude: /node_modules/,
           use: ["style-loader", "css-loader", "sass-loader"],
         },
@@ -58,11 +66,6 @@ module.exports = (env, options) => {
     plugins: [
       new CleanWebpackPlugin(),
       new MiniCssExtractPlugin(),
-      new webpack.ProvidePlugin({
-        $: "jquery",
-        jQuery: "jquery",
-        "window.jQuery": "jquery",
-      }),
       new HtmlWebpackPlugin({
         template: "./template.js",
       }),
