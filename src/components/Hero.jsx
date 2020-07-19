@@ -9,12 +9,11 @@ class Hero extends Component {
           <div id='heroText'>
             <div id='hello'>Hello There!</div>
             <div id='name'>I'm Vraj.</div>
-            <div id='prof'>
-              <ul id='slider'>
-                <li>Developer.</li>
-                <li>Designer.</li>
-              </ul>
-            </div>
+
+            <ul id='slider'>
+              <li>Developer.</li>
+              <li>Designer.</li>
+            </ul>
           </div>
         </section>
       </div>

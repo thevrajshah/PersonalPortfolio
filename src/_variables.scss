@@ -14,22 +14,20 @@ $-webkitgradient: -webkit-linear-gradient(
 
 // lightMode
 html[data-theme="light"] {
-  --accent: #00e0a5; //#00cddb  #02b7c4
+  --accent: #00e0d5; //#00cddb
   --foreground1: #111;
   --background1: #fff;
-  --foreground2: #444;
+  --foreground2: #7f7f7f;
   --background2: #f8f8f8;
 }
 
 //darkMode
 html[data-theme="dark"] {
-  body.dark-mode {
-    --accent: #00cddb; //#00e0a5
-    --foreground1: #fff;
-    --background1: #111;
-    --foreground2: #ebebeb;
-    --background2: #1d1d1d;
-  }
+  --accent: #00e0d5; //#00cddb
+  --foreground1: #fff;
+  --background1: #111;
+  --foreground2: #999;
+  --background2: #1f1f1f;
 }
 
 // Media Queries

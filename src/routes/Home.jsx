@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import "./routes.scss";
 import Hero from "../components/Hero";
 import { WhiteSection, GreySection } from "../components/Containers";
+import { devSkills, designSkills } from "../assets/Data.json";
 
 export default class Home extends Component {
   render() {
@@ -10,9 +11,7 @@ export default class Home extends Component {
         <Hero />
         <WhiteSection>
           <h1 style={{ fontSize: "4rem" }}>about me</h1>
-          <h2 id='highlight'>
-            I'm a computer enginnering student based in Gujarat, India.
-          </h2>
+          <h2>I'm a computer enginnering student based in Gujarat, India.</h2>
           <p>
             I love tech in general. I really enjoy everything from designing
             images with coloured text to working on complex UI/UX. This website
@@ -21,7 +20,7 @@ export default class Home extends Component {
           </p>
           <a
             href='https://twitter.com/thevrajshah?ref_src=twsrc%5Etfw'
-            class='twitter-follow-button'
+            className='twitter-follow-button'
             data-show-count='false'
           >
             Follow @thevrajshah
@@ -29,21 +28,24 @@ export default class Home extends Component {
         </WhiteSection>
         <GreySection textAlign='center'>
           <h1>Skills</h1>
-          <hr id='line' />
-          {/* <div id='skills'>
-        <div id='development'>
-          <h5>Development</h5>
-          afdfd
-        </div>
-        <div id='design'>
-          <h5>Design</h5>
-          agfga
-        </div>
-      </div> */}
+          <div id='Skills'>
+            <div id='development'>
+              <h5>Development</h5>
+              {devSkills.map(data => {
+                return <span id='skill'>{data}</span>;
+              })}
+            </div>
+            <div id='design'>
+              <h5>Design</h5>
+              {designSkills.map((data, key) => {
+                return <span id='skill'>{data}</span>;
+              })}
+            </div>
+          </div>
         </GreySection>
         <WhiteSection>
           <h1 style={{ fontSize: "3.5rem" }}>about this website</h1>
-          <h2 id='highlight'> Looks like you stumbled into my Website.</h2>
+          <h2> Looks like you stumbled into my Website.</h2>
           <p>
             I' sure you're liking it here! Well, this website is completely
             designed & built by me using <strong>ReactJS</strong> and basic

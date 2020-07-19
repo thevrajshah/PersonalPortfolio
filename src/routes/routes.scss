@@ -1,14 +1,25 @@
 @import "../variables";
 
 // Skills
-#skills {
+#Skills {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+
+  #skill {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-right: 1.5rem;
+    padding: 5px 1px;
+    color: var(--foreground2);
+    border-bottom: 1.5px solid var(--accent);
+  }
   #development,
   #design {
-    display: flex;
-    margin: 5px;
+    text-align: left;
+    margin: 1rem 2.5rem;
+    max-width: 30rem;
+
+    box-sizing: border-box;
   }
 }
 
@@ -17,6 +28,10 @@
 }
 
 @media screen and #{$mq-medium} {
+  #Skills {
+    display: grid;
+    grid-template-columns: 100%;
+  }
 }
 
 @media screen and #{$mq-small} {

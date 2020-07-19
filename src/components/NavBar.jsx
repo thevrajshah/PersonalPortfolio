@@ -5,16 +5,8 @@ import "./components.scss";
 import ThemeMode from "./ThemeChanger";
 
 export default class NavBar extends Component {
-  state = { mobileNavVisible: false, opaqueNav: false };
-
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-  }
+  state = { mobileNavVisible: false };
   // Hide or show the menu.
-  handleScroll = () => {};
   toggleMobileNav = () => {
     this.setState({ mobileNavVisible: !this.state.mobileNavVisible });
   };
@@ -24,6 +16,7 @@ export default class NavBar extends Component {
         <nav>
           <span id='logo'>
             VRAJ.<b style={{ color: "var(--accent)" }}>SHAH</b>
+            <ThemeMode />
           </span>
           <ul id='desktopNav'>
             <li>
@@ -41,9 +34,6 @@ export default class NavBar extends Component {
               <a id='blog' href='#'>
                 BLOG
               </a>
-            </li>
-            <li>
-              <ThemeMode />
             </li>
           </ul>
           <Social />
@@ -77,9 +67,6 @@ export default class NavBar extends Component {
             <a href='#' id='blog' onClick={this.toggleMobileNav}>
               BLOG
             </a>
-          </li>
-          <li>
-            <ThemeMode />
           </li>
         </ul>
       </header>

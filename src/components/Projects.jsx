@@ -1,25 +1,25 @@
 import React, { Component, Fragment } from "react";
 import "./components.scss";
 import { GreySection } from "./Containers";
+import { projects } from "../assets/Data.json";
 
 class Projects extends Component {
   render() {
     return (
       <GreySection paddingLR='0 2rem'>
         <div className='projects'>
-          {projectData.map((data, key) => {
+          {projects.map((data, key) => {
             return (
               <ProjectCard
                 key={key}
-                Name={data.Name}
-                Description={data.Description}
-                Tools={data.Tools}
+                Name={data.name}
+                Description={data.desc}
+                GitUrl={data.giturl}
+                LiveUrl={data.liveurl}
               />
             );
           })}
-          {/* <ProjectCard Name="Lawda Website" />
-          <ProjectCard Name="Lassun App" />
-          <ProjectCard Name="Falana Project" /> */}
+          <i className='fa fa-chevron-left' />
         </div>
       </GreySection>
     );
@@ -40,16 +40,15 @@ class ProjectCard extends Component {
           <p>{this.props.Description}</p>
         </div>
         <div className='tools'>
-          <i>{this.props.Tools}</i>
+          <u>{this.props.Tools}</u>
         </div>
         <div className='projectOptions'>
           <a
             target='_blank'
             className='fab fa-github-alt'
-            href='https://github.com/thevrajshah'
-            rel='noopener noreferrer'
+            href={this.props.GitUrl}
           />
-          <a id='veiwLive' href=''>
+          <a target='_blank' id='veiwLive' href={this.props.LiveUrl}>
             Veiw
           </a>
         </div>
@@ -57,28 +56,3 @@ class ProjectCard extends Component {
     );
   }
 }
-
-const projectData = [
-  {
-    Name: "Some Random Project",
-    Description:
-      "Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    GitUrl: "",
-    LiveUrl: "",
-  },
-  {
-    Name: "Someone Else's Project",
-    Description:
-      "Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    Name: "Some Other Project",
-    Description:
-      "Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    Name: "Someone Else's Project",
-    Description:
-      "Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-];

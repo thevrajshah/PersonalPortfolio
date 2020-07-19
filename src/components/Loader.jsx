@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./components.scss";
 import { WhiteSection } from "./Containers";
-import dino from "../images/dino.gif";
+import dino from "../assets/dino.gif";
 
 class Loader extends Component {
   render() {

@@ -1,4 +1,4 @@
-import React, { Component, Suspense, lazy, useState } from "react";
+import React, { Component, Fragment, Suspense, lazy, useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.scss";
 import "./_variables.scss";
@@ -13,7 +13,7 @@ const Connect = lazy(() => import("./routes/Connect"));
 export default class App extends Component {
   render() {
     return (
-      <React.Fragment>
+      <Fragment>
         <Router onUpdate={() => window.scrollTo(0, 0)}>
           <NavBar />
           <Suspense fallback={<Loader />}>
@@ -25,7 +25,7 @@ export default class App extends Component {
           </Suspense>
         </Router>
         <Footer />
-      </React.Fragment>
+      </Fragment>
     );
   }
 }
