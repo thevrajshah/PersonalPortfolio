@@ -10,7 +10,7 @@ export default class Home extends Component {
     return (
       <Fragment>
         <Helmet>
-          <title>Vraj Shah - Developer</title>
+          <title>Vraj Shah</title>
         </Helmet>
         <Hero />
         <WhiteSection>

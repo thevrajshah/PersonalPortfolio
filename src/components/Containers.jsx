@@ -51,7 +51,7 @@ export class Card extends Component {
         className='card'
         style={{
           textAlign: this.props.align ? this.props.align : "center",
-          padding: this.props.padding ? this.props.padding : "2rem 2.5rem",
+          padding: this.props.padding ? this.props.padding : "2rem 3rem",
         }}
       >
         {this.props.children}

@@ -12,6 +12,7 @@ class Projects extends Component {
             return (
               <ProjectCard
                 key={key}
+                ImgUrl={data.img}
                 Name={data.name}
                 Description={data.desc}
                 GitUrl={data.giturl}
@@ -36,7 +37,7 @@ class ProjectCard extends Component {
     return (
       <div className='projectCard'>
         <div className='projectImage'>
-          <img src='#' alt='' />
+          <img src={this.props.ImgUrl} alt='' />
         </div>
         <div className='projectText'>
           <h5>{this.props.Name}</h5>

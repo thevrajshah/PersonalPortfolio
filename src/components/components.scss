@@ -130,7 +130,6 @@ header {
 
 // Social Styling
 #social {
-  font-size: 1rem;
   a {
     vertical-align: middle;
     cursor: pointer;
@@ -148,8 +147,11 @@ header {
   .fa-linkedin:hover {
     color: #00a6ff;
   }
-  .fa-instagram:hover {
-    color: #ff1f57;
+  .fa-dev {
+    font-size: 1.7rem;
+    &:hover {
+      color: #004ddb;
+    }
   }
 }
 // Loader Styling
@@ -223,8 +225,8 @@ header {
   display: none;
   position: absolute;
   z-index: 3;
-  margin-top: -2rem;
-  right: 1rem;
+  margin-top: -2.5rem;
+  right: 2rem;
   font-size: 1.4rem;
   animation: oscillate-X 1s ease-in-out infinite;
   -moz-animation: oscillate-X 1s ease-in-out infinite;
@@ -247,17 +249,17 @@ header {
 .projectCard {
   display: grid;
   box-sizing: border-box;
-  height: 35rem;
+  height: 36rem;
   width: 28rem !important;
   min-width: 28rem;
   grid-template-rows: 15rem 15rem 2rem 3rem;
   margin: 1rem;
   background-color: var(--background1);
-  border-radius: 20px;
+  border-radius: 2.5rem;
   box-shadow: $shadow;
   .projectImage {
-    border-radius: 20px 20px 0 0;
-    background: #bbbbbb;
+    border-radius: 2.5rem 2.5rem 0 0;
+    background: #888;
   }
   .projectText {
     padding: 1rem 2rem;
@@ -272,9 +274,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 15px;
+    margin: 2rem;
     .fa-github-alt {
       color: var(--foreground1);
+      font-size: 1.6rem;
       &:hover {
         color: #a806c5;
       }
@@ -326,7 +329,7 @@ header {
 
 //Contact Styling
 #contactCard {
-  margin: 3rem 7vw;
+  margin: 2.5rem 7vw;
 }
 #contactForm {
   margin: 2rem 0;
@@ -463,6 +466,7 @@ footer {
     justify-content: flex-start;
     flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
+    padding: 2rem;
   }
   // Gallery Styling
   .imgContainer {
@@ -564,34 +568,6 @@ footer {
     opacity: 1;
   }
 }
-
-@-moz-keyframes Slider {
-  0% {
-    opacity: 0;
-  }
-  5% {
-    opacity: 0;
-    -moz-transform: translateY(-50px);
-  }
-  10% {
-    opacity: 1;
-    -moz-transform: translateY(0px);
-  }
-  25% {
-    opacity: 1;
-    -moz-transform: translateY(0px);
-  }
-  30% {
-    opacity: 0;
-    -moz-transform: translateY(50px);
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 @-webkit-keyframes Slider {
   0% {
     opacity: 0;
@@ -644,34 +620,23 @@ footer {
 
 @keyframes oscillate-X {
   0% {
-    translate: 0;
+    transform: translateX(0);
   }
   50% {
-    translate: -2px;
+    transform: translateX(-5px);
   }
   100% {
-    translate: 0px;
-  }
-}
-@-moz-keyframes oscillate-X {
-  0% {
-    translate: 0;
-  }
-  50% {
-    translate: -2px;
-  }
-  100% {
-    translate: 0px;
+    transform: translateX(0);
   }
 }
 @-webkit-keyframes oscillate-X {
   0% {
-    translate: 0;
+    transform: translateX(0);
   }
   50% {
-    translate: -2px;
+    transform: translateX(-5px);
   }
   100% {
-    translate: 0px;
+    transform: translateX(0);
   }
 }

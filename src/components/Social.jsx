@@ -25,8 +25,8 @@ export default class Social extends Component {
         />
         <a
           target='_blank'
-          className='fab fa-instagram'
-          href='https://www.instagram.com/thevrajshaah'
+          className='fab fa-dev'
+          href='https://dev.to/thevrajshah'
           rel='noopener noreferrer'
         />
       </span>
