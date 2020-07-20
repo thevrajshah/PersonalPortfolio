@@ -225,12 +225,12 @@ header {
   z-index: 3;
   margin-top: -2rem;
   right: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   animation: oscillate-X 1s ease-in-out infinite;
   -moz-animation: oscillate-X 1s ease-in-out infinite;
   -webkit-animation: oscillate-X 1s ease-in-out infinite;
   .fa-long-arrow-left {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-right: 3px;
     vertical-align: middle;
     color: var(--accent);
@@ -238,11 +238,11 @@ header {
 }
 .projects {
   z-index: 0;
-  display: grid;
-  display: -moz-grid;
+  display: flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  grid-template-columns: auto auto auto;
 }
 .projectCard {
   display: grid;
@@ -251,16 +251,16 @@ header {
   width: 28rem !important;
   min-width: 28rem;
   grid-template-rows: 15rem 15rem 2rem 3rem;
-  margin: 15px;
+  margin: 1rem;
   background-color: var(--background1);
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: $shadow;
   .projectImage {
-    border-radius: 10px 10px 0 0;
+    border-radius: 20px 20px 0 0;
     background: #bbbbbb;
   }
   .projectText {
-    padding: 20px;
+    padding: 1rem 2rem;
     color: var(--foreground2);
   }
   .tools {
@@ -272,7 +272,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto 15px;
+    margin: 15px;
     .fa-github-alt {
       color: var(--foreground1);
       &:hover {
@@ -461,8 +461,8 @@ footer {
     overflow-x: scroll;
     display: flex;
     justify-content: flex-start;
-    display: -ms-flex;
-    flex-direction: row;
+    flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
   }
   // Gallery Styling
   .imgContainer {
