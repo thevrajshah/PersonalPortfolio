@@ -1,5 +1,6 @@
 import React, { Component, Fragment, lazy, Suspense } from "react";
 import "./routes.scss";
+import Helmet from "react-helmet";
 import { WhiteSection } from "../components/Containers";
 import Projects from "../components/Projects";
 import Design from "../components/Design";
@@ -10,6 +11,9 @@ export default class Portfolio extends Component {
   render() {
     return (
       <Fragment>
+        <Helmet>
+          <title>Portfolio | Vraj Shah</title>
+        </Helmet>
         <WhiteSection textAlign='center'>
           <h1>Programming</h1>
           <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>

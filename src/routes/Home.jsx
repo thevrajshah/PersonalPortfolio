@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import "./routes.scss";
+import Helmet from "react-helmet";
 import Hero from "../components/Hero";
 import { WhiteSection, GreySection, Card } from "../components/Containers";
 import { devSkills, designSkills } from "../assets/Data.json";
@@ -8,6 +9,9 @@ export default class Home extends Component {
   render() {
     return (
       <Fragment>
+        <Helmet>
+          <title>Vraj Shah - Developer</title>
+        </Helmet>
         <Hero />
         <WhiteSection>
           <h1 style={{ fontSize: "4rem" }}>about me</h1>
