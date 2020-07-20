@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import "./routes.scss";
 import Hero from "../components/Hero";
-import { WhiteSection, GreySection } from "../components/Containers";
+import { WhiteSection, GreySection, Card } from "../components/Containers";
 import { devSkills, designSkills } from "../assets/Data.json";
 
 export default class Home extends Component {
@@ -26,21 +26,25 @@ export default class Home extends Component {
             Follow @thevrajshah
           </a>
         </WhiteSection>
-        <GreySection textAlign='center'>
+        <GreySection textAlign='center' paddingLR='0 2rem'>
           <h1>Skills</h1>
           <div id='Skills'>
-            <div id='development'>
-              <h5>Development</h5>
-              {devSkills.map(data => {
-                return <span id='skill'>{data}</span>;
-              })}
-            </div>
-            <div id='design'>
-              <h5>Design</h5>
-              {designSkills.map((data, key) => {
-                return <span id='skill'>{data}</span>;
-              })}
-            </div>
+            <Card align='left'>
+              <h5 style={{ color: "var(--accent)" }}>Development</h5>
+              <div id='skill-container'>
+                {devSkills.map(data => {
+                  return <span id='skill'>{data}</span>;
+                })}
+              </div>
+            </Card>
+            <Card align='left'>
+              <h5 style={{ color: "var(--accent)" }}>Design</h5>
+              <div id='skill-container'>
+                {designSkills.map((data, key) => {
+                  return <span id='skill'>{data}</span>;
+                })}
+              </div>
+            </Card>
           </div>
         </GreySection>
         <WhiteSection>

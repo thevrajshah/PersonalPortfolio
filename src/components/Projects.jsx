@@ -6,7 +6,7 @@ import { projects } from "../assets/Data.json";
 class Projects extends Component {
   render() {
     return (
-      <GreySection paddingLR='0 2rem'>
+      <GreySection paddingLR='0 2.5rem'>
         <div className='projects'>
           {projects.map((data, key) => {
             return (
@@ -19,7 +19,10 @@ class Projects extends Component {
               />
             );
           })}
-          <i className='fa fa-chevron-left' />
+          <span id='swipe'>
+            <i className='fa fa-long-arrow-left' />
+            swipe
+          </span>
         </div>
       </GreySection>
     );

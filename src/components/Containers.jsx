@@ -47,14 +47,15 @@ export class GreySection extends Component {
 export class Card extends Component {
   render() {
     return (
-      <section>
-        <div
-          className='card'
-          style={{ textAlign: this.props.align ? this.props.align : "center" }}
-        >
-          {this.props.children}
-        </div>
-      </section>
+      <div
+        className='card'
+        style={{
+          textAlign: this.props.align ? this.props.align : "center",
+          padding: this.props.padding ? this.props.padding : "2rem 2.5rem",
+        }}
+      >
+        {this.props.children}
+      </div>
     );
   }
 }

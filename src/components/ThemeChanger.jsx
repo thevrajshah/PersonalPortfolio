@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const ThemeChanger = () => {
-  const [themeState, setThemeState] = useState(false);
+  const [themeState, setThemeState] = useState(true);
 
   const handleChange = () => {
     setThemeState(!themeState);

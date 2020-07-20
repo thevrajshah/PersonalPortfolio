@@ -219,13 +219,22 @@ header {
 }
 
 // Projects Styling
-.fa-chevron-left {
-  font-size: 1.8rem;
+#swipe {
+  display: none;
   position: absolute;
   z-index: 3;
-  top: 70%;
-  right: 5px;
+  margin-top: -2rem;
+  right: 1rem;
+  font-size: 1.2rem;
   animation: oscillate-X 1s ease-in-out infinite;
+  -moz-animation: oscillate-X 1s ease-in-out infinite;
+  -webkit-animation: oscillate-X 1s ease-in-out infinite;
+  .fa-long-arrow-left {
+    font-size: 1.4rem;
+    margin-right: 3px;
+    vertical-align: middle;
+    color: var(--accent);
+  }
 }
 .projects {
   z-index: 0;
@@ -316,14 +325,16 @@ header {
 }
 
 //Contact Styling
+#contactCard {
+  margin: 3rem 7vw;
+}
 #contactForm {
-  margin: 20px 0;
-  padding: 0 20%;
+  margin: 2rem 0;
+  padding: 0 21%;
   display: inline-block;
   input {
     width: 100%;
     padding: 12px 20px;
-    width: 100%;
   }
   textarea {
     height: 150px;
@@ -372,6 +383,7 @@ header {
     }
   }
 }
+
 .m-1-10 {
   margin-left: 5px;
   transition: all 0.4s $curve2 0s;
@@ -442,6 +454,9 @@ footer {
     }
   }
   // Projects Styling
+  #swipe {
+    display: block;
+  }
   .projects {
     overflow-x: scroll;
     display: flex;
@@ -481,8 +496,11 @@ footer {
     }
   }
   //Contact Styling
+  #contactCard {
+    margin: 20px 1.5rem;
+  }
   #contactForm {
-    padding: 0 12%;
+    padding: 0 2.5%;
   }
 }
 
