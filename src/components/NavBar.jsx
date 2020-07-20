@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import { NavLink } from "react-router-dom";
 import Social from "./Social";
 import "./components.scss";
-import ThemeMode from "./ThemeChanger";
+import ThemeMode from "../ThemeChanger";
 
 export default class NavBar extends Component {
   state = { mobileNavVisible: false };

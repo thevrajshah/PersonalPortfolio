@@ -32,8 +32,12 @@ export default class Home extends Component {
             <Card align='left'>
               <h5 style={{ color: "var(--accent)" }}>Development</h5>
               <div id='skill-container'>
-                {devSkills.map(data => {
-                  return <span id='skill'>{data}</span>;
+                {devSkills.map((data, key) => {
+                  return (
+                    <span key={key} id='skill'>
+                      {data}
+                    </span>
+                  );
                 })}
               </div>
             </Card>
@@ -41,7 +45,11 @@ export default class Home extends Component {
               <h5 style={{ color: "var(--accent)" }}>Design</h5>
               <div id='skill-container'>
                 {designSkills.map((data, key) => {
-                  return <span id='skill'>{data}</span>;
+                  return (
+                    <span key={key} id='skill'>
+                      {data}
+                    </span>
+                  );
                 })}
               </div>
             </Card>
@@ -59,7 +67,7 @@ export default class Home extends Component {
           </p>
           <p>
             However, the pain of messing with CSS for weeks to tweak each
-            smallest detail is totally worth it.
+            smallest detail is totally worth it. Thank You!
           </p>
         </WhiteSection>
       </Fragment>

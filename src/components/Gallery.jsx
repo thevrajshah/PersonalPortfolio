@@ -8,9 +8,9 @@ class Gallery extends Component {
     return (
       <GreySection paddingLR='0' paddingTB='0'>
         <div className='imgContainer'>
-          {photographs.map(url => (
+          {photographs.map((url, key) => (
             <div className='imgWrapper'>
-              <img src={url} />
+              <img key={key} src={url} />
             </div>
           ))}
         </div>
