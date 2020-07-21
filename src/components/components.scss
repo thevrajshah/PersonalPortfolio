@@ -9,7 +9,6 @@ header {
   top: 0px;
   background: var(--background1);
   font-weight: 700;
-  box-shadow: $shadow;
   nav {
     display: flex;
     padding: 10px 25px;
@@ -163,7 +162,7 @@ header {
   justify-content: center;
   background: var(--accent);
   background: $gradient;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   height: calc(100vh - 5.2rem);
   padding: 5rem 2.5rem;
@@ -176,9 +175,23 @@ header {
   }
   #hello {
     font-size: 2.5rem;
-    color: #222;
+    color: #111;
     font-family: $font2;
     animation: hero 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s both;
+  }
+  #swipe {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    color: var(--background2);
+    font-size: 1.4rem;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    animation: oscillate-Y 1s ease-in-out infinite;
+    .fa-arrow-down {
+      font-size: 1.3rem;
+    }
   }
   #name {
     font-size: 7.5rem;
@@ -186,18 +199,22 @@ header {
     animation: hero 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s both;
   }
   #slider {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform-origin: center;
+    transform: translateX(-85px);
     font-family: $font2;
+    text-align: center;
     font-size: 3rem;
     font-weight: 700;
     li {
-      animation: Slider 5s linear infinite 0s;
+      animation: Slider 4s $curve2 infinite 0s;
       color: #111;
       opacity: 0;
       overflow: hidden;
       display: block;
       position: absolute;
-      text-align: center;
-      margin: 0 auto;
     }
     li:nth-child(2) {
       animation-delay: 2.5s;
@@ -206,34 +223,35 @@ header {
 }
 
 // Projects Styling
-#swipe {
-  display: none;
-  position: absolute;
-  z-index: 3;
-  margin-top: -2.5rem;
-  right: 2.5rem;
-  font-size: 1.4rem;
-  animation: oscillate-X 1s ease-in-out infinite;
-  .fa-long-arrow-left {
-    font-size: 1.6rem;
-    margin-right: 3px;
-    vertical-align: middle;
-    color: var(--accent);
-  }
-}
-.projects {
+
+#projects {
   z-index: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  #swipe {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    margin-top: -3rem;
+    right: 3rem;
+    font-size: 1.4rem;
+    animation: oscillate-X 1s ease-in-out infinite;
+    .fa-long-arrow-left {
+      font-size: 1.6rem;
+      margin-right: 3px;
+      vertical-align: middle;
+      color: var(--accent);
+    }
+  }
 }
-.projectCard {
+#projectCard {
   display: grid;
   box-sizing: border-box;
   height: 36rem;
-  width: 28rem !important;
-  min-width: 28rem;
+  width: 27rem !important;
+  min-width: 27rem;
   grid-template-rows: 17rem 13rem 2rem 3rem;
   margin: 1rem;
   background-color: var(--background1);
@@ -241,8 +259,8 @@ header {
   box-shadow: $shadow;
   overflow: hidden;
   #projectImage {
-    background: var(--background2);
-    width: 28rem;
+    background: #888;
+    width: 27rem;
     height: 100%;
     object-fit: fill;
   }
@@ -438,20 +456,9 @@ footer {
       width: 12em;
     }
   }
-  // Projects Styling
-  #swipe {
-    display: block;
-  }
-  .projects {
-    overflow-x: scroll;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    padding: 2rem;
-  }
   // Gallery Styling
   .imgContainer {
-    margin: 0 5%;
+    margin: 0;
   }
   //Contact Styling
   #contactForm {
@@ -469,10 +476,18 @@ footer {
       font-size: 6rem;
     }
   }
-  // Gallery Styling
-  .imgContainer {
-    margin: 0;
+  // Projects Styling
+  #projects {
+    overflow-x: scroll;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding: 2rem;
+    #swipe {
+      display: block;
+    }
   }
+  // Gallery Styling
   .imgWrapper {
     width: 12.5rem;
     height: 12.5rem;
@@ -562,5 +577,17 @@ footer {
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes oscillate-Y {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

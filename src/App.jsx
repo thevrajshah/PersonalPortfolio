@@ -5,9 +5,9 @@ import "./_variables.scss";
 import Loader from "./components/Loader";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import Home from "./routes/Home";
+import About from "./routes/About";
 
-const Portfolio = lazy(() => import("./routes/Portfolio"));
+const Work = lazy(() => import("./routes/Work"));
 const Connect = lazy(() => import("./routes/Connect"));
 
 export default class App extends Component {
@@ -18,8 +18,8 @@ export default class App extends Component {
           <NavBar />
           <Suspense fallback={<Loader />}>
             <Switch>
-              <Route path='/' exact component={Home} />
-              <Route path='/portfolio' component={Portfolio} />
+              <Route path='/' exact component={About} />
+              <Route path='/work' component={Work} />
               <Route path='/connect' component={Connect} />
             </Switch>
           </Suspense>

@@ -1,13 +1,13 @@
 import React, { Component, Fragment } from "react";
 import "./components.scss";
-import { GreySection } from "./Containers";
+import { GreySection, WhiteSection } from "./Containers";
 import { projects } from "../assets/Data.json";
 
 class Projects extends Component {
   render() {
     return (
-      <GreySection paddingLR='0 2.5rem'>
-        <div className='projects'>
+      <GreySection textAlign='left' paddingLR='0 2.5rem'>
+        <div id='projects'>
           {projects.map((data, key) => {
             return (
               <ProjectCard
@@ -35,7 +35,7 @@ export default Projects;
 class ProjectCard extends Component {
   render() {
     return (
-      <div className='projectCard'>
+      <div id='projectCard'>
         <img id='projectImage' src={this.props.ImgUrl} alt='' />
 
         <div className='projectText'>

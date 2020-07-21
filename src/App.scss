@@ -57,13 +57,13 @@ h6 {
   }
 }
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: var(--accent);
-  line-height: 2.5rem;
+  line-height: 3rem;
   font-weight: 500;
 }
 b {
-  font-weight: 700;
+  font-family: $font2;
 }
 p {
   margin: 0.25rem 0 0.75rem 0;
@@ -110,7 +110,6 @@ section {
   background: var(--background1);
 }
 .greySection {
-  box-shadow: $inset-shadow;
   background: var(--background2);
 }
 #line {

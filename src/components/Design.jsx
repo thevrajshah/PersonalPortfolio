@@ -7,9 +7,7 @@ export default class Design extends Component {
     return (
       <WhiteSection textAlign='center'>
         <h1>Design</h1>
-        <p>
-          <i>"Design-Grid Here"</i>
-        </p>
+        <h2>Coming Soon...</h2>
       </WhiteSection>
     );
   }

@@ -21,11 +21,11 @@ export default class NavBar extends Component {
           <ul id='desktopNav'>
             <li>
               <NavLink to='/' exact>
-                HOME
+                ABOUT
               </NavLink>
             </li>
             <li>
-              <NavLink to='/portfolio'>PROTFOLIO</NavLink>
+              <NavLink to='/work'>WORK</NavLink>
             </li>
             <li>
               <NavLink to='/connect'>CONNECT</NavLink>
@@ -50,12 +50,12 @@ export default class NavBar extends Component {
         >
           <li>
             <NavLink to='/' exact onClick={this.toggleMobileNav}>
-              HOME
+              ABOUT
             </NavLink>
           </li>
           <li>
-            <NavLink to='/portfolio' onClick={this.toggleMobileNav}>
-              PROTFOLIO
+            <NavLink to='/work' onClick={this.toggleMobileNav}>
+              WORK
             </NavLink>
           </li>
           <li>

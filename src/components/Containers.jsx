@@ -50,7 +50,7 @@ export class Card extends Component {
       <div
         className='card'
         style={{
-          textAlign: this.props.align ? this.props.align : "center",
+          textAlign: this.props.textAlign ? this.props.textAlign : "center",
           padding: this.props.padding ? this.props.padding : "2rem 3rem",
         }}
       >
