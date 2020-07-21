@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
 const package = require("./package.json");
+const autoprefixer = require("autoprefixer");
 
 module.exports = (env, options) => {
   const isDevMode = options.mode === "development";
@@ -23,14 +24,6 @@ module.exports = (env, options) => {
     module: {
       rules: [
         {
-          test: /\.(png|gif|jp(e*)g|svg|ico)$/,
-          loader: "url-loader",
-          /* options: {
-            limit: 8000,
-            name: "images/[hash]-[name].[ext]",
-          }, */
-        },
-        {
           test: /\.js(x*)$/,
           exclude: /node_modules/,
           use: "babel-loader",
@@ -48,6 +41,14 @@ module.exports = (env, options) => {
           },
           type: "javascript/auto",
         },
+        {
+          test: /\.(png|gif|jp(e*)g|svg|ico)$/,
+          loader: "url-loader",
+          /* options: {
+            limit: 8000,
+            name: "images/[hash]-[name].[ext]",
+          }, */
+        },
       ],
     },
     devServer: {
@@ -55,6 +56,11 @@ module.exports = (env, options) => {
       historyApiFallback: true,
     },
     plugins: [
+      new webpack.LoaderOptionsPlugin({
+        options: {
+          postcss: [autoprefixer()],
+        },
+      }),
       new CleanWebpackPlugin(),
       new MiniCssExtractPlugin(),
       new HtmlWebpackPlugin({

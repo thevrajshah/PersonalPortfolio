@@ -5,7 +5,6 @@ header {
   // fixed position
   z-index: 5;
   position: sticky;
-  position: -webkit-sticky;
   width: 100%;
   top: 0px;
   background: var(--background1);
@@ -46,13 +45,8 @@ header {
   }
   a {
     color: var(--foreground1);
-    // opacity: 0.6;
-    &:hover {
-      color: var(--accent);
-      // opacity: 1;
-    }
+    &:hover,
     &.active {
-      // opacity: 1;
       color: var(--accent);
     }
   }
@@ -113,7 +107,6 @@ header {
   width: 100%;
   text-align: center;
   transition: all 0.3s $curve1 0s;
-  -webkit-animation: nav-in 0.3s $curve1 alternate both;
   animation: nav-in 0.3s $curve1 both alternate;
   li {
     display: block;
@@ -134,7 +127,6 @@ header {
     vertical-align: middle;
     cursor: pointer;
     color: var(--foreground1);
-    // opacity: 0.6;
     margin: 0 4px;
     font-size: 1.5rem;
   }
@@ -171,7 +163,6 @@ header {
   justify-content: center;
   background: var(--accent);
   background: $gradient;
-  background: $-webkitgradient;
   background-attachment: fixed;
   background-size: cover;
   height: calc(100vh - 5.2rem);
@@ -187,13 +178,11 @@ header {
     font-size: 2.5rem;
     color: #222;
     font-family: $font2;
-    -webkit-animation: hero 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s both;
     animation: hero 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s both;
   }
   #name {
     font-size: 7.5rem;
     color: #fff;
-    -webkit-animation: hero 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s both;
     animation: hero 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s both;
   }
   #slider {
@@ -202,8 +191,6 @@ header {
     font-weight: 700;
     li {
       animation: Slider 5s linear infinite 0s;
-      -ms-animation: Slider 5s linear infinite 0s;
-      -webkit-animation: Slider 5s linear infinite 0s;
       color: #111;
       opacity: 0;
       overflow: hidden;
@@ -214,8 +201,6 @@ header {
     }
     li:nth-child(2) {
       animation-delay: 2.5s;
-      -ms-animation-delay: 2.5s;
-      -webkit-animation-delay: 2.5s;
     }
   }
 }
@@ -226,11 +211,9 @@ header {
   position: absolute;
   z-index: 3;
   margin-top: -2.5rem;
-  right: 2rem;
+  right: 2.5rem;
   font-size: 1.4rem;
   animation: oscillate-X 1s ease-in-out infinite;
-  -moz-animation: oscillate-X 1s ease-in-out infinite;
-  -webkit-animation: oscillate-X 1s ease-in-out infinite;
   .fa-long-arrow-left {
     font-size: 1.6rem;
     margin-right: 3px;
@@ -242,7 +225,6 @@ header {
   z-index: 0;
   display: flex;
   flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   justify-content: center;
   width: 100%;
 }
@@ -252,14 +234,17 @@ header {
   height: 36rem;
   width: 28rem !important;
   min-width: 28rem;
-  grid-template-rows: 15rem 15rem 2rem 3rem;
+  grid-template-rows: 17rem 13rem 2rem 3rem;
   margin: 1rem;
   background-color: var(--background1);
   border-radius: 2.5rem;
   box-shadow: $shadow;
-  .projectImage {
-    border-radius: 2.5rem 2.5rem 0 0;
-    background: #888;
+  overflow: hidden;
+  #projectImage {
+    background: var(--background2);
+    width: 28rem;
+    height: 100%;
+    object-fit: fill;
   }
   .projectText {
     padding: 1rem 2rem;
@@ -314,14 +299,11 @@ header {
     cursor: pointer;
     max-height: 20rem;
     width: 100%;
-    -o-object-fit: cover;
     object-fit: cover;
-    -webkit-filter: grayscale(0.9);
     filter: grayscale(0.9);
     transition: all 0.4s $curve2;
     &:hover {
       transform: scale(1.05);
-      -webkit-filter: none;
       filter: none;
     }
   }
@@ -465,7 +447,6 @@ footer {
     display: flex;
     justify-content: flex-start;
     flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
     padding: 2rem;
   }
   // Gallery Styling
@@ -530,31 +511,7 @@ footer {
     height: 1;
   }
 }
-@-webkit-keyframes nav-in {
-  0% {
-    height: 0;
-  }
-  50% {
-    height: 0.5;
-  }
-  100% {
-    height: 1;
-  }
-}
 
-@-webkit-keyframes hero {
-  0% {
-    letter-spacing: 1em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    letter-spacing: normal;
-    opacity: 1;
-  }
-}
 @keyframes hero {
   0% {
     letter-spacing: 1em;
@@ -566,28 +523,6 @@ footer {
   100% {
     letter-spacing: normal;
     opacity: 1;
-  }
-}
-@-webkit-keyframes Slider {
-  0% {
-    opacity: 0;
-    top: -50px;
-  }
-  20% {
-    opacity: 0.5;
-  }
-  40% {
-    opacity: 0.8;
-  }
-  50% {
-    opacity: 1;
-    top: 0;
-  }
-  70% {
-    top: 50px;
-  }
-  100% {
-    top: -50px;
   }
 }
 @keyframes Slider {
@@ -619,17 +554,6 @@ footer {
 }
 
 @keyframes oscillate-X {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(-5px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@-webkit-keyframes oscillate-X {
   0% {
     transform: translateX(0);
   }

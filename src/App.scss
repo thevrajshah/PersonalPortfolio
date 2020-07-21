@@ -99,7 +99,6 @@ button {
   outline: none;
   transition: all 0.3s $curve1 0s;
   touch-action: manipulation;
-  -ms-touch-action: manipulation;
 }
 // Section Styling
 section {
@@ -143,28 +142,13 @@ section {
 
 // Animations
 /* transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1); */
-@-webkit-keyframes width {
-  0% {
-    width: 1%;
-  }
-  100% {
-    width: 3%;
-  }
-}
+
 @keyframes width {
   0% {
     width: 1%;
   }
   100% {
     width: 3%;
-  }
-}
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 @keyframes fade-in {

@@ -22,7 +22,7 @@
   "projects": [
     {
       "name": "Rock Paper Scissors",
-      "img": "/rps.png",
+      "img": "https://www.esquireme.com/sites/default/files/styles/full_img/public/images/2017/05/29/rock_paper_scissors__2x.png?itok=EB8fRWP9",
       "desc": "Basic Project for starters involving DOM Manipulation",
       "giturl": "https://github.com/thevrajshah/RockPaperScissors",
       "liveurl": "https://thevrajshah.github.io/RockPaperScissors/"

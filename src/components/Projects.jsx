@@ -36,9 +36,8 @@ class ProjectCard extends Component {
   render() {
     return (
       <div className='projectCard'>
-        <div className='projectImage'>
-          <img src={this.props.ImgUrl} alt='' />
-        </div>
+        <img id='projectImage' src={this.props.ImgUrl} alt='' />
+
         <div className='projectText'>
           <h5>{this.props.Name}</h5>
           <p>{this.props.Description}</p>
