@@ -149,7 +149,6 @@ header {
   background: var(--background2);
   border-radius: 2rem;
   padding: 0 10px;
-  box-shadow: $inset-shadow;
   a {
     vertical-align: middle;
     cursor: pointer;
@@ -286,7 +285,7 @@ header {
   min-width: 27rem;
   grid-template-rows: 17rem 13rem 2rem 3rem;
   margin: 2rem 2.5rem;
-  background-color: var(--background2);
+  background-color: var(--background1);
   border-radius: 2.5rem;
   box-shadow: $shadow;
   overflow: hidden;
@@ -516,7 +515,7 @@ footer {
     display: flex;
     justify-content: flex-start;
     flex-wrap: nowrap;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     #projectCard {
       margin: 2rem 1rem;
     }
