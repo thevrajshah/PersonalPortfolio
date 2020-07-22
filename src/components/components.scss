@@ -5,12 +5,16 @@
   background-color: transparent;
   nav a {
     color: #111;
-    opacity: 0.8;
+    opacity: 0.7;
     &:hover,
     &.active {
       color: #111;
       opacity: 1;
     }
+  }
+  .hamburger::before,
+  .hamburger::after {
+    background-color: #111;
   }
   #Social a,
   #themeChanger {
@@ -115,15 +119,14 @@ header {
   }
 }
 #mobileNav {
-  z-index: 5;
+  z-index: -1;
   display: none;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 50px;
+  position: absolute;
+  top: 0;
   left: 0;
-  padding: 5px 10%;
+  padding: 5rem 10% 5px;
   background: var(--background1);
-  height: calc(100vh - 50px);
+  height: calc(100vh);
   width: 100%;
   text-align: center;
   transition: all 0.3s $curve1 0s;
@@ -228,12 +231,14 @@ header {
     transform-origin: center;
     transform: translateX(-85px);
     font-family: $font2;
-    text-align: center;
     font-size: 3rem;
     font-weight: 700;
     li {
-      animation: Slider 4s $curve2 infinite 0s;
+      animation: Slider 4.5s $curve2 infinite 0s;
+      transition: all 0.8s $curve1;
       color: #111;
+      text-align: center;
+
       opacity: 0;
       overflow: hidden;
       display: block;
@@ -241,6 +246,9 @@ header {
     }
     li:nth-child(2) {
       animation-delay: 1.8s;
+    }
+    li:nth-child(3) {
+      animation-delay: 8s;
     }
   }
 }
@@ -257,7 +265,7 @@ header {
     display: none;
     position: absolute;
     z-index: 3;
-    margin-top: -3rem;
+    margin-top: -2rem;
     right: 3rem;
     font-size: 1.4rem;
     animation: oscillate-X 1s ease-in-out infinite;
@@ -281,6 +289,7 @@ header {
   border-radius: 2.5rem;
   box-shadow: $shadow;
   overflow: hidden;
+  text-align: left;
   #projectImage {
     background: #888;
     width: 27rem;

@@ -68,18 +68,18 @@ export default class About extends Component {
           <Gallery />
         </Suspense>
         <WhiteSection>
-          <h1 style={{ fontSize: "3.5rem" }}>about this website</h1>
+          <h1 style={{ fontSize: "3.5rem" }}>about the website</h1>
           <h2> Looks like you stumbled into my Website.</h2>
           <p>
-            I' sure you're liking it here! Well, this website is completely
-            designed & built by me using <b>ReactJS</b> and basic
-            <b> HTML/CSS</b> tools and I love to take pride in that as most of
-            the websites these days especially the personal one are made using
-            templates.
+            I'm sure you're liking it here! Well, this website is handcrafted by
+            me with <b>ReactJS</b>, basic
+            <b> HTML/CSS</b> and other related tools (No templates/frameworks
+            used).
           </p>
           <p>
-            However, the pain of messing with CSS for weeks to tweak each
-            smallest detail is totally worth it. Thank You!
+            The initial purpose of building this site was just to learn React
+            while implementing it; but later on it started growing and now it
+            serves as my identity, portfolio, blog whatever you like to call it.
           </p>
         </WhiteSection>
       </Fragment>

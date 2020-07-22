@@ -9,7 +9,6 @@ export default class NavBar extends Component {
   // Hide or show the menu.
   toggleMobileNav = () => {
     this.setState({ mobileNavVisible: !this.state.mobileNavVisible });
-    this.setState({ transparentNav: !this.state.transparentNav });
   };
 
   componentDidMount() {

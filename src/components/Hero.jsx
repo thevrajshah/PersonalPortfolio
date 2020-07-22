@@ -12,6 +12,7 @@ class Hero extends Component {
             <ul id='slider'>
               <li>Developer</li>
               <li>Designer</li>
+              <li>Student</li>
             </ul>
           </div>
           <div id='swipe'>

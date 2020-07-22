@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from "react";
 import "./routes.scss";
 import Helmet from "react-helmet";
-import { WhiteSection } from "../components/Containers";
 import Projects from "../components/Projects";
 import Design from "../components/Design";
 

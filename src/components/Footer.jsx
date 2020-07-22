@@ -24,7 +24,7 @@ export default class Footer extends Component {
               .
             </div>
             <div id='copyright'>
-              © 2020 <b>VrajShah</b>.
+              © 2020 <strong>VrajShah</strong>.
             </div>
           </div>
         </section>
