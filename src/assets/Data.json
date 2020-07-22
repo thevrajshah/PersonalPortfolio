@@ -22,17 +22,24 @@
   "projects": [
     {
       "name": "React Personal Website",
-      "img": "https://i.imgur.com/9ZtW3mq.png",
-      "desc": "This very website which you're currently on.",
+      "img": "https://i.imgur.com/9ZtW3mql.png",
+      "desc": "Production quality website build with industry-level tools like React, Webpack, Sass, json, etc. with the finest aesthetic feel.",
       "giturl": "https://github.com/thevrajshah/ReactPersonalWebsite",
       "liveurl": "https://thevrajshah.me/"
     },
     {
       "name": "Rock Paper Scissors",
       "img": "https://www.esquireme.com/sites/default/files/styles/full_img/public/images/2017/05/29/rock_paper_scissors__2x.png?itok=EB8fRWP9",
-      "desc": "Basic Project for starters involving DOM Manipulation",
+      "desc": "JavaScript Game involving DOM Manipulation for beginners.",
       "giturl": "https://github.com/thevrajshah/RockPaperScissors",
       "liveurl": "https://thevrajshah.github.io/RockPaperScissors/"
+    },
+    {
+      "name": "Single-Page Portfolio ",
+      "img": "https://i.imgur.com/1iwHD1al.png",
+      "desc": "Responsive single-page webpage implemented just with vanilla JS & CSS which can be used for low-level projects.",
+      "giturl": "https://github.com/thevrajshah/21DaysChallenge-WebDev",
+      "liveurl": "https://thevrajshah.github.io/21DaysChallenge-WebDev/"
     }
   ],
   "photographs": [
