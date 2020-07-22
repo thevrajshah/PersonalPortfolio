@@ -9,7 +9,7 @@ export default class Work extends Component {
     return (
       <Fragment>
         <Helmet>
-          <title>Portfolio -- Vraj Shah</title>
+          <title>Portfolio - Vraj Shah</title>
         </Helmet>
         <div id='Head'>
           <section>

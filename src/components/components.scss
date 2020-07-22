@@ -5,11 +5,11 @@
   background-color: transparent;
   nav a {
     color: #111;
-    opacity: 0.7;
+    opacity: 1;
     &:hover,
     &.active {
       color: #111;
-      opacity: 1;
+      opacity: 0.5;
     }
   }
   .hamburger::before,
@@ -161,10 +161,10 @@ header {
     color: #a806c5;
   }
   .fa-twitter:hover {
-    color: #1d9ff0;
+    color: #139ae8;
   }
   .fa-linkedin:hover {
-    color: #00a6ff;
+    color: #0077b5;
   }
   .fa-dev {
     font-size: 1.6rem;
@@ -285,7 +285,7 @@ header {
   width: 27rem !important;
   min-width: 27rem;
   grid-template-rows: 17rem 13rem 2rem 3rem;
-  margin: 1rem;
+  margin: 2rem 2.5rem;
   background-color: var(--background1);
   border-radius: 2.5rem;
   box-shadow: $shadow;
@@ -295,7 +295,7 @@ header {
     background: #888;
     width: 27rem;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
   }
   .projectText {
     padding: 1rem 2rem;
@@ -354,7 +354,7 @@ header {
     filter: grayscale(0.9);
     transition: all 0.4s $curve2;
     &:hover {
-      transform: scale(1.05);
+      transform: scale(1.07);
       filter: none;
     }
   }
@@ -507,7 +507,7 @@ footer {
       font-size: 1.5rem;
     }
     #name {
-      font-size: 5rem;
+      font-size: 5.5rem;
     }
   }
   // Projects Styling

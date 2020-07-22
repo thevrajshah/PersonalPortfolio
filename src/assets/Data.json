@@ -21,19 +21,18 @@
   ],
   "projects": [
     {
+      "name": "React Personal Website",
+      "img": "https://i.imgur.com/9ZtW3mq.png",
+      "desc": "This very website which you're currently on.",
+      "giturl": "https://github.com/thevrajshah/ReactPersonalWebsite",
+      "liveurl": "https://thevrajshah.me/"
+    },
+    {
       "name": "Rock Paper Scissors",
       "img": "https://www.esquireme.com/sites/default/files/styles/full_img/public/images/2017/05/29/rock_paper_scissors__2x.png?itok=EB8fRWP9",
       "desc": "Basic Project for starters involving DOM Manipulation",
       "giturl": "https://github.com/thevrajshah/RockPaperScissors",
       "liveurl": "https://thevrajshah.github.io/RockPaperScissors/"
-    },
-    {
-      "name": "Someone Else's Project",
-      "desc": "Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-      "name": "Someone Else's Project",
-      "desc": "Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }
   ],
   "photographs": [

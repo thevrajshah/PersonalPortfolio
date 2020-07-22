@@ -19,9 +19,12 @@ export default class About extends Component {
           <h1 style={{ fontSize: "4rem" }}>about me</h1>
           <h2>I design & create stuff on the Web.</h2>
           <p>
-            Through constant learning and creation, I produce aesthetic software
-            to the best standard. I'm a computer enginnering student based in
-            Gujarat, India.
+            I'm an self-taught, Rookie Developer based in Gujarat, India.
+            Through constant learning and creation, I try to produce aesthetic
+            software at my best. I often contribute to the open-source
+            community. Other than that I enjoy exploring general trivia via
+            podcasts and youtube videos. Also, I love movies especially the
+            horror and thriller ones.
           </p>
           <a
             href='https://twitter.com/thevrajshah?ref_src=twsrc%5Etfw'
@@ -62,7 +65,7 @@ export default class About extends Component {
         </GreySection>
         <WhiteSection textAlign='center'>
           <h1>Random Shots</h1>
-          <h2>Art means the world to me.</h2>
+          <h2>Art means everything to me.</h2>
         </WhiteSection>
         <Suspense fallback={"Loading..."}>
           <Gallery />
@@ -71,15 +74,16 @@ export default class About extends Component {
           <h1 style={{ fontSize: "3.5rem" }}>about the website</h1>
           <h2> Looks like you stumbled into my Website.</h2>
           <p>
-            I'm sure you're liking it here! Well, this website is handcrafted by
-            me with <b>ReactJS</b>, basic
+            I'm sure you're liking it here! Well, this website is designed &
+            developed by me with <b>ReactJS</b>, basic
             <b> HTML/CSS</b> and other related tools (No templates/frameworks
             used).
           </p>
           <p>
             The initial purpose of building this site was just to learn React
             while implementing it; but later on it started growing and now it
-            serves as my identity, portfolio, blog whatever you like to call it.
+            serves as my identity, portfolio, blog whatever you like to call it.{" "}
+            <strong>Thank You 😊</strong>
           </p>
         </WhiteSection>
       </Fragment>

@@ -27,7 +27,7 @@ html[data-theme="dark"] {
   --foreground1: #fff;
   --background1: #111;
   --foreground2: #c3c3c3;
-  --background2: #171717;
+  --background2: #181818;
 }
 
 // Media Queries
@@ -47,4 +47,4 @@ $mq-large: (
 $curve1: cubic-bezier(0.39, 0.575, 0.565, 1);
 $curve2: cubic-bezier(0.7, 0, 0.3, 1);
 $shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
-$inset-shadow: inset 0 0 5px 2px rgba(0, 0, 0, 0.1);
+$inset-shadow: inset 0 0 5px 2px rgba(0, 0, 0, 0.05);

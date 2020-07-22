@@ -23,12 +23,14 @@ export default class Social extends Component {
           href='https://twitter.com/thevrajshah'
           rel='noopener noreferrer'
         />
-        <a
-          target='_blank'
-          className='fab fa-dev'
-          href='https://dev.to/thevrajshah'
-          rel='noopener noreferrer'
-        />
+        {/*{" "}
+      <a
+        target='_blank'
+        className='fab fa-dev'
+        href='https://dev.to/thevrajshah'
+        rel='noopener noreferrer'
+      />{" "}
+      */}
       </span>
     );
   }

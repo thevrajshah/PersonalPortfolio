@@ -8,8 +8,7 @@ class Projects extends Component {
     return (
       <WhiteSection textAlign='center' paddingLR='0 2.5rem'>
         <h1>Development</h1>
-        <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
-
+        <h2>Projects that I actually completed</h2>
         <div id='projects'>
           {projects.map((data, key) => {
             return (
