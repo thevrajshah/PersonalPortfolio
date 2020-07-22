@@ -516,7 +516,10 @@ footer {
     display: flex;
     justify-content: flex-start;
     flex-wrap: nowrap;
-    padding: 2rem;
+    padding: 2rem 0;
+    #projectCard {
+      margin: 2rem 1rem;
+    }
     #swipe {
       display: block;
     }
