@@ -16,8 +16,9 @@ class Hero extends Component {
             </ul>
           </div>
           <div id='swipe'>
-            swipe down <br />
-            <i className='fa fa-arrow-down' />
+            <i className='fa fa-arrow-up' />
+            <br />
+            swipe up
           </div>
         </section>
       </div>
