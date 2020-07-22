@@ -12,10 +12,11 @@ export default class Work extends Component {
         <Helmet>
           <title>Portfolio -- Vraj Shah</title>
         </Helmet>
-        <WhiteSection textAlign='center'>
-          <h1 style={{ fontSize: "4rem" }}>work</h1>
-          <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
-        </WhiteSection>
+        <div id='Head'>
+          <section>
+            <h1 style={{ color: "#111", fontSize: "4.5rem" }}>work.</h1>
+          </section>
+        </div>
         <Projects />
         <Design />
       </Fragment>

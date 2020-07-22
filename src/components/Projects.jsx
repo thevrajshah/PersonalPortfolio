@@ -1,12 +1,15 @@
 import React, { Component, Fragment } from "react";
 import "./components.scss";
-import { GreySection, WhiteSection } from "./Containers";
+import { WhiteSection } from "./Containers";
 import { projects } from "../assets/Data.json";
 
 class Projects extends Component {
   render() {
     return (
-      <GreySection textAlign='left' paddingLR='0 2.5rem'>
+      <WhiteSection textAlign='center' paddingLR='0 2.5rem'>
+        <h1>Development</h1>
+        <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+
         <div id='projects'>
           {projects.map((data, key) => {
             return (
@@ -25,7 +28,7 @@ class Projects extends Component {
             swipe
           </span>
         </div>
-      </GreySection>
+      </WhiteSection>
     );
   }
 }

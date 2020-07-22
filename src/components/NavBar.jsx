@@ -5,19 +5,33 @@ import "./components.scss";
 import ThemeMode from "../ThemeChanger";
 
 export default class NavBar extends Component {
-  state = { mobileNavVisible: false };
+  state = { mobileNavVisible: false, transparentNav: false };
   // Hide or show the menu.
   toggleMobileNav = () => {
     this.setState({ mobileNavVisible: !this.state.mobileNavVisible });
+    this.setState({ transparentNav: !this.state.transparentNav });
   };
+
+  componentDidMount() {
+    window.addEventListener("scroll", () => {
+      const isTop = window.scrollY < 50;
+      if (isTop !== true) {
+        this.setState({ transparentNav: true });
+      } else {
+        this.setState({ transparentNav: false });
+      }
+    });
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll");
+  }
+
   render() {
     return (
-      <header>
+      <header className={this.state.transparentNav ? "" : "transparentNav"}>
         <nav>
-          <span id='logo'>
-            VRAJ.<b style={{ color: "var(--accent)" }}>SHAH</b>
-            <ThemeMode />
-          </span>
+          <ThemeMode />
           <ul id='desktopNav'>
             <li>
               <NavLink to='/' exact>
@@ -31,7 +45,7 @@ export default class NavBar extends Component {
               <NavLink to='/connect'>CONNECT</NavLink>
             </li>
             <li>
-              <a id='blog' href='#'>
+              <a id='blog' href='#Hero'>
                 BLOG
               </a>
             </li>

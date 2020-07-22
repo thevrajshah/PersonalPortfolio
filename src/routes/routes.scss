@@ -1,5 +1,12 @@
 @import "../variables";
 
+#Head {
+  margin-top: -5.2rem;
+  background: $gradient;
+  padding: 8.2rem 3rem 3rem;
+  text-align: center;
+}
+
 // Skills
 #Skills {
   display: flex;

@@ -1,13 +1,35 @@
 @import "../variables";
 
 // NavBar Styling
+.transparentNav {
+  background-color: transparent;
+  nav a {
+    color: #111;
+    opacity: 0.8;
+    &:hover,
+    &.active {
+      color: #111;
+      opacity: 1;
+    }
+  }
+  #Social a,
+  #themeChanger {
+    opacity: 1;
+  }
+  #mobileNav {
+    color: var(--background1);
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}
 header {
   // fixed position
   z-index: 5;
   position: sticky;
   width: 100%;
   top: 0px;
-  background: var(--background1);
+  background-color: var(--background1);
   font-weight: 700;
   nav {
     display: flex;
@@ -18,17 +40,16 @@ header {
     font-size: 1.2rem;
     align-items: center;
     height: 5.2rem;
+    color: var(--background1);
     #logo {
       // padding: 3px;
       // border: solid var(--accent) 0.3px;
       vertical-align: middle;
-      color: var(--foreground1);
       font-weight: 900;
       font-size: 1.5rem;
       font-family: $font2;
       line-height: 0.9;
       vertical-align: middle;
-      transition: all 0.3s $curve1;
     }
     // DesktopNav
     #desktopNav {
@@ -121,7 +142,10 @@ header {
 }
 
 // Social Styling
-#social {
+#Social {
+  background: var(--background2);
+  border-radius: 2rem;
+  padding: 0 10px;
   a {
     vertical-align: middle;
     cursor: pointer;
@@ -139,7 +163,7 @@ header {
     color: #00a6ff;
   }
   .fa-dev {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     &:hover {
       color: #004ddb;
     }
@@ -158,13 +182,12 @@ header {
 // Hero Styling
 #Hero {
   display: flex;
+  position: relative;
+  margin-top: -5.2rem;
   flex-direction: column;
   justify-content: center;
-  background: var(--accent);
   background: $gradient;
-  background-attachment: scroll;
-  background-size: cover;
-  height: calc(100vh - 5.2rem);
+  height: calc(100vh);
   padding: 5rem 2.5rem;
   line-height: 1.2;
   transition: all 0.3s $curve1 0s;
@@ -172,6 +195,7 @@ header {
     margin: 2rem auto;
     text-align: center;
     font-weight: bolder;
+    transform-origin: center;
   }
   #hello {
     font-size: 2.5rem;
@@ -183,7 +207,7 @@ header {
     position: absolute;
     bottom: 2rem;
     left: 0;
-    color: var(--background2);
+    color: #111;
     font-size: 1.4rem;
     font-weight: 700;
     width: 100%;
@@ -199,8 +223,7 @@ header {
     animation: hero 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s both;
   }
   #slider {
-    position: absolute;
-    width: 100%;
+    position: relative;
     left: 50%;
     transform-origin: center;
     transform: translateX(-85px);
@@ -217,7 +240,7 @@ header {
       position: absolute;
     }
     li:nth-child(2) {
-      animation-delay: 2.5s;
+      animation-delay: 1.8s;
     }
   }
 }
@@ -329,7 +352,7 @@ header {
 
 //Contact Styling
 #contactCard {
-  margin: 2.5rem 7vw;
+  margin: -10rem 7vw 2.5rem;
 }
 #contactForm {
   margin: 2rem 0;
@@ -469,11 +492,12 @@ footer {
 @media screen and #{$mq-small} {
   // Hero Styling
   #heroText {
+    padding: 7.5rem 4rem;
     #hello {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
     #name {
-      font-size: 6rem;
+      font-size: 5rem;
     }
   }
   // Projects Styling
@@ -489,15 +513,15 @@ footer {
   }
   // Gallery Styling
   .imgWrapper {
-    width: 12.5rem;
-    height: 12.5rem;
+    width: 18.75rem;
+    height: 18.75rem;
     img {
-      max-height: 12.5rem;
+      max-height: 18.75rem;
     }
   }
   //Contact Styling
   #contactCard {
-    margin: 20px 1.5rem;
+    margin: -10rem 1.5rem 2rem;
   }
   #contactForm {
     padding: 0 2.5%;
@@ -529,7 +553,7 @@ footer {
 
 @keyframes hero {
   0% {
-    letter-spacing: 1em;
+    letter-spacing: 0.5em;
     opacity: 0;
   }
   40% {
@@ -546,18 +570,22 @@ footer {
   }
   5% {
     opacity: 0;
+    transform: translateY(-50px);
     -moz-transform: translateY(-50px);
   }
   10% {
     opacity: 1;
+    transform: translateY(0px);
     -moz-transform: translateY(0px);
   }
   25% {
     opacity: 1;
+    transform: translateY(0px);
     -moz-transform: translateY(0px);
   }
   30% {
     opacity: 0;
+    transform: translateY(50px);
     -moz-transform: translateY(50px);
   }
   80% {

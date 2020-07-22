@@ -15,10 +15,9 @@ export default class App extends Component {
     return (
       <Fragment>
         <Router onUpdate={() => window.scrollTo(0, 0)}>
-          <NavBar />
+          <NavBar /> <Route path='/' exact component={About} />
           <Suspense fallback={<Loader />}>
             <Switch>
-              <Route path='/' exact component={About} />
               <Route path='/work' component={Work} />
               <Route path='/connect' component={Connect} />
             </Switch>

@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  transition: all 0.2s $curve1;
 }
 html {
   font-size: 10px;
@@ -108,6 +109,7 @@ section {
 }
 .whiteSection {
   background: var(--background1);
+  box-shadow: $shadow;
 }
 .greySection {
   background: var(--background2);
@@ -127,6 +129,16 @@ section {
   color: var(--foreground1);
   border-radius: 3rem;
   box-shadow: $shadow;
+}
+
+// Badge Styling
+.badge {
+  margin: 15px auto;
+  padding: 2px 14px;
+  border-radius: 8px;
+  width: max-content;
+  background-color: var(--accent);
+  font-weight: 400;
 }
 
 // Responsive Design

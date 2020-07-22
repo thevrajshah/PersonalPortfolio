@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import "./components.scss";
-import { WhiteSection } from "./Containers";
+import { GreySection } from "./Containers";
 
 export default class Design extends Component {
   render() {
     return (
-      <WhiteSection textAlign='center'>
+      <GreySection textAlign='center'>
         <h1>Design</h1>
         <h2>Coming Soon...</h2>
-      </WhiteSection>
+      </GreySection>
     );
   }
 }

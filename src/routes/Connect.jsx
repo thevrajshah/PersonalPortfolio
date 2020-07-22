@@ -7,6 +7,11 @@ export default class Connect extends Component {
   render() {
     return (
       <Fragment>
+        <div id='Head'>
+          <section>
+            <h1 style={{ color: "#111", fontSize: "4.5rem" }}>​</h1>
+          </section>
+        </div>
         <Helmet>
           <title>Connect | Vraj Shah</title>
         </Helmet>

@@ -4,7 +4,7 @@ import "./components.scss";
 export default class Social extends Component {
   render() {
     return (
-      <span id='social'>
+      <span id='Social'>
         <a
           target='_blank'
           className='fab fa-github'
