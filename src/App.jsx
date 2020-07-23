@@ -20,6 +20,7 @@ export default class App extends Component {
             <Switch>
               <Route path='/work' component={Work} />
               <Route path='/connect' component={Connect} />
+              <Route path='/404' component={Loader} />
             </Switch>
           </Suspense>
         </Router>

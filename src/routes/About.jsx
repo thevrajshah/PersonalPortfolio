@@ -86,6 +86,39 @@ export default class About extends Component {
             <strong>Thank You 😊</strong>
           </p>
         </WhiteSection>
+        <GreySection textAlign='center'>
+          <script
+            async
+            src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
+          ></script>
+          <div id='Ads'>
+            <ins
+              class='adsbygoogle'
+              style={{ display: "block" }}
+              data-ad-client='ca-pub-1805340331841889'
+              data-ad-slot='9867912939'
+              data-ad-format='auto'
+              data-full-width-responsive='true'
+            ></ins>
+            <ins
+              class='adsbygoogle'
+              style={{ display: "block" }}
+              data-ad-client='ca-pub-1805340331841889'
+              data-ad-slot='9867912939'
+              data-ad-format='auto'
+              data-full-width-responsive='true'
+            ></ins>
+            <ins
+              class='adsbygoogle'
+              style={{ display: "block" }}
+              data-ad-client='ca-pub-1805340331841889'
+              data-ad-slot='9867912939'
+              data-ad-format='auto'
+              data-full-width-responsive='true'
+            ></ins>
+          </div>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </GreySection>
       </Fragment>
     );
   }

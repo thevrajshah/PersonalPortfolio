@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import Social from "./Social";
 import "./components.scss";
 import ThemeMode from "../ThemeChanger";
@@ -47,9 +47,7 @@ export default class NavBar extends Component {
               <NavLink to='/connect'>CONNECT</NavLink>
             </li>
             <li>
-              <a id='blog' href='#Hero'>
-                BLOG
-              </a>
+              <Link to='/404'>BLOG</Link>
             </li>
           </ul>
           <Social />
