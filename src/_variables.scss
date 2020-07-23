@@ -19,6 +19,16 @@ html[data-theme="light"] {
   --background1: #fff;
   --foreground2: #7f7f7f;
   --background2: #fafafa;
+  .transparentNav {
+    .hamburger::before,
+    .hamburger::after {
+      background-color: #111;
+    }
+    #themeChanger {
+      opacity: 1;
+      color: #111;
+    }
+  }
 }
 
 //darkMode
@@ -28,6 +38,16 @@ html[data-theme="dark"] {
   --background1: #111;
   --foreground2: #c3c3c3;
   --background2: #181818;
+  .transparentNav {
+    .hamburger::before,
+    .hamburger::after {
+      background-color: (var(--background1));
+    }
+    #themeChanger {
+      opacity: 1;
+      color: var(--background1);
+    }
+  }
 }
 
 // Media Queries

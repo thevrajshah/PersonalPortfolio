@@ -12,14 +12,6 @@
       opacity: 0.6;
     }
   }
-  .hamburger::before,
-  .hamburger::after {
-    background-color: #111;
-  }
-  #themeChanger {
-    opacity: 1;
-    color: #111;
-  }
   #mobileNav {
     color: var(--background1);
     &:hover {
