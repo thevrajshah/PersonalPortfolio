@@ -6,7 +6,7 @@ import dino from "../assets/dino.gif";
 class Loader extends Component {
   render() {
     return (
-      <WhiteSection textAlign='center'>
+      <WhiteSection textAlign='center' paddingTB='8.2rem 0'>
         <div className='loader'>
           <h3>Wait until I figure out Server-Side Rendering....</h3>
           <img

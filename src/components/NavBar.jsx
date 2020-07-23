@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import Social from "./Social";
 import "./components.scss";
@@ -11,10 +11,13 @@ export default class NavBar extends Component {
     this.setState({ mobileNavVisible: !this.state.mobileNavVisible });
     this.setState({ transparentNav: !this.state.transparentNav });
   };
-
   componentDidMount() {
     window.addEventListener("scroll", () => {
       const isTop = window.scrollY < 50;
+      document.body.style.overflowY = this.state.mobileNavVisible
+        ? hidden
+        : scroll;
+
       if (isTop !== true) {
         this.setState({ transparentNav: true });
       } else {

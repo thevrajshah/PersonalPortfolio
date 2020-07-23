@@ -16,9 +16,9 @@
   .hamburger::after {
     background-color: #111;
   }
-  #Social a,
   #themeChanger {
     opacity: 1;
+    color: #111;
   }
   #mobileNav {
     color: var(--background1);
@@ -208,7 +208,7 @@ header {
   }
   #swipe {
     position: absolute;
-    bottom: 4rem;
+    bottom: 5rem;
     left: 0;
     color: #111;
     font-size: 1.4rem;
@@ -486,6 +486,11 @@ footer {
   .loader {
     img {
       width: 12em;
+    }
+  }
+  #Hero {
+    #swipe {
+      bottom: 7.5rem;
     }
   }
   // Gallery Styling
