@@ -3,20 +3,11 @@
 // NavBar Styling
 .transparentNav {
   background-color: transparent;
-  nav a {
-    color: #111;
-    opacity: 1;
-    &:hover,
-    &.active {
-      color: #111;
-      opacity: 0.6;
-    }
-  }
-  #mobileNav {
-    color: var(--background1);
-    &:hover {
-      color: var(--accent);
-    }
+  #desktopNav,
+  #themeChanger,
+  #mobileMenu,
+  #Social {
+    box-shadow: $shadow;
   }
 }
 header {
@@ -50,6 +41,9 @@ header {
     // DesktopNav
     #desktopNav {
       display: block;
+      padding: 0 10px;
+      border-radius: 2rem;
+      background: var(--background1);
       li {
         display: inline-block;
         vertical-align: middle;
@@ -68,13 +62,18 @@ header {
   }
 }
 // MobileNav
+#mobileMenu {
+  display: none;
+  border-radius: 9px;
+  padding: 4px 5px;
+  background: var(--background1);
+}
 .hamburger {
   cursor: pointer;
   background: transparent;
   height: 20px;
   position: relative;
   width: 20px;
-  display: none;
   &::before,
   &::after {
     background-color: var(--foreground1);
@@ -134,13 +133,22 @@ header {
 #themeChanger {
   font-size: 1.5rem;
   margin-left: 7px;
+  border-radius: 50%;
+  padding: 6px;
+  background: var(--background1);
+}
+.fa-sun-o:hover {
+  color: #00ffea;
+}
+.fa-moon-o:hover {
+  color: #4d00c9;
 }
 
 // Social Styling
 #Social {
-  background: var(--background2);
+  background: var(--background1);
   border-radius: 2rem;
-  padding: 0 10px;
+  padding: 0 7.5px;
   a {
     vertical-align: middle;
     cursor: pointer;
@@ -471,6 +479,7 @@ footer {
     }
   }
   // Mobile Nav
+  #mobileMenu,
   .hamburger {
     display: block;
   }

@@ -9,7 +9,6 @@ export default class NavBar extends Component {
   // Hide or show the menu.
   toggleMobileNav = () => {
     this.setState({ mobileNavVisible: !this.state.mobileNavVisible });
-    this.setState({ transparentNav: !this.state.transparentNav });
   };
   componentDidMount() {
     window.addEventListener("scroll", () => {
@@ -54,12 +53,14 @@ export default class NavBar extends Component {
             </li>
           </ul>
           <Social />
-          <i
-            className={
-              this.state.mobileNavVisible ? "hamburger cross" : "hamburger"
-            }
-            onClick={this.toggleMobileNav}
-          />
+          <button id='mobileMenu'>
+            <i
+              className={
+                this.state.mobileNavVisible ? "hamburger cross" : "hamburger"
+              }
+              onClick={this.toggleMobileNav}
+            />
+          </button>
         </nav>
         <ul
           id='mobileNav'
