@@ -65,9 +65,7 @@ header {
 // MobileNav
 #mobileMenu {
   display: none;
-  border-radius: 9px;
-  padding: 4px 5px;
-  background: var(--background1);
+  box-shadow: $shadow;
 }
 .hamburger {
   cursor: pointer;
@@ -134,9 +132,7 @@ header {
 #themeChanger {
   font-size: 1.5rem;
   margin-left: 7px;
-  border-radius: 50%;
-  padding: 6px;
-  background: var(--background1);
+  box-shadow: $shadow;
 }
 .fa-sun-o:hover {
   color: #00ffea;
@@ -147,8 +143,6 @@ header {
 
 // Social Styling
 #Social {
-  background: var(--background1);
-  border-radius: 2rem;
   padding: 0 7.5px;
   a {
     vertical-align: middle;
@@ -156,6 +150,7 @@ header {
     color: var(--foreground1);
     margin: 0 4px;
     font-size: 1.5rem;
+    box-shadow: $shadow;
   }
   .fa-github:hover {
     color: #a806c5;
