@@ -1,4 +1,4 @@
-@import "../variables";
+@import './vars';
 
 #Head {
   margin-top: -5.2rem;
@@ -39,11 +39,11 @@
 }
 
 // Responsive Design
-@media screen and #{$mq-large} {
+@media screen and (max-width: $lg) {
 }
 
-@media screen and #{$mq-medium} {
+@media screen and (max-width: $md) {
 }
 
-@media screen and #{$mq-small} {
+@media screen and (max-width: $sm) {
 }

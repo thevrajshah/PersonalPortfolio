@@ -1,5 +1,4 @@
-import React, { useState, useEffect, setMode, Fragment } from "react";
-import Helmet from "react-helmet";
+import React, { useState, useEffect } from "react";
 
 const themeType = {
   dark: "dark",
@@ -26,17 +25,14 @@ const ThemeChanger = () => {
     setMode(mode === themeType.light ? themeType.dark : themeType.light);
   };
   return (
-    <Fragment>
-      <Helmet>
-        <html data-theme={mode} />
-      </Helmet>
+  
       <a
         onClick={toggleMode}
         onKeyDown={toggleMode}
         className={mode === themeType.light ? "fa fa-moon-o" : "fa fa-sun-o"}
         id='themeChanger'
       />
-    </Fragment>
+    
   );
 };
 export default ThemeChanger;

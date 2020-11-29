@@ -1,47 +1,35 @@
 {
   "name": "thevrajshah",
   "version": "1.0.0",
-  "description": "",
-  "main": "Browser.js",
+  "description": "Personal Website for Vraj Shah built using NextJS",
+  "main": "index.js",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot --port 3000",
-    "start:lan": "webpack-dev-server --mode development --open --hot --host 0.0.0.0 --port 3000",
-    "build": "webpack --mode production"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p $PORT"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thevrajshah/ReactPersonalWebsite.git"
   },
   "keywords": [
-    "thevrajshah",
-    "react",
-    "webpack",
-    "babel"
+    "thevrajshah"
   ],
   "author": "Vraj Shah",
   "license": "MIT",
-  "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0",
-    "react-router-dom": "^5.2.0"
+  "bugs": {
+    "url": "https://github.com/thevrajshah/ReactPersonalWebsite/issues"
   },
-  "devDependencies": {
-    "@babel/core": "^7.10.4",
-    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
-    "@babel/preset-env": "^7.10.4",
-    "@babel/preset-react": "^7.10.4",
-    "autoprefixer": "^9.8.5",
-    "babel-loader": "^8.1.0",
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^3.6.0",
-    "html-webpack-plugin": "^4.3.0",
-    "json5-loader": "^4.0.0",
-    "mini-css-extract-plugin": "^0.9.0",
-    "node-sass": "^4.14.1",
-    "postcss-loader": "^3.0.0",
-    "sass-loader": "^8.0.2",
-    "style-loader": "^1.2.1",
-    "url-loader": "^4.1.0",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
-  }
+  "homepage": "https://github.com/thevrajshah/ReactPersonalWebsite#readme",
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "next": "^10.0.3",
+    "node-sass": "^5.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.1.0",
+    "sass": "^1.29.0"
+  },
+  "devDependencies": {}
 }

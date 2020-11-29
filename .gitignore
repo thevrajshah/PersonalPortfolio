@@ -1,7 +1,2 @@
-# dependencies
-/node_modules
-
-# production
-/build
-
-/.vscode
+node_modules
+.next
