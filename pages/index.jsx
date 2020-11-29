@@ -10,7 +10,7 @@ export default function home() {
     <>
       <Head>
         <meta property="og:locale" content="en-US" />
-        <meta property="og:site_name" content="thevrajshah" />
+        <meta property="og:site_name" content="Vraj Shah" />
         <meta property="og:title" content="Vraj Shah - Developer" />
         <meta property="og:url" content="https://thevrajshah.me/" />
         <meta

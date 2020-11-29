@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import { FaLongArrowAltRight } from 'react-icons/fa';
+import { TiRefresh } from 'react-icons/ti';
 import { Card } from '../components/Containers';
 
 export default function Connect() {
@@ -37,11 +39,11 @@ export default function Connect() {
                 />
                 <textarea name="message" placeholder="Message" required />
                 <button type="reset">
-                  <i className="fa fa-refresh" />
+                  <TiRefresh />
                 </button>
                 <button type="submit">
                   Submit
-                  <i className="fa fa-long-arrow-right m-1-10" />
+                  <FaLongArrowAltRight />
                 </button>
               </form>
             </div>

@@ -64,7 +64,7 @@ header {
 // MobileNav
 #mobileMenu {
   display: none;
-  padding: 3px 5px;
+  padding: 4px 6px;
   border-radius: 1rem;
   background: var(--background1);
   box-shadow: none;
@@ -396,7 +396,7 @@ header {
     &:hover {
       background: var(--foreground1);
       box-shadow: 0 5px 10px 0px rgba(24, 24, 24, 0.35);
-      i.m-1-10 {
+      svg {
         transform: translateX(5px);
       }
     }
@@ -407,11 +407,14 @@ header {
     background: var(--foreground1);
     box-shadow: 0 5px 10px 0px rgba(24, 24, 24, 0.35);
     transition: all 0.3s $curve2 0s;
+    svg {
+      height: 1.8em;
+      width: 1.8em;
+    }
     &:hover {
       background: var(--foreground2);
-      i.fa-refresh {
+      svg {
         transform: rotate(360deg);
-        transition: all 0.4s $curve2 0s;
       }
     }
   }
@@ -444,7 +447,7 @@ footer {
     position: relative;
     top: 5px;
     margin: 5px auto;
-    padding: 2px 5px;
+    padding: 1px 5px;
     color: var(--background1);
     border-radius: 50%;
     font-size: 1.4rem;
