@@ -44,10 +44,10 @@ export default function NavBar() {
           <NavLink href="/" exact>
             <li>ABOUT</li>
           </NavLink>
-          <NavLink href="/Work">
+          <NavLink href="/work">
             <li>WORK</li>
           </NavLink>
-          <NavLink href="/Connect">
+          <NavLink href="/connect">
             <li>CONNECT</li>
           </NavLink>
           <NavLink href="/404">
@@ -66,10 +66,10 @@ export default function NavBar() {
         <NavLink href="/" exact>
           <li onClick={() => setDrawer(0)}>ABOUT</li>
         </NavLink>
-        <NavLink href="/Work">
+        <NavLink href="/work">
           <li onClick={() => setDrawer(0)}>WORK</li>
         </NavLink>
-        <NavLink href="/Connect">
+        <NavLink href="/connect">
           <li onClick={() => setDrawer(0)}>CONNECT</li>
         </NavLink>
         <li onClick={() => setDrawer(0)}>
