@@ -9,6 +9,22 @@ export default function home() {
   return (
     <>
       <Head>
+        <meta property="og:locale" content="en-US" />
+        <meta property="og:site_name" content="thevrajshah" />
+        <meta property="og:title" content="Vraj Shah - Developer" />
+        <meta property="og:url" content="https://thevrajshah.me/" />
+        <meta
+          property="og:description"
+          content="Hey! I'm Vraj, a developer based in Gujarat, India. I design & create quality software with the help of constant learning & improvisation"
+        />
+        <meta
+          name="keywords"
+          content="vraj, shah, vraj shah, thevrajshah, developer, web developer, fullstack developer, vadodara, gujarat, code, coding, st kabir school, svit, sardar vallabhbhai patel institute of technology, react, webpack, wordpress"
+        />
+
+        <meta name="color-scheme" content="dark light" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="HandheldFriendly" content="True" />
         <title>Vraj Shah | Developer, Designer & Student</title>
       </Head>
       <Hero />
