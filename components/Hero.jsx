@@ -6,7 +6,7 @@ export default function Hero() {
       <section>
         <div id="heroText">
           <div id="hello">Hello There! 🖐️</div>
-          <div id="name">I'm Vraj.</div>
+          <h1 id="name">I'm Vraj.</h1>
           <ul id="slider">
             <li>Developer</li>
             <li>Designer</li>
@@ -15,7 +15,6 @@ export default function Hero() {
         </div>
         <div id="swipe">
           <FaArrowUp />
-          {/* <i className="fa fa-arrow-up" /> */}
           <br />
           swipe up
         </div>
