@@ -5,7 +5,7 @@ import { Context } from '../Context';
 import NavLink from './NavLink';
 
 export default function NavBar() {
-  const { drawer, theme, setDrawer, setTheme } = useContext(Context);
+  const { drawer, darkTheme, setDrawer, setDarkTheme } = useContext(Context);
 
   const [transNav, setTransNav] = useState(false);
 
@@ -31,14 +31,14 @@ export default function NavBar() {
       <nav>
         <a
           onClick={() => {
-            setTheme(!theme);
+            setDarkTheme(!darkTheme);
           }}
           onKeyDown={() => {
-            setTheme(!theme);
+            setDarkTheme(!darkTheme);
           }}
           id="themeChanger"
         >
-          {theme ? <FaMoon id="moon" /> : <FaRegSun id="sun" />}
+          {darkTheme ? <FaMoon id="moon" /> : <FaRegSun id="sun" />}
         </a>
         <ul id="desktopNav">
           <NavLink href="/" exact>
@@ -50,7 +50,7 @@ export default function NavBar() {
           <NavLink href="/connect">
             <li>CONNECT</li>
           </NavLink>
-          <NavLink href="/404">
+          <NavLink href="/blog">
             <li>BLOG</li>
           </NavLink>
         </ul>
@@ -72,11 +72,9 @@ export default function NavBar() {
         <NavLink href="/connect">
           <li onClick={() => setDrawer(0)}>CONNECT</li>
         </NavLink>
-        <li onClick={() => setDrawer(0)}>
-          <a href="#" id="blog">
-            BLOG
-          </a>
-        </li>
+        <NavLink href="/blog">
+          <li onClick={() => setDrawer(0)}>BLOG</li>
+        </NavLink>
       </ul>
     </header>
   );

@@ -5,11 +5,11 @@ import { Context } from './Context';
 import { useContext, useEffect } from 'react';
 
 export default function Layout({ children }) {
-  const { theme } = useContext(Context);
+  const { darkTheme } = useContext(Context);
   useEffect(() => {
-    theme
-      ? (document.body.className = 'light')
-      : (document.body.className = 'dark');
+    darkTheme
+      ? (document.body.className = 'dark')
+      : (document.body.className = 'light');
   });
   return (
     <>

@@ -17,7 +17,7 @@ export default function Work() {
       </div>
       <Projects />
       <Design />
-      <WhiteSection textAlign="center">
+      {/* <WhiteSection textAlign="center">
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
@@ -49,7 +49,7 @@ export default function Work() {
           ></ins>
         </div>
         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-      </WhiteSection>
+      </WhiteSection> */}
     </>
   );
 }

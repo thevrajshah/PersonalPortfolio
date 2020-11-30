@@ -4,24 +4,23 @@ export const Context = createContext();
 
 export const Provider = (props) => {
   const [drawer, setDrawer] = useState(0);
-  const [theme, setTheme] = useState(0);
-  /* => {
+  const [darkTheme, setDarkTheme] = useState(() => {
     if (typeof window !== 'undefined') {
-      const val = localStorage.getItem('theme');
-      return val ? JSON.parse(val) : 1;
+      const val = localStorage.getItem('darkTheme');
+      return val ? JSON.parse(val) : true;
     }
-    return 0;
-  }); */
+    return false;
+  });
 
-  // useEffect(() => {
-  //   if (typeof window !== 'undefined') {
-  //     localStorage.setItem('theme', JSON.stringify(theme));
-  //   }
-  // }, [theme]);
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('darkTheme', JSON.stringify(darkTheme));
+    }
+    console.log(localStorage.getItem('darkTheme'));
+  }, [darkTheme]);
 
-  console.log(theme);
   return (
-    <Context.Provider value={{ drawer, theme, setDrawer, setTheme }}>
+    <Context.Provider value={{ drawer, darkTheme, setDrawer, setDarkTheme }}>
       {props.children}
     </Context.Provider>
   );

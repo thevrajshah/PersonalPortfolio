@@ -10,6 +10,10 @@ export default function MyApp({ Component, pageProps }) {
     <Provider>
       <Head>
         <script src="https://platform.twitter.com/widgets.js"></script>
+        <script
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
       </Head>
       <Layout>
         <Component {...pageProps} />

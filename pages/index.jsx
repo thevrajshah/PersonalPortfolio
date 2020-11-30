@@ -97,7 +97,7 @@ export default function home() {
           <strong>Thank You 😊</strong>
         </p>
       </WhiteSection>
-      <GreySection textAlign="center">
+      {/* <GreySection textAlign="center">
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
@@ -129,7 +129,7 @@ export default function home() {
           ></ins>
         </div>
         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-      </GreySection>
+      </GreySection> */}
     </>
   );
 }

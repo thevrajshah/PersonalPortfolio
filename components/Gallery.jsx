@@ -6,8 +6,8 @@ export default function Gallery() {
     <GreySection paddingLR="0" paddingTB="0">
       <div className="imgContainer">
         {photographs.map((url, key) => (
-          <div className="imgWrapper">
-            <img key={key} src={url} />
+          <div className="imgWrapper" key={key}>
+            <img src={url} />
           </div>
         ))}
       </div>
