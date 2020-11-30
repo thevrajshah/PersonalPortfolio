@@ -55,7 +55,10 @@ export default function home() {
           <img src="/javascript.svg" alt="" />
           <img src="/nodejs.svg" alt="" />
           <img src="/mongo.svg" alt="" />
+          <img src="/dart.svg" alt="" />
+          <img src="/flutter.svg" alt="" />
           <img src="/c++.svg" alt="" />
+          <img src="/python.svg" alt="" />
           <img src="/html5.svg" alt="" />
           <img src="/css3.svg" alt="" />
         </div>
