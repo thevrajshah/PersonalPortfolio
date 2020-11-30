@@ -49,6 +49,16 @@ export default function home() {
       </WhiteSection>
       <GreySection textAlign="center" paddingLR="0 2rem">
         <h1>Skills</h1>
+        <div id="tech">
+          <img src="/nextjs.svg" alt="" />
+          <img src="/react.svg" alt="" />
+          <img src="/javascript.svg" alt="" />
+          <img src="/nodejs.svg" alt="" />
+          <img src="/mongo.svg" alt="" />
+          <img src="/c++.svg" alt="" />
+          <img src="/html5.svg" alt="" />
+          <img src="/css3.svg" alt="" />
+        </div>
         <div id="Skills">
           <Card align="left">
             <h5 style={{ color: 'var(--accent)' }}>Development</h5>

@@ -21,25 +21,26 @@ body {
   padding: 0;
   font-size: 1.8rem;
   line-height: 3rem;
-  color: var(--foreground1);
-  background: var(--background1);
+  color: var(--fg1);
+  background: var(--bg1);
+  transition: all 0.4s $curve1;
   animation: fade-in 0.8s $curve1;
   // lightMode
   &.light {
     --accent: #00e0d5; //#00cddb
-    --foreground1: #111;
-    --background1: #fff;
-    --foreground2: #7f7f7f;
-    --background2: #fafafa;
+    --fg1: #111;
+    --bg1: #fff;
+    --fg2: #7f7f7f;
+    --bg2: #fafafa;
   }
 
   //darkMode
   &.dark {
     --accent: #00e0d5; //#00cddb
-    --foreground1: #fff;
-    --background1: #111;
-    --foreground2: #c3c3c3;
-    --background2: #181818;
+    --fg1: #fff;
+    --bg1: #111;
+    --fg2: #c3c3c3;
+    --bg2: #181818;
   }
 }
 
@@ -50,7 +51,7 @@ h4,
 h5,
 h6 {
   cursor: default;
-  color: var(--foreground1);
+  color: var(--fg1);
   font-weight: 700;
   margin: 5px 0;
   a {
@@ -71,7 +72,7 @@ b {
 p {
   margin: 0.25rem 0 0.5rem 0;
   font-family: $font1;
-  color: var(--foreground2);
+  color: var(--fg2);
   line-height: 24px;
   font-size: 1.4rem;
   a {
@@ -92,7 +93,6 @@ li {
 }
 svg {
   vertical-align: middle;
-  transition: all 0.3s $curve1;
 }
 input,
 textarea,
@@ -100,12 +100,26 @@ button {
   font-family: $font1;
   font-size: 1.4rem;
   font-weight: 700;
-  color: var(--foreground2);
+  color: var(--fg2);
   display: inline-block;
   border: none;
   outline: none;
   transition: all 0.3s $curve1 0s;
   touch-action: manipulation;
+}
+button {
+  &.btn {
+    margin: 10px auto;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    background: var(--bg1);
+    color: var(--fg1);
+    font-size: 1.5rem;
+    box-shadow: 0 5px 10px 0px rgba(7, 143, 255, 0.1);
+    &:hover {
+      color: var(--accent);
+    }
+  }
 }
 // Section Styling
 section {
@@ -114,11 +128,11 @@ section {
   background: transparent;
 }
 .whiteSection {
-  background: var(--background1);
+  background: var(--bg1);
   box-shadow: $shadow;
 }
 .greySection {
-  background: var(--background2);
+  background: var(--bg2);
 }
 #line {
   width: 5rem;
@@ -131,8 +145,8 @@ section {
 // Card Styling
 .card {
   margin: 1rem 0.75rem;
-  background-color: var(--background1);
-  color: var(--foreground1);
+  background-color: var(--bg1);
+  color: var(--fg1);
   border-radius: 3rem;
   box-shadow: $shadow;
 }

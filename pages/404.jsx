@@ -13,7 +13,7 @@ export default function Custon404() {
             style={{
               margin: '1.5rem 5px',
               padding: '1rem 1.5rem',
-              background: 'var(--background1)',
+              background: 'var(--bg1)',
               color: 'var(--acccent)',
               fontSize: '1.4rem',
               borderRadius: '25px',

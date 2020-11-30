@@ -1,4 +1,4 @@
-import { FaArrowAltCircleRight, FaArrowUp } from 'react-icons/fa';
+import { FaArrowUp, FaDownload } from 'react-icons/fa';
 
 export default function Hero() {
   return (
@@ -13,6 +13,14 @@ export default function Hero() {
             <li>Student</li>
           </ul>
         </div>
+        <button
+          onClick={() => {
+            window.open('/VrajShah_Resume.pdf', '_blank');
+          }}
+          className="btn"
+        >
+          <FaDownload /> Download CV
+        </button>
         <div id="swipe">
           <FaArrowUp />
           <br />

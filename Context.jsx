@@ -16,7 +16,6 @@ export const Provider = (props) => {
     if (typeof window !== 'undefined') {
       localStorage.setItem('darkTheme', JSON.stringify(darkTheme));
     }
-    console.log(localStorage.getItem('darkTheme'));
   }, [darkTheme]);
 
   return (

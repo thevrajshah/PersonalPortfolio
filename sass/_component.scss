@@ -17,7 +17,7 @@ header {
   position: sticky;
   width: 100%;
   top: 0px;
-  background-color: var(--background1);
+  background-color: var(--bg1);
   font-weight: 700;
   nav {
     display: flex;
@@ -28,7 +28,7 @@ header {
     font-size: 1.2rem;
     align-items: center;
     height: 5.2rem;
-    color: var(--background1);
+    color: var(--bg1);
     #logo {
       // padding: 3px;
       // border: solid var(--accent) 0.3px;
@@ -44,14 +44,14 @@ header {
       display: block;
       padding: 0 10px;
       border-radius: 2rem;
-      background: var(--background1);
+      background: var(--bg1);
       li {
         cursor: pointer;
         display: inline-block;
         vertical-align: middle;
         padding: 2px 15px;
         letter-spacing: 0.8px;
-        color: var(--foreground1);
+        color: var(--fg1);
         transition: 0.3s;
         &:hover,
         &.active {
@@ -66,7 +66,7 @@ header {
   display: none;
   padding: 4px 6px;
   border-radius: 1rem;
-  background: var(--background1);
+  background: var(--bg1);
   box-shadow: none;
 }
 .hamburger {
@@ -77,7 +77,7 @@ header {
   width: 20px;
   &::before,
   &::after {
-    background-color: var(--foreground1);
+    background-color: var(--fg1);
     content: ' ';
     border: none;
     display: block;
@@ -117,7 +117,7 @@ header {
   top: 0;
   left: 0;
   padding: 5rem 10% 5px;
-  background: var(--background1);
+  background: var(--bg1);
   height: calc(100vh);
   width: 100%;
   text-align: center;
@@ -142,10 +142,10 @@ header {
   padding: 0 7px;
   margin-left: 7px;
   box-shadow: none;
-  background: var(--background1);
+  background: var(--bg1);
   border-radius: 2rem;
   svg {
-    color: var(--foreground1);
+    color: var(--fg1);
     &#moon:hover {
       color: #4d00c9;
     }
@@ -158,11 +158,11 @@ header {
 // Social
 #Social {
   padding: 0 7px;
-  background: var(--background1);
+  background: var(--bg1);
   border-radius: 2rem;
   a {
     cursor: pointer;
-    color: var(--foreground1);
+    color: var(--fg1);
     margin: 0 4px;
     font-size: 1.4rem;
   }
@@ -210,11 +210,18 @@ header {
     font-weight: bolder;
     transform-origin: center;
   }
+
   #hello {
     font-size: 2.5rem;
     color: #111;
     font-family: $font2;
     animation: hero 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s both;
+  }
+  .btn {
+    position: relative;
+    margin: 7.5rem auto 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   #swipe {
     position: absolute;
@@ -239,16 +246,18 @@ header {
     position: relative;
     left: 50%;
     transform-origin: center;
-    transform: translateX(-85px);
+    transform: translateX(-80px);
     font-family: $font2;
     font-size: 3rem;
     font-weight: 700;
+
     li {
       animation: Slider 4.5s $curve2 infinite 0s;
       transition: all 0.8s $curve1;
       color: #111;
       text-align: center;
-
+      width: fit-content;
+      margin:auto;
       opacity: 0;
       overflow: hidden;
       display: block;
@@ -295,7 +304,7 @@ header {
   min-width: 27rem;
   grid-template-rows: 17rem 13rem 2rem 3rem;
   margin: 2rem 2.5rem;
-  background-color: var(--background1);
+  background-color: var(--bg1);
   border-radius: 2.5rem;
   box-shadow: $shadow;
   overflow: hidden;
@@ -308,11 +317,11 @@ header {
   }
   .projectText {
     padding: 1rem 2rem;
-    color: var(--foreground2);
+    color: var(--fg2);
   }
   .tools {
     margin: auto;
-    color: var(--foreground2);
+    color: var(--fg2);
     font-size: 1rem;
   }
   .projectOptions {
@@ -321,7 +330,7 @@ header {
     align-items: center;
     margin: 2rem;
     #github-alt {
-      color: var(--foreground1);
+      color: var(--fg1);
       font-size: 1.6rem;
       &:hover {
         color: #a806c5;
@@ -374,7 +383,7 @@ header {
   margin: -10rem 7vw 2.5rem;
 }
 #contactForm {
-  background: var(--background1);
+  background: var(--bg1);
   margin: 2rem 0;
   padding: 0 21%;
   display: inline-block;
@@ -390,12 +399,12 @@ header {
   button[type='submit'] {
     margin: 10px 5px;
     background: var(--accent);
-    color: var(--background1);
+    color: var(--bg1);
     font-size: 1.5rem;
     transition: all 0.3s $curve2 0s;
     box-shadow: 0 5px 10px 0px rgba(7, 143, 255, 0.1);
     &:hover {
-      background: var(--foreground1);
+      background: var(--fg1);
       box-shadow: 0 5px 10px 0px rgba(24, 24, 24, 0.35);
       svg {
         transform: translateX(5px);
@@ -404,8 +413,8 @@ header {
   }
   button[type='reset'] {
     margin: 10px 5px;
-    color: var(--background1);
-    background: var(--foreground1);
+    color: var(--bg1);
+    background: var(--fg1);
     box-shadow: 0 5px 10px 0px rgba(24, 24, 24, 0.35);
     transition: all 0.3s $curve2 0s;
     svg {
@@ -413,7 +422,7 @@ header {
       width: 1.8em;
     }
     &:hover {
-      background: var(--foreground2);
+      background: var(--fg2);
       svg {
         transform: rotate(360deg);
       }
@@ -425,7 +434,7 @@ header {
     margin: 10px 0;
     padding: 12px 20px;
     border-radius: 25px;
-    background-color: var(--background2);
+    background-color: var(--bg2);
     &:focus,
     &:hover {
       box-shadow: $shadow;
@@ -442,14 +451,14 @@ header {
 footer {
   bottom: 0;
   height: 8rem;
-  background: var(--background1);
+  background: var(--bg1);
   text-align: center;
   button#toTop {
     position: relative;
     top: 5px;
     margin: 5px auto;
     padding: 1px 5px;
-    color: var(--background1);
+    color: var(--bg1);
     border-radius: 50%;
     font-size: 1.4rem;
     background: var(--accent);
@@ -469,14 +478,14 @@ footer {
     color: #dc143c;
     #createdWith {
       margin: auto 0;
-      color: var(--foreground1);
+      color: var(--fg1);
       img {
         width: 15px;
         vertical-align: middle;
       }
     }
     #copyright {
-      color: var(--foreground1);
+      color: var(--fg1);
     }
   }
 }
