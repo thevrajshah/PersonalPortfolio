@@ -54,6 +54,22 @@
   }
 }
 
+#resume {
+  .btn {
+    position: absolute;
+    margin: 1.5rem 2.5rem;
+    padding: 8px 1.2rem;
+    background: var(--accent);
+    color: #fff;
+    right: 0;
+    bottom: 0;
+    // transform: translateX(-50%);
+    &:hover {
+      background: var(--bg1);
+      color: var(--accent);
+    }
+  }
+}
 // Responsive Design
 @media screen and (max-width: $lg) {
 }

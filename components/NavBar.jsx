@@ -21,9 +21,7 @@ export default function NavBar() {
       }
     });
 
-    return () => {
-      window.removeEventListener('scroll', window);
-    };
+    return () => window.removeEventListener('scroll', window);
   });
 
   return (
@@ -47,6 +45,9 @@ export default function NavBar() {
           <NavLink href="/work">
             <li>WORK</li>
           </NavLink>
+          <NavLink href="/resume">
+            <li>RESUME</li>
+          </NavLink>
           <NavLink href="/connect">
             <li>CONNECT</li>
           </NavLink>
@@ -68,6 +69,9 @@ export default function NavBar() {
         </NavLink>
         <NavLink href="/work">
           <li onClick={() => setDrawer(0)}>WORK</li>
+        </NavLink>
+        <NavLink href="/resume">
+          <li onClick={() => setDrawer(0)}>RESUME</li>
         </NavLink>
         <NavLink href="/connect">
           <li onClick={() => setDrawer(0)}>CONNECT</li>

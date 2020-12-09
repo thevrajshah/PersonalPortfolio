@@ -3,6 +3,7 @@ import Footer from './components/Footer';
 
 import { Context } from './Context';
 import { useContext, useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 export default function Layout({ children }) {
   const { darkTheme } = useContext(Context);
@@ -11,6 +12,15 @@ export default function Layout({ children }) {
       ? (document.body.className = 'dark')
       : (document.body.className = 'light');
   });
+  const router = useRouter();
+  if (router.pathname === '/resume') {
+    return (
+      <>
+        <NavBar />
+        {children}
+      </>
+    );
+  }
   return (
     <>
       <NavBar />

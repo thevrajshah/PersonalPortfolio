@@ -1,4 +1,5 @@
-import { FaArrowUp, FaDownload } from 'react-icons/fa';
+import Link from 'next/link';
+import { FaArrowUp, FaDownload, FaFile, FaFileAlt } from 'react-icons/fa';
 
 export default function Hero() {
   return (
@@ -13,14 +14,11 @@ export default function Hero() {
             <li>Student</li>
           </ul>
         </div>
-        <button
-          onClick={() => {
-            window.open('/VrajShah_Resume.pdf', '_blank');
-          }}
-          className="btn"
-        >
-          <FaDownload /> Download CV
-        </button>
+        <Link href="/resume">
+          <button className="btn">
+            <FaFileAlt /> View Resume
+          </button>
+        </Link>
         <div id="swipe">
           <FaArrowUp />
           <br />
