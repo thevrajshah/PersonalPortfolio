@@ -1,8 +1,8 @@
-import Social from './Social';
-import { FaSun, FaMoon, FaRegSun } from 'react-icons/fa';
-import { useState, useEffect, useContext } from 'react';
-import { Context } from '../Context';
-import NavLink from './NavLink';
+import Social from "./Social";
+import { FaSun, FaMoon, FaRegSun } from "react-icons/fa";
+import { useState, useEffect, useContext } from "react";
+import { Context } from "../Context";
+import NavLink from "./NavLink";
 
 export default function NavBar() {
   const { drawer, darkTheme, setDrawer, setDarkTheme } = useContext(Context);
@@ -10,9 +10,9 @@ export default function NavBar() {
   const [transNav, setTransNav] = useState(false);
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       const isTop = window.scrollY < 100;
-      document.body.style.overflowY = drawer ? 'hidden' : 'scroll';
+      document.body.style.overflowY = drawer ? "hidden" : "scroll";
 
       if (isTop !== true) {
         setTransNav(true);
@@ -21,11 +21,11 @@ export default function NavBar() {
       }
     });
 
-    return () => window.removeEventListener('scroll', window);
+    return () => window.removeEventListener("scroll", window);
   });
 
   return (
-    <header className={transNav ? '' : 'transparentNav'}>
+    <header className={transNav ? "" : "transparentNav"}>
       <nav>
         <a
           onClick={() => {
@@ -51,19 +51,19 @@ export default function NavBar() {
           <NavLink href="/connect">
             <li>CONNECT</li>
           </NavLink>
-          <NavLink href="/blog">
+          {/* <NavLink href="/blog">
             <li>BLOG</li>
-          </NavLink>
+          </NavLink> */}
         </ul>
         <Social />
         <button id="mobileMenu">
           <i
-            className={drawer ? 'hamburger cross' : 'hamburger'}
+            className={drawer ? "hamburger cross" : "hamburger"}
             onClick={() => setDrawer(!drawer)}
           />
         </button>
       </nav>
-      <ul id="mobileNav" style={{ display: drawer ? 'block' : 'none' }}>
+      <ul id="mobileNav" style={{ display: drawer ? "block" : "none" }}>
         <NavLink href="/" exact>
           <li onClick={() => setDrawer(0)}>ABOUT</li>
         </NavLink>
@@ -76,9 +76,9 @@ export default function NavBar() {
         <NavLink href="/connect">
           <li onClick={() => setDrawer(0)}>CONNECT</li>
         </NavLink>
-        <NavLink href="/blog">
+        {/* <NavLink href="/blog">
           <li onClick={() => setDrawer(0)}>BLOG</li>
-        </NavLink>
+        </NavLink> */}
       </ul>
     </header>
   );
