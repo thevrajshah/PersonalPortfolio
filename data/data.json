@@ -2,13 +2,15 @@
   "devSkills": [
     "React",
     "Webpack",
-    "JavaScript",
+    "Express",
     "Node",
-    "SCSS",
-    "C/C++",
+    "Flutter",
+    "JavaScript",
     "Python",
-    "Linux",
-    "Git",
+    "Dart",
+    "Java",
+    "C/C++",
+    "SCSS",
     "HTML",
     "CSS"
   ],
@@ -21,22 +23,53 @@
   ],
   "projects": [
     {
+      "name": "Prakarsh XVI Website",
+      "img": "/img/prakarsh-xvi.png",
+      "desc": "Event website for Prakarsh fest at our College  in 2021. Built with React, Next.js, MaterialUI & Sass.",
+      "liveurl": "https://prakarsh-xvi.herokuapp.com/"
+    },
+    {
+      "name": "PresentStorie Vendor Dashboard",
+      "img": "/img/presentstorie-vendor.png",
+      "desc": "Vendor Dashboard for gifting E-Commerce.",
+      "liveurl": "https://vendor.presentstorie.com/"
+    },
+    {
+      "name": "PresentStorie Website",
+      "img": "/img/presentstorie-website.png",
+      "desc": "An E-Commerce for gifting. Built with React, Next.js & Sass over custom UI design.",
+      "liveurl": "https://presentstorie.com/"
+    },
+    {
+      "name": "Shelter Hero",
+      "img": "/img/shelter-hero.png",
+      "desc": "A web-app that lets you to report the homeless. I just wanted to learn ContextAPI but it won me a hackathon.😅",
+      "liveurl": "https://presentstorie.com/",
+      "giturl": "https://thevrajshah.github.io/ShelterHero/"
+    },
+    {
+      "name": "Vision X Website",
+      "img": "/img/vision-x.png",
+      "desc": "An event website for Vision fest at our College in 2020. Built with React & Sass",
+      "liveurl": "https://cevision.tech/"
+    },
+    {
       "name": "React Personal Website",
-      "img": "https://i.imgur.com/UmkzK97l.png",
-      "desc": "Production quality website build with industry-level tools like React, Webpack, Sass, json, etc. with the finest aesthetic feel.",
+      "img": "/img/portfolio.png",
+      "desc": "Production quality website build with like React, Webpack, Sass, etc. to acheive the finest aesthetic.",
       "giturl": "https://github.com/thevrajshah/ReactPersonalWebsite",
       "liveurl": "https://thevrajshah.me/"
     },
     {
       "name": "Rock Paper Scissors",
-      "img": "https://www.esquireme.com/sites/default/files/styles/full_img/public/images/2017/05/29/rock_paper_scissors__2x.png?itok=EB8fRWP9",
+      "img": "/img/rock-paper-scissor.jpeg",
       "desc": "JavaScript Game involving DOM Manipulation for beginners.",
       "giturl": "https://github.com/thevrajshah/RockPaperScissors",
       "liveurl": "https://thevrajshah.github.io/RockPaperScissors/"
     },
     {
       "name": "Single-Page Portfolio ",
-      "img": "https://i.imgur.com/1iwHD1al.png",
+      "img": "/img/basic-portfolio.png",
       "desc": "Responsive single-page webpage implemented just with vanilla JS & CSS which can be used for low-level projects.",
       "giturl": "https://github.com/thevrajshah/21DaysChallenge-WebDev",
       "liveurl": "https://thevrajshah.github.io/21DaysChallenge-WebDev/"
