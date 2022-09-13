@@ -2,10 +2,11 @@ import Head from 'next/head';
 
 import Hero from '../components/Hero';
 import { WhiteSection, GreySection, Card } from '../components/Containers';
-import { devSkills, designSkills } from '../data/data.json';
+import skills from '../data/data.json';
 import Gallery from '../components/Gallery';
 
 export default function home() {
+	const {designSkills,devSkills} = skills 
 	return (
 		<>
 			<Head>
