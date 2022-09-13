@@ -45,7 +45,7 @@ export default function Resume() {
         <FaDownload />
       </button>
       <iframe
-        src="https://docs.google.com/gview?url=https://thevrajshah.me/VrajShah_Resume.pdf&embedded=true"
+        src="https://docs.google.com/gview?url=https://thevrajshah.pages.dev/resume.pdf&embedded=true"
         style={{
           width: '100%',
           height: 'calc(100vh - 60px)',
