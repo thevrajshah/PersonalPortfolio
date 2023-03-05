@@ -51,7 +51,7 @@ function ProjectCard(props) {
 					<FiLock style={{ opacity: '0.6' }} />
 				)}
 				<a target="_blank" id="veiwLive" href={props.LiveUrl}>
-					Veiw
+					View Live
 				</a>
 			</div>
 		</div>
